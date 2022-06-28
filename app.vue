@@ -1,5 +1,5 @@
 <template>
-  <div class="drawer drawer-mobile">
+  <div class="drawer drawer-mobile" id="beauty-template">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div
       class="drawer-content flex flex-col items-center justify-center relative"
@@ -13,14 +13,18 @@
             tabindex="0"
             class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"
           >
-            <li>
-              <nuxt-link to="/zh/card/1">
-                🇨🇳 <span class="ml-1">zh</span>
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/en/card/1">
-                🇺🇸 <span class="ml-1">en</span>
+            <li v-for="item in langs" class="flex">
+              <nuxt-link
+                :to="`/${item.text}/card/1`"
+                class="flex justify-between"
+              >
+                <span>
+                  {{ item.icon }}
+                  <span class="ml-1">{{ item.text }}</span>
+                </span>
+                <span class="badge badge-outline lowercase">
+                  {{ item.desc }}
+                </span>
               </nuxt-link>
             </li>
           </ul>
@@ -60,6 +64,24 @@
 </template>
 
 <script setup>
+const langs = [
+  {
+    icon: "🇨🇳",
+    text: "zh",
+    desc: "中文",
+  },
+  {
+    icon: "🇺🇸",
+    text: "en",
+    desc: "english",
+  },
+  // {
+  //   icon: "🇯🇵",
+  //   text: "jp",
+  //   beta: true,
+  // },
+];
+
 const themes = [
   "light",
   "dark",
@@ -93,6 +115,7 @@ const themes = [
 ];
 
 const htmlMode = useColorMode({
+  selector: "#beauty-template",
   attribute: "data-theme",
 });
 </script>

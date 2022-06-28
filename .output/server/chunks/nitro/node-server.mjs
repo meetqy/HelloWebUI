@@ -15,7 +15,7 @@ import { promises } from 'fs';
 import { resolve, dirname } from 'pathe';
 import { fileURLToPath } from 'url';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{}};
+const _runtimeConfig = {"app":{"baseURL":"/beauty-template","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -330,25 +330,25 @@ const assets = {
   "/_nuxt/1-55cea316.mjs": {
     "type": "application/javascript",
     "etag": "\"585-dvD8d4otd4ITDKiDRwUCczsCABc\"",
-    "mtime": "2022-06-28T03:29:12.378Z",
+    "mtime": "2022-06-28T03:33:18.187Z",
     "path": "../public/_nuxt/1-55cea316.mjs"
   },
   "/_nuxt/entry-08902094.mjs": {
     "type": "application/javascript",
     "etag": "\"6572b-InxmLrl+y7OH9JnwkPHfQ8mhcrU\"",
-    "mtime": "2022-06-28T03:29:12.378Z",
+    "mtime": "2022-06-28T03:33:18.187Z",
     "path": "../public/_nuxt/entry-08902094.mjs"
   },
   "/_nuxt/entry.96b5ed6f.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"11215-8ZgTjsTHv3Se16MphzfddlIpCQY\"",
-    "mtime": "2022-06-28T03:29:12.377Z",
+    "mtime": "2022-06-28T03:33:18.185Z",
     "path": "../public/_nuxt/entry.96b5ed6f.css"
   },
   "/_nuxt/manifest.json": {
     "type": "application/json",
     "etag": "\"1de-T5Cf6NVGJy40UV4S9SmKg9vzvvs\"",
-    "mtime": "2022-06-28T03:29:12.376Z",
+    "mtime": "2022-06-28T03:33:18.184Z",
     "path": "../public/_nuxt/manifest.json"
   }
 };

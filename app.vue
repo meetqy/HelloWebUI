@@ -15,7 +15,7 @@
           >
             <li v-for="item in langs" class="flex">
               <nuxt-link
-                :to="`/${item.text}/card/1`"
+                :to="`/${item.text}/${url}`"
                 class="flex justify-between"
               >
                 <span>
@@ -64,6 +64,8 @@
 </template>
 
 <script setup>
+const url = computed(() => useRoute().path.split("/").slice(2, 4).join("/"));
+
 const langs = [
   {
     icon: "🇨🇳",

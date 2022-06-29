@@ -1,6 +1,6 @@
 ![](./readme/preview.gif)
 
-# [Template.wcao.cc](https://template.wcao.cc)
+# HelloWebUI
 
 多语言、多主题、响应式，基于 Faker.js 生成测试数据；更加真实体验众多场景下，模板的展示效果。
 

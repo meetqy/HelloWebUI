@@ -6,5 +6,5 @@
 
 ## 所有模板
 
-- [card1](https://wcao.cc/template/1)
-- [card3](https://wcao.cc/template/3)
+- [card1](https://wcao.cc/beauty-template/en/card/1)
+- [card3](https://wcao.cc/beauty-template/en/card/3)

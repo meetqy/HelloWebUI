@@ -9610,55 +9610,62 @@ const lorem$1 = {
   words: words$1
 };
 const first_name$2 = [
-  "\u5927\u7FD4",
-  "\u84EE",
-  "\u98AF\u592A",
-  "\u6A39",
-  "\u5927\u548C",
-  "\u967D\u7FD4",
-  "\u9678\u6597",
-  "\u592A\u4E00",
-  "\u6D77\u7FD4",
-  "\u84BC\u7A7A",
-  "\u7FFC",
-  "\u967D\u83DC",
-  "\u7D50\u611B",
-  "\u7D50\u8863",
-  "\u674F",
-  "\u8389\u5B50",
-  "\u7F8E\u7FBD",
-  "\u7D50\u83DC",
-  "\u5FC3\u611B",
-  "\u611B\u83DC",
-  "\u7F8E\u54B2"
+  "\u3064\u3080\u304E",
+  "\u308A\u3093",
+  "\u3048\u307E",
+  "\u3053\u3053\u308D",
+  "\u3053\u3053\u3084",
+  "\u307F\u3086",
+  "\u308A\u3087\u3046",
+  "\u3042\u304A\u3044",
+  "\u304B\u306E",
+  "\u304B\u3048\u3067",
+  "\u3068\u3089\u307E\u3055\u3001\u3053\u3046",
+  "\u3052\u3093",
+  "\u3044\u3076\u304D\u3001\u304B\u3048\u3067",
+  "\u3042\u304A\u3001\u3042\u304A\u3044",
+  "\u304B\u306A\u305F\u3001\u304D\u3087\u3046\u3001\u304B\u306A\u3068",
+  "\u3072\u3087\u3046\u304C\u3001\u3072\u3085\u3046\u304C",
+  "\u308A\u3087\u3046",
+  "\u305D\u3046\u305F\u3001\u3042\u304A\u3068\u3001\u3042\u304A\u3001\u307F\u306A\u3068\u3001\u3042\u304A\u3044\u3001\u305D\u3089",
+  "\u3086\u3044\u3068",
+  "\u3053\u305F\u308D\u3046"
 ];
 const last_name$2 = [
-  "\u4F50\u85E4",
-  "\u9234\u6728",
-  "\u9AD8\u6A4B",
-  "\u7530\u4E2D",
-  "\u6E21\u8FBA",
-  "\u4F0A\u85E4",
-  "\u5C71\u672C",
-  "\u4E2D\u6751",
-  "\u5C0F\u6797",
-  "\u52A0\u85E4",
-  "\u5409\u7530",
-  "\u5C71\u7530",
+  "\u30B5\u30C8\u30A6",
+  "\u30B9\u30BA\u30AD",
+  "\u30BF\u30AB\u30CF\u30B7",
+  "\u30BF\u30CA\u30AB",
+  "\u30EF\u30BF\u30CA\u30D9",
+  "\u30A4\u30C8\u30A6",
+  "\u30CA\u30AB\u30E0\u30E9",
+  "\u30B3\u30D0\u30E4\u30B7",
+  "\u30E4\u30DE\u30E2\u30C8",
+  "\u30AB\u30C8\u30A6",
+  "\u30E8\u30B7\u30C0",
+  "\u30E4\u30DE\u30C0",
   "\u4F50\u3005\u6728",
-  "\u5C71\u53E3",
-  "\u658E\u85E4",
-  "\u677E\u672C",
-  "\u4E95\u4E0A",
-  "\u6728\u6751",
-  "\u6797",
-  "\u6E05\u6C34"
+  "\u30B5\u30B5\u30AD",
+  "\u30E4\u30DE\u30B0\u30C1",
+  "\u30B5\u30A4\u30C8\u30A6",
+  "\u30B7\u30DF\u30BA",
+  "\u30E4\u30DE\u30B6\u30AD",
+  "\u30CA\u30AB\u30B8\u30DE",
+  "\u30E2\u30EA"
 ];
-const name_$4 = ["{{name.last_name}} {{name.first_name}}"];
 const name$2 = {
-  first_name: first_name$2,
-  last_name: last_name$2,
-  name: name_$4
+  female_first_name: last_name$2,
+  first_name: last_name$2,
+  last_name: first_name$2,
+  male_first_name: last_name$2,
+  binary_gender: [],
+  female_middle_name: [],
+  male_middle_name: [],
+  middle_name: [],
+  gender: [],
+  prefix: [],
+  suffix: [],
+  name: []
 };
 const formats$3 = ["0####-#-####", "0###-##-####", "0##-###-####", "0#-####-####"];
 const phone_number$2 = {
@@ -10078,11 +10085,260 @@ const formats$2 = ["0##-########", "0###-########", "1##########"];
 const phone_number$1 = {
   formats: formats$2
 };
+const department$1 = [
+  "\u4E66\u7C4D",
+  "\u7535\u5F71",
+  "\u97F3\u4E50",
+  "\u6E38\u620F",
+  "\u7535\u5B50\u4EA7\u54C1",
+  "\u7535\u8111",
+  "\u5BB6",
+  "\u82B1\u56ED",
+  "\u5DE5\u5177",
+  "\u6742\u8D27\u5E97",
+  "\u5065\u5EB7",
+  "\u7F8E\u597D\u7684\u4E8B",
+  "\u73A9\u5177",
+  "\u5C0F\u5B69",
+  "\u5357\u6D77"
+];
+const product_description$1 = [
+  "\u4ECE\u539F\u6750\u6599\u5230\u52A0\u5DE5\u54C1\uFF0C\u4E3A\u60A8\u63D0\u4F9B\u4E00\u5207\u98DF\u54C1\u3002 \u53CC\u65E5\u98DF\u54C1\u7ECF\u8425\u98DF\u6750\u8303\u56F4\u5E7F\u6CDB\uFF0C\u65E2\u6709\u7802\u7CD6\u3001\u9762\u7C89\u7B49\u539F\u6750\u6599\uFF0C\u4E5F\u6709\u5373\u4E70\u5373\u5403\u7684\u52A0\u5DE5. \u98DF\u54C1",
+  "\u56FE\u602A\u517D\u4F5C\u56FE\u795E\u5668,\u63D0\u4F9B3056\u5F20\u514D\u8D39\u5546\u54C1\u4ECB\u7ECD\u56FE\u7247,\u5546\u54C1\u4ECB\u7ECD\u6A21\u677F\u8BBE\u8BA1,\u5546\u54C1\u4ECB\u7ECD\u80CC\u666F\u7D20\u6750\u4E0B\u8F7D,\u4F9B\u4F60\u8FDB\u884C\u5728\u7EBF\u56FE\u7247\u8BBE\u8BA1\u5236\u4F5C\u3002",
+  "\u53BB\u54EA\u513F\u8D2D\u4E70\u5546\u54C1\u4ECB\u7ECD\u5C55\u793A\u724C\uFF1F\u5F53\u7136\u6765\u6DD8\u5B9D\u6D77\u5916\uFF0C\u6DD8\u5B9D\u5F53\u524D\u6709167\u4EF6\u5546\u54C1\u4ECB\u7ECD\u5C55\u793A\u724C\u76F8\u5173\u7684\u5546\u54C1\u5728\u552E\u3002",
+  "\u4EAC\u4E1CJD.COM\u7535\u8111\u6574\u673A,\u4E13\u4E1A\u63D0\u4F9B\u7535\u8111-\u7B14\u8BB0\u672C_\u6E38\u620F\u672C_\u8D85\u6781\u672C_\u53F0\u5F0F\u673A_\u4E00\u4F53\u673A_\u670D\u52A1\u5668_\u5DE5\u4F5C\u7AD9_\u5E73\u677F\u7535\u8111\u7684\u6700\u65B0\u62A5\u4EF7\u3001\u4FC3\u9500\u3001\u8BC4\u8BBA\u3001\u5BFC\u8D2D\u3001\u56FE\u7247\u7B49\u76F8\u5173\u4FE1\u606F!\u4E3A\u60A8\u63D0\u4F9B\u6109\u60A6\u7684\u7F51\u4E0A\u8D2D\u7269 ",
+  " \u592A\u5E73\u6D0B\u7535\u8111\u7F51\u63D0\u4F9B\u7B14\u8BB0\u672C\u7535\u8111\u5927\u5168\u5168\u9762\u670D\u52A1\u4FE1\u606F\uFF0C\u5305\u542B\u7B14\u8BB0\u672C\u7535\u8111\u62A5\u4EF7\u3001\u53C2\u6570\u3001\u8BC4\u6D4B\u3001\u6BD4\u8F83\u3001\u70B9\u8BC4\u3001\u8BBA\u575B\u7B49\uFF0C\u5E2E\u60A8\u5168\u9762\u4E86\u89E3\u7B14\u8BB0\u672C\u7535\u8111\u3002",
+  "ZOL\u624B\u673A\u7248\u4E3A\u60A8\u63D0\u4F9B\u7B14\u8BB0\u672C\u7535\u8111\u4FE1\u606F,\u5305\u62EC\u7B14\u8BB0\u672C\u7535\u8111\u62A5\u4EF7,\u7B14\u8BB0\u672C\u7535\u8111\u53C2\u6570,\u7B14\u8BB0\u672C\u7535\u8111\u8BC4\u6D4B,\u7B14\u8BB0\u672C\u7535\u8111\u56FE\u7247,\u7B14\u8BB0\u672C\u7535\u8111\u70B9\u8BC4\u7B49\u8BE6\u7EC6\u5185\u5BB9,\u4E3A\u60A8\u8D2D\u4E70\u7B14\u8BB0\u672C\u7535\u8111\u63D0\u4F9B\u6700\u6709\u4EF7\u503C\u7684"
+];
+const product_name$1 = {
+  adjective: [
+    "\u5C0F\u7684",
+    "\u4EBA\u4F53\u5DE5\u7A0B\u5B66",
+    "\u7535\u5B50",
+    "Rustic",
+    "\u4E61\u6751",
+    "\u534E\u4E3D\u7684",
+    "\u96BE\u4EE5\u7F6E\u4FE1\u7684"
+  ],
+  material: ["\u575A\u5F3A\u7684", "\u9752\u94DC\u8272", "\u6728\u5236\u7684", "\u6DF7\u51DD\u571F", "\u5851\u6599", "\u68C9\u5236\u7684"],
+  product: [
+    "\u6905\u5B50",
+    "\u8F66\u5B50",
+    "\u7535\u8111",
+    "\u952E\u76D8",
+    "\u9F20\u6807",
+    "\u81EA\u884C\u8F66",
+    "\u68D2\u7403",
+    "\u91D1\u5B50",
+    "\u889C\u5B50",
+    "\u8868\u683C",
+    "\u978B\u5B50",
+    "\u5E3D\u5B50"
+  ]
+};
+const commerce$1 = {
+  department: department$1,
+  product_description: product_description$1,
+  product_name: product_name$1
+};
+const month$1 = {
+  wide: [
+    "\u4E00\u6708",
+    "\u4E8C\u6708",
+    "\u4E09\u6708",
+    "\u56DB\u6708",
+    "\u4E94\u6708",
+    "\u516D\u6708",
+    "\u4E03\u6708",
+    "\u516B\u6708",
+    "\u4E5D\u6708",
+    "\u5341\u6708",
+    "\u5341\u4E00\u6708",
+    "\u5341\u4E8C\u6708"
+  ],
+  wide_context: [
+    "\u4E00\u6708",
+    "\u4E8C\u6708",
+    "\u4E09\u6708",
+    "\u56DB\u6708",
+    "\u4E94\u6708",
+    "\u516D\u6708",
+    "\u4E03\u6708",
+    "\u516B\u6708",
+    "\u4E5D\u6708",
+    "\u5341\u6708",
+    "\u5341\u4E00\u6708",
+    "\u5341\u4E8C\u6708"
+  ]
+};
+const weekday$1 = {
+  wide: ["\u661F\u671F\u5929", "\u661F\u671F\u4E00", "\u661F\u671F\u4E8C", "\u661F\u671F\u4E09", "\u661F\u671F\u4E09", "\u661F\u671F\u4E94", "\u661F\u671F\u516D"],
+  wide_context: [
+    "\u661F\u671F\u5929",
+    "\u661F\u671F\u4E00",
+    "\u661F\u671F\u4E8C",
+    "\u661F\u671F\u4E09",
+    "\u661F\u671F\u4E09",
+    "\u661F\u671F\u4E94",
+    "\u661F\u671F\u516D"
+  ]
+};
+const date$1 = {
+  month: month$1,
+  weekday: weekday$1
+};
+const abbreviation$1 = [
+  "ADP",
+  "AGP",
+  "AI",
+  "API",
+  "ASCII",
+  "CLI",
+  "COM",
+  "CSS",
+  "DNS",
+  "DRAM",
+  "EXE",
+  "FTP",
+  "GB",
+  "HDD",
+  "HEX",
+  "HTTP",
+  "IB",
+  "IP",
+  "JBOD",
+  "JSON",
+  "OCR",
+  "PCI",
+  "PNG",
+  "RAM",
+  "RSS",
+  "SAS",
+  "SCSI",
+  "SDD",
+  "SMS",
+  "SMTP",
+  "SQL",
+  "SSD",
+  "SSL",
+  "TCP",
+  "THX",
+  "TLS",
+  "UDP",
+  "USB",
+  "UTF8",
+  "VGA",
+  "XML",
+  "XSS"
+];
+const adjective$3 = [
+  "auxiliary",
+  "primary",
+  "back-end",
+  "digital",
+  "open-source",
+  "virtual",
+  "cross-platform",
+  "redundant",
+  "online",
+  "haptic",
+  "multi-byte",
+  "bluetooth",
+  "wireless",
+  "1080p",
+  "neural",
+  "optical",
+  "solid state",
+  "mobile"
+];
+const ingverb$1 = [
+  "backing up",
+  "bypassing",
+  "hacking",
+  "overriding",
+  "compressing",
+  "copying",
+  "navigating",
+  "indexing",
+  "connecting",
+  "generating",
+  "quantifying",
+  "calculating",
+  "synthesizing",
+  "transmitting",
+  "programming",
+  "parsing"
+];
+const noun$3 = [
+  "driver",
+  "protocol",
+  "bandwidth",
+  "panel",
+  "microchip",
+  "program",
+  "port",
+  "card",
+  "array",
+  "interface",
+  "system",
+  "sensor",
+  "firewall",
+  "hard drive",
+  "pixel",
+  "alarm",
+  "feed",
+  "monitor",
+  "application",
+  "transmitter",
+  "bus",
+  "circuit",
+  "capacitor",
+  "matrix"
+];
+const phrase$1 = [
+  "If we {{verb}} the {{noun}}, we can get to the {{abbreviation}} {{noun}} through the {{adjective}} {{abbreviation}} {{noun}}!",
+  "We need to {{verb}} the {{adjective}} {{abbreviation}} {{noun}}!",
+  "Try to {{verb}} the {{abbreviation}} {{noun}}, maybe it will {{verb}} the {{adjective}} {{noun}}!",
+  "You can't {{verb}} the {{noun}} without {{ingverb}} the {{adjective}} {{abbreviation}} {{noun}}!",
+  "Use the {{adjective}} {{abbreviation}} {{noun}}, then you can {{verb}} the {{adjective}} {{noun}}!",
+  "The {{abbreviation}} {{noun}} is down, {{verb}} the {{adjective}} {{noun}} so we can {{verb}} the {{abbreviation}} {{noun}}!",
+  "{{ingverb}} the {{noun}} won't do anything, we need to {{verb}} the {{adjective}} {{abbreviation}} {{noun}}!",
+  "I'll {{verb}} the {{adjective}} {{abbreviation}} {{noun}}, that should {{noun}} the {{abbreviation}} {{noun}}!"
+];
+const verb$2 = [
+  "\u8FD4\u56DE",
+  "\u901A\u8FC7",
+  "\u9A73\u56DE",
+  "\u786E\u8BA4",
+  "\u538B\u7F29",
+  "\u590D\u5236",
+  "\u8DF3\u8F6C",
+  "\u7D22\u5F15",
+  "\u8054\u7CFB",
+  "\u6253\u5305",
+  "\u8D28\u91CF",
+  "\u8F93\u5165",
+  "\u63D0\u4EA4",
+  "\u8FDB\u5EA6",
+  "\u91CD\u542F",
+  "\u683C\u5F0F\u5316"
+];
+const hacker$1 = {
+  abbreviation: abbreviation$1,
+  adjective: adjective$3,
+  ingverb: ingverb$1,
+  noun: noun$3,
+  phrase: phrase$1,
+  verb: verb$2
+};
 const zh_CN = {
   title: "Chinese",
   address: address$1,
   name: name$1,
-  phone_number: phone_number$1
+  phone_number: phone_number$1,
+  commerce: commerce$1,
+  date: date$1,
+  hacker: hacker$1
 };
 const building_number = ["#####", "####", "###"];
 const city = [

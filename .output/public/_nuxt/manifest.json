@@ -1,18 +1,27 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-08902094.mjs",
+    "file": "entry-0be36244.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
-      "pages/[language]/card/1.vue"
+      "pages/[language]/card/1.vue",
+      "pages/[language]/card/3.vue"
     ],
     "css": [
-      "entry.96b5ed6f.css"
+      "entry.fe095d07.css"
     ]
   },
   "pages/[language]/card/1.vue": {
-    "file": "1-55cea316.mjs",
+    "file": "1-42803bc0.mjs",
     "src": "pages/[language]/card/1.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/[language]/card/3.vue": {
+    "file": "3-c3176966.mjs",
+    "src": "pages/[language]/card/3.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"

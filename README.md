@@ -1,11 +1,10 @@
 ![](./readme/preview.gif)
 
-# Beauty-Template
+# template.wcao.cc
 
-多语言、多主题模板，所有模板基于 Tailwind/Daisyui/Faker-js
-
-[wcao.cc](https://github.com/meetqy/meetqy) 博客中，独立出来存放模板的仓库。
+多语言、多主题、响应式，基于 Faker.js 生成测试数据；更加真实体验众多场景下，模板的展示效果。
 
 ## All Template
 
-Preview to [wcao.cc](https://wcao.cc/template/1)
+- [card1](https://wcao.cc/template/1)
+- [card3](https://wcao.cc/template/3)

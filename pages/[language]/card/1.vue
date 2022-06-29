@@ -23,47 +23,18 @@
       <img
         class="mb-3 w-24 h-24 rounded-full shadow-lg"
         src="https://wcao.cc/image-space/api/avatar"
+        alt="Bonnie image"
       />
       <h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">
-        {{
-          useLanguage(
-            {
-              en: $Random.name(),
-              zh: $Random.cname(),
-            },
-            $route
-          )
-        }}
+        {{ $faker.name.findName() }}
       </h5>
       <span class="text-sm text-base-content text-opacity-50">
-        {{
-          useLanguage(
-            {
-              en: $Random.title(2),
-              zh: $Random.ctitle(4, 6),
-            },
-            $route
-          )
-        }}
+        {{ $faker.name.jobTitle() }}
       </span>
       <div class="flex mt-4 space-x-3 lg:mt-6">
-        <a href="#" class="btn btn-sm capitalize">{{
-          useLanguage(
-            {
-              en: $Random.title(2),
-              zh: $Random.ctitle(4, 6),
-            },
-            $route
-          )
-        }}</a>
+        <a href="#" class="btn btn-sm capitalize">{{ $faker.word.verb() }}</a>
         <a href="#" class="btn btn-outline btn-sm capitalize">{{
-          useLanguage(
-            {
-              en: $Random.word(),
-              zh: $Random.cword(4),
-            },
-            $route
-          )
+          $faker.word.verb()
         }}</a>
       </div>
     </div>

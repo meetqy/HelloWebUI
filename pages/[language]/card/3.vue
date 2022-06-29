@@ -2,25 +2,9 @@
   <div class="max-w-2xl px-8 py-4 mx-auto bg-base-100 rounded-lg shadow-md">
     <div class="flex items-center justify-between">
       <span class="text-sm font-light text-base-content text-opacity-60">
-        {{
-          useLanguage(
-            {
-              en: "Mar 10, 2019",
-              zh: "2019年5月10日",
-            },
-            $route
-          )
-        }}
+        {{ $faker.date.month() }}
       </span>
-      <a class="btn btn-primary btn-sm">{{
-        useLanguage(
-          {
-            en: $Random.title(1, 2),
-            zh: $Random.cword(2, 4),
-          },
-          $route
-        )
-      }}</a>
+      <a class="btn btn-primary btn-sm">{{ $faker.hacker.verb() }}</a>
     </div>
 
     <div class="mt-2">
@@ -28,40 +12,16 @@
         href="#"
         class="text-2xl font-bold text-base-content text-opacity-70 hover:underline"
       >
-        {{
-          useLanguage(
-            {
-              en: $Random.title(),
-              zh: $Random.cparagraph(1),
-            },
-            $route
-          )
-        }}
+        {{ $faker.commerce.productName() }}
       </a>
       <p class="mt-2 text-base-content text-opacity-60">
-        {{
-          useLanguage(
-            {
-              en: $Random.paragraph(1, 5),
-              zh: $Random.cparagraph(1, 5),
-            },
-            $route
-          )
-        }}
+        {{ $faker.commerce.productDescription() }}
       </p>
     </div>
 
     <div class="flex items-center justify-between mt-4">
       <a href="#" class="btn btn-link hover:underline capitalize">
-        {{
-          useLanguage(
-            {
-              en: "read more",
-              zh: "阅读更多",
-            },
-            $route
-          )
-        }}
+        {{ $faker.hacker.verb() }}
       </a>
 
       <div class="flex items-center">
@@ -71,15 +31,7 @@
           alt="avatar"
         />
         <a class="font-bold text-base-content text-opacity-70 cursor-pointer">
-          {{
-            useLanguage(
-              {
-                en: $Random.name(),
-                zh: $Random.cname(),
-              },
-              $route
-            )
-          }}
+          {{ $faker.name.findName() }}
         </a>
       </div>
     </div>

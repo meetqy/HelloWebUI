@@ -66,10 +66,28 @@
 <script setup>
 const url = computed(() => useRoute().path.split("/").slice(2, 4).join("/"));
 
+const { $faker } = useNuxtApp();
+
+const setLocale = (language) => {
+  const arr = language.split("_");
+  if (arr[1]) {
+    arr[1] = arr[1].toLocaleUpperCase();
+  }
+  $faker.setLocale(arr.join("_"));
+};
+
+const route = useRoute();
+const { language } = route.params;
+setLocale(language);
+
+watch(route, (val) => {
+  setLocale(val.params.language);
+});
+
 const langs = [
   {
     icon: "🇨🇳",
-    text: "zh",
+    text: "zh_CN",
     desc: "中文",
   },
   {
@@ -77,11 +95,11 @@ const langs = [
     text: "en",
     desc: "english",
   },
-  // {
-  //   icon: "🇯🇵",
-  //   text: "jp",
-  //   beta: true,
-  // },
+  {
+    icon: "🇯🇵",
+    text: "ja",
+    desc: "ジャパン",
+  },
 ];
 
 const themes = [

@@ -4,7 +4,7 @@
       <span class="text-sm font-light text-base-content text-opacity-60">
         {{ $faker.date.month() }}
       </span>
-      <a class="btn btn-primary btn-sm">{{ $faker.hacker.verb() }}</a>
+      <a class="btn btn-primary btn-sm">{{ $faker.word.verb() }}</a>
     </div>
 
     <div class="mt-2">
@@ -21,7 +21,7 @@
 
     <div class="flex items-center justify-between mt-4">
       <a href="#" class="btn btn-link hover:underline capitalize">
-        {{ $faker.hacker.verb() }}
+        {{ $faker.word.verb() }}
       </a>
 
       <div class="flex items-center">

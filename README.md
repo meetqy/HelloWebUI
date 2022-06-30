@@ -6,5 +6,8 @@
 
 ## Card
 
-- [个人基础信息展示](https://wcao.cc/beauty-template/en/card/1)
-- [card3](https://wcao.cc/beauty-template/en/card/3)
+<div>
+<img src='./readme/template/card/1.jpg' width='175'/>
+<img src='./readme/template/card/2.jpg' width='175'/>
+<img src='./readme/template/card/3.jpg' width='175'/>
+</div>

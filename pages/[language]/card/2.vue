@@ -11,19 +11,18 @@
     </a>
     <div class="p-5">
       <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-base-content">
-          Noteworthy technology acquisitions 2021
-        </h5>
+        <h3 class="mb-2 text-2xl font-bold tracking-tight text-base-content">
+          {{ $faker.commerce.productName() }}
+        </h3>
       </a>
       <p class="mb-3 font-normal text-base-content text-opacity-80">
-        Here are the biggest enterprise technology acquisitions of 2021 so far,
-        in reverse chronological order.
+        {{ $faker.commerce.productDescription() }}
       </p>
       <a
         href="#"
         class="inline-flex items-center py-2 px-3 text-sm font-medium text-center btn btn-primary"
       >
-        Read more
+        {{ $faker.word.adjective() }}
         <svg
           class="ml-2 -mr-1 w-4 h-4"
           fill="currentColor"

@@ -9,6 +9,7 @@ import lorem from "./lorem";
 import name_ from "./name";
 import phone_number from "./phone_number";
 import word from "./word";
+import commerce from "./commerce";
 
 const ja: LocaleDefinition = {
   title: "Japanese",
@@ -18,6 +19,7 @@ const ja: LocaleDefinition = {
   name: name_,
   phone_number,
   word,
+  commerce,
 };
 
 export default ja;

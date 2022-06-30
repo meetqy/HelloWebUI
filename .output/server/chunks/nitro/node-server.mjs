@@ -327,40 +327,40 @@ const errorHandler = (async function errorhandler(_error, event) {
 });
 
 const assets = {
-  "/_nuxt/1-43086570.mjs": {
+  "/_nuxt/1-754ede56.mjs": {
     "type": "application/javascript",
-    "etag": "\"4ce-2VP0SNo1N2Yd5tVMi4AAs1lM8LA\"",
-    "mtime": "2022-06-30T06:19:36.005Z",
-    "path": "../public/_nuxt/1-43086570.mjs"
+    "etag": "\"4ce-pkxsuSkMjNp3n3aM44MfXx43ZuY\"",
+    "mtime": "2022-06-30T07:37:40.658Z",
+    "path": "../public/_nuxt/1-754ede56.mjs"
   },
-  "/_nuxt/2-e504ac8c.mjs": {
+  "/_nuxt/2-9ab05695.mjs": {
     "type": "application/javascript",
-    "etag": "\"494-7CJgJYMwvjOIze6P/q7DJU71MWA\"",
-    "mtime": "2022-06-30T06:19:36.005Z",
-    "path": "../public/_nuxt/2-e504ac8c.mjs"
+    "etag": "\"49b-sYOGEJ8wrfuLEK0e1F9PlGj4qOI\"",
+    "mtime": "2022-06-30T07:37:40.657Z",
+    "path": "../public/_nuxt/2-9ab05695.mjs"
   },
-  "/_nuxt/3-6eba59e4.mjs": {
+  "/_nuxt/3-12d73a8e.mjs": {
     "type": "application/javascript",
-    "etag": "\"4b3-5hXbhUIZdnZdy/mm7Tg85g78J5w\"",
-    "mtime": "2022-06-30T06:19:36.004Z",
-    "path": "../public/_nuxt/3-6eba59e4.mjs"
+    "etag": "\"4b3-/U100f0Jk9AoGxvMd4p0WUZAJec\"",
+    "mtime": "2022-06-30T07:37:40.650Z",
+    "path": "../public/_nuxt/3-12d73a8e.mjs"
   },
-  "/_nuxt/entry-00785a2c.mjs": {
+  "/_nuxt/entry-6889a5fc.mjs": {
     "type": "application/javascript",
-    "etag": "\"d3258-NTzNX/MvMk4WueHJXDTgGi3r+kc\"",
-    "mtime": "2022-06-30T06:19:36.004Z",
-    "path": "../public/_nuxt/entry-00785a2c.mjs"
+    "etag": "\"d39d1-UZ2sNZBDPSYx7I1oLmGf7pAt4eU\"",
+    "mtime": "2022-06-30T07:37:40.649Z",
+    "path": "../public/_nuxt/entry-6889a5fc.mjs"
   },
-  "/_nuxt/entry.f8608314.css": {
+  "/_nuxt/entry.370571ff.css": {
     "type": "text/css; charset=utf-8",
-    "etag": "\"125dc-YbIOHihh9DcN+t6R9QgthOCPPQM\"",
-    "mtime": "2022-06-30T06:19:36.001Z",
-    "path": "../public/_nuxt/entry.f8608314.css"
+    "etag": "\"12a3f-pE1ldDxgnyb++q456nP1y/xyshw\"",
+    "mtime": "2022-06-30T07:37:40.647Z",
+    "path": "../public/_nuxt/entry.370571ff.css"
   },
   "/_nuxt/manifest.json": {
     "type": "application/json",
-    "etag": "\"3c8-l4kC2jbrZzYEh6cfgFxLit757iM\"",
-    "mtime": "2022-06-30T06:19:36.000Z",
+    "etag": "\"3c8-l2+KGI9Aqq/IbNmAmK7/HacheiI\"",
+    "mtime": "2022-06-30T07:37:40.647Z",
     "path": "../public/_nuxt/manifest.json"
   }
 };

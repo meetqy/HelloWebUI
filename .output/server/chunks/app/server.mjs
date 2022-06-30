@@ -55636,6 +55636,41 @@ function tryOnMounted(fn, sync = true) {
   else
     vue_cjs_prod.nextTick(fn);
 }
+function useTimeoutFn(cb, interval, options = {}) {
+  const {
+    immediate = true
+  } = options;
+  const isPending = vue_cjs_prod.ref(false);
+  let timer = null;
+  function clear() {
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+    }
+  }
+  function stop() {
+    isPending.value = false;
+    clear();
+  }
+  function start(...args) {
+    clear();
+    isPending.value = true;
+    timer = setTimeout(() => {
+      isPending.value = false;
+      timer = null;
+      cb(...args);
+    }, vue_cjs_prod.unref(interval));
+  }
+  if (immediate) {
+    isPending.value = true;
+  }
+  tryOnScopeDispose(stop);
+  return {
+    isPending,
+    start,
+    stop
+  };
+}
 var __getOwnPropSymbols$5 = Object.getOwnPropertySymbols;
 var __hasOwnProp$5 = Object.prototype.hasOwnProperty;
 var __propIsEnum$5 = Object.prototype.propertyIsEnumerable;
@@ -55708,6 +55743,7 @@ function unrefElement(elRef) {
   return (_a = plain == null ? void 0 : plain.$el) != null ? _a : plain;
 }
 const defaultWindow = void 0;
+const defaultNavigator = void 0;
 function useEventListener(...args) {
   let target;
   let event;
@@ -55767,6 +55803,42 @@ function useMediaQuery(query, options = {}) {
     });
   });
   return matches;
+}
+function useClipboard(options = {}) {
+  const {
+    navigator = defaultNavigator,
+    read = false,
+    source,
+    copiedDuring = 1500
+  } = options;
+  const events = ["copy", "cut"];
+  const isSupported = Boolean(navigator && "clipboard" in navigator);
+  const text = vue_cjs_prod.ref("");
+  const copied = vue_cjs_prod.ref(false);
+  const timeout = useTimeoutFn(() => copied.value = false, copiedDuring);
+  function updateText() {
+    navigator.clipboard.readText().then((value) => {
+      text.value = value;
+    });
+  }
+  if (isSupported && read) {
+    for (const event of events)
+      useEventListener(event, updateText);
+  }
+  async function copy(value = vue_cjs_prod.unref(source)) {
+    if (isSupported && value != null) {
+      await navigator.clipboard.writeText(value);
+      text.value = value;
+      copied.value = true;
+      timeout.start();
+    }
+  }
+  return {
+    isSupported,
+    text,
+    copied,
+    copy
+  };
 }
 const _global = typeof globalThis !== "undefined" ? globalThis : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
 const globalKey = "__vueuse_ssr_handlers__";
@@ -56158,6 +56230,7 @@ const _sfc_main$3 = {
   setup(__props) {
     const url = vue_cjs_prod.computed(() => useRoute().path.split("/").slice(2, 4).join("/"));
     const { $faker } = useNuxtApp();
+    useClipboard();
     const setLocale = (language2) => {
       const arr = language2.split("_");
       if (arr[1]) {
@@ -56229,7 +56302,7 @@ const _sfc_main$3 = {
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: "drawer drawer-mobile",
         id: "beauty-template"
-      }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content flex flex-col items-center justify-center relative"><div class="h-12 bg-base-200 w-full absolute left-0 top-0 flex justify-end px-4 items-center"><div class="dropdown dropdown-end"><label tabindex="0" class="btn btn-sm m-1 capitalize">language</label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
+      }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content bg-neutral-content flex flex-col items-center justify-center relative"><div class="h-12 w-full bg-base-200 shadow-md absolute left-0 top-0 flex justify-end px-4 items-center"><button class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg></button><div class="dropdown dropdown-end"><label tabindex="0" class="btn btn-sm m-1 capitalize">language</label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
       serverRenderer.exports.ssrRenderList(langs, (item) => {
         _push(`<li class="flex">`);
         _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {
@@ -56253,9 +56326,9 @@ const _sfc_main$3 = {
         }, _parent));
         _push(`</li>`);
       });
-      _push(`<!--]--></ul></div></div>`);
+      _push(`<!--]--></ul></div></div><div id="template-wrapper">`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtPage, null, null, _parent));
-      _push(`</div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
+      _push(`</div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
       serverRenderer.exports.ssrRenderList(themes, (item) => {
         _push(`<li${serverRenderer.exports.ssrRenderAttr("data-theme", item)} class="${serverRenderer.exports.ssrRenderClass([{ "outline-dashed": vue_cjs_prod.unref(htmlMode) === item }, "my-2 shadow rounded-box"])}"><a href="javascript:;" class="flex justify-between hover:bg-transparent active:bg-transparent focus:bg-transparent"><span>${serverRenderer.exports.ssrInterpolate(item)}</span><div class="flex gap-1 h-4"><div class="bg-primary w-2 rounded"></div><div class="bg-secondary w-2 rounded"></div><div class="bg-accent w-2 rounded"></div><div class="bg-neutral w-2 rounded"></div></div></a></li>`);
       });
@@ -56309,7 +56382,7 @@ const _1$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$1 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-sm bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><a href="#"><div class="h-64 w-full overflow-hidden"><img class="rounded-t-lg" src="https://wcao.cc/image-space/api/girls?xxx" alt=""></div></a><div class="p-5"><a href="#"><h3 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3></a><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center btn btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adjective())} <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a></div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-sm bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><a href="#"><div class="h-64 w-full overflow-hidden"><img class="rounded-t-lg w-full" src="https://wcao.cc/image-space/api/girls?xxx" alt=""></div></a><div class="p-5"><a href="#"><h3 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3></a><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center btn btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adjective())} <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a></div></div>`);
 }
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {

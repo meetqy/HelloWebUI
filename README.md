@@ -7,7 +7,7 @@
 ## Card
 
 <div>
-<img src='./readme/template/card/1.jpg' width='175'/>
-<img src='./readme/template/card/2.jpg' width='175'/>
-<img src='./readme/template/card/3.jpg' width='175'/>
+<img src='./readme/template/card/1.jpg' width='200'/>
+<img src='./readme/template/card/2.jpg' width='200'/>
+<img src='./readme/template/card/3.jpg' width='200'/>
 </div>

@@ -9,6 +9,7 @@ import phone_number from "./phone_number";
 import commerce from "./commerce";
 import date from "./date";
 import hacker from "./hacker";
+import word from "./word";
 
 const zh_CN: LocaleDefinition = {
   title: "Chinese",
@@ -17,7 +18,7 @@ const zh_CN: LocaleDefinition = {
   phone_number,
   commerce,
   date,
-  hacker,
+  word,
 };
 
 export default zh_CN;

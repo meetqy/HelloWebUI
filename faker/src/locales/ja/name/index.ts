@@ -5,13 +5,14 @@
 import type { NameDefinitions } from "../../..";
 import first_name from "./first_name";
 import last_name from "./last_name";
-import name_ from "./name";
+import title from "./title";
 
 const name: NameDefinitions = {
   female_first_name: last_name,
   first_name: last_name,
   last_name: first_name,
   male_first_name: last_name,
+  title: title,
   binary_gender: [],
   female_middle_name: [],
   male_middle_name: [],

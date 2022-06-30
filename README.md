@@ -1,6 +1,6 @@
 ![](./readme/preview.gif)
 
-# HelloWebUI - webhook
+# HelloWebUI
 
 分享多主题、多语言、响应式 web 网页模板
 

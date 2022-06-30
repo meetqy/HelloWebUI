@@ -2,10 +2,10 @@
   <div class="drawer drawer-mobile" id="beauty-template">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div
-      class="drawer-content flex flex-col items-center justify-center relative"
+      class="drawer-content bg-neutral-content flex flex-col items-center justify-center relative"
     >
       <div
-        class="h-12 bg-base-200 w-full absolute left-0 top-0 flex justify-end px-4 items-center"
+        class="h-12 w-full bg-base-200 shadow-md absolute left-0 top-0 flex justify-end px-4 items-center"
       >
         <div class="dropdown dropdown-end">
           <label tabindex="0" class="btn btn-sm m-1 capitalize">language</label>
@@ -30,6 +30,7 @@
           </ul>
         </div>
       </div>
+
       <NuxtPage />
     </div>
     <div class="drawer-side">

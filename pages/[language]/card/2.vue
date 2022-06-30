@@ -3,7 +3,7 @@
     <a href="#">
       <div class="h-64 w-full overflow-hidden">
         <img
-          class="rounded-t-lg"
+          class="rounded-t-lg w-full"
           src="https://wcao.cc/image-space/api/girls?xxx"
           alt=""
         />

@@ -56231,6 +56231,7 @@ const _sfc_main$3 = {
     const url = vue_cjs_prod.computed(() => useRoute().path.split("/").slice(2, 4).join("/"));
     const { $faker } = useNuxtApp();
     useClipboard();
+    vue_cjs_prod.ref();
     const setLocale = (language2) => {
       const arr = language2.split("_");
       if (arr[1]) {

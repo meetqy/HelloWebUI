@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <div id="template-wrapper">
+      <div id="template-wrapper" ref="templateWrapper">
         <NuxtPage />
       </div>
     </div>
@@ -89,9 +89,12 @@ const { $faker } = useNuxtApp();
 
 const { copy } = useClipboard();
 
-const onCopy = () => {
-  const el = document.querySelector("#template-wrapper");
-  copy(createHtml(el.innerHTML));
+const templateWrapper = ref();
+
+const onCopy = async () => {
+  const el = templateWrapper.value;
+
+  await copy(createHtml(el.innerHTML));
   alert("复制成功，只需要粘贴到任意一个html文件中，即可完美复刻！");
 };
 

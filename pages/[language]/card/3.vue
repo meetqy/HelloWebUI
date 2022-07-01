@@ -2,7 +2,7 @@
   <div class="max-w-2xl px-8 py-4 mx-auto bg-base-100 rounded-lg shadow-md">
     <div class="flex items-center justify-between">
       <span class="text-sm font-light text-base-content text-opacity-60">
-        {{ $faker.date.month() }}
+        {{ $faker.date.month() }} 2019
       </span>
       <a class="btn btn-primary btn-sm">{{ $faker.word.verb() }}</a>
     </div>
@@ -20,9 +20,9 @@
     </div>
 
     <div class="flex items-center justify-between mt-4">
-      <a href="#" class="btn btn-link hover:underline capitalize">
-        {{ $faker.word.verb() }}
-      </a>
+      <a href="#" class="btn btn-link hover:underline">{{
+        $faker.word.verb()
+      }}</a>
 
       <div class="flex items-center">
         <img

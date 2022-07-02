@@ -10,6 +10,7 @@ import name_ from "./name";
 import phone_number from "./phone_number";
 import word from "./word";
 import commerce from "./commerce";
+import date from "./date";
 
 const ja: LocaleDefinition = {
   title: "Japanese",
@@ -20,6 +21,7 @@ const ja: LocaleDefinition = {
   phone_number,
   word,
   commerce,
+  date,
 };
 
 export default ja;

@@ -10398,7 +10398,7 @@ const word$3 = {
   preposition: preposition$3,
   verb: verb$4
 };
-const department$2 = [
+const department$3 = [
   "\u672C",
   "\u6620\u753B",
   "\u97F3\u697D",
@@ -10422,7 +10422,7 @@ const department$2 = [
   "\u300C\u81EA\u52D5\u8ECA\u300D",
   "\u300C\u30A4\u30F3\u30C0\u30B9\u30C8\u30EA\u30A2\u30EB\u300D"
 ];
-const product_description$2 = [
+const product_description$3 = [
   "\u4EBA\u9593\u5DE5\u5B66\u306B\u57FA\u3065\u3044\u305F\u30A8\u30B0\u30BC\u30AF\u30C6\u30A3\u30D6\u30C1\u30A7\u30A2\u306F\u3001\u63A5\u7740\u3055\u308C\u305F\u9ED2\u9769\u3068PVC\u30D1\u30C3\u30C9\u5165\u308A\u306E\u30B7\u30FC\u30C8\u3068\u80CC\u3082\u305F\u308C\u3067\u88C5\u98FE\u3055\u308C\u3066\u304A\u308A\u3001\u4E00\u65E5\u4E2D\u5FEB\u9069\u3067\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u307E\u3059\u3002",
   "\u81EA\u52D5\u8ECA\u306E\u30EC\u30A4\u30A2\u30A6\u30C8\u306F\u3001\u30A8\u30F3\u30B8\u30F3\u5F8C\u90E8\u306B\u30C8\u30E9\u30F3\u30B9\u30A2\u30AF\u30B9\u30EB\u30BF\u30A4\u30D7\u306E\u30C8\u30E9\u30F3\u30B9\u30DF\u30C3\u30B7\u30E7\u30F3\u304C\u53D6\u308A\u4ED8\u3051\u3089\u308C\u3001\u56DB\u8F2A\u99C6\u52D5\u306E\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30B8\u30F3\u30C7\u30B6\u30A4\u30F3\u3067\u69CB\u6210\u3055\u308C\u3066\u3044\u307E\u3059\u3002",
   "\u65B0\u3057\u3044ABC139370\u300113.3\u3001\u7B2C5\u4E16\u4EE3CoreA5-8250U\u30018 GB RAM\u3001256 GB SSD\u3001\u96FB\u6E90UHD\u30B0\u30E9\u30D5\u30A3\u30C3\u30AF\u30B9\u3001OS 10\u30DB\u30FC\u30E0\u3001OS Office A\uFF06J 2016",
@@ -10436,7 +10436,7 @@ const product_description$2 = [
   "\u5929\u7136\u6210\u5206\u306E\u30A8\u30AD\u30B5\u30A4\u30C6\u30A3\u30F3\u30B0\u306A\u30DF\u30C3\u30AF\u30B9\u3092\u6301\u3063\u3066\u3044\u308B\u30A2\u30C3\u30D7\u30EB\u30CA\u30C1\u30E5\u30E9\u30EC\u306E\u7F8E\u3057\u3044\u7BC4\u56F2\u3002 100\uFF05\u5929\u7136\u6210\u5206\u306E\u826F\u3055\u3067",
   "\u30A2\u30F3\u30C7\u30A3\u306E\u9774\u306F\u3001\u8010\u4E45\u6027\u3060\u3051\u3067\u306A\u304F\u3001\u30C8\u30EC\u30F3\u30C9\u3001\u6700\u3082\u30B9\u30BF\u30A4\u30EA\u30C3\u30B7\u30E5\u306A\u9774\u3068\u30B5\u30F3\u30C0\u30EB\u306E\u7BC4\u56F2\u3092\u5FF5\u982D\u306B\u7F6E\u3044\u3066\u8A2D\u8A08\u3055\u308C\u3066\u3044\u307E\u3059"
 ];
-const product_name$2 = {
+const product_name$3 = {
   adjective: [
     "\u5C0F\u3055\u306A",
     "\u300C\u4EBA\u9593\u5DE5\u5B66\u7684\u300D",
@@ -10504,10 +10504,56 @@ const product_name$2 = {
     "\u300C\u30C1\u30C3\u30D7\u30B9\u300D"
   ]
 };
-const commerce$2 = {
-  department: department$2,
-  product_description: product_description$2,
-  product_name: product_name$2
+const commerce$3 = {
+  department: department$3,
+  product_description: product_description$3,
+  product_name: product_name$3
+};
+const month$3 = {
+  wide: [
+    "1\u6708",
+    "2\u6708",
+    "\u884C\u9032",
+    "\u300C4\u6708\u300D",
+    "5\u6708",
+    "\u516D\u6708",
+    "\u300C7\u6708\u300D",
+    "\u300C8\u6708\u300D",
+    "\u300C9\u6708\u300D",
+    "10\u6708",
+    "\u300C11\u6708\u300D",
+    "12\u6708"
+  ],
+  wide_context: [
+    "1\u6708",
+    "2\u6708",
+    "\u884C\u9032",
+    "\u300C4\u6708\u300D",
+    "5\u6708",
+    "\u516D\u6708",
+    "\u300C7\u6708\u300D",
+    "\u300C8\u6708\u300D",
+    "\u300C9\u6708\u300D",
+    "10\u6708",
+    "\u300C11\u6708\u300D",
+    "12\u6708"
+  ]
+};
+const weekday$3 = {
+  wide: ["\u65E5\u66DC\u65E5", "\u6708\u66DC\u65E5", "\u706B\u66DC\u65E5", "\u6C34\u66DC\u65E5", "\u6C34\u66DC\u65E5", "\u91D1\u66DC\u65E5", "\u571F\u66DC\u65E5"],
+  wide_context: [
+    "\u65E5\u66DC\u65E5",
+    "\u6708\u66DC\u65E5",
+    "\u706B\u66DC\u65E5",
+    "\u6C34\u66DC\u65E5",
+    "\u6C34\u66DC\u65E5",
+    "\u91D1\u66DC\u65E5",
+    "\u571F\u66DC\u65E5"
+  ]
+};
+const date$3 = {
+  month: month$3,
+  weekday: weekday$3
 };
 const ja = {
   title: "Japanese",
@@ -10517,7 +10563,8 @@ const ja = {
   name: name$3,
   phone_number: phone_number$3,
   word: word$3,
-  commerce: commerce$2
+  commerce: commerce$3,
+  date: date$3
 };
 const building_number$1 = ["#####", "####", "###", "##", "#"];
 const city$2 = ["{{address.city_prefix}}{{address.city_suffix}}"];
@@ -11018,7 +11065,7 @@ const formats$3 = ["0##-########", "0###-########", "1##########"];
 const phone_number$2 = {
   formats: formats$3
 };
-const department$1 = [
+const department$2 = [
   "\u4E66\u7C4D",
   "\u7535\u5F71",
   "\u97F3\u4E50",
@@ -11035,7 +11082,7 @@ const department$1 = [
   "\u5C0F\u5B69",
   "\u5357\u6D77"
 ];
-const product_description$1 = [
+const product_description$2 = [
   "\u4ECE\u539F\u6750\u6599\u5230\u52A0\u5DE5\u54C1\uFF0C\u4E3A\u60A8\u63D0\u4F9B\u4E00\u5207\u98DF\u54C1\u3002 \u53CC\u65E5\u98DF\u54C1\u7ECF\u8425\u98DF\u6750\u8303\u56F4\u5E7F\u6CDB\uFF0C\u65E2\u6709\u7802\u7CD6\u3001\u9762\u7C89\u7B49\u539F\u6750\u6599\uFF0C\u4E5F\u6709\u5373\u4E70\u5373\u5403\u7684\u52A0\u5DE5. \u98DF\u54C1",
   "\u56FE\u602A\u517D\u4F5C\u56FE\u795E\u5668,\u63D0\u4F9B3056\u5F20\u514D\u8D39\u5546\u54C1\u4ECB\u7ECD\u56FE\u7247,\u5546\u54C1\u4ECB\u7ECD\u6A21\u677F\u8BBE\u8BA1,\u5546\u54C1\u4ECB\u7ECD\u80CC\u666F\u7D20\u6750\u4E0B\u8F7D,\u4F9B\u4F60\u8FDB\u884C\u5728\u7EBF\u56FE\u7247\u8BBE\u8BA1\u5236\u4F5C\u3002",
   "\u53BB\u54EA\u513F\u8D2D\u4E70\u5546\u54C1\u4ECB\u7ECD\u5C55\u793A\u724C\uFF1F\u5F53\u7136\u6765\u6DD8\u5B9D\u6D77\u5916\uFF0C\u6DD8\u5B9D\u5F53\u524D\u6709167\u4EF6\u5546\u54C1\u4ECB\u7ECD\u5C55\u793A\u724C\u76F8\u5173\u7684\u5546\u54C1\u5728\u552E\u3002",
@@ -11043,7 +11090,7 @@ const product_description$1 = [
   " \u592A\u5E73\u6D0B\u7535\u8111\u7F51\u63D0\u4F9B\u7B14\u8BB0\u672C\u7535\u8111\u5927\u5168\u5168\u9762\u670D\u52A1\u4FE1\u606F\uFF0C\u5305\u542B\u7B14\u8BB0\u672C\u7535\u8111\u62A5\u4EF7\u3001\u53C2\u6570\u3001\u8BC4\u6D4B\u3001\u6BD4\u8F83\u3001\u70B9\u8BC4\u3001\u8BBA\u575B\u7B49\uFF0C\u5E2E\u60A8\u5168\u9762\u4E86\u89E3\u7B14\u8BB0\u672C\u7535\u8111\u3002",
   "ZOL\u624B\u673A\u7248\u4E3A\u60A8\u63D0\u4F9B\u7B14\u8BB0\u672C\u7535\u8111\u4FE1\u606F,\u5305\u62EC\u7B14\u8BB0\u672C\u7535\u8111\u62A5\u4EF7,\u7B14\u8BB0\u672C\u7535\u8111\u53C2\u6570,\u7B14\u8BB0\u672C\u7535\u8111\u8BC4\u6D4B,\u7B14\u8BB0\u672C\u7535\u8111\u56FE\u7247,\u7B14\u8BB0\u672C\u7535\u8111\u70B9\u8BC4\u7B49\u8BE6\u7EC6\u5185\u5BB9,\u4E3A\u60A8\u8D2D\u4E70\u7B14\u8BB0\u672C\u7535\u8111\u63D0\u4F9B\u6700\u6709\u4EF7\u503C\u7684"
 ];
-const product_name$1 = {
+const product_name$2 = {
   adjective: [
     "\u5C0F\u7684",
     "\u4EBA\u4F53\u5DE5\u7A0B\u5B66",
@@ -11069,12 +11116,12 @@ const product_name$1 = {
     "\u5E3D\u5B50"
   ]
 };
-const commerce$1 = {
-  department: department$1,
-  product_description: product_description$1,
-  product_name: product_name$1
+const commerce$2 = {
+  department: department$2,
+  product_description: product_description$2,
+  product_name: product_name$2
 };
-const month$1 = {
+const month$2 = {
   wide: [
     "\u4E00\u6708",
     "\u4E8C\u6708",
@@ -11104,7 +11151,7 @@ const month$1 = {
     "\u5341\u4E8C\u6708"
   ]
 };
-const weekday$1 = {
+const weekday$2 = {
   wide: ["\u661F\u671F\u5929", "\u661F\u671F\u4E00", "\u661F\u671F\u4E8C", "\u661F\u671F\u4E09", "\u661F\u671F\u4E09", "\u661F\u671F\u4E94", "\u661F\u671F\u516D"],
   wide_context: [
     "\u661F\u671F\u5929",
@@ -11116,9 +11163,9 @@ const weekday$1 = {
     "\u661F\u671F\u516D"
   ]
 };
-const date$1 = {
-  month: month$1,
-  weekday: weekday$1
+const date$2 = {
+  month: month$2,
+  weekday: weekday$2
 };
 const adjective$4 = [
   "\u5F03",
@@ -11722,8 +11769,8 @@ const zh_CN = {
   address: address$2,
   name: name$2,
   phone_number: phone_number$2,
-  commerce: commerce$1,
-  date: date$1,
+  commerce: commerce$2,
+  date: date$2,
   word: word$2
 };
 const building_number = ["#####", "####", "###"];
@@ -17558,7 +17605,7 @@ const color = {
   human,
   space
 };
-const department = [
+const department$1 = [
   "Books",
   "Movies",
   "Music",
@@ -17582,7 +17629,7 @@ const department = [
   "Automotive",
   "Industrial"
 ];
-const product_description = [
+const product_description$1 = [
   "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
   "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
   "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
@@ -17596,7 +17643,7 @@ const product_description = [
   "The beautiful range of Apple Natural\xE9 that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
   "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals"
 ];
-const product_name = {
+const product_name$1 = {
   adjective: [
     "Small",
     "Ergonomic",
@@ -17664,10 +17711,10 @@ const product_name = {
     "Chips"
   ]
 };
-const commerce = {
-  department,
-  product_description,
-  product_name
+const commerce$1 = {
+  department: department$1,
+  product_description: product_description$1,
+  product_name: product_name$1
 };
 const adjective$3 = [
   "Adaptive",
@@ -18230,7 +18277,7 @@ const database = {
   engine,
   type: type_$1
 };
-const month = {
+const month$1 = {
   wide: [
     "January",
     "February",
@@ -18288,7 +18335,7 @@ const month = {
     "Dec"
   ]
 };
-const weekday = {
+const weekday$1 = {
   wide: [
     "Sunday",
     "Monday",
@@ -18310,9 +18357,9 @@ const weekday = {
   abbr: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
   abbr_context: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 };
-const date = {
-  month,
-  weekday
+const date$1 = {
+  month: month$1,
+  weekday: weekday$1
 };
 const account_type = [
   "Checking",
@@ -55559,10 +55606,10 @@ const en = {
   business,
   cell_phone,
   color,
-  commerce,
+  commerce: commerce$1,
   company: company$1,
   database,
-  date,
+  date: date$1,
   finance,
   hacker,
   internet: internet$1,
@@ -59690,6 +59737,108 @@ const word = {
   preposition,
   verb
 };
+const department = [
+  "\uC11C\uC801",
+  "\uC601\uD654",
+  "\uC74C\uC545",
+  "\uAC8C\uC784",
+  "\uC804\uC790 \uC81C\uD488",
+  "\uCEF4\uD4E8\uD130",
+  "\uAC00\uC871",
+  "\uC815\uC6D0",
+  "\uB3C4\uAD6C",
+  "\uC2DD\uB8CC\uD488 \uAC00\uAC8C",
+  "\uAC74\uAC15\uD55C",
+  "\uC88B\uC740 \uAC83",
+  "\uC7A5\uB09C\uAC10",
+  "\uC5B4\uB9B0\uC774",
+  "\uB0A8\uC911\uAD6D\uD574"
+];
+const product_description = [
+  "\uC6D0\uB8CC\uBD80\uD130 \uAC00\uACF5\uD488\uAE4C\uC9C0 \uBAA8\uB4E0 \uAC83\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4. Sojitz Foods\uB294 \uC124\uD0D5, \uBC00\uAC00\uB8E8 \uB4F1\uC758 \uC6D0\uC7AC\uB8CC\uB294 \uBB3C\uB860, \uC9C1\uC811 \uC0AC\uC11C \uBA39\uC744 \uC218 \uC788\uB294 \uAC00\uACF5\uC2DD\uD488\uAE4C\uC9C0 \uB2E4\uC591\uD55C \uC6D0\uC7AC\uB8CC\uB97C \uCDE8\uAE09\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.",
+  "\uADF8\uB9BC \uAD34\uBB3C \uADF8\uB9AC\uAE30 \uC778\uACF5\uBB3C, 3056 \uBB34\uB8CC \uC81C\uD488 \uC18C\uAC1C \uC0AC\uC9C4, \uC81C\uD488 \uC18C\uAC1C \uD15C\uD50C\uB9BF \uB514\uC790\uC778, \uC81C\uD488 \uC18C\uAC1C \uBC30\uACBD \uC790\uB8CC \uB2E4\uC6B4\uB85C\uB4DC\uB97C \uC81C\uACF5\uD558\uC5EC \uC628\uB77C\uC778 \uC0AC\uC9C4\uC744 \uB514\uC790\uC778\uD558\uACE0 \uB9CC\uB4E4 \uC218 \uC788\uC2B5\uB2C8\uB2E4.",
+  "\uC0C1\uD488\uC18C\uAC1C \uAC8C\uC2DC\uD310\uC740 \uC5B4\uB514\uC11C \uAD6C\uB9E4\uD558\uB098\uC694? \uBB3C\uB860 \uD574\uC678 \uD0C0\uC624\uBC14\uC624\uB85C \uC624\uC138\uC694. \uD604\uC7AC \uD0C0\uC624\uBC14\uC624\uC5D0\uB294 167\uAC1C\uC758 \uC81C\uD488\uC18C\uAC1C \uAC8C\uC2DC\uD310 \uAD00\uB828 \uC0C1\uD488\uC774 \uD310\uB9E4\uB418\uACE0 \uC788\uC2B5\uB2C8\uB2E4.",
+  "JD.COM \uCEF4\uD4E8\uD130 \uC644\uC131 \uAE30\uACC4\uB294 \uCEF4\uD4E8\uD130-notebooks_gamebooks_ultrabooks_desktops_all-in-ones_servers_workstations_tablets\uC758 \uCD5C\uC2E0 \uACAC\uC801, \uD310\uCD09, \uB9AC\uBDF0, \uC1FC\uD551 \uAC00\uC774\uB4DC, \uC0AC\uC9C4 \uBC0F \uAE30\uD0C0 \uAD00\uB828 \uC815\uBCF4\uB97C \uC804\uBB38\uC801\uC73C\uB85C \uC81C\uACF5\uD569\uB2C8\uB2E4! \uB2F9\uC2E0\uC740 \uC990\uAC70\uC6B4 \uC628\uB77C\uC778 \uC1FC\uD551\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4",
+  " \uD37C\uC2DC\uD53D \uC778\uD130\uB137\uC740 \uB178\uD2B8\uBD81 \uACAC\uC801, \uB9E4\uAC1C\uBCC0\uC218, \uD3C9\uAC00, \uBE44\uAD50, \uB9AC\uBDF0, \uD3EC\uB7FC \uB4F1 \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130\uC5D0 \uB300\uD55C \uD3EC\uAD04\uC801\uC778 \uC11C\uBE44\uC2A4 \uC815\uBCF4\uB97C \uC81C\uACF5\uD558\uC5EC \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130\uC5D0 \uB300\uD55C \uC644\uC804\uD55C \uC774\uD574\uB97C \uB3D5\uC2B5\uB2C8\uB2E4.",
+  "ZOL \uBAA8\uBC14\uC77C \uBC84\uC804\uC740 \uB178\uD2B8\uBD81 \uACAC\uC801, \uB178\uD2B8\uBD81 \uB9E4\uAC1C\uBCC0\uC218, \uB178\uD2B8\uBD81 \uD3C9\uAC00, \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130 \uC0AC\uC9C4, \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130 \uB9AC\uBDF0 \uBC0F \uAE30\uD0C0 \uC790\uC138\uD55C \uB0B4\uC6A9\uC744 \uD3EC\uD568\uD55C \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130 \uC815\uBCF4\uB97C \uC81C\uACF5\uD558\uC5EC \uAC00\uC7A5 \uAC00\uCE58 \uC788\uB294 \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130 \uAD6C\uB9E4\uB97C \uC81C\uACF5\uD569\uB2C8\uB2E4."
+];
+const product_name = {
+  adjective: [
+    "\uC791\uC740",
+    "\uC778\uAC04 \uACF5\uD559",
+    "\uC804\uC790",
+    "\uCD0C\uC0AC\uB78C \uAC19\uC740",
+    "\uC2DC\uACE8\uC758",
+    "\uC544\uC8FC \uBA4B\uC9C4",
+    "\uBBFF\uC744 \uC218 \uC5C6\uB294"
+  ],
+  material: ["\uAC15\uD55C", "\uCCAD\uB3D9", "\uB098\uBB34", "\uCF58\uD06C\uB9AC\uD2B8", "\uD50C\uB77C\uC2A4\uD2F1", "\uBA74"],
+  product: [
+    "\uC758\uC790",
+    "\uC790\uB3D9\uCC28",
+    "\uCEF4\uD4E8\uD130",
+    "\uAC74\uBC18",
+    "\uC0DD\uC950",
+    "\uC790\uC804\uAC70",
+    "\uC57C\uAD6C",
+    "\uAE08",
+    "\uC591\uB9D0",
+    "\uC2DC\uD2B8",
+    "\uAD6C\uB450",
+    "\uBAA8\uC790"
+  ]
+};
+const commerce = {
+  department,
+  product_description,
+  product_name
+};
+const month = {
+  wide: [
+    "1\uC6D4",
+    "2\uC6D4",
+    "3\uC6D4",
+    "4\uC6D4",
+    "5\uC6D4",
+    "6\uC6D4",
+    "\uCE60\uC6D4",
+    "\uD314\uC6D4",
+    "\uAD6C\uC6D4",
+    "\uC2ED\uC6D4",
+    "\uC2ED\uC77C\uC6D4",
+    "12\uC6D4"
+  ],
+  wide_context: [
+    "1\uC6D4",
+    "2\uC6D4",
+    "3\uC6D4",
+    "4\uC6D4",
+    "5\uC6D4",
+    "6\uC6D4",
+    "\uCE60\uC6D4",
+    "\uD314\uC6D4",
+    "\uAD6C\uC6D4",
+    "\uC2ED\uC6D4",
+    "\uC2ED\uC77C\uC6D4",
+    "12\uC6D4"
+  ]
+};
+const weekday = {
+  wide: ["\uC77C\uC694\uC77C", "\uC6D4\uC694\uC77C", "\uD654\uC694\uC77C", "\uC218\uC694\uC77C", "\uC218\uC694\uC77C", "\uAE08\uC694\uC77C", "\uD1A0\uC694\uC77C"],
+  wide_context: [
+    "\uC77C\uC694\uC77C",
+    "\uC6D4\uC694\uC77C",
+    "\uD654\uC694\uC77C",
+    "\uC218\uC694\uC77C",
+    "\uC218\uC694\uC77C",
+    "\uAE08\uC694\uC77C",
+    "\uD1A0\uC694\uC77C"
+  ]
+};
+const date = {
+  month,
+  weekday
+};
 const ko = {
   title: "Korean",
   address,
@@ -59698,7 +59847,9 @@ const ko = {
   lorem,
   name,
   phone_number,
-  word
+  word,
+  commerce,
+  date
 };
 const locales = {
   ja,

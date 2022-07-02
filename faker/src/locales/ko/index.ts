@@ -10,6 +10,8 @@ import lorem from "./lorem";
 import name_ from "./name";
 import phone_number from "./phone_number";
 import word from "./word";
+import commerce from "./commerce";
+import date from "./date";
 
 const ko: LocaleDefinition = {
   title: "Korean",
@@ -20,6 +22,8 @@ const ko: LocaleDefinition = {
   name: name_,
   phone_number,
   word,
+  commerce,
+  date,
 };
 
 export default ko;

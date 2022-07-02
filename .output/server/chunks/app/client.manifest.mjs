@@ -1,6 +1,6 @@
 const client_manifest = {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-13cf44e6.mjs",
+    "file": "entry-8785a0dc.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -10,11 +10,11 @@ const client_manifest = {
       "pages/[language]/card/4.vue"
     ],
     "css": [
-      "entry.af992bfe.css"
+      "entry.458d1872.css"
     ]
   },
   "pages/[language]/card/1.vue": {
-    "file": "1-f39e8cc2.mjs",
+    "file": "1-5e108512.mjs",
     "src": "pages/[language]/card/1.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -22,7 +22,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/2.vue": {
-    "file": "2-8dd3b535.mjs",
+    "file": "2-d7ea564c.mjs",
     "src": "pages/[language]/card/2.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -30,7 +30,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/3.vue": {
-    "file": "3-ed6c09c4.mjs",
+    "file": "3-3444035f.mjs",
     "src": "pages/[language]/card/3.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -38,7 +38,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/4.vue": {
-    "file": "4-dce6e114.mjs",
+    "file": "4-ca8c486f.mjs",
     "src": "pages/[language]/card/4.vue",
     "isDynamicEntry": true,
     "imports": [

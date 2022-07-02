@@ -90,6 +90,48 @@ const { $faker } = useNuxtApp();
 const { copy } = useClipboard();
 
 const templateWrapper = ref();
+const route = useRoute();
+const { language } = route.params;
+
+const setHead = (route) => {
+  useHead({
+    titleTemplate: `[${curLang.value.icon} ${curLang.value.desc}] ${route.path
+      .replace("/" + route.params.language, "")
+      .replace("/", "")} - ${curLang.value.title}`,
+  });
+};
+
+const curLang = ref();
+const langs = [
+  {
+    icon: "🇨🇳",
+    text: "zh_CN",
+    desc: "中文",
+    title: "多主题、语言切换、在线预览模板",
+  },
+  {
+    icon: "🇺🇸",
+    text: "en",
+    desc: "english",
+    title: "Multiple themes, language switching, online preview templates",
+  },
+  {
+    icon: "🇯🇵",
+    text: "ja",
+    desc: "ジャパン",
+    title: "複数のテーマ、言語の切り替え、オンラインプレビューテンプレート",
+  },
+  {
+    icon: "🇰🇷",
+    text: "ko",
+    desc: "한국어",
+    title: "여러 테마, 언어 전환, 온라인 미리보기 템플릿",
+  },
+];
+
+const setCurLang = (language) => {
+  curLang.value = langs.filter((item) => item.text === language)[0];
+};
 
 const onCopy = async () => {
   const el = templateWrapper.value;
@@ -106,36 +148,15 @@ const setLocale = (language) => {
   $faker.setLocale(arr.join("_"));
 };
 
-const route = useRoute();
-const { language } = route.params;
 setLocale(language);
+setCurLang(language);
+setHead(route);
 
 watch(route, (val) => {
   setLocale(val.params.language);
+  setCurLang(val.params.language);
+  setHead(val);
 });
-
-const langs = [
-  {
-    icon: "🇨🇳",
-    text: "zh_CN",
-    desc: "中文",
-  },
-  {
-    icon: "🇺🇸",
-    text: "en",
-    desc: "english",
-  },
-  {
-    icon: "🇯🇵",
-    text: "ja",
-    desc: "ジャパン",
-  },
-  {
-    icon: "🇰🇷",
-    text: "ko",
-    desc: "한국어",
-  },
-];
 
 const themes = [
   "light",

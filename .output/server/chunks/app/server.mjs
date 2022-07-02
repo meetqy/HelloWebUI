@@ -60520,6 +60520,43 @@ const _sfc_main$4 = {
     const { $faker } = useNuxtApp();
     useClipboard();
     vue_cjs_prod.ref();
+    const route = useRoute();
+    const { language } = route.params;
+    const setHead = (route2) => {
+      useHead({
+        titleTemplate: `[${curLang.value.icon} ${curLang.value.desc}] ${route2.path.replace("/" + route2.params.language, "").replace("/", "")} - ${curLang.value.title}`
+      });
+    };
+    const curLang = vue_cjs_prod.ref();
+    const langs = [
+      {
+        icon: "\u{1F1E8}\u{1F1F3}",
+        text: "zh_CN",
+        desc: "\u4E2D\u6587",
+        title: "\u591A\u4E3B\u9898\u3001\u8BED\u8A00\u5207\u6362\u3001\u5728\u7EBF\u9884\u89C8\u6A21\u677F"
+      },
+      {
+        icon: "\u{1F1FA}\u{1F1F8}",
+        text: "en",
+        desc: "english",
+        title: "Multiple themes, language switching, online preview templates"
+      },
+      {
+        icon: "\u{1F1EF}\u{1F1F5}",
+        text: "ja",
+        desc: "\u30B8\u30E3\u30D1\u30F3",
+        title: "\u8907\u6570\u306E\u30C6\u30FC\u30DE\u3001\u8A00\u8A9E\u306E\u5207\u308A\u66FF\u3048\u3001\u30AA\u30F3\u30E9\u30A4\u30F3\u30D7\u30EC\u30D3\u30E5\u30FC\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8"
+      },
+      {
+        icon: "\u{1F1F0}\u{1F1F7}",
+        text: "ko",
+        desc: "\uD55C\uAD6D\uC5B4",
+        title: "\uC5EC\uB7EC \uD14C\uB9C8, \uC5B8\uC5B4 \uC804\uD658, \uC628\uB77C\uC778 \uBBF8\uB9AC\uBCF4\uAE30 \uD15C\uD50C\uB9BF"
+      }
+    ];
+    const setCurLang = (language2) => {
+      curLang.value = langs.filter((item) => item.text === language2)[0];
+    };
     const setLocale = (language2) => {
       const arr = language2.split("_");
       if (arr[1]) {
@@ -60527,34 +60564,14 @@ const _sfc_main$4 = {
       }
       $faker.setLocale(arr.join("_"));
     };
-    const route = useRoute();
-    const { language } = route.params;
     setLocale(language);
+    setCurLang(language);
+    setHead(route);
     vue_cjs_prod.watch(route, (val) => {
       setLocale(val.params.language);
+      setCurLang(val.params.language);
+      setHead(val);
     });
-    const langs = [
-      {
-        icon: "\u{1F1E8}\u{1F1F3}",
-        text: "zh_CN",
-        desc: "\u4E2D\u6587"
-      },
-      {
-        icon: "\u{1F1FA}\u{1F1F8}",
-        text: "en",
-        desc: "english"
-      },
-      {
-        icon: "\u{1F1EF}\u{1F1F5}",
-        text: "ja",
-        desc: "\u30B8\u30E3\u30D1\u30F3"
-      },
-      {
-        icon: "\u{1F1F0}\u{1F1F7}",
-        text: "ko",
-        desc: "\uD55C\uAD6D\uC5B4"
-      }
-    ];
     const themes = [
       "light",
       "dark",

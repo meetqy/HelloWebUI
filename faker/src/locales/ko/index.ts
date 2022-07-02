@@ -4,20 +4,22 @@
  */
 import type { LocaleDefinition } from "../..";
 import address from "./address";
+import company from "./company";
+import internet from "./internet";
+import lorem from "./lorem";
 import name_ from "./name";
 import phone_number from "./phone_number";
-import commerce from "./commerce";
-import date from "./date";
 import word from "./word";
 
-const zh_CN: LocaleDefinition = {
-  title: "Chinese",
+const ko: LocaleDefinition = {
+  title: "Korean",
   address,
+  company,
+  internet,
+  lorem,
   name: name_,
   phone_number,
-  commerce,
-  date,
   word,
 };
 
-export default zh_CN;
+export default ko;

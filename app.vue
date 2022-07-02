@@ -130,6 +130,11 @@ const langs = [
     text: "ja",
     desc: "ジャパン",
   },
+  {
+    icon: "🇰🇷",
+    text: "ko",
+    desc: "한국어",
+  },
 ];
 
 const themes = [

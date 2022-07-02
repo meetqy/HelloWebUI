@@ -3,21 +3,22 @@
  * Run 'pnpm run generate:locales' to update.
  */
 
-import type { LocaleDefinition } from '..';
+import type { LocaleDefinition } from "..";
 
-import ja from './ja'
-import zh_CN from './zh_CN'
-import en from './en'
+import ja from "./ja";
+import zh_CN from "./zh_CN";
+import en from "./en";
+import ko from "./ko";
 
-
-export type KnownLocale =
-  "ja"|
-  "zh_CN"|"en"
+export type KnownLocale = "ja" | "zh_CN" | "en" | "ko";
 
 export type KnownLocales = Record<KnownLocale, LocaleDefinition>;
 
 const locales: KnownLocales = {
-  ja,zh_CN,en
+  ja,
+  zh_CN,
+  en,
+  ko,
 };
 
 export default locales;

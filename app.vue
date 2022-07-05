@@ -2,10 +2,10 @@
   <div class="drawer drawer-mobile" id="beauty-template">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div
-      class="drawer-content bg-base-300 flex flex-col items-center justify-center relative"
+      class="drawer-content bg-base-200 flex flex-col items-center justify-center relative"
     >
       <div
-        class="h-12 w-full bg-base-200 shadow-md absolute left-0 top-0 flex justify-end px-4 items-center"
+        class="h-12 w-full bg-base-100 shadow-md absolute left-0 top-0 flex justify-end px-4 items-center"
       >
         <button class="btn btn-sm btn-ghost mr-2" @click="onCopy">
           <svg

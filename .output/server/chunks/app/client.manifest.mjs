@@ -1,6 +1,6 @@
 const client_manifest = {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-0aeeee51.mjs",
+    "file": "entry-e4dd4781.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -8,14 +8,15 @@ const client_manifest = {
       "pages/[language]/card/2.vue",
       "pages/[language]/card/3.vue",
       "pages/[language]/card/4.vue",
-      "pages/[language]/card/5.vue"
+      "pages/[language]/card/5.vue",
+      "pages/[language]/card/6.vue"
     ],
     "css": [
-      "entry.85b9c362.css"
+      "entry.13db4f9c.css"
     ]
   },
   "pages/[language]/card/1.vue": {
-    "file": "1-fbc991ca.mjs",
+    "file": "1-2df09bd2.mjs",
     "src": "pages/[language]/card/1.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -23,7 +24,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/2.vue": {
-    "file": "2-245a7826.mjs",
+    "file": "2-48ad3b39.mjs",
     "src": "pages/[language]/card/2.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -31,7 +32,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/3.vue": {
-    "file": "3-2547c079.mjs",
+    "file": "3-4ff97ae3.mjs",
     "src": "pages/[language]/card/3.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -39,7 +40,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/4.vue": {
-    "file": "4-32afea05.mjs",
+    "file": "4-a99aa9f1.mjs",
     "src": "pages/[language]/card/4.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -47,8 +48,16 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/5.vue": {
-    "file": "5-bb55d951.mjs",
+    "file": "5-68599e2c.mjs",
     "src": "pages/[language]/card/5.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/[language]/card/6.vue": {
+    "file": "6-94d89e45.mjs",
+    "src": "pages/[language]/card/6.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"

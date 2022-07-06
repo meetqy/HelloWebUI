@@ -1,6 +1,6 @@
 const client_manifest = {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-e4dd4781.mjs",
+    "file": "entry-aa6a7797.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -9,14 +9,15 @@ const client_manifest = {
       "pages/[language]/card/3.vue",
       "pages/[language]/card/4.vue",
       "pages/[language]/card/5.vue",
-      "pages/[language]/card/6.vue"
+      "pages/[language]/card/6.vue",
+      "pages/[language]/card/7.vue"
     ],
     "css": [
-      "entry.13db4f9c.css"
+      "entry.39b6e114.css"
     ]
   },
   "pages/[language]/card/1.vue": {
-    "file": "1-2df09bd2.mjs",
+    "file": "1-784e92e0.mjs",
     "src": "pages/[language]/card/1.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -24,7 +25,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/2.vue": {
-    "file": "2-48ad3b39.mjs",
+    "file": "2-b061a152.mjs",
     "src": "pages/[language]/card/2.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -32,7 +33,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/3.vue": {
-    "file": "3-4ff97ae3.mjs",
+    "file": "3-40579e28.mjs",
     "src": "pages/[language]/card/3.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -40,7 +41,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/4.vue": {
-    "file": "4-a99aa9f1.mjs",
+    "file": "4-3fa879ef.mjs",
     "src": "pages/[language]/card/4.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -48,7 +49,7 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/5.vue": {
-    "file": "5-68599e2c.mjs",
+    "file": "5-19774735.mjs",
     "src": "pages/[language]/card/5.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -56,8 +57,16 @@ const client_manifest = {
     ]
   },
   "pages/[language]/card/6.vue": {
-    "file": "6-94d89e45.mjs",
+    "file": "6-0127ed84.mjs",
     "src": "pages/[language]/card/6.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/[language]/card/7.vue": {
+    "file": "7-78db931e.mjs",
+    "src": "pages/[language]/card/7.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"

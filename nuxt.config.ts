@@ -5,5 +5,8 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/beauty-template",
   },
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+  modules: ["@nuxtjs/strapi", "@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+  strapi: {
+    url: "https://strapi.wcao.cc",
+  },
 });

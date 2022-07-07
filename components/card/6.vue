@@ -72,7 +72,48 @@
 </template>
 
 <script setup>
-const { language } = useRoute().params;
+const { language = "zh_CN" } = useRoute().params;
 
-const locales = await getLocales("Card", 6);
+const locales = {
+  en: [
+    "Sign in to our platform",
+    "Your email",
+    "Your password",
+    "Remember me",
+    "Lost Password?",
+    "Login to your account",
+    "Not registered?",
+    "Create account",
+  ],
+  zh_CN: [
+    "登录我们的平台",
+    "您的邮箱",
+    "您的密码",
+    "记住我",
+    "忘记密码？",
+    "登录您的账户",
+    "没有注册？",
+    "创建账户",
+  ],
+  ja: [
+    "プラットフォームにサインイン",
+    "あなたのメール",
+    "あなたのパスワード",
+    "私を覚えている",
+    "パスワードを紛失しましたか？",
+    "アカウントにログイン",
+    "登録されていませんか？",
+    "アカウントの作成",
+  ],
+  ko: [
+    "플랫폼에 로그인",
+    "귀하의 이메일",
+    "비밀번호",
+    "나를 기억해",
+    "비밀번호를 분실하셨습니까?",
+    "계정에 로그인",
+    "등록되지 않았습니까?",
+    "계정 만들기",
+  ],
+};
 </script>

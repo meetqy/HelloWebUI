@@ -1,4 +1,4 @@
-import { v as vue_cjs_prod, r as require$$0, s as serverRenderer } from '../handlers/renderer.mjs';
+import { v as vue_cjs_prod, s as serverRenderer, r as require$$0 } from '../handlers/renderer.mjs';
 import { hasProtocol, isEqual, withBase, withQuery, joinURL } from 'ufo';
 import { stringify } from 'qs';
 import { u as useRuntimeConfig$1 } from '../nitro/node-server.mjs';
@@ -2363,88 +2363,6 @@ var vueRouter_cjs_prod = {};
   exports.viewDepthKey = viewDepthKey;
 })(vueRouter_cjs_prod);
 const wrapInRef = (value) => vue_cjs_prod.isRef(value) ? value : vue_cjs_prod.ref(value);
-const getDefault = () => null;
-function useAsyncData(key, handler, options = {}) {
-  var _a, _b, _c, _d, _e;
-  if (typeof key !== "string") {
-    throw new TypeError("asyncData key must be a string");
-  }
-  if (typeof handler !== "function") {
-    throw new TypeError("asyncData handler must be a function");
-  }
-  options = { server: true, default: getDefault, ...options };
-  if (options.defer) {
-    console.warn("[useAsyncData] `defer` has been renamed to `lazy`. Support for `defer` will be removed in RC.");
-  }
-  options.lazy = (_b = (_a = options.lazy) != null ? _a : options.defer) != null ? _b : false;
-  options.initialCache = (_c = options.initialCache) != null ? _c : true;
-  const nuxt = useNuxtApp();
-  const instance = vue_cjs_prod.getCurrentInstance();
-  if (instance && !instance._nuxtOnBeforeMountCbs) {
-    const cbs = instance._nuxtOnBeforeMountCbs = [];
-    if (instance && false) {
-      vue_cjs_prod.onBeforeMount(() => {
-        cbs.forEach((cb) => {
-          cb();
-        });
-        cbs.splice(0, cbs.length);
-      });
-      vue_cjs_prod.onUnmounted(() => cbs.splice(0, cbs.length));
-    }
-  }
-  const useInitialCache = () => options.initialCache && nuxt.payload.data[key] !== void 0;
-  const asyncData = {
-    data: wrapInRef((_d = nuxt.payload.data[key]) != null ? _d : options.default()),
-    pending: vue_cjs_prod.ref(!useInitialCache()),
-    error: vue_cjs_prod.ref((_e = nuxt.payload._errors[key]) != null ? _e : null)
-  };
-  asyncData.refresh = (opts = {}) => {
-    if (nuxt._asyncDataPromises[key]) {
-      return nuxt._asyncDataPromises[key];
-    }
-    if (opts._initial && useInitialCache()) {
-      return nuxt.payload.data[key];
-    }
-    asyncData.pending.value = true;
-    nuxt._asyncDataPromises[key] = Promise.resolve(handler(nuxt)).then((result) => {
-      if (options.transform) {
-        result = options.transform(result);
-      }
-      if (options.pick) {
-        result = pick(result, options.pick);
-      }
-      asyncData.data.value = result;
-      asyncData.error.value = null;
-    }).catch((error) => {
-      asyncData.error.value = error;
-      asyncData.data.value = vue_cjs_prod.unref(options.default());
-    }).finally(() => {
-      asyncData.pending.value = false;
-      nuxt.payload.data[key] = asyncData.data.value;
-      if (asyncData.error.value) {
-        nuxt.payload._errors[key] = true;
-      }
-      delete nuxt._asyncDataPromises[key];
-    });
-    return nuxt._asyncDataPromises[key];
-  };
-  const initialFetch = () => asyncData.refresh({ _initial: true });
-  const fetchOnServer = options.server !== false && nuxt.payload.serverRendered;
-  if (fetchOnServer) {
-    const promise = initialFetch();
-    vue_cjs_prod.onServerPrefetch(() => promise);
-  }
-  const asyncDataPromise = Promise.resolve(nuxt._asyncDataPromises[key]).then(() => asyncData);
-  Object.assign(asyncDataPromise, asyncData);
-  return asyncDataPromise;
-}
-function pick(obj, keys) {
-  const newObj = {};
-  for (const key of keys) {
-    newObj[key] = obj[key];
-  }
-  return newObj;
-}
 const useState = (key, init) => {
   const nuxt = useNuxtApp();
   const state2 = vue_cjs_prod.toRef(nuxt.payload.state, key);
@@ -3250,7 +3168,62 @@ const preload = defineNuxtPlugin((nuxtApp) => {
     }
   });
 });
-const components = {};
+const components = {
+  Blog1: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _1$3;
+  }).then((c) => c.default || c)),
+  Card1: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _1$1;
+  }).then((c) => c.default || c)),
+  Card10: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _10$1;
+  }).then((c) => c.default || c)),
+  Card11: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _11$1;
+  }).then((c) => c.default || c)),
+  Card12: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _12$1;
+  }).then((c) => c.default || c)),
+  Card13: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _13$1;
+  }).then((c) => c.default || c)),
+  Card14: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _14$1;
+  }).then((c) => c.default || c)),
+  Card15: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _15$1;
+  }).then((c) => c.default || c)),
+  Card16: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _16$1;
+  }).then((c) => c.default || c)),
+  Card17: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _17$1;
+  }).then((c) => c.default || c)),
+  Card2: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _2$1;
+  }).then((c) => c.default || c)),
+  Card3: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _3$1;
+  }).then((c) => c.default || c)),
+  Card4: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _4$1;
+  }).then((c) => c.default || c)),
+  Card5: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _5$1;
+  }).then((c) => c.default || c)),
+  Card6: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _6;
+  }).then((c) => c.default || c)),
+  Card7: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _7;
+  }).then((c) => c.default || c)),
+  Card8: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _8$1;
+  }).then((c) => c.default || c)),
+  Card9: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _9$1;
+  }).then((c) => c.default || c))
+};
 function _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47_46nuxt_47components_46plugin_46mjs(nuxtApp) {
   for (const name2 in components) {
     nuxtApp.vueApp.component(name2, components[name2]);
@@ -3825,7 +3798,7 @@ const Components = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePr
   Html,
   Body
 }, Symbol.toStringTag, { value: "Module" }));
-const metaConfig = { "globalMeta": { "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "meta": [], "link": [], "style": [], "script": [] } };
+const metaConfig = { "globalMeta": { "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "meta": [], "link": [], "style": [], "script": [{ "src": "https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js" }] } };
 const metaMixin = {
   created() {
     const instance = vue_cjs_prod.getCurrentInstance();
@@ -3908,218 +3881,481 @@ const NuxtPage = vue_cjs_prod.defineComponent({
   }
 });
 const defaultPageTransition = { name: "page", mode: "out-in" };
-const _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
+function tryOnScopeDispose(fn) {
+  if (vue_cjs_prod.getCurrentScope()) {
+    vue_cjs_prod.onScopeDispose(fn);
+    return true;
   }
+  return false;
+}
+const isString = (val) => typeof val === "string";
+const noop = () => {
+};
+function createFilterWrapper(filter, fn) {
+  function wrapper(...args) {
+    filter(() => fn.apply(this, args), { fn, thisArg: this, args });
+  }
+  return wrapper;
+}
+const bypassFilter = (invoke) => {
+  return invoke();
+};
+function pausableFilter(extendFilter = bypassFilter) {
+  const isActive = vue_cjs_prod.ref(true);
+  function pause() {
+    isActive.value = false;
+  }
+  function resume() {
+    isActive.value = true;
+  }
+  const eventFilter = (...args) => {
+    if (isActive.value)
+      extendFilter(...args);
+  };
+  return { isActive, pause, resume, eventFilter };
+}
+function tryOnBeforeMount(fn, sync = true) {
+  if (vue_cjs_prod.getCurrentInstance())
+    vue_cjs_prod.onBeforeMount(fn);
+  else if (sync)
+    fn();
+  else
+    vue_cjs_prod.nextTick(fn);
+}
+function tryOnMounted(fn, sync = true) {
+  if (vue_cjs_prod.getCurrentInstance())
+    vue_cjs_prod.onMounted(fn);
+  else if (sync)
+    fn();
+  else
+    vue_cjs_prod.nextTick(fn);
+}
+function useTimeoutFn(cb, interval, options = {}) {
+  const {
+    immediate = true
+  } = options;
+  const isPending = vue_cjs_prod.ref(false);
+  let timer = null;
+  function clear() {
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+    }
+  }
+  function stop() {
+    isPending.value = false;
+    clear();
+  }
+  function start(...args) {
+    clear();
+    isPending.value = true;
+    timer = setTimeout(() => {
+      isPending.value = false;
+      timer = null;
+      cb(...args);
+    }, vue_cjs_prod.unref(interval));
+  }
+  if (immediate) {
+    isPending.value = true;
+  }
+  tryOnScopeDispose(stop);
+  return {
+    isPending,
+    start,
+    stop
+  };
+}
+var __getOwnPropSymbols$5 = Object.getOwnPropertySymbols;
+var __hasOwnProp$5 = Object.prototype.hasOwnProperty;
+var __propIsEnum$5 = Object.prototype.propertyIsEnumerable;
+var __objRest$5 = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp$5.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols$5)
+    for (var prop of __getOwnPropSymbols$5(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum$5.call(source, prop))
+        target[prop] = source[prop];
+    }
   return target;
 };
-const meta$6 = void 0;
-const meta$5 = void 0;
-const meta$4 = void 0;
-const meta$3 = void 0;
-const meta$2 = void 0;
-const useStrapiVersion = () => {
-  const config = useRuntimeConfig();
-  return config.strapi.version;
-};
-const useStrapiUrl = () => {
-  const config = useRuntimeConfig();
-  const version2 = config.strapi.version;
-  return version2 === "v3" ? config.strapi.url : `${config.strapi.url}${config.strapi.prefix}`;
-};
-const useStrapiToken = () => {
-  const nuxtApp = useNuxtApp();
-  const config = useRuntimeConfig();
-  nuxtApp._cookies = nuxtApp._cookies || {};
-  if (nuxtApp._cookies.strapi_jwt) {
-    return nuxtApp._cookies.strapi_jwt;
-  }
-  const cookie = useCookie("strapi_jwt", config.strapi.cookie);
-  nuxtApp._cookies.strapi_jwt = cookie;
-  return cookie;
-};
-const defaultErrors = (err) => ({
-  v4: {
-    error: {
-      status: 500,
-      name: "UnknownError",
-      message: err.message,
-      details: err
+function watchWithFilter(source, cb, options = {}) {
+  const _a = options, {
+    eventFilter = bypassFilter
+  } = _a, watchOptions = __objRest$5(_a, [
+    "eventFilter"
+  ]);
+  return vue_cjs_prod.watch(source, createFilterWrapper(eventFilter, cb), watchOptions);
+}
+var __defProp$1 = Object.defineProperty;
+var __defProps$1 = Object.defineProperties;
+var __getOwnPropDescs$1 = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols$1 = Object.getOwnPropertySymbols;
+var __hasOwnProp$1 = Object.prototype.hasOwnProperty;
+var __propIsEnum$1 = Object.prototype.propertyIsEnumerable;
+var __defNormalProp$1 = (obj, key, value) => key in obj ? __defProp$1(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues$1 = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp$1.call(b, prop))
+      __defNormalProp$1(a, prop, b[prop]);
+  if (__getOwnPropSymbols$1)
+    for (var prop of __getOwnPropSymbols$1(b)) {
+      if (__propIsEnum$1.call(b, prop))
+        __defNormalProp$1(a, prop, b[prop]);
     }
-  },
-  v3: {
-    error: "UnknownError",
-    message: err.message,
-    statusCode: 500
-  }
-});
-const useStrapiClient = () => {
-  const nuxt = useNuxtApp();
-  const baseURL2 = useStrapiUrl();
-  const version2 = useStrapiVersion();
-  const token = useStrapiToken();
-  return async (url, fetchOptions = {}) => {
-    const headers = {};
-    if (token && token.value) {
-      headers.Authorization = `Bearer ${token.value}`;
-    }
-    if (version2 === "v4" && fetchOptions.params) {
-      const params = stringify(fetchOptions.params, { encodeValuesOnly: true });
-      if (params) {
-        url = `${url}?${params}`;
-      }
-      delete fetchOptions.params;
-    }
-    try {
-      return await $fetch(url, {
-        retry: 0,
-        baseURL: baseURL2,
-        ...fetchOptions,
-        headers: {
-          ...headers,
-          ...fetchOptions.headers
-        }
-      });
-    } catch (err) {
-      const e = err.data || defaultErrors(err)[version2];
-      nuxt.hooks.callHook("strapi:error", e);
-      throw e;
-    }
-  };
+  return a;
 };
-const useStrapi4 = () => {
-  const client = useStrapiClient();
-  const version2 = useStrapiVersion();
-  if (version2 !== "v4") {
-    console.warn("useStrapi4 is only available for v4");
-  }
-  const find = (contentType, params) => {
-    return client(`/${contentType}`, { method: "GET", params });
-  };
-  const findOne = (contentType, id, params) => {
-    return client(`/${contentType}/${id}`, { method: "GET", params });
-  };
-  const create = (contentType, data) => {
-    return client(`/${contentType}`, { method: "POST", body: { data } });
-  };
-  const update = (contentType, id, data) => {
-    if (typeof id === "object") {
-      data = id;
-      id = void 0;
+var __spreadProps$1 = (a, b) => __defProps$1(a, __getOwnPropDescs$1(b));
+var __objRest$1 = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp$1.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols$1)
+    for (var prop of __getOwnPropSymbols$1(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum$1.call(source, prop))
+        target[prop] = source[prop];
     }
-    const path = [contentType, id].filter(Boolean).join("/");
-    return client(path, { method: "PUT", body: { data } });
-  };
-  const _delete = (contentType, id) => {
-    const path = [contentType, id].filter(Boolean).join("/");
-    return client(path, { method: "DELETE" });
-  };
-  return {
-    find,
-    findOne,
-    create,
-    update,
-    delete: _delete
-  };
+  return target;
 };
-const useableLocales = vue_cjs_prod.ref([]);
-const getLocales = async (type = "Card", titleNum) => {
-  const { data } = await useAsyncData(`posts/${type}/${titleNum}`, () => useStrapi4().find(`posts`, {
-    fields: ["locales"],
-    filters: {
-      title: {
-        $eq: `${type} Part ${titleNum}`
-      }
-    },
-    publicationState: "live" 
+function watchPausable(source, cb, options = {}) {
+  const _a = options, {
+    eventFilter: filter
+  } = _a, watchOptions = __objRest$1(_a, [
+    "eventFilter"
+  ]);
+  const { eventFilter, pause, resume, isActive } = pausableFilter(filter);
+  const stop = watchWithFilter(source, cb, __spreadProps$1(__spreadValues$1({}, watchOptions), {
+    eventFilter
   }));
-  let locales2 = [];
-  if (data.value.data && data.value.data.length > 0) {
-    locales2 = data.value.data[0].attributes.locales;
+  return { stop, pause, resume, isActive };
+}
+function unrefElement(elRef) {
+  var _a;
+  const plain = vue_cjs_prod.unref(elRef);
+  return (_a = plain == null ? void 0 : plain.$el) != null ? _a : plain;
+}
+const defaultWindow = void 0;
+const defaultNavigator = void 0;
+function useEventListener(...args) {
+  let target;
+  let event;
+  let listener;
+  let options;
+  if (isString(args[0])) {
+    [event, listener, options] = args;
+    target = defaultWindow;
+  } else {
+    [target, event, listener, options] = args;
   }
-  useableLocales.value = locales2;
-  return locales2;
+  if (!target)
+    return noop;
+  let cleanup = noop;
+  const stopWatch = vue_cjs_prod.watch(() => unrefElement(target), (el) => {
+    cleanup();
+    if (!el)
+      return;
+    el.addEventListener(event, listener, options);
+    cleanup = () => {
+      el.removeEventListener(event, listener, options);
+      cleanup = noop;
+    };
+  }, { immediate: true, flush: "post" });
+  const stop = () => {
+    stopWatch();
+    cleanup();
+  };
+  tryOnScopeDispose(stop);
+  return stop;
+}
+function useMediaQuery(query, options = {}) {
+  const { window: window2 = defaultWindow } = options;
+  const isSupported = Boolean(window2 && "matchMedia" in window2);
+  let mediaQuery;
+  const matches = vue_cjs_prod.ref(false);
+  const update = () => {
+    if (!isSupported)
+      return;
+    if (!mediaQuery)
+      mediaQuery = window2.matchMedia(query);
+    matches.value = mediaQuery.matches;
+  };
+  tryOnBeforeMount(() => {
+    update();
+    if (!mediaQuery)
+      return;
+    if ("addEventListener" in mediaQuery)
+      mediaQuery.addEventListener("change", update);
+    else
+      mediaQuery.addListener(update);
+    tryOnScopeDispose(() => {
+      if ("removeEventListener" in mediaQuery)
+        mediaQuery.removeEventListener("change", update);
+      else
+        mediaQuery.removeListener(update);
+    });
+  });
+  return matches;
+}
+function useClipboard(options = {}) {
+  const {
+    navigator = defaultNavigator,
+    read = false,
+    source,
+    copiedDuring = 1500
+  } = options;
+  const events = ["copy", "cut"];
+  const isSupported = Boolean(navigator && "clipboard" in navigator);
+  const text = vue_cjs_prod.ref("");
+  const copied = vue_cjs_prod.ref(false);
+  const timeout = useTimeoutFn(() => copied.value = false, copiedDuring);
+  function updateText() {
+    navigator.clipboard.readText().then((value) => {
+      text.value = value;
+    });
+  }
+  if (isSupported && read) {
+    for (const event of events)
+      useEventListener(event, updateText);
+  }
+  async function copy(value = vue_cjs_prod.unref(source)) {
+    if (isSupported && value != null) {
+      await navigator.clipboard.writeText(value);
+      text.value = value;
+      copied.value = true;
+      timeout.start();
+    }
+  }
+  return {
+    isSupported,
+    text,
+    copied,
+    copy
+  };
+}
+const _global = typeof globalThis !== "undefined" ? globalThis : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+const globalKey = "__vueuse_ssr_handlers__";
+_global[globalKey] = _global[globalKey] || {};
+const handlers = _global[globalKey];
+function getSSRHandler(key, fallback) {
+  return handlers[key] || fallback;
+}
+function guessSerializerType(rawInit) {
+  return rawInit == null ? "any" : rawInit instanceof Set ? "set" : rawInit instanceof Map ? "map" : rawInit instanceof Date ? "date" : typeof rawInit === "boolean" ? "boolean" : typeof rawInit === "string" ? "string" : typeof rawInit === "object" ? "object" : Array.isArray(rawInit) ? "object" : !Number.isNaN(rawInit) ? "number" : "any";
+}
+const StorageSerializers = {
+  boolean: {
+    read: (v) => v === "true",
+    write: (v) => String(v)
+  },
+  object: {
+    read: (v) => JSON.parse(v),
+    write: (v) => JSON.stringify(v)
+  },
+  number: {
+    read: (v) => Number.parseFloat(v),
+    write: (v) => String(v)
+  },
+  any: {
+    read: (v) => v,
+    write: (v) => String(v)
+  },
+  string: {
+    read: (v) => v,
+    write: (v) => String(v)
+  },
+  map: {
+    read: (v) => new Map(JSON.parse(v)),
+    write: (v) => JSON.stringify(Array.from(v.entries()))
+  },
+  set: {
+    read: (v) => new Set(JSON.parse(v)),
+    write: (v) => JSON.stringify(Array.from(v))
+  },
+  date: {
+    read: (v) => new Date(v),
+    write: (v) => v.toISOString()
+  }
 };
+function useStorage(key, initialValue, storage, options = {}) {
+  var _a;
+  const {
+    flush = "pre",
+    deep = true,
+    listenToStorageChanges = true,
+    writeDefaults = true,
+    shallow,
+    window: window2 = defaultWindow,
+    eventFilter,
+    onError = (e) => {
+      console.error(e);
+    }
+  } = options;
+  const data = (shallow ? vue_cjs_prod.shallowRef : vue_cjs_prod.ref)(initialValue);
+  if (!storage) {
+    try {
+      storage = getSSRHandler("getDefaultStorage", () => {
+        var _a2;
+        return (_a2 = defaultWindow) == null ? void 0 : _a2.localStorage;
+      })();
+    } catch (e) {
+      onError(e);
+    }
+  }
+  if (!storage)
+    return data;
+  const rawInit = vue_cjs_prod.unref(initialValue);
+  const type = guessSerializerType(rawInit);
+  const serializer = (_a = options.serializer) != null ? _a : StorageSerializers[type];
+  const { pause: pauseWatch, resume: resumeWatch } = watchPausable(data, () => write(data.value), { flush, deep, eventFilter });
+  if (window2 && listenToStorageChanges)
+    useEventListener(window2, "storage", update);
+  update();
+  return data;
+  function write(v) {
+    try {
+      if (v == null)
+        storage.removeItem(key);
+      else
+        storage.setItem(key, serializer.write(v));
+    } catch (e) {
+      onError(e);
+    }
+  }
+  function read(event) {
+    if (event && event.key !== key)
+      return;
+    pauseWatch();
+    try {
+      const rawValue = event ? event.newValue : storage.getItem(key);
+      if (rawValue == null) {
+        if (writeDefaults && rawInit !== null)
+          storage.setItem(key, serializer.write(rawInit));
+        return rawInit;
+      } else if (typeof rawValue !== "string") {
+        return rawValue;
+      } else {
+        return serializer.read(rawValue);
+      }
+    } catch (e) {
+      onError(e);
+    } finally {
+      resumeWatch();
+    }
+  }
+  function update(event) {
+    if (event && event.key !== key)
+      return;
+    data.value = read(event);
+  }
+}
+function usePreferredDark(options) {
+  return useMediaQuery("(prefers-color-scheme: dark)", options);
+}
+var __defProp$g = Object.defineProperty;
+var __getOwnPropSymbols$i = Object.getOwnPropertySymbols;
+var __hasOwnProp$i = Object.prototype.hasOwnProperty;
+var __propIsEnum$i = Object.prototype.propertyIsEnumerable;
+var __defNormalProp$g = (obj, key, value) => key in obj ? __defProp$g(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues$g = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp$i.call(b, prop))
+      __defNormalProp$g(a, prop, b[prop]);
+  if (__getOwnPropSymbols$i)
+    for (var prop of __getOwnPropSymbols$i(b)) {
+      if (__propIsEnum$i.call(b, prop))
+        __defNormalProp$g(a, prop, b[prop]);
+    }
+  return a;
+};
+function useColorMode(options = {}) {
+  const {
+    selector = "html",
+    attribute = "class",
+    window: window2 = defaultWindow,
+    storage,
+    storageKey = "vueuse-color-scheme",
+    listenToStorageChanges = true,
+    storageRef
+  } = options;
+  const modes = __spreadValues$g({
+    auto: "",
+    light: "light",
+    dark: "dark"
+  }, options.modes || {});
+  const preferredDark = usePreferredDark({ window: window2 });
+  const preferredMode = vue_cjs_prod.computed(() => preferredDark.value ? "dark" : "light");
+  const store = storageRef || (storageKey == null ? vue_cjs_prod.ref("auto") : useStorage(storageKey, "auto", storage, { window: window2, listenToStorageChanges }));
+  const state2 = vue_cjs_prod.computed({
+    get() {
+      return store.value === "auto" ? preferredMode.value : store.value;
+    },
+    set(v) {
+      store.value = v;
+    }
+  });
+  const updateHTMLAttrs = getSSRHandler("updateHTMLAttrs", (selector2, attribute2, value) => {
+    const el = window2 == null ? void 0 : window2.document.querySelector(selector2);
+    if (!el)
+      return;
+    if (attribute2 === "class") {
+      const current = value.split(/\s/g);
+      Object.values(modes).flatMap((i) => (i || "").split(/\s/g)).filter(Boolean).forEach((v) => {
+        if (current.includes(v))
+          el.classList.add(v);
+        else
+          el.classList.remove(v);
+      });
+    } else {
+      el.setAttribute(attribute2, value);
+    }
+  });
+  function defaultOnChanged(mode) {
+    var _a;
+    updateHTMLAttrs(selector, attribute, (_a = modes[mode]) != null ? _a : mode);
+  }
+  function onChanged(mode) {
+    if (options.onChanged)
+      options.onChanged(mode, defaultOnChanged);
+    else
+      defaultOnChanged(mode);
+  }
+  vue_cjs_prod.watch(state2, onChanged, { flush: "post", immediate: true });
+  tryOnMounted(() => onChanged(state2.value));
+  return state2;
+}
+var SwipeDirection;
+(function(SwipeDirection2) {
+  SwipeDirection2["UP"] = "UP";
+  SwipeDirection2["RIGHT"] = "RIGHT";
+  SwipeDirection2["DOWN"] = "DOWN";
+  SwipeDirection2["LEFT"] = "LEFT";
+  SwipeDirection2["NONE"] = "NONE";
+})(SwipeDirection || (SwipeDirection = {}));
 const meta$1 = void 0;
 const meta = void 0;
 const routes = [
   {
-    name: "language-card-1",
-    path: "/:language/card/1",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[language]/card/1.vue",
-    children: [],
-    meta: meta$6,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _1$1;
-    })
-  },
-  {
-    name: "language-card-2",
-    path: "/:language/card/2",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[language]/card/2.vue",
-    children: [],
-    meta: meta$5,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _2$1;
-    })
-  },
-  {
-    name: "language-card-3",
-    path: "/:language/card/3",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[language]/card/3.vue",
-    children: [],
-    meta: meta$4,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _3$1;
-    })
-  },
-  {
-    name: "language-card-4",
-    path: "/:language/card/4",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[language]/card/4.vue",
-    children: [],
-    meta: meta$3,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _4$1;
-    })
-  },
-  {
-    name: "language-card-5",
-    path: "/:language/card/5",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[language]/card/5.vue",
-    children: [],
-    meta: meta$2,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _5$1;
-    })
-  },
-  {
-    name: "language-card-6",
-    path: "/:language/card/6",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[language]/card/6.vue",
+    name: "language-type-num",
+    path: "/:language/:type/:num",
+    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[language]/[type]/[num].vue",
     children: [],
     meta: meta$1,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _6;
+      return _num_$1;
     })
   },
   {
-    name: "language-card-7",
-    path: "/:language/card/7",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[language]/card/7.vue",
+    name: "type-num",
+    path: "/:type/:num",
+    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[type]/[num].vue",
     children: [],
     meta,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _7;
+      return _num_;
     })
   }
 ];
@@ -4249,7 +4485,76 @@ const _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47node_modules_47
   });
   return { provide: { router } };
 });
+const useStrapiToken = () => {
+  const nuxtApp = useNuxtApp();
+  const config = useRuntimeConfig();
+  nuxtApp._cookies = nuxtApp._cookies || {};
+  if (nuxtApp._cookies.strapi_jwt) {
+    return nuxtApp._cookies.strapi_jwt;
+  }
+  const cookie = useCookie("strapi_jwt", config.strapi.cookie);
+  nuxtApp._cookies.strapi_jwt = cookie;
+  return cookie;
+};
 const useStrapiUser = () => useState("strapi_user");
+const useStrapiUrl = () => {
+  const config = useRuntimeConfig();
+  const version2 = config.strapi.version;
+  return version2 === "v3" ? config.strapi.url : `${config.strapi.url}${config.strapi.prefix}`;
+};
+const useStrapiVersion = () => {
+  const config = useRuntimeConfig();
+  return config.strapi.version;
+};
+const defaultErrors = (err) => ({
+  v4: {
+    error: {
+      status: 500,
+      name: "UnknownError",
+      message: err.message,
+      details: err
+    }
+  },
+  v3: {
+    error: "UnknownError",
+    message: err.message,
+    statusCode: 500
+  }
+});
+const useStrapiClient = () => {
+  const nuxt = useNuxtApp();
+  const baseURL2 = useStrapiUrl();
+  const version2 = useStrapiVersion();
+  const token = useStrapiToken();
+  return async (url, fetchOptions = {}) => {
+    const headers = {};
+    if (token && token.value) {
+      headers.Authorization = `Bearer ${token.value}`;
+    }
+    if (version2 === "v4" && fetchOptions.params) {
+      const params = stringify(fetchOptions.params, { encodeValuesOnly: true });
+      if (params) {
+        url = `${url}?${params}`;
+      }
+      delete fetchOptions.params;
+    }
+    try {
+      return await $fetch(url, {
+        retry: 0,
+        baseURL: baseURL2,
+        ...fetchOptions,
+        headers: {
+          ...headers,
+          ...fetchOptions.headers
+        }
+      });
+    } catch (err) {
+      const e = err.data || defaultErrors(err)[version2];
+      nuxt.hooks.callHook("strapi:error", e);
+      throw e;
+    }
+  };
+};
 const useStrapiAuth = () => {
   const url = useStrapiUrl();
   const token = useStrapiToken();
@@ -60368,459 +60673,15 @@ const _plugins = [
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47node_modules_47_64nuxtjs_47strapi_47dist_47runtime_47strapi_46plugin,
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47plugins_47faker_46ts
 ];
-function tryOnScopeDispose(fn) {
-  if (vue_cjs_prod.getCurrentScope()) {
-    vue_cjs_prod.onScopeDispose(fn);
-    return true;
+vue_cjs_prod.ref([]);
+const _export_sfc = (sfc, props) => {
+  const target = sfc.__vccOpts || sfc;
+  for (const [key, val] of props) {
+    target[key] = val;
   }
-  return false;
-}
-const isString = (val) => typeof val === "string";
-const noop = () => {
-};
-function createFilterWrapper(filter, fn) {
-  function wrapper(...args) {
-    filter(() => fn.apply(this, args), { fn, thisArg: this, args });
-  }
-  return wrapper;
-}
-const bypassFilter = (invoke) => {
-  return invoke();
-};
-function pausableFilter(extendFilter = bypassFilter) {
-  const isActive = vue_cjs_prod.ref(true);
-  function pause() {
-    isActive.value = false;
-  }
-  function resume() {
-    isActive.value = true;
-  }
-  const eventFilter = (...args) => {
-    if (isActive.value)
-      extendFilter(...args);
-  };
-  return { isActive, pause, resume, eventFilter };
-}
-function tryOnBeforeMount(fn, sync = true) {
-  if (vue_cjs_prod.getCurrentInstance())
-    vue_cjs_prod.onBeforeMount(fn);
-  else if (sync)
-    fn();
-  else
-    vue_cjs_prod.nextTick(fn);
-}
-function tryOnMounted(fn, sync = true) {
-  if (vue_cjs_prod.getCurrentInstance())
-    vue_cjs_prod.onMounted(fn);
-  else if (sync)
-    fn();
-  else
-    vue_cjs_prod.nextTick(fn);
-}
-function useTimeoutFn(cb, interval, options = {}) {
-  const {
-    immediate = true
-  } = options;
-  const isPending = vue_cjs_prod.ref(false);
-  let timer = null;
-  function clear() {
-    if (timer) {
-      clearTimeout(timer);
-      timer = null;
-    }
-  }
-  function stop() {
-    isPending.value = false;
-    clear();
-  }
-  function start(...args) {
-    clear();
-    isPending.value = true;
-    timer = setTimeout(() => {
-      isPending.value = false;
-      timer = null;
-      cb(...args);
-    }, vue_cjs_prod.unref(interval));
-  }
-  if (immediate) {
-    isPending.value = true;
-  }
-  tryOnScopeDispose(stop);
-  return {
-    isPending,
-    start,
-    stop
-  };
-}
-var __getOwnPropSymbols$5 = Object.getOwnPropertySymbols;
-var __hasOwnProp$5 = Object.prototype.hasOwnProperty;
-var __propIsEnum$5 = Object.prototype.propertyIsEnumerable;
-var __objRest$5 = (source, exclude) => {
-  var target = {};
-  for (var prop in source)
-    if (__hasOwnProp$5.call(source, prop) && exclude.indexOf(prop) < 0)
-      target[prop] = source[prop];
-  if (source != null && __getOwnPropSymbols$5)
-    for (var prop of __getOwnPropSymbols$5(source)) {
-      if (exclude.indexOf(prop) < 0 && __propIsEnum$5.call(source, prop))
-        target[prop] = source[prop];
-    }
   return target;
 };
-function watchWithFilter(source, cb, options = {}) {
-  const _a = options, {
-    eventFilter = bypassFilter
-  } = _a, watchOptions = __objRest$5(_a, [
-    "eventFilter"
-  ]);
-  return vue_cjs_prod.watch(source, createFilterWrapper(eventFilter, cb), watchOptions);
-}
-var __defProp$1 = Object.defineProperty;
-var __defProps$1 = Object.defineProperties;
-var __getOwnPropDescs$1 = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols$1 = Object.getOwnPropertySymbols;
-var __hasOwnProp$1 = Object.prototype.hasOwnProperty;
-var __propIsEnum$1 = Object.prototype.propertyIsEnumerable;
-var __defNormalProp$1 = (obj, key, value) => key in obj ? __defProp$1(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues$1 = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (__hasOwnProp$1.call(b, prop))
-      __defNormalProp$1(a, prop, b[prop]);
-  if (__getOwnPropSymbols$1)
-    for (var prop of __getOwnPropSymbols$1(b)) {
-      if (__propIsEnum$1.call(b, prop))
-        __defNormalProp$1(a, prop, b[prop]);
-    }
-  return a;
-};
-var __spreadProps$1 = (a, b) => __defProps$1(a, __getOwnPropDescs$1(b));
-var __objRest$1 = (source, exclude) => {
-  var target = {};
-  for (var prop in source)
-    if (__hasOwnProp$1.call(source, prop) && exclude.indexOf(prop) < 0)
-      target[prop] = source[prop];
-  if (source != null && __getOwnPropSymbols$1)
-    for (var prop of __getOwnPropSymbols$1(source)) {
-      if (exclude.indexOf(prop) < 0 && __propIsEnum$1.call(source, prop))
-        target[prop] = source[prop];
-    }
-  return target;
-};
-function watchPausable(source, cb, options = {}) {
-  const _a = options, {
-    eventFilter: filter
-  } = _a, watchOptions = __objRest$1(_a, [
-    "eventFilter"
-  ]);
-  const { eventFilter, pause, resume, isActive } = pausableFilter(filter);
-  const stop = watchWithFilter(source, cb, __spreadProps$1(__spreadValues$1({}, watchOptions), {
-    eventFilter
-  }));
-  return { stop, pause, resume, isActive };
-}
-function unrefElement(elRef) {
-  var _a;
-  const plain = vue_cjs_prod.unref(elRef);
-  return (_a = plain == null ? void 0 : plain.$el) != null ? _a : plain;
-}
-const defaultWindow = void 0;
-const defaultNavigator = void 0;
-function useEventListener(...args) {
-  let target;
-  let event;
-  let listener;
-  let options;
-  if (isString(args[0])) {
-    [event, listener, options] = args;
-    target = defaultWindow;
-  } else {
-    [target, event, listener, options] = args;
-  }
-  if (!target)
-    return noop;
-  let cleanup = noop;
-  const stopWatch = vue_cjs_prod.watch(() => unrefElement(target), (el) => {
-    cleanup();
-    if (!el)
-      return;
-    el.addEventListener(event, listener, options);
-    cleanup = () => {
-      el.removeEventListener(event, listener, options);
-      cleanup = noop;
-    };
-  }, { immediate: true, flush: "post" });
-  const stop = () => {
-    stopWatch();
-    cleanup();
-  };
-  tryOnScopeDispose(stop);
-  return stop;
-}
-function useMediaQuery(query, options = {}) {
-  const { window: window2 = defaultWindow } = options;
-  const isSupported = Boolean(window2 && "matchMedia" in window2);
-  let mediaQuery;
-  const matches = vue_cjs_prod.ref(false);
-  const update = () => {
-    if (!isSupported)
-      return;
-    if (!mediaQuery)
-      mediaQuery = window2.matchMedia(query);
-    matches.value = mediaQuery.matches;
-  };
-  tryOnBeforeMount(() => {
-    update();
-    if (!mediaQuery)
-      return;
-    if ("addEventListener" in mediaQuery)
-      mediaQuery.addEventListener("change", update);
-    else
-      mediaQuery.addListener(update);
-    tryOnScopeDispose(() => {
-      if ("removeEventListener" in mediaQuery)
-        mediaQuery.removeEventListener("change", update);
-      else
-        mediaQuery.removeListener(update);
-    });
-  });
-  return matches;
-}
-function useClipboard(options = {}) {
-  const {
-    navigator = defaultNavigator,
-    read = false,
-    source,
-    copiedDuring = 1500
-  } = options;
-  const events = ["copy", "cut"];
-  const isSupported = Boolean(navigator && "clipboard" in navigator);
-  const text = vue_cjs_prod.ref("");
-  const copied = vue_cjs_prod.ref(false);
-  const timeout = useTimeoutFn(() => copied.value = false, copiedDuring);
-  function updateText() {
-    navigator.clipboard.readText().then((value) => {
-      text.value = value;
-    });
-  }
-  if (isSupported && read) {
-    for (const event of events)
-      useEventListener(event, updateText);
-  }
-  async function copy(value = vue_cjs_prod.unref(source)) {
-    if (isSupported && value != null) {
-      await navigator.clipboard.writeText(value);
-      text.value = value;
-      copied.value = true;
-      timeout.start();
-    }
-  }
-  return {
-    isSupported,
-    text,
-    copied,
-    copy
-  };
-}
-const _global = typeof globalThis !== "undefined" ? globalThis : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
-const globalKey = "__vueuse_ssr_handlers__";
-_global[globalKey] = _global[globalKey] || {};
-const handlers = _global[globalKey];
-function getSSRHandler(key, fallback) {
-  return handlers[key] || fallback;
-}
-function guessSerializerType(rawInit) {
-  return rawInit == null ? "any" : rawInit instanceof Set ? "set" : rawInit instanceof Map ? "map" : rawInit instanceof Date ? "date" : typeof rawInit === "boolean" ? "boolean" : typeof rawInit === "string" ? "string" : typeof rawInit === "object" ? "object" : Array.isArray(rawInit) ? "object" : !Number.isNaN(rawInit) ? "number" : "any";
-}
-const StorageSerializers = {
-  boolean: {
-    read: (v) => v === "true",
-    write: (v) => String(v)
-  },
-  object: {
-    read: (v) => JSON.parse(v),
-    write: (v) => JSON.stringify(v)
-  },
-  number: {
-    read: (v) => Number.parseFloat(v),
-    write: (v) => String(v)
-  },
-  any: {
-    read: (v) => v,
-    write: (v) => String(v)
-  },
-  string: {
-    read: (v) => v,
-    write: (v) => String(v)
-  },
-  map: {
-    read: (v) => new Map(JSON.parse(v)),
-    write: (v) => JSON.stringify(Array.from(v.entries()))
-  },
-  set: {
-    read: (v) => new Set(JSON.parse(v)),
-    write: (v) => JSON.stringify(Array.from(v))
-  },
-  date: {
-    read: (v) => new Date(v),
-    write: (v) => v.toISOString()
-  }
-};
-function useStorage(key, initialValue, storage, options = {}) {
-  var _a;
-  const {
-    flush = "pre",
-    deep = true,
-    listenToStorageChanges = true,
-    writeDefaults = true,
-    shallow,
-    window: window2 = defaultWindow,
-    eventFilter,
-    onError = (e) => {
-      console.error(e);
-    }
-  } = options;
-  const data = (shallow ? vue_cjs_prod.shallowRef : vue_cjs_prod.ref)(initialValue);
-  if (!storage) {
-    try {
-      storage = getSSRHandler("getDefaultStorage", () => {
-        var _a2;
-        return (_a2 = defaultWindow) == null ? void 0 : _a2.localStorage;
-      })();
-    } catch (e) {
-      onError(e);
-    }
-  }
-  if (!storage)
-    return data;
-  const rawInit = vue_cjs_prod.unref(initialValue);
-  const type = guessSerializerType(rawInit);
-  const serializer = (_a = options.serializer) != null ? _a : StorageSerializers[type];
-  const { pause: pauseWatch, resume: resumeWatch } = watchPausable(data, () => write(data.value), { flush, deep, eventFilter });
-  if (window2 && listenToStorageChanges)
-    useEventListener(window2, "storage", update);
-  update();
-  return data;
-  function write(v) {
-    try {
-      if (v == null)
-        storage.removeItem(key);
-      else
-        storage.setItem(key, serializer.write(v));
-    } catch (e) {
-      onError(e);
-    }
-  }
-  function read(event) {
-    if (event && event.key !== key)
-      return;
-    pauseWatch();
-    try {
-      const rawValue = event ? event.newValue : storage.getItem(key);
-      if (rawValue == null) {
-        if (writeDefaults && rawInit !== null)
-          storage.setItem(key, serializer.write(rawInit));
-        return rawInit;
-      } else if (typeof rawValue !== "string") {
-        return rawValue;
-      } else {
-        return serializer.read(rawValue);
-      }
-    } catch (e) {
-      onError(e);
-    } finally {
-      resumeWatch();
-    }
-  }
-  function update(event) {
-    if (event && event.key !== key)
-      return;
-    data.value = read(event);
-  }
-}
-function usePreferredDark(options) {
-  return useMediaQuery("(prefers-color-scheme: dark)", options);
-}
-var __defProp$g = Object.defineProperty;
-var __getOwnPropSymbols$i = Object.getOwnPropertySymbols;
-var __hasOwnProp$i = Object.prototype.hasOwnProperty;
-var __propIsEnum$i = Object.prototype.propertyIsEnumerable;
-var __defNormalProp$g = (obj, key, value) => key in obj ? __defProp$g(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues$g = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (__hasOwnProp$i.call(b, prop))
-      __defNormalProp$g(a, prop, b[prop]);
-  if (__getOwnPropSymbols$i)
-    for (var prop of __getOwnPropSymbols$i(b)) {
-      if (__propIsEnum$i.call(b, prop))
-        __defNormalProp$g(a, prop, b[prop]);
-    }
-  return a;
-};
-function useColorMode(options = {}) {
-  const {
-    selector = "html",
-    attribute = "class",
-    window: window2 = defaultWindow,
-    storage,
-    storageKey = "vueuse-color-scheme",
-    listenToStorageChanges = true,
-    storageRef
-  } = options;
-  const modes = __spreadValues$g({
-    auto: "",
-    light: "light",
-    dark: "dark"
-  }, options.modes || {});
-  const preferredDark = usePreferredDark({ window: window2 });
-  const preferredMode = vue_cjs_prod.computed(() => preferredDark.value ? "dark" : "light");
-  const store = storageRef || (storageKey == null ? vue_cjs_prod.ref("auto") : useStorage(storageKey, "auto", storage, { window: window2, listenToStorageChanges }));
-  const state2 = vue_cjs_prod.computed({
-    get() {
-      return store.value === "auto" ? preferredMode.value : store.value;
-    },
-    set(v) {
-      store.value = v;
-    }
-  });
-  const updateHTMLAttrs = getSSRHandler("updateHTMLAttrs", (selector2, attribute2, value) => {
-    const el = window2 == null ? void 0 : window2.document.querySelector(selector2);
-    if (!el)
-      return;
-    if (attribute2 === "class") {
-      const current = value.split(/\s/g);
-      Object.values(modes).flatMap((i) => (i || "").split(/\s/g)).filter(Boolean).forEach((v) => {
-        if (current.includes(v))
-          el.classList.add(v);
-        else
-          el.classList.remove(v);
-      });
-    } else {
-      el.setAttribute(attribute2, value);
-    }
-  });
-  function defaultOnChanged(mode) {
-    var _a;
-    updateHTMLAttrs(selector, attribute, (_a = modes[mode]) != null ? _a : mode);
-  }
-  function onChanged(mode) {
-    if (options.onChanged)
-      options.onChanged(mode, defaultOnChanged);
-    else
-      defaultOnChanged(mode);
-  }
-  vue_cjs_prod.watch(state2, onChanged, { flush: "post", immediate: true });
-  tryOnMounted(() => onChanged(state2.value));
-  return state2;
-}
-var SwipeDirection;
-(function(SwipeDirection2) {
-  SwipeDirection2["UP"] = "UP";
-  SwipeDirection2["RIGHT"] = "RIGHT";
-  SwipeDirection2["DOWN"] = "DOWN";
-  SwipeDirection2["LEFT"] = "LEFT";
-  SwipeDirection2["NONE"] = "NONE";
-})(SwipeDirection || (SwipeDirection = {}));
-const _sfc_main$c = {
+const _sfc_main$p = {
   __name: "error-404",
   __ssrInlineRender: true,
   props: {
@@ -60882,14 +60743,14 @@ const _sfc_main$c = {
     };
   }
 };
-const _sfc_setup$c = _sfc_main$c.setup;
-_sfc_main$c.setup = (props, ctx) => {
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-404.vue");
-  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
 };
-const Error404 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-011aae6d"]]);
-const _sfc_main$b = {
+const Error404 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["__scopeId", "data-v-011aae6d"]]);
+const _sfc_main$o = {
   __name: "error-500",
   __ssrInlineRender: true,
   props: {
@@ -60930,14 +60791,14 @@ const _sfc_main$b = {
     };
   }
 };
-const _sfc_setup$b = _sfc_main$b.setup;
-_sfc_main$b.setup = (props, ctx) => {
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-500.vue");
-  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
-const Error500 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-6aee6495"]]);
-const _sfc_main$9 = {
+const Error500 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["__scopeId", "data-v-6aee6495"]]);
+const _sfc_main$m = {
   __name: "nuxt-error-page",
   __ssrInlineRender: true,
   props: {
@@ -60965,13 +60826,13 @@ const _sfc_main$9 = {
     };
   }
 };
-const _sfc_setup$9 = _sfc_main$9.setup;
-_sfc_main$9.setup = (props, ctx) => {
+const _sfc_setup$m = _sfc_main$m.setup;
+_sfc_main$m.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
-  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
+  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
 };
-const _sfc_main$8 = {
+const _sfc_main$l = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
@@ -60989,7 +60850,7 @@ const _sfc_main$8 = {
       serverRenderer.exports.ssrRenderSuspense(_push, {
         default: () => {
           if (vue_cjs_prod.unref(error)) {
-            _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(_sfc_main$9), { error: vue_cjs_prod.unref(error) }, null, _parent));
+            _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(_sfc_main$m), { error: vue_cjs_prod.unref(error) }, null, _parent));
           } else {
             _push(serverRenderer.exports.ssrRenderComponent(_component_App, null, null, _parent));
           }
@@ -60999,14 +60860,374 @@ const _sfc_main$8 = {
     };
   }
 };
+const _sfc_setup$l = _sfc_main$l.setup;
+_sfc_main$l.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-root.vue");
+  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
+};
+const _sfc_main$k = {};
+function _sfc_ssrRender$g(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_page = vue_cjs_prod.resolveComponent("nuxt-page");
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_page, _attrs, null, _parent));
+}
+const _sfc_setup$k = _sfc_main$k.setup;
+_sfc_main$k.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
+  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
+};
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$g]]);
+if (!globalThis.$fetch) {
+  globalThis.$fetch = $fetch$1.create({
+    baseURL: baseURL()
+  });
+}
+let entry;
+const plugins = normalizePlugins(_plugins);
+{
+  entry = async function createNuxtAppServer(ssrContext) {
+    const vueApp = vue_cjs_prod.createApp(_sfc_main$l);
+    vueApp.component("App", AppComponent);
+    const nuxt = createNuxtApp({ vueApp, ssrContext });
+    try {
+      await applyPlugins(nuxt, plugins);
+      await nuxt.hooks.callHook("app:created", vueApp);
+    } catch (err) {
+      await nuxt.callHook("app:error", err);
+      ssrContext.error = ssrContext.error || err;
+    }
+    return vueApp;
+  };
+}
+const entry$1 = (ctx) => entry(ctx);
+const _sfc_main$j = {};
+function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
+  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "dark:bg-gray-800 dark:text-gray-100" }, _attrs))}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"><a rel="noopener noreferrer" href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"><img src="https://source.unsplash.com/random/480x360" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"><div class="p-6 space-y-2 lg:col-span-5"><h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline"> Noster tincidunt reprimique ad pro </h3><span class="text-xs dark:text-gray-400">February 19, 2021</span><p> Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id. </p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?1"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 21, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?2"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 22, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?3"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 23, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?4"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 24, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?5"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 25, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?6"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 26, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a></div><div class="flex justify-center"><button type="button" class="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400"> Load more posts... </button></div></div></section>`);
+}
+const _sfc_setup$j = _sfc_main$j.setup;
+_sfc_main$j.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/1.vue");
+  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
+};
+const _1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$f]]);
+const _1$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _1$2
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$i = {};
+function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><div class="flex justify-end px-4 pt-4"><button id="dropdownButton" data-dropdown-toggle="dropdown" class="btn btn-ghost" type="button"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div><div class="flex flex-col items-center pb-10 px-24"><img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://wcao.cc/image-space/api/avatar" alt="Bonnie image"><h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h5><span class="text-sm text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobTitle())}</span><div class="flex mt-4 space-x-3 lg:mt-6"><a href="#" class="btn btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><a href="#" class="btn btn-outline btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
+}
+const _sfc_setup$i = _sfc_main$i.setup;
+_sfc_main$i.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/1.vue");
+  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
+};
+const _1 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$e]]);
+const _1$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _1
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$h = {};
+function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 max-w-md w-full bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><h5 class="mb-4 text-xl font-medium text-base-content text-opacity-50"> Standard plan </h5><div class="flex items-baseline text-base-content text-opacity-90"><span class="text-3xl font-semibold">$</span><span class="text-5xl font-extrabold tracking-tight">49</span><span class="ml-1 text-xl font-normal text-base-content text-opacity-50">/month</span></div><ul role="list" class="my-7 space-y-5"><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">2 team members</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">20GB Cloud storage</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Integration help</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Sketch Files</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">API Access</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Complete documentation</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">24\xD77 phone &amp; email support</span></li></ul><button type="button" class="btn capitalize btn-primary"> Choose plan </button></div>`);
+}
+const _sfc_setup$h = _sfc_main$h.setup;
+_sfc_main$h.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/10.vue");
+  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
+};
+const _10 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$d]]);
+const _10$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _10
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$g = {};
+function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center" }, _attrs))}><div class="block rounded-lg shadow-lg bg-base-100 max-w-sm text-center"><div class="py-3 px-6 border-b border-base-content border-opacity-30"> Featured </div><div class="p-6"><h5 class="text-base-content text-opacity-90 text-xl font-medium mb-2"> Special title treatment </h5><p class="text-base-content text-opacity-70 text-base mb-4"> With supporting text below as a natural lead-in to additional content. </p><button type="button" class="btn capitalize btn-primary btn-sm"> Button </button></div><div class="py-3 px-6 border-t border-base-content border-opacity-30 text-base-content text-opacity-60"> 2 days ago </div></div></div>`);
+}
+const _sfc_setup$g = _sfc_main$g.setup;
+_sfc_main$g.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/11.vue");
+  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
+};
+const _11 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["ssrRender", _sfc_ssrRender$c]]);
+const _11$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _11
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$f = {};
+function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "relative max-w-md mx-auto md:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl mt-16" }, _attrs))}><div class="px-6"><div class="flex flex-wrap justify-center"><div class="w-full flex justify-center"><img src="https://wcao.cc/r/a/avatar" class="shadow-xl flex-shrink-0 w-36 h-36 -top-16 rounded-full align-middle border-none absolute"></div><div class="w-full text-center mt-20"><div class="flex justify-center lg:pt-4 pt-8 pb-0"><div class="p-3 text-center"><span class="text-xl font-bold block uppercase tracking-wide text-base-content text-opacity-70">3,360</span><span class="text-sm text-base-content text-opacity-40">Photos</span></div><div class="p-3 text-center"><span class="text-xl font-bold block uppercase tracking-wide text-base-content text-opacity-70">2,454</span><span class="text-sm text-base-content text-opacity-40">Followers</span></div><div class="p-3 text-center"><span class="text-xl font-bold block uppercase tracking-wide text-base-content text-opacity-70">564</span><span class="text-sm text-base-content text-opacity-40">Following</span></div></div></div></div><div class="text-center mt-2"><h3 class="text-2xl text-base-content text-opacity-70 font-bold leading-normal mb-1"> Mike Thompson </h3><div class="text-xs mt-0 mb-2 text-base-content text-opacity-40 font-bold uppercase"><i class="fas fa-map-marker-alt mr-2 text-base-content text-opacity-40 opacity-75"></i>Paris, France </div></div><div class="mt-6 py-6 border-t border-base-content border-opacity-20 text-center"><div class="flex flex-wrap justify-center"><div class="w-full px-4"><p class="font-light leading-relaxed text-base-content text-opacity-60 mb-4"> An artist of considerable range, Mike is the name taken by Melbourne-raised, Brooklyn-based Nick Murphy writes, performs and records all of his own music, giving it a warm. </p><a href="javascript:;" class="font-normal text-base-content text-opacity-70 hover:text-base-content hover:text-opacity-40">Follow Account</a></div></div></div></div></div>`);
+}
+const _sfc_setup$f = _sfc_main$f.setup;
+_sfc_main$f.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/12.vue");
+  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
+};
+const _12 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["ssrRender", _sfc_ssrRender$b]]);
+const _12$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _12
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$e = {};
+function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mx-auto max-w-lg" }, _attrs))}><div class="border bg-base-300 bg-opacity-25 rounded-lg p-6 text-base-content text-opacity-10 relative z-10" style="${serverRenderer.exports.ssrRenderStyle({ "cursor": "auto" })}"><div class="flex flex-wrap items-center"><div class="flex w-full h-48 md:h-64 lg:h-72 relative"><div class="w-8/12 pr-4 relative"><img src="https://wcao.cc/r/a/avatar?1" class="w-full h-full object-cover object-top rounded-lg bg-base-100"></div><div class="w-4/12 h-full"><div class="flex flex-col w-full h-full"><div class="flex-1 pb-2"><div class="w-full h-full relative"><img src="https://wcao.cc/r/a/avatar?2" class="absolute top-0 w-full h-full object-cover object-center rounded-lg bg-base-100"></div></div><div class="flex-1 pt-2"><div class="w-full h-full relative"><img src="https://wcao.cc/r/a/avatar?3" class="absolute top-0 w-full h-full object-cover object-bottom rounded-lg bg-base-100"></div></div></div></div></div><div class="w-full pt-8 flex flex-col justify-between"><div><h2 class="font-bold text-xl text-base-content"> Tailmail - Tailwind CSS Email Design Kit </h2><div class="flex flex-wrap text-center pt-4 mb-2"><div class="badge badge-accent mr-2">Tailwind CSS</div><div class="badge badge-accent mr-2">React</div><div class="badge badge-accent mr-2">Next.js</div></div><p class="text-xs leading-relaxed text-base-content text-opacity-50"> This revolutionary email design kit is going to transform the way in which you send modern emails. </p><ul class="text-xs mt-4 list-disc list-inside text-base-content text-opacity-50 leading-relaxed"><li>Responsive</li><li>Mobile-friendly</li><li>Media queries</li><li>20MB of JavaScript</li></ul></div><div class="w-full sm:flex-1 grid gap-4 grid-cols-2 pt-6"><a href="javascript:;" class="btn capitalize glass btn-info"> Preview </a><button x-on:click="pay(&#39;Essential&#39;)" class="btn capitalize btn-success"> Buy now </button></div></div></div></div></div>`);
+}
+const _sfc_setup$e = _sfc_main$e.setup;
+_sfc_main$e.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/13.vue");
+  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
+};
+const _13 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["ssrRender", _sfc_ssrRender$a]]);
+const _13$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _13
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$d = {};
+function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex items-center justify-center" }, _attrs))}><div class="max-w-md md:max-w-2xl px-2"><div class="bg-base-100 shadow-xl rounded-lg overflow-hidden md:flex"><div class="bg-cover bg-bottom h-56 md:h-auto md:w-56" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url(https://wcao.cc/r/a/sgwg)" })}"></div><div><div class="p-4 md:p-5"><p class="font-bold text-xl md:text-2xl">Amsterdam Walking Tour</p><p class="text-base-content text-opacity-70 md:text-lg"> Explore popular tourist destinations as well as hidden local favourites. </p></div><div class="p-4 md:p-5 bg-base-200"><div class="sm:flex sm:justify-between sm:items-center"><div><div class="text-lg text-base-content text-opacity-70"><span class="text-base-content text-opacity-90 font-bold">17</span> per person* </div><div class="flex items-center"><div class="inline-flex -mx-px"><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg></div><div class="text-base-content text-opacity-60 ml-2 text-sm md:text-base mt-1"> 28 reviews </div></div></div><button class="mt-3 sm:mt-0 btn btn-primary">Book now</button></div><div class="mt-3 text-base-content text-opacity-60 text-sm md:text-base"> *Prices may vary depending on selected date. </div></div></div></div></div></div>`);
+}
+const _sfc_setup$d = _sfc_main$d.setup;
+_sfc_main$d.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/14.vue");
+  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
+};
+const _14 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["ssrRender", _sfc_ssrRender$9]]);
+const _14$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _14
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$c = {};
+function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl mt-16" }, _attrs))}><div class="card overflow-visible"><div class="card-header mx-4 -mt-6 max-h-[400px] rounded-lg overflow-hidden"><a href="https://wcao.cc" blur-shadow-image="true"><img class="w-full" src="https://wcao.cc/r/a/girls" alt="tailwind-card-image"></a></div><div class="card-body"><a href="#"><h4 class="font-semibold">Material Design 3</h4></a><p class="opcacity-60 mb-4"> The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. </p><button class="btn capitalize" data-ripple-light="true"> Read More </button></div></div></div>`);
+}
+const _sfc_setup$c = _sfc_main$c.setup;
+_sfc_main$c.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/15.vue");
+  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
+};
+const _15 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["ssrRender", _sfc_ssrRender$8]]);
+const _15$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _15
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$b = {};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+  _push(`<article${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mb-4 break-inside p-6 rounded-xl bg-base-100 flex flex-col bg-clip-border" }, _attrs))}><div class="flex pb-6 items-center justify-between"><div class="flex"><a class="inline-block mr-4" href="#"><img class="rounded-full max-w-none w-14 h-14" src="https://wcao.cc/r/a/avatar"></a><div class="flex flex-col"><div class="flex items-center"><a class="inline-block text-lg font-bold mr-2" href="#">Savannah Nguyen</a></div><div class="text-accent-focus text-opacity-50">January 22, 2021</div></div></div></div><h2 class="text-3xl font-extrabold">Web Design templates Selection</h2><div class="py-4"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div><div class="py-4"><a class="inline-flex items-center" href="#"><span class="mr-2"><svg class="fill-rose-600" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path></svg></span><span class="text-lg font-bold">15</span></a></div><div class="relative"><input class="pt-2 pb-2 pl-3 w-full h-11 bg-accent-focus bg-opacity-10 rounded-lg placeholder:text-accent-focus text-opacity-60 font-medium pr-20" type="text" placeholder="Write a comment"><span class="flex absolute right-3 top-2/4 -mt-3 items-center"><svg class="mr-2" style="${serverRenderer.exports.ssrRenderStyle({ "width": "26px", "height": "26px" })}" viewBox="0 0 24 24"><path fill="currentColor" d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z"></path></svg><svg class="fill-primary" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path></svg></span></div></article>`);
+}
+const _sfc_setup$b = _sfc_main$b.setup;
+_sfc_main$b.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/16.vue");
+  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
+};
+const _16 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", _sfc_ssrRender$7]]);
+const _16$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _16
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$a = {};
+function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
+  _push(`<article${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mb-4 break-inside rounded-xl bg-base-100 flex flex-col bg-clip-border" }, _attrs))}><div class="flex p-6 items-center justify-between"><div class="flex"><a class="inline-block mr-4" href="#"><img class="rounded-full max-w-none w-14 h-14" src="https://wcao.cc/r/a/avatar"></a><div class="flex flex-col"><div class="flex items-center"><a class="inline-block text-lg font-bold mr-2" href="#">Annette Black</a><span class="text-accent-focus text-opacity-50">3 minutes ago</span></div><div class="text-accent-focus text-opacity-50">Medical Assistant</div></div></div></div><div class="p-6 bg-primary bg-opacity-50"><h2 class="text-3xl font-extrabold text-base-100"> Web Design templates Selection </h2></div><div class="p-6"><div class="flex justify-between items-center"><a class="inline-flex items-center" href="#"><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji"></span><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji?12"></span><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji?13"></span><span class="text-lg font-bold ml-3">237</span></a><a class="ml-auto" href="#">23 comentarios</a></div><div class="mt-6 mb-6 h-px bg-accent-focus bg-opacity-20"></div><div class="flex items-center justify-between mb-6"><button class="btn capitalize btn-ghost">Me gusta</button><button class="btn capitalize btn-ghost">Comentar</button><button class="btn capitalize btn-ghost">Compartir</button></div><div class="relative"><input class="input w-full input-md bg-accent-content bg-opacity-10" type="text" placeholder="Write a comment"><span class="flex absolute right-3 top-2/4 -mt-3 items-center"><svg class="mr-2" style="${serverRenderer.exports.ssrRenderStyle({ "width": "26px", "height": "26px" })}" viewBox="0 0 24 24"><path fill="currentColor" d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z"></path></svg><svg class="fill-primary" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path></svg></span></div></div></article>`);
+}
+const _sfc_setup$a = _sfc_main$a.setup;
+_sfc_main$a.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/17.vue");
+  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
+};
+const _17 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["ssrRender", _sfc_ssrRender$6]]);
+const _17$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _17
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$9 = {};
+function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-sm bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><a href="#"><div class="h-64 w-full overflow-hidden"><img class="rounded-t-lg w-full" src="https://wcao.cc/image-space/api/girls?xxx" alt=""></div></a><div class="p-5"><a href="#"><h3 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3></a><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center btn btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adjective())} <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a></div></div>`);
+}
+const _sfc_setup$9 = _sfc_main$9.setup;
+_sfc_main$9.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/2.vue");
+  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
+};
+const _2 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$5]]);
+const _2$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _2
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$8 = {};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-2xl px-8 py-4 mx-auto bg-base-100 rounded-lg shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.date.month())} 2019 </span><a class="btn btn-primary btn-sm">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div><div class="mt-2"><a href="#" class="text-2xl font-bold text-base-content text-opacity-70 hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</a><p class="mt-2 text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div class="flex items-center justify-between mt-4"><a href="#" class="btn btn-link hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><div class="flex items-center"><img class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" src="https://wcao.cc/image-space/api/avatar?xxx " alt="avatar"><a class="font-bold text-base-content text-opacity-70 cursor-pointer">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</a></div></div></div>`);
+}
 const _sfc_setup$8 = _sfc_main$8.setup;
 _sfc_main$8.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-root.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/3.vue");
   return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
-const _sfc_main$7 = {
-  __name: "app",
+const _3 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$4]]);
+const _3$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _3
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$7 = {};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "w-full max-w-sm px-4 py-3 mx-auto bg-base-100 rounded-md shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.product())}</span><span class="px-3 py-1 text-xs btn btn-primary btn-sm uppercase rounded-full">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productMaterial())}</span></div><div><h1 class="mt-2 text-lg font-semibold text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="mt-2 text-sm text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div><div class="flex items-center mt-2 text-base-content text-opacity-70"><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.conjunction())}:</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</a><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.noun())}</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.interjection())}</a></div><div class="flex items-center justify-center mt-4"><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"></path></svg></a><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8283 12L16.2426 13.4142L19.071 10.5858C20.6331 9.02365 20.6331 6.49099 19.071 4.9289C17.5089 3.3668 14.9762 3.3668 13.4141 4.9289L10.5857 7.75732L11.9999 9.17154L14.8283 6.34311C15.6094 5.56206 16.8757 5.56206 17.6568 6.34311C18.4378 7.12416 18.4378 8.39049 17.6568 9.17154L14.8283 12Z"></path><path d="M12 14.8285L13.4142 16.2427L10.5858 19.0711C9.02365 20.6332 6.49099 20.6332 4.9289 19.0711C3.3668 17.509 3.3668 14.9764 4.9289 13.4143L7.75732 10.5858L9.17154 12L6.34311 14.8285C5.56206 15.6095 5.56206 16.8758 6.34311 17.6569C7.12416 18.4379 8.39049 18.4379 9.17154 17.6569L12 14.8285Z"></path><path d="M14.8284 10.5857C15.2189 10.1952 15.2189 9.56199 14.8284 9.17147C14.4379 8.78094 13.8047 8.78094 13.4142 9.17147L9.17154 13.4141C8.78101 13.8046 8.78101 14.4378 9.17154 14.8283C9.56206 15.2188 10.1952 15.2188 10.5857 14.8283L14.8284 10.5857Z"></path></svg></a></div></div></div>`);
+}
+const _sfc_setup$7 = _sfc_main$7.setup;
+_sfc_main$7.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/4.vue");
+  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
+};
+const _4 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$3]]);
+const _4$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _4
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$6 = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+  _push(`<a${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
+    href: "#",
+    class: "flex flex-col items-center bg-base-100 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-base-200"
+  }, _attrs))}><img class="object-cover mt-4 sm:mt-0 w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://wcao.cc/image-space/api/ultraman-card?xxx" alt=""><div class="flex flex-col justify-between p-4 leading-normal"><h5 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h5><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
+}
+const _sfc_setup$6 = _sfc_main$6.setup;
+_sfc_main$6.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/5.vue");
+  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
+};
+const _5 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$2]]);
+const _5$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _5
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$5 = {
+  __name: "6",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { language = "zh_CN" } = useRoute().params;
+    const locales2 = {
+      en: [
+        "Sign in to our platform",
+        "Your email",
+        "Your password",
+        "Remember me",
+        "Lost Password?",
+        "Login to your account",
+        "Not registered?",
+        "Create account"
+      ],
+      zh_CN: [
+        "\u767B\u5F55\u6211\u4EEC\u7684\u5E73\u53F0",
+        "\u60A8\u7684\u90AE\u7BB1",
+        "\u60A8\u7684\u5BC6\u7801",
+        "\u8BB0\u4F4F\u6211",
+        "\u5FD8\u8BB0\u5BC6\u7801\uFF1F",
+        "\u767B\u5F55\u60A8\u7684\u8D26\u6237",
+        "\u6CA1\u6709\u6CE8\u518C\uFF1F",
+        "\u521B\u5EFA\u8D26\u6237"
+      ],
+      ja: [
+        "\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u306B\u30B5\u30A4\u30F3\u30A4\u30F3",
+        "\u3042\u306A\u305F\u306E\u30E1\u30FC\u30EB",
+        "\u3042\u306A\u305F\u306E\u30D1\u30B9\u30EF\u30FC\u30C9",
+        "\u79C1\u3092\u899A\u3048\u3066\u3044\u308B",
+        "\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u7D1B\u5931\u3057\u307E\u3057\u305F\u304B\uFF1F",
+        "\u30A2\u30AB\u30A6\u30F3\u30C8\u306B\u30ED\u30B0\u30A4\u30F3",
+        "\u767B\u9332\u3055\u308C\u3066\u3044\u307E\u305B\u3093\u304B\uFF1F",
+        "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u4F5C\u6210"
+      ],
+      ko: [
+        "\uD50C\uB7AB\uD3FC\uC5D0 \uB85C\uADF8\uC778",
+        "\uADC0\uD558\uC758 \uC774\uBA54\uC77C",
+        "\uBE44\uBC00\uBC88\uD638",
+        "\uB098\uB97C \uAE30\uC5B5\uD574",
+        "\uBE44\uBC00\uBC88\uD638\uB97C \uBD84\uC2E4\uD558\uC168\uC2B5\uB2C8\uAE4C?",
+        "\uACC4\uC815\uC5D0 \uB85C\uADF8\uC778",
+        "\uB4F1\uB85D\uB418\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uAE4C?",
+        "\uACC4\uC815 \uB9CC\uB4E4\uAE30"
+      ]
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full rounded-box max-w-md bg-base-100 border border-base-200 shadow-md sm:p-6 lg:p-8" }, _attrs))}><form class="space-y-6" action="#"><h5 class="text-xl font-medium text-base-content">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</h5><div><label for="email" class="block mb-2 text-sm font-medium text-base-content">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][1])}</label><input type="email" name="email" id="email" class="input input-bordered w-full" placeholder="name@company[2]om" required></div><div><label for="password" class="block mb-2 text-sm font-medium text-base-content">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][2])}</label><input type="password" name="password" id="password" placeholder="\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022" class="input input-bordered w-full" required></div><div class="flex items-start justify-between"><div class="flex items-start"><input id="remember" type="checkbox" value="" class="checkbox checkbox-sm rounded-box" required><label for="remember" class="ml-2 text-sm font-medium text-base-content">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][3])}</label></div><a href="#" class="btn btn-link btn-xs capitalize">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][4])}</a></div><button type="submit" class="btn btn-primary w-full capitalize">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][5])}</button><div class="text-sm font-medium text-base-content text-opacity-70">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][6])} <a href="#" class="btn btn-link btn-xs capitalize">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][7])}</a></div></form></div>`);
+    };
+  }
+};
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/6.vue");
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
+};
+const _6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _sfc_main$5
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$4 = {
+  __name: "7",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { language } = useRoute().params;
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-md bg-base-100 rounded-lg shadow-md" }, _attrs))}><a href="#" class="flex justify-center"><img class="rounded-t-lg w-full" src="https://wcao.cc/r/a/iwatch" alt="product image"></a><div class="px-5 pb-5 mt-8"><a href="#"><h5 class="text-xl font-semibold tracking-tight text-base-content text-opacity-90"> Apple Watch Series 7 GPS ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h5></a><div class="flex items-center mt-2.5 mb-5"><div class="rating"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning" checked><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"></div><span class="badge badge-info ml-3"> 2.0 </span></div><div class="flex justify-between items-center"><span class="text-3xl font-bold text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(language) === "zh_CN" ? "\uFFE5" : "$")}${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.price())}</span><a href="#" class="btn btn-primary capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
+    };
+  }
+};
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/7.vue");
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
+};
+const _7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _sfc_main$4
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$3 = {};
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full text-center bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><h5 class="mb-2 text-3xl font-bold text-base-content text-opacity-90"> Work fast from anywhere </h5><p class="mb-5 text-base text-base-content text-opacity-50 sm:text-lg"> Stay up to date and move work forward with Flowbite on iOS &amp; Android. Download the app today. </p><div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4"><a href="#" class="btn capitalize btn-primary"><svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg><div class="text-left"><div class="mb-1 text-xs">Download on the</div><div class="-mt-1 font-sans text-sm font-semibold">Mac App Store</div></div></a><a href="#" class="btn capitalize btn-primary"><svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg><div class="text-left"><div class="mb-1 text-xs">Get in on</div><div class="-mt-1 font-sans text-sm font-semibold">Google Play</div></div></a></div></div>`);
+}
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/8.vue");
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+};
+const _8 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]);
+const _8$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _8
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$2 = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full max-w-md bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><div class="flex justify-between items-center mb-4"><h5 class="text-xl font-bold leading-none text-base-content text-opacity-90"> Latest Customers </h5><a href="#" class="text-sm font-medium text-primary hover:underline"> View all </a></div><div class="flow-root"><ul role="list" class="divide-y divide-base-200"><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?1" alt="Neil image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Neil Sims </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $320 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?2" alt="Bonnie image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Bonnie Green </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $3467 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?3" alt="Michael image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Michael Gough </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $67 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?4" alt="Lana image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Lana Byrd </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $367 </div></div></li><li class="pt-3 pb-0 sm:pt-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?5" alt="Thomas image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Thomes Lean </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $2367 </div></div></li></ul></div></div>`);
+}
+const _sfc_setup$2 = _sfc_main$2.setup;
+_sfc_main$2.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/9.vue");
+  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+};
+const _9 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
+const _9$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _9
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$1 = {
+  __name: "[num]",
   __ssrInlineRender: true,
   setup(__props) {
     const url = vue_cjs_prod.computed(() => useRoute().path.split("/").slice(2, 4).join("/"));
@@ -61014,7 +61235,8 @@ const _sfc_main$7 = {
     useClipboard();
     vue_cjs_prod.ref();
     const route = useRoute();
-    const { language } = route.params;
+    const { language = "zh_CN", type, num } = route.params;
+    const currentElement = vue_cjs_prod.resolveComponent(type + num);
     const setHead = (route2) => {
       useHead({
         titleTemplate: `[${curLang.value.icon} ${curLang.value.desc}] ${route2.path.replace("/" + route2.params.language, "").replace("/", "")} - ${curLang.value.title}`
@@ -61102,7 +61324,6 @@ const _sfc_main$7 = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_nuxt_link = __nuxt_component_0;
-      const _component_NuxtPage = vue_cjs_prod.resolveComponent("NuxtPage");
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: "drawer drawer-mobile",
         id: "beauty-template"
@@ -61131,7 +61352,7 @@ const _sfc_main$7 = {
         _push(`</li>`);
       });
       _push(`<!--]--></ul></div></div><div id="template-wrapper" class="w-full flex justify-center items-center">`);
-      _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtPage, null, null, _parent));
+      serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement)), null, null), _parent);
       _push(`</div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
       serverRenderer.exports.ssrRenderList(themes, (item) => {
         _push(`<li${serverRenderer.exports.ssrRenderAttr("data-theme", item)} class="${serverRenderer.exports.ssrRenderClass([{ "outline-dashed": vue_cjs_prod.unref(htmlMode) === item }, "my-2 shadow rounded-box"])}"><a href="javascript:;" class="flex justify-between hover:bg-transparent active:bg-transparent focus:bg-transparent"><span>${serverRenderer.exports.ssrInterpolate(item)}</span><div class="flex gap-1 h-4"><div class="bg-primary w-2 rounded"></div><div class="bg-secondary w-2 rounded"></div><div class="bg-accent w-2 rounded"></div><div class="bg-neutral w-2 rounded"></div></div></a></li>`);
@@ -61140,152 +61361,35 @@ const _sfc_main$7 = {
     };
   }
 };
-const _sfc_setup$7 = _sfc_main$7.setup;
-_sfc_main$7.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
-  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
-};
-if (!globalThis.$fetch) {
-  globalThis.$fetch = $fetch$1.create({
-    baseURL: baseURL()
-  });
-}
-let entry;
-const plugins = normalizePlugins(_plugins);
-{
-  entry = async function createNuxtAppServer(ssrContext) {
-    const vueApp = vue_cjs_prod.createApp(_sfc_main$8);
-    vueApp.component("App", _sfc_main$7);
-    const nuxt = createNuxtApp({ vueApp, ssrContext });
-    try {
-      await applyPlugins(nuxt, plugins);
-      await nuxt.hooks.callHook("app:created", vueApp);
-    } catch (err) {
-      await nuxt.callHook("app:error", err);
-      ssrContext.error = ssrContext.error || err;
-    }
-    return vueApp;
-  };
-}
-const entry$1 = (ctx) => entry(ctx);
-const _sfc_main$6 = {};
-function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><div class="flex justify-end px-4 pt-4"><button id="dropdownButton" data-dropdown-toggle="dropdown" class="btn btn-ghost" type="button"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div><div class="flex flex-col items-center pb-10 px-24"><img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://wcao.cc/image-space/api/avatar" alt="Bonnie image"><h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h5><span class="text-sm text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobTitle())}</span><div class="flex mt-4 space-x-3 lg:mt-6"><a href="#" class="btn btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><a href="#" class="btn btn-outline btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
-}
-const _sfc_setup$6 = _sfc_main$6.setup;
-_sfc_main$6.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[language]/card/1.vue");
-  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
-};
-const _1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$4]]);
-const _1$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _1
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$5 = {};
-function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-sm bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><a href="#"><div class="h-64 w-full overflow-hidden"><img class="rounded-t-lg w-full" src="https://wcao.cc/image-space/api/girls?xxx" alt=""></div></a><div class="p-5"><a href="#"><h3 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3></a><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center btn btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adjective())} <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a></div></div>`);
-}
-const _sfc_setup$5 = _sfc_main$5.setup;
-_sfc_main$5.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[language]/card/2.vue");
-  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
-};
-const _2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$3]]);
-const _2$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _2
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$4 = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-2xl px-8 py-4 mx-auto bg-base-100 rounded-lg shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.date.month())} 2019 </span><a class="btn btn-primary btn-sm">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div><div class="mt-2"><a href="#" class="text-2xl font-bold text-base-content text-opacity-70 hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</a><p class="mt-2 text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div class="flex items-center justify-between mt-4"><a href="#" class="btn btn-link hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><div class="flex items-center"><img class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" src="https://wcao.cc/image-space/api/avatar?xxx " alt="avatar"><a class="font-bold text-base-content text-opacity-70 cursor-pointer">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</a></div></div></div>`);
-}
-const _sfc_setup$4 = _sfc_main$4.setup;
-_sfc_main$4.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[language]/card/3.vue");
-  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
-};
-const _3 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$2]]);
-const _3$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _3
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$3 = {};
-function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "w-full max-w-sm px-4 py-3 mx-auto bg-base-100 rounded-md shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.product())}</span><span class="px-3 py-1 text-xs btn btn-primary btn-sm uppercase rounded-full">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productMaterial())}</span></div><div><h1 class="mt-2 text-lg font-semibold text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="mt-2 text-sm text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div><div class="flex items-center mt-2 text-base-content text-opacity-70"><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.conjunction())}:</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</a><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.noun())}</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.interjection())}</a></div><div class="flex items-center justify-center mt-4"><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"></path></svg></a><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8283 12L16.2426 13.4142L19.071 10.5858C20.6331 9.02365 20.6331 6.49099 19.071 4.9289C17.5089 3.3668 14.9762 3.3668 13.4141 4.9289L10.5857 7.75732L11.9999 9.17154L14.8283 6.34311C15.6094 5.56206 16.8757 5.56206 17.6568 6.34311C18.4378 7.12416 18.4378 8.39049 17.6568 9.17154L14.8283 12Z"></path><path d="M12 14.8285L13.4142 16.2427L10.5858 19.0711C9.02365 20.6332 6.49099 20.6332 4.9289 19.0711C3.3668 17.509 3.3668 14.9764 4.9289 13.4143L7.75732 10.5858L9.17154 12L6.34311 14.8285C5.56206 15.6095 5.56206 16.8758 6.34311 17.6569C7.12416 18.4379 8.39049 18.4379 9.17154 17.6569L12 14.8285Z"></path><path d="M14.8284 10.5857C15.2189 10.1952 15.2189 9.56199 14.8284 9.17147C14.4379 8.78094 13.8047 8.78094 13.4142 9.17147L9.17154 13.4141C8.78101 13.8046 8.78101 14.4378 9.17154 14.8283C9.56206 15.2188 10.1952 15.2188 10.5857 14.8283L14.8284 10.5857Z"></path></svg></a></div></div></div>`);
-}
-const _sfc_setup$3 = _sfc_main$3.setup;
-_sfc_main$3.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[language]/card/4.vue");
-  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
-};
-const _4 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]);
-const _4$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _4
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$2 = {};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<a${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
-    href: "#",
-    class: "flex flex-col items-center bg-base-100 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-base-200"
-  }, _attrs))}><img class="object-cover mt-4 sm:mt-0 w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://wcao.cc/image-space/api/ultraman-card?xxx" alt=""><div class="flex flex-col justify-between p-4 leading-normal"><h5 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h5><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
-}
-const _sfc_setup$2 = _sfc_main$2.setup;
-_sfc_main$2.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[language]/card/5.vue");
-  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
-};
-const _5 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
-const _5$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _5
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$1 = {
-  __name: "6",
-  __ssrInlineRender: true,
-  async setup(__props) {
-    let __temp, __restore;
-    const { language } = useRoute().params;
-    const locales2 = ([__temp, __restore] = vue_cjs_prod.withAsyncContext(() => getLocales("Card", 6)), __temp = await __temp, __restore(), __temp);
-    return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full rounded-box max-w-md bg-base-100 border border-base-200 shadow-md sm:p-6 lg:p-8" }, _attrs))}><form class="space-y-6" action="#"><h5 class="text-xl font-medium text-base-content">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(locales2)[vue_cjs_prod.unref(language)][0])}</h5><div><label for="email" class="block mb-2 text-sm font-medium text-base-content">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(locales2)[vue_cjs_prod.unref(language)][1])}</label><input type="email" name="email" id="email" class="input input-bordered w-full" placeholder="name@company[2]om" required></div><div><label for="password" class="block mb-2 text-sm font-medium text-base-content">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(locales2)[vue_cjs_prod.unref(language)][2])}</label><input type="password" name="password" id="password" placeholder="\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022" class="input input-bordered w-full" required></div><div class="flex items-start justify-between"><div class="flex items-start"><input id="remember" type="checkbox" value="" class="checkbox checkbox-sm rounded-box" required><label for="remember" class="ml-2 text-sm font-medium text-base-content">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(locales2)[vue_cjs_prod.unref(language)][3])}</label></div><a href="#" class="btn btn-link btn-xs capitalize">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(locales2)[vue_cjs_prod.unref(language)][4])}</a></div><button type="submit" class="btn btn-primary w-full capitalize">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(locales2)[vue_cjs_prod.unref(language)][5])}</button><div class="text-sm font-medium text-base-content text-opacity-70">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(locales2)[vue_cjs_prod.unref(language)][6])} <a href="#" class="btn btn-link btn-xs capitalize">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(locales2)[vue_cjs_prod.unref(language)][7])}</a></div></form></div>`);
-    };
-  }
-};
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[language]/card/6.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[language]/[type]/[num].vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const _6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _num_$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _sfc_main$1
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main = {
-  __name: "7",
+  __name: "[num]",
   __ssrInlineRender: true,
   setup(__props) {
-    const { language } = useRoute().params;
+    const route = useRoute();
+    const { num, language, type } = route.params;
+    const currentElement = vue_cjs_prod.resolveComponent(type + num);
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-md bg-base-100 rounded-lg shadow-md" }, _attrs))}><a href="#" class="flex justify-center"><img class="rounded-t-lg w-full" src="https://wcao.cc/r/a/iwatch" alt="product image"></a><div class="px-5 pb-5 mt-8"><a href="#"><h5 class="text-xl font-semibold tracking-tight text-base-content text-opacity-90"> Apple Watch Series 7 GPS ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h5></a><div class="flex items-center mt-2.5 mb-5"><div class="rating"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning" checked><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"></div><span class="badge badge-info ml-3"> 2.0 </span></div><div class="flex justify-between items-center"><span class="text-3xl font-bold text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(language) === "zh_CN" ? "\uFFE5" : "$")}${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.price())}</span><a href="#" class="btn btn-primary capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
+      serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement)), _attrs, null), _parent);
     };
   }
 };
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[language]/card/7.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[type]/[num].vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const _7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _num_ = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _sfc_main
 }, Symbol.toStringTag, { value: "Module" }));

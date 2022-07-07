@@ -1,6 +1,6 @@
 <template>
   <component is="wcao">
-    <div id="beauty-template" class="w-full">
+    <div id="beauty-template" class="w-full flex justify-center items-center">
       <component :is="currentElement"></component>
     </div>
   </component>

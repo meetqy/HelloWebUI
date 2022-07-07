@@ -60673,13 +60673,13 @@ const _plugins = [
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47node_modules_47_64nuxtjs_47strapi_47dist_47runtime_47strapi_46plugin,
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47plugins_47faker_46ts
 ];
+vue_cjs_prod.ref([]);
 const useParams = () => {
   return {
     language: "en",
     ...useRoute().params
   };
 };
-vue_cjs_prod.ref([]);
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -61433,14 +61433,14 @@ const _sfc_main = {
       serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent("wcao"), _attrs, {
         default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<div id="beauty-template" class="w-full"${_scopeId}>`);
+            _push2(`<div id="beauty-template" class="w-full flex justify-center items-center"${_scopeId}>`);
             serverRenderer.exports.ssrRenderVNode(_push2, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement)), null, null), _parent2, _scopeId);
             _push2(`</div>`);
           } else {
             return [
               vue_cjs_prod.createVNode("div", {
                 id: "beauty-template",
-                class: "w-full"
+                class: "w-full flex justify-center items-center"
               }, [
                 (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement))))
               ])

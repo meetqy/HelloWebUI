@@ -1,6 +1,6 @@
 const client_manifest = {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-1c1bed6f.mjs",
+    "file": "entry-da57a1d8.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -26,11 +26,11 @@ const client_manifest = {
       "pages/[type]/[num].vue"
     ],
     "css": [
-      "entry.62a0a386.css"
+      "entry.d5c5e0a1.css"
     ]
   },
   "components/blog/1.vue": {
-    "file": "1-bbbaf482.mjs",
+    "file": "1-b614e0ec.mjs",
     "src": "components/blog/1.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -38,7 +38,7 @@ const client_manifest = {
     ]
   },
   "components/card/1.vue": {
-    "file": "1-f5004e06.mjs",
+    "file": "1-f51680cf.mjs",
     "src": "components/card/1.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -46,7 +46,7 @@ const client_manifest = {
     ]
   },
   "components/card/10.vue": {
-    "file": "10-14b3adf2.mjs",
+    "file": "10-976fe4ec.mjs",
     "src": "components/card/10.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -54,7 +54,7 @@ const client_manifest = {
     ]
   },
   "components/card/11.vue": {
-    "file": "11-e5deb92a.mjs",
+    "file": "11-8bd6c14a.mjs",
     "src": "components/card/11.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -62,7 +62,7 @@ const client_manifest = {
     ]
   },
   "components/card/12.vue": {
-    "file": "12-d65a1a4e.mjs",
+    "file": "12-65866676.mjs",
     "src": "components/card/12.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -70,7 +70,7 @@ const client_manifest = {
     ]
   },
   "components/card/13.vue": {
-    "file": "13-023aa61f.mjs",
+    "file": "13-2bb73678.mjs",
     "src": "components/card/13.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -78,7 +78,7 @@ const client_manifest = {
     ]
   },
   "components/card/14.vue": {
-    "file": "14-6fb7f2f5.mjs",
+    "file": "14-fb0cab61.mjs",
     "src": "components/card/14.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -86,7 +86,7 @@ const client_manifest = {
     ]
   },
   "components/card/15.vue": {
-    "file": "15-d8fc120a.mjs",
+    "file": "15-2c5aebe1.mjs",
     "src": "components/card/15.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -94,7 +94,7 @@ const client_manifest = {
     ]
   },
   "components/card/16.vue": {
-    "file": "16-3f63f23f.mjs",
+    "file": "16-3bf2e68b.mjs",
     "src": "components/card/16.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -102,7 +102,7 @@ const client_manifest = {
     ]
   },
   "components/card/17.vue": {
-    "file": "17-befd9781.mjs",
+    "file": "17-0408ed51.mjs",
     "src": "components/card/17.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -110,7 +110,7 @@ const client_manifest = {
     ]
   },
   "components/card/2.vue": {
-    "file": "2-88492380.mjs",
+    "file": "2-7be9e441.mjs",
     "src": "components/card/2.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -118,7 +118,7 @@ const client_manifest = {
     ]
   },
   "components/card/3.vue": {
-    "file": "3-7ba6f076.mjs",
+    "file": "3-ce7856b2.mjs",
     "src": "components/card/3.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -126,7 +126,7 @@ const client_manifest = {
     ]
   },
   "components/card/4.vue": {
-    "file": "4-20f3fef4.mjs",
+    "file": "4-0e869cf0.mjs",
     "src": "components/card/4.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -134,7 +134,7 @@ const client_manifest = {
     ]
   },
   "components/card/5.vue": {
-    "file": "5-1af74452.mjs",
+    "file": "5-88e14dbc.mjs",
     "src": "components/card/5.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -142,7 +142,7 @@ const client_manifest = {
     ]
   },
   "components/card/6.vue": {
-    "file": "6-7c76b9c4.mjs",
+    "file": "6-f38ef484.mjs",
     "src": "components/card/6.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -150,7 +150,7 @@ const client_manifest = {
     ]
   },
   "components/card/7.vue": {
-    "file": "7-2956cfe7.mjs",
+    "file": "7-e39cd049.mjs",
     "src": "components/card/7.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -158,7 +158,7 @@ const client_manifest = {
     ]
   },
   "components/card/8.vue": {
-    "file": "8-dbe5854b.mjs",
+    "file": "8-1ee9e574.mjs",
     "src": "components/card/8.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -166,7 +166,7 @@ const client_manifest = {
     ]
   },
   "components/card/9.vue": {
-    "file": "9-a05bc2a0.mjs",
+    "file": "9-7c74090d.mjs",
     "src": "components/card/9.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -174,19 +174,27 @@ const client_manifest = {
     ]
   },
   "pages/[language]/[type]/[num].vue": {
-    "file": "_num_-ae5428fa.mjs",
+    "file": "_num_-d21f14c8.mjs",
     "src": "pages/[language]/[type]/[num].vue",
     "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs",
+      "_index-4f1661b9.mjs"
+    ]
+  },
+  "_index-4f1661b9.mjs": {
+    "file": "index-4f1661b9.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/[type]/[num].vue": {
-    "file": "_num_-75779924.mjs",
+    "file": "_num_-78910555.mjs",
     "src": "pages/[type]/[num].vue",
     "isDynamicEntry": true,
     "imports": [
-      "node_modules/nuxt/dist/app/entry.mjs"
+      "node_modules/nuxt/dist/app/entry.mjs",
+      "_index-4f1661b9.mjs"
     ]
   }
 };

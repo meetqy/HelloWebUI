@@ -60673,6 +60673,12 @@ const _plugins = [
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47node_modules_47_64nuxtjs_47strapi_47dist_47runtime_47strapi_46plugin,
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47plugins_47faker_46ts
 ];
+const useParams = () => {
+  return {
+    language: "en",
+    ...useRoute().params
+  };
+};
 vue_cjs_prod.ref([]);
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -61118,7 +61124,7 @@ const _sfc_main$5 = {
   __name: "6",
   __ssrInlineRender: true,
   setup(__props) {
-    const { language = "zh_CN" } = useRoute().params;
+    const { language } = useParams();
     const locales2 = {
       en: [
         "Sign in to our platform",
@@ -61180,7 +61186,7 @@ const _sfc_main$4 = {
   __name: "7",
   __ssrInlineRender: true,
   setup(__props) {
-    const { language } = useRoute().params;
+    const { language } = useParams();
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-md bg-base-100 rounded-lg shadow-md" }, _attrs))}><a href="#" class="flex justify-center"><img class="rounded-t-lg w-full" src="https://wcao.cc/r/a/iwatch" alt="product image"></a><div class="px-5 pb-5 mt-8"><a href="#"><h5 class="text-xl font-semibold tracking-tight text-base-content text-opacity-90"> Apple Watch Series 7 GPS ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h5></a><div class="flex items-center mt-2.5 mb-5"><div class="rating"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning" checked><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"><input type="radio" name="rating-2" class="mask mask-star-2 bg-warning"></div><span class="badge badge-info ml-3"> 2.0 </span></div><div class="flex justify-between items-center"><span class="text-3xl font-bold text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(language) === "zh_CN" ? "\uFFE5" : "$")}${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.price())}</span><a href="#" class="btn btn-primary capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
     };
@@ -61200,7 +61206,7 @@ const _sfc_main$3 = {
   __name: "8",
   __ssrInlineRender: true,
   setup(__props) {
-    const { language = "zh_CN" } = useRoute().params;
+    const { language } = useParams();
     const locales2 = {
       en: [
         "Work fast from anywhere",
@@ -61274,7 +61280,7 @@ const _sfc_main$1 = {
     useClipboard();
     vue_cjs_prod.ref();
     const route = useRoute();
-    const { language = "zh_CN", type, num } = route.params;
+    const { language = "en", type, num } = route.params;
     const currentElement = vue_cjs_prod.resolveComponent(type + num);
     const setHead = (route2) => {
       useHead({
@@ -61421,13 +61427,28 @@ const _sfc_main = {
     });
     const { num, type } = route.params;
     const { dark = false } = route.query;
-    console.log(dark);
     htmlMode.value = dark ? "dark" : "light";
     const currentElement = vue_cjs_prod.resolveComponent(type + num);
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ id: "beauty-template" }, _attrs))}>`);
-      serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement)), null, null), _parent);
-      _push(`</div>`);
+      serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent("wcao"), _attrs, {
+        default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(`<div id="beauty-template" class="w-full"${_scopeId}>`);
+            serverRenderer.exports.ssrRenderVNode(_push2, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement)), null, null), _parent2, _scopeId);
+            _push2(`</div>`);
+          } else {
+            return [
+              vue_cjs_prod.createVNode("div", {
+                id: "beauty-template",
+                class: "w-full"
+              }, [
+                (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement))))
+              ])
+            ];
+          }
+        }),
+        _: 1
+      }), _parent);
     };
   }
 };

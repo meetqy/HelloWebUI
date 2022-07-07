@@ -1,3 +1,10 @@
+export const useParams = () => {
+  return {
+    language: "en",
+    ...useRoute().params,
+  };
+};
+
 export const allLanguage = [
   {
     icon: "🇨🇳",

@@ -95,7 +95,7 @@ const { copy } = useClipboard();
 
 const templateWrapper = ref();
 const route = useRoute();
-const { language = "zh_CN", type, num } = route.params;
+const { language = "en", type, num } = route.params;
 
 const currentElement = resolveComponent(type + num);
 

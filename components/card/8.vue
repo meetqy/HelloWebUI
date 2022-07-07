@@ -62,7 +62,7 @@
 </template>
 
 <script setup>
-const { language = "zh_CN" } = useRoute().params;
+const { language } = useParams();
 
 const locales = {
   en: [

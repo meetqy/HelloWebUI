@@ -59,5 +59,5 @@
 </template>
 
 <script setup>
-const { language } = useRoute().params;
+const { language } = useParams();
 </script>

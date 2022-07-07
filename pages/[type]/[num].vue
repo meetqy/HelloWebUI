@@ -1,7 +1,9 @@
 <template>
-  <div id="beauty-template">
-    <component :is="currentElement"></component>
-  </div>
+  <component is="wcao">
+    <div id="beauty-template" class="w-full">
+      <component :is="currentElement"></component>
+    </div>
+  </component>
 </template>
 
 <script setup>
@@ -14,7 +16,6 @@ const htmlMode = useColorMode({
 
 const { num, type } = route.params;
 const { dark = false } = route.query;
-console.log(dark);
 
 htmlMode.value = dark ? "dark" : "light";
 

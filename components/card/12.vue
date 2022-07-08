@@ -15,30 +15,33 @@
             <div class="p-3 text-center">
               <span
                 class="text-xl font-bold block uppercase tracking-wide text-base-content text-opacity-70"
-                >3,360</span
               >
-              <span class="text-sm text-base-content text-opacity-40"
-                >Photos</span
-              >
+                {{ $faker.random.numeric(3) }}
+              </span>
+              <span class="text-sm text-base-content text-opacity-40">
+                {{ locales[language][0] }}
+              </span>
             </div>
             <div class="p-3 text-center">
               <span
                 class="text-xl font-bold block uppercase tracking-wide text-base-content text-opacity-70"
-                >2,454</span
               >
-              <span class="text-sm text-base-content text-opacity-40"
-                >Followers</span
-              >
+                {{ $faker.random.numeric(3) }}
+              </span>
+              <span class="text-sm text-base-content text-opacity-40">
+                {{ locales[language][1] }}
+              </span>
             </div>
 
             <div class="p-3 text-center">
               <span
                 class="text-xl font-bold block uppercase tracking-wide text-base-content text-opacity-70"
-                >564</span
               >
-              <span class="text-sm text-base-content text-opacity-40"
-                >Following</span
-              >
+                {{ $faker.random.numeric(2) }}
+              </span>
+              <span class="text-sm text-base-content text-opacity-40">
+                {{ locales[language][2] }}
+              </span>
             </div>
           </div>
         </div>
@@ -47,15 +50,16 @@
         <h3
           class="text-2xl text-base-content text-opacity-70 font-bold leading-normal mb-1"
         >
-          Mike Thompson
+          {{ $faker.name.findName() }}
         </h3>
         <div
           class="text-xs mt-0 mb-2 text-base-content text-opacity-40 font-bold uppercase"
         >
           <i
             class="fas fa-map-marker-alt mr-2 text-base-content text-opacity-40 opacity-75"
-          ></i
-          >Paris, France
+          >
+          </i>
+          {{ $faker.word.adverb() }},{{ $faker.word.verb() }}
         </div>
       </div>
       <div
@@ -66,18 +70,23 @@
             <p
               class="font-light leading-relaxed text-base-content text-opacity-60 mb-4"
             >
-              An artist of considerable range, Mike is the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy writes, performs and
-              records all of his own music, giving it a warm.
+              {{ $faker.commerce.productDescription() }}
             </p>
-            <a
-              href="javascript:;"
-              class="font-normal text-base-content text-opacity-70 hover:text-base-content hover:text-opacity-40"
-              >Follow Account</a
-            >
+            <a href="javascript:;" class="btn">{{ locales[language][3] }}</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+const { language } = useParams();
+
+const locales = {
+  en: ["Photos", "Followers", "Following", "follow account"],
+  zh_CN: ["相册", "关注我的", "我关注的", "关注我"],
+  ja: ["写真", "フォロワー", "フォロー", "アカウントをフォロー"],
+  ko: ["사진", "팔로워", "팔로잉", "계정 팔로우"],
+};
+</script>

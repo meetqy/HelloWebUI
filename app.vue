@@ -1,5 +1,7 @@
 <template>
-  <nuxt-page />
+  <div id="beauty-template">
+    <nuxt-page />
+  </div>
 </template>
 <style lang="postcss">
 .scrollbar {

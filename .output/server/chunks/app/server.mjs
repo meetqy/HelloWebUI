@@ -61404,7 +61404,11 @@ const _sfc_main$j = {
   __ssrInlineRender: true,
   props: {
     lang: Boolean,
-    daisyui: Boolean
+    daisyui: Boolean,
+    middle: {
+      type: Boolean,
+      default: true
+    }
   },
   setup(__props) {
     const props = __props;
@@ -61544,7 +61548,7 @@ const _sfc_main$j = {
           }, _parent));
           _push(`</li>`);
         });
-        _push(`<!--]--></ul></div></div><div id="template-wrapper" class="w-full flex justify-center">`);
+        _push(`<!--]--></ul></div></div><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{ "items-center h-full -mt-12": props.middle }, "w-full flex justify-center"])}">`);
         serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
         serverRenderer.exports.ssrRenderList(themes, (item) => {
@@ -61573,7 +61577,7 @@ const _sfc_main$i = {};
 function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
   const _component_Blog1 = __nuxt_component_1$e;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, _attrs, {
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(serverRenderer.exports.ssrRenderComponent(_component_Blog1, null, null, _parent2, _scopeId));
@@ -61601,7 +61605,7 @@ const _sfc_main$h = {};
 function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
   const _component_Blog2 = __nuxt_component_1$d;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, _attrs, {
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(serverRenderer.exports.ssrRenderComponent(_component_Blog2, null, null, _parent2, _scopeId));

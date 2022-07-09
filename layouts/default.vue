@@ -61,7 +61,11 @@
         </div>
       </div>
 
-      <div id="template-wrapper" class="w-full flex justify-center">
+      <div
+        id="template-wrapper"
+        class="w-full flex justify-center"
+        :class="{ 'items-center h-full -mt-12': props.middle }"
+      >
         <slot></slot>
       </div>
     </div>
@@ -104,6 +108,10 @@
 const props = defineProps({
   lang: Boolean,
   daisyui: Boolean,
+  middle: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 const { $faker } = useNuxtApp();

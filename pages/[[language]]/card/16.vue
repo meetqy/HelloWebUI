@@ -1,5 +1,5 @@
 <template>
-    <nuxt-layout>
+    <nuxt-layout daisyui>
       <Card16 />
     </nuxt-layout>
   </template>

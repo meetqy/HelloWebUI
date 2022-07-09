@@ -1,8 +1,10 @@
 export const useParams = () => {
-  return {
-    language: "en",
-    ...useRoute().params,
-  };
+  const params = useRoute().params;
+  if (!params.language) {
+    params.language = "en";
+  }
+
+  return params;
 };
 
 export const allLanguage = [

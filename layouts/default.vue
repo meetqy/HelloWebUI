@@ -1,10 +1,25 @@
 <template>
-  <div class="drawer drawer-mobile">
+  <div class="drawer drawer-mobile" v-if="!full">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content bg-base-200 relative pt-12 min-h-screen">
       <div
         class="h-12 w-full bg-base-100 shadow-md fixed left-0 top-0 flex justify-end px-4 items-center"
       >
+        <button
+          class="btn btn-ghost btn-sm hover:bg-transparent font-light mr-2"
+          v-if="!props.lang || !props.daisyui"
+        >
+          完善中...
+        </button>
+
+        <div
+          class="btn btn-ghost hover:bg-transparent btn-sm"
+          v-if="props.daisyui"
+        >
+          <span class="lowercase text-primary">daisy</span>
+          <span class="!text-base-content uppercase">UI</span>
+        </div>
+
         <button class="btn btn-sm btn-ghost mr-2" @click="onCopy">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +36,7 @@
             />
           </svg>
         </button>
+
         <div class="dropdown dropdown-end">
           <label tabindex="0" class="btn btn-sm m-1 capitalize">language</label>
           <ul
@@ -45,11 +61,7 @@
         </div>
       </div>
 
-      <div
-        id="template-wrapper"
-        class="w-full flex justify-center"
-        ref="templateWrapper"
-      >
+      <div id="template-wrapper" class="w-full flex justify-center">
         <slot></slot>
       </div>
     </div>
@@ -83,6 +95,9 @@
       </ul>
     </div>
   </div>
+  <div class="flex justify-center" v-else>
+    <slot></slot>
+  </div>
 </template>
 
 <script setup>
@@ -91,18 +106,19 @@ const props = defineProps({
   daisyui: Boolean,
 });
 
-const url = computed(() => useRoute().path.split("/").slice(2, 4).join("/"));
-
 const { $faker } = useNuxtApp();
 
-const { copy } = useClipboard();
-
-const templateWrapper = ref();
 const route = useRoute();
+const { full } = route.query;
 let { language } = route.params;
 if (!language) {
   language = "en";
 }
+
+const url = computed(() => {
+  const arr = route.path.split("/");
+  return arr.slice(arr.length === 4 ? 2 : 1).join("/");
+});
 
 const setHead = (route) => {
   useHead({
@@ -144,8 +160,9 @@ const setCurLang = (language) => {
   curLang.value = langs.filter((item) => item.text === language)[0];
 };
 
+const { copy } = useClipboard();
 const onCopy = async () => {
-  const el = templateWrapper.value;
+  const el = document.getElementById("template-wrapper");
 
   await copy(createHtml(el.innerHTML));
   alert("复制成功，只需要粘贴到任意一个html文件中，即可完美复刻！");

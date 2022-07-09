@@ -1,10 +1,10 @@
 const fs = require("fs");
 
-for (let i = 1; i <= 17; i++) {
+for (let i = 9; i <= 17; i++) {
   fs.writeFileSync(
     `${i}.vue`,
     `<template>
-    <nuxt-layout>
+    <nuxt-layout daisyui>
       <Card${i} />
     </nuxt-layout>
   </template>

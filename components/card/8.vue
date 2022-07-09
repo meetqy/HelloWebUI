@@ -8,9 +8,7 @@
     <p class="mb-5 text-base text-base-content text-opacity-50 sm:text-lg">
       {{ locales[language][1] }}
     </p>
-    <div
-      class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4"
-    >
+    <div class="justify-between items-center pt-4 flex w-full lg:px-14">
       <a href="#" class="btn capitalize btn-primary">
         <svg
           class="mr-3 w-7 h-7"

@@ -28,7 +28,7 @@
       <h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">
         {{ $faker.name.findName() }}
       </h5>
-      <span class="text-sm text-base-content text-opacity-50">
+      <span class="text-sm text-base-content text-opacity-50 text-center">
         {{ $faker.name.jobTitle() }}
       </span>
       <div class="flex mt-4 space-x-3 lg:mt-6">

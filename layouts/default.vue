@@ -1,11 +1,9 @@
 <template>
   <div class="drawer drawer-mobile">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-    <div
-      class="drawer-content bg-base-200 flex flex-col items-center justify-center relative"
-    >
+    <div class="drawer-content bg-base-200 relative pt-12 min-h-screen">
       <div
-        class="h-12 w-full bg-base-100 shadow-md absolute left-0 top-0 flex justify-end px-4 items-center"
+        class="h-12 w-full bg-base-100 shadow-md fixed left-0 top-0 flex justify-end px-4 items-center"
       >
         <button class="btn btn-sm btn-ghost mr-2" @click="onCopy">
           <svg
@@ -49,12 +47,13 @@
 
       <div
         id="template-wrapper"
-        class="w-full flex justify-center items-center"
+        class="w-full flex justify-center"
         ref="templateWrapper"
       >
         <slot></slot>
       </div>
     </div>
+
     <div class="drawer-side">
       <label for="my-drawer-2" class="drawer-overlay"></label>
       <ul

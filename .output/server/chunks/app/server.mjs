@@ -3168,62 +3168,7 @@ const preload = defineNuxtPlugin((nuxtApp) => {
     }
   });
 });
-const components = {
-  Blog1: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _1$5;
-  }).then((c) => c.default || c)),
-  Card1: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _1$4;
-  }).then((c) => c.default || c)),
-  Card10: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _10$2;
-  }).then((c) => c.default || c)),
-  Card11: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _11$2;
-  }).then((c) => c.default || c)),
-  Card12: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _12$2;
-  }).then((c) => c.default || c)),
-  Card13: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _13$2;
-  }).then((c) => c.default || c)),
-  Card14: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _14$2;
-  }).then((c) => c.default || c)),
-  Card15: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _15$2;
-  }).then((c) => c.default || c)),
-  Card16: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _16$2;
-  }).then((c) => c.default || c)),
-  Card17: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _17$2;
-  }).then((c) => c.default || c)),
-  Card2: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _2$2;
-  }).then((c) => c.default || c)),
-  Card3: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _3$2;
-  }).then((c) => c.default || c)),
-  Card4: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _4$2;
-  }).then((c) => c.default || c)),
-  Card5: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _5$2;
-  }).then((c) => c.default || c)),
-  Card6: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _6$2;
-  }).then((c) => c.default || c)),
-  Card7: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _7$2;
-  }).then((c) => c.default || c)),
-  Card8: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _8$2;
-  }).then((c) => c.default || c)),
-  Card9: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _9$2;
-  }).then((c) => c.default || c))
-};
+const components = {};
 function _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47_46nuxt_47components_46plugin_46mjs(nuxtApp) {
   for (const name2 in components) {
     nuxtApp.vueApp.component(name2, components[name2]);
@@ -3922,14 +3867,10 @@ _sfc_main$H.setup = (props, ctx) => {
   return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
 };
 const __nuxt_component_1$d = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["ssrRender", _sfc_ssrRender$w]]);
-const _1$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$d
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$i = void 0;
 const _sfc_main$G = {};
 function _sfc_ssrRender$v(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><div class="flex justify-end px-4 pt-4"><button id="dropdownButton" data-dropdown-toggle="dropdown" class="btn btn-ghost" type="button"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div><div class="flex flex-col items-center pb-10 px-24"><img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://wcao.cc/image-space/api/avatar" alt="Bonnie image"><h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h5><span class="text-sm text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobTitle())}</span><div class="flex mt-4 space-x-3 lg:mt-6"><a href="#" class="btn btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><a href="#" class="btn btn-outline btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><div class="flex justify-end px-4 pt-4"><button id="dropdownButton" data-dropdown-toggle="dropdown" class="btn btn-ghost" type="button"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div><div class="flex flex-col items-center pb-10 px-24"><img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://wcao.cc/image-space/api/avatar" alt="Bonnie image"><h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h5><span class="text-sm text-base-content text-opacity-50 text-center">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobTitle())}</span><div class="flex mt-4 space-x-3 lg:mt-6"><a href="#" class="btn btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><a href="#" class="btn btn-outline btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
 }
 const _sfc_setup$G = _sfc_main$G.setup;
 _sfc_main$G.setup = (props, ctx) => {
@@ -3938,10 +3879,6 @@ _sfc_main$G.setup = (props, ctx) => {
   return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
 };
 const __nuxt_component_1$c = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["ssrRender", _sfc_ssrRender$v]]);
-const _1$4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$c
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$h = void 0;
 const _sfc_main$F = {};
 function _sfc_ssrRender$u(_ctx, _push, _parent, _attrs) {
@@ -3954,10 +3891,6 @@ _sfc_main$F.setup = (props, ctx) => {
   return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
 const __nuxt_component_1$b = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["ssrRender", _sfc_ssrRender$u]]);
-const _10$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$b
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$g = void 0;
 const _sfc_main$E = {};
 function _sfc_ssrRender$t(_ctx, _push, _parent, _attrs) {
@@ -3970,10 +3903,6 @@ _sfc_main$E.setup = (props, ctx) => {
   return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
 const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["ssrRender", _sfc_ssrRender$t]]);
-const _11$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$a
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$f = void 0;
 const useParams = () => {
   return {
@@ -4003,10 +3932,6 @@ _sfc_main$D.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/12.vue");
   return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const _12$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _sfc_main$D
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$e = void 0;
 const _sfc_main$C = {};
 function _sfc_ssrRender$s(_ctx, _push, _parent, _attrs) {
@@ -4019,10 +3944,6 @@ _sfc_main$C.setup = (props, ctx) => {
   return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
 const __nuxt_component_1$9 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["ssrRender", _sfc_ssrRender$s]]);
-const _13$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$9
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$d = void 0;
 const _sfc_main$B = {};
 function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs) {
@@ -4035,10 +3956,6 @@ _sfc_main$B.setup = (props, ctx) => {
   return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
 const __nuxt_component_1$8 = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender$r]]);
-const _14$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$8
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$c = void 0;
 const _sfc_main$A = {};
 function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs) {
@@ -4051,10 +3968,6 @@ _sfc_main$A.setup = (props, ctx) => {
   return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
 const __nuxt_component_1$7 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$q]]);
-const _15$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$7
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$b = void 0;
 const _sfc_main$z = {};
 function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
@@ -4067,10 +3980,6 @@ _sfc_main$z.setup = (props, ctx) => {
   return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
 const __nuxt_component_1$6 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$p]]);
-const _16$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$6
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$a = void 0;
 const _sfc_main$y = {};
 function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
@@ -4083,10 +3992,6 @@ _sfc_main$y.setup = (props, ctx) => {
   return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
 const __nuxt_component_1$5 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$o]]);
-const _17$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$5
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$9 = void 0;
 const _sfc_main$x = {};
 function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
@@ -4099,10 +4004,6 @@ _sfc_main$x.setup = (props, ctx) => {
   return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
 const __nuxt_component_1$4 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$n]]);
-const _2$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$4
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$8 = void 0;
 const _sfc_main$w = {};
 function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
@@ -4115,10 +4016,6 @@ _sfc_main$w.setup = (props, ctx) => {
   return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
 const __nuxt_component_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$m]]);
-const _3$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$3
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$7 = void 0;
 const _sfc_main$v = {};
 function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
@@ -4131,10 +4028,6 @@ _sfc_main$v.setup = (props, ctx) => {
   return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
 };
 const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["ssrRender", _sfc_ssrRender$l]]);
-const _4$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$2
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$6 = void 0;
 const _sfc_main$u = {};
 function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
@@ -4150,10 +4043,6 @@ _sfc_main$u.setup = (props, ctx) => {
   return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
 const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["ssrRender", _sfc_ssrRender$k]]);
-const _5$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1$1
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$5 = void 0;
 const _sfc_main$t = {
   __name: "6",
@@ -4213,10 +4102,6 @@ _sfc_main$t.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/6.vue");
   return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
-const _6$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _sfc_main$t
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$4 = void 0;
 const _sfc_main$s = {
   __name: "7",
@@ -4234,10 +4119,6 @@ _sfc_main$s.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/7.vue");
   return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-const _7$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _sfc_main$s
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$3 = void 0;
 const _sfc_main$r = {
   __name: "8",
@@ -4279,7 +4160,7 @@ const _sfc_main$r = {
       ]
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full text-center bg-base-100 rounded-lg border shadow-md sm:p-8 max-w-xl" }, _attrs))}><h5 class="mb-2 text-3xl font-bold text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</h5><p class="mb-5 text-base text-base-content text-opacity-50 sm:text-lg">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][1])}</p><div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4"><a href="#" class="btn capitalize btn-primary"><svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg><div class="text-left"><div class="mb-1 text-xs">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][2])}</div><div class="-mt-1 font-sans text-sm font-semibold">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][3])}</div></div></a><a href="#" class="btn capitalize btn-primary"><svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg><div class="text-left"><div class="mb-1 text-xs">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][4])}</div><div class="-mt-1 font-sans text-sm font-semibold">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][5])}</div></div></a></div></div>`);
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full text-center bg-base-100 rounded-lg border shadow-md sm:p-8 max-w-xl" }, _attrs))}><h5 class="mb-2 text-3xl font-bold text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</h5><p class="mb-5 text-base text-base-content text-opacity-50 sm:text-lg">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][1])}</p><div class="justify-between items-center pt-4 flex w-full lg:px-14"><a href="#" class="btn capitalize btn-primary"><svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg><div class="text-left"><div class="mb-1 text-xs">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][2])}</div><div class="-mt-1 font-sans text-sm font-semibold">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][3])}</div></div></a><a href="#" class="btn capitalize btn-primary"><svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg><div class="text-left"><div class="mb-1 text-xs">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][4])}</div><div class="-mt-1 font-sans text-sm font-semibold">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][5])}</div></div></a></div></div>`);
     };
   }
 };
@@ -4289,10 +4170,6 @@ _sfc_main$r.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/8.vue");
   return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
-const _8$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _sfc_main$r
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$2 = void 0;
 const _sfc_main$q = {};
 function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
@@ -4305,10 +4182,6 @@ _sfc_main$q.setup = (props, ctx) => {
   return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
 };
 const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$j]]);
-const _9$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": __nuxt_component_1
-}, Symbol.toStringTag, { value: "Module" }));
 const meta$1 = void 0;
 function tryOnScopeDispose(fn) {
   if (vue_cjs_prod.getCurrentScope()) {
@@ -61608,7 +61481,7 @@ const _sfc_main$j = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_nuxt_link = __nuxt_component_0$1;
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "drawer drawer-mobile" }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content bg-base-200 flex flex-col items-center justify-center relative"><div class="h-12 w-full bg-base-100 shadow-md absolute left-0 top-0 flex justify-end px-4 items-center"><button class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg></button><div class="dropdown dropdown-end"><label tabindex="0" class="btn btn-sm m-1 capitalize">language</label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "drawer drawer-mobile" }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content bg-base-200 relative pt-12 min-h-screen"><div class="h-12 w-full bg-base-100 shadow-md fixed left-0 top-0 flex justify-end px-4 items-center"><button class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg></button><div class="dropdown dropdown-end"><label tabindex="0" class="btn btn-sm m-1 capitalize">language</label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
       serverRenderer.exports.ssrRenderList(langs, (item) => {
         _push(`<li class="flex">`);
         _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {
@@ -61632,7 +61505,7 @@ const _sfc_main$j = {
         }, _parent));
         _push(`</li>`);
       });
-      _push(`<!--]--></ul></div></div><div id="template-wrapper" class="w-full flex justify-center items-center">`);
+      _push(`<!--]--></ul></div></div><div id="template-wrapper" class="w-full flex justify-center">`);
       serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
       _push(`</div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
       serverRenderer.exports.ssrRenderList(themes, (item) => {

@@ -16,8 +16,4 @@ export default defineNuxtConfig({
   strapi: {
     url: "https://strapi.wcao.cc",
   },
-  components: {
-    global: true,
-    dirs: ["~/components"],
-  },
 });

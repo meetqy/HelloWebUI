@@ -62161,27 +62161,25 @@ const _sfc_main = {
   __ssrInlineRender: true,
   setup(__props) {
     const route = useRoute();
+    const { num, type } = route.params;
+    const { mode } = route.query;
+    const currentElement = vue_cjs_prod.resolveComponent(type + num);
     const htmlMode = useColorMode({
       selector: "#beauty-template",
       attribute: "data-theme"
     });
-    const { num, type } = route.params;
-    const { dark = false } = route.query;
-    htmlMode.value = dark ? "dark" : "light";
-    const currentElement = vue_cjs_prod.resolveComponent(type + num);
+    htmlMode.value = mode;
+    console.log(htmlMode.value);
     return (_ctx, _push, _parent, _attrs) => {
       serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent("wcao"), _attrs, {
         default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<div id="beauty-template" class="w-full flex justify-center items-center"${_scopeId}>`);
+            _push2(`<div class="w-full flex justify-center items-center"${_scopeId}>`);
             serverRenderer.exports.ssrRenderVNode(_push2, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement)), null, null), _parent2, _scopeId);
             _push2(`</div>`);
           } else {
             return [
-              vue_cjs_prod.createVNode("div", {
-                id: "beauty-template",
-                class: "w-full flex justify-center items-center"
-              }, [
+              vue_cjs_prod.createVNode("div", { class: "w-full flex justify-center items-center" }, [
                 (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.resolveDynamicComponent(vue_cjs_prod.unref(currentElement))))
               ])
             ];

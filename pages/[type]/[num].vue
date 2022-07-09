@@ -1,6 +1,6 @@
 <template>
   <component is="wcao">
-    <div id="beauty-template" class="w-full flex justify-center items-center">
+    <div class="w-full flex justify-center items-center">
       <component :is="currentElement"></component>
     </div>
   </component>
@@ -9,15 +9,17 @@
 <script setup>
 const route = useRoute();
 
+const { num, type } = route.params;
+const { mode } = route.query;
+
+const currentElement = resolveComponent(type + num);
+
 const htmlMode = useColorMode({
   selector: "#beauty-template",
   attribute: "data-theme",
 });
 
-const { num, type } = route.params;
-const { dark = false } = route.query;
+htmlMode.value = mode;
 
-htmlMode.value = dark ? "dark" : "light";
-
-const currentElement = resolveComponent(type + num);
+console.log(htmlMode.value);
 </script>

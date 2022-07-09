@@ -86,6 +86,11 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  lang: Boolean,
+  daisyui: Boolean,
+});
+
 const url = computed(() => useRoute().path.split("/").slice(2, 4).join("/"));
 
 const { $faker } = useNuxtApp();
@@ -94,7 +99,10 @@ const { copy } = useClipboard();
 
 const templateWrapper = ref();
 const route = useRoute();
-const { language = "en" } = route.params;
+let { language } = route.params;
+if (!language) {
+  language = "en";
+}
 
 const setHead = (route) => {
   useHead({
@@ -148,6 +156,7 @@ const setLocale = (language) => {
   if (arr[1]) {
     arr[1] = arr[1].toLocaleUpperCase();
   }
+
   $faker.setLocale(arr.join("_"));
 };
 
@@ -156,8 +165,9 @@ setCurLang(language);
 setHead(route);
 
 watch(route, (val) => {
-  setLocale(val.params.language);
-  setCurLang(val.params.language);
+  const la = val.params.language || "en";
+  setLocale(la);
+  setCurLang(la);
   setHead(val);
 });
 

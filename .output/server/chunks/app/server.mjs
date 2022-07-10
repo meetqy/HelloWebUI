@@ -1,6 +1,7 @@
 import { v as vue_cjs_prod, s as serverRenderer, r as require$$0 } from '../handlers/renderer.mjs';
 import { hasProtocol, isEqual, withBase, withQuery, joinURL } from 'ufo';
 import { stringify } from 'qs';
+import Mock from 'mockjs';
 import { u as useRuntimeConfig$1 } from '../nitro/node-server.mjs';
 import 'h3';
 import 'unenv/runtime/mock/proxy';
@@ -3849,6 +3850,39 @@ const __nuxt_component_0 = vue_cjs_prod.defineComponent({
     };
   }
 });
+const useParams = () => {
+  const params = useRoute().params;
+  if (!params.language) {
+    params.language = "en";
+  }
+  return params;
+};
+const _sfc_main$I = {
+  __name: "1",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { language } = useParams();
+    const locales2 = {
+      en: ["Load more posts..."],
+      zh_CN: ["\u52A0\u8F7D\u66F4\u591A..."],
+      ja: ["\u3055\u3089\u306B\u6295\u7A3F\u3092\u8AAD\u307F\u8FBC\u3080..."],
+      ko: ["\uB354 \uB9CE\uC740 \uAC8C\uC2DC\uBB3C \uB85C\uB4DC..."]
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-200 text-base-content w-full" }, _attrs))}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"><a href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"><img src="https://wcao.cc/r/a/animal?7" alt="" class="object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"><div class="p-6 space-y-2 lg:col-span-5"><h3 class="text-2xl font-semibold sm:text-4xl">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
+      serverRenderer.exports.ssrRenderList(6, (item) => {
+        _push(`<a href="#" class="max-w-sm mx-auto bg-base-100 shadow overflow-hidden rounded"><img role="presentation" class="object-cover w-full rounded-t h-44 bg-base-300"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item}`)}><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
+      });
+      _push(`<!--]--></div><div class="flex justify-center"><button type="button" class="btn btn-ghost normal-case font-light btn-sm text-base-content/50">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</button></div></div></section>`);
+    };
+  }
+};
+const _sfc_setup$I = _sfc_main$I.setup;
+_sfc_main$I.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/1.vue");
+  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
+};
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -3856,17 +3890,6 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$I = {};
-function _sfc_ssrRender$y(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "dark:bg-gray-800 dark:text-gray-100" }, _attrs))}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"><a rel="noopener noreferrer" href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"><img src="https://source.unsplash.com/random/480x360" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"><div class="p-6 space-y-2 lg:col-span-5"><h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline"> Noster tincidunt reprimique ad pro </h3><span class="text-xs dark:text-gray-400">February 19, 2021</span><p> Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id. </p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?1"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 21, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?2"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 22, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?3"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 23, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?4"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 24, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?5"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 25, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a><a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"><img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?6"><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold group-hover:underline group-focus:underline"> In usu laoreet repudiare legendos </h3><span class="text-xs dark:text-gray-400">January 26, 2021</span><p> Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri. </p></div></a></div><div class="flex justify-center"><button type="button" class="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400"> Load more posts... </button></div></div></section>`);
-}
-const _sfc_setup$I = _sfc_main$I.setup;
-_sfc_main$I.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/1.vue");
-  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
-};
-const __nuxt_component_1$e = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["ssrRender", _sfc_ssrRender$y]]);
 const meta$i = void 0;
 const _sfc_main$H = {};
 function _sfc_ssrRender$x(_ctx, _push, _parent, _attrs) {
@@ -3919,13 +3942,6 @@ _sfc_main$E.setup = (props, ctx) => {
 };
 const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["ssrRender", _sfc_ssrRender$u]]);
 const meta$e = void 0;
-const useParams = () => {
-  const params = useRoute().params;
-  if (!params.language) {
-    params.language = "en";
-  }
-  return params;
-};
 const _sfc_main$D = {
   __name: "12",
   __ssrInlineRender: true,
@@ -60715,6 +60731,14 @@ const _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47plugins_47faker
     }
   };
 });
+const _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47plugins_47mock_46ts = defineNuxtPlugin(() => {
+  return {
+    provide: {
+      Mock,
+      Random: Mock.Random
+    }
+  };
+});
 const _plugins = [
   preload,
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47_46nuxt_47components_46plugin_46mjs,
@@ -60722,7 +60746,8 @@ const _plugins = [
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47node_modules_47nuxt_47dist_47head_47runtime_47plugin,
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47node_modules_47nuxt_47dist_47pages_47runtime_47router,
   _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47node_modules_47_64nuxtjs_47strapi_47dist_47runtime_47strapi_46plugin,
-  _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47plugins_47faker_46ts
+  _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47plugins_47faker_46ts,
+  _47Users_47meetqy_47Desktop_47my_45template_47hellowebui_47plugins_47mock_46ts
 ];
 function tryOnScopeDispose(fn) {
   if (vue_cjs_prod.getCurrentScope()) {
@@ -61576,8 +61601,12 @@ const _default = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProp
 const _sfc_main$i = {};
 function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Blog1 = __nuxt_component_1$e;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
+  const _component_Blog1 = _sfc_main$I;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+    middle: false,
+    lang: "",
+    daisyui: ""
+  }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(serverRenderer.exports.ssrRenderComponent(_component_Blog1, null, null, _parent2, _scopeId));

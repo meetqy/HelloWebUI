@@ -1,26 +1,24 @@
 <template>
-  <section class="dark:bg-gray-800 dark:text-gray-100">
+  <section class="bg-base-200 text-base-content w-full">
     <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
       <a
-        rel="noopener noreferrer"
         href="#"
-        class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900"
+        class="block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"
       >
         <img
-          src="https://source.unsplash.com/random/480x360"
+          src="https://wcao.cc/r/a/animal?7"
           alt=""
-          class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
+          class="object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"
         />
         <div class="p-6 space-y-2 lg:col-span-5">
-          <h3
-            class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline"
-          >
-            Noster tincidunt reprimique ad pro
+          <h3 class="text-2xl font-semibold sm:text-4xl">
+            {{ $faker.commerce.productName() }}
           </h3>
-          <span class="text-xs dark:text-gray-400">February 19, 2021</span>
-          <p>
-            Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in
-            graece fuisset, eos affert putent doctus id.
+          <span class="text-xs text-base-content text-opacity-50">{{
+            $Random.datetime("yyyy-MM-dd")
+          }}</span>
+          <p class="text-base-content/70">
+            {{ $faker.commerce.productDescription() }}
           </p>
         </div>
       </a>
@@ -28,152 +26,24 @@
         class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
       >
         <a
-          rel="noopener noreferrer"
+          v-for="item in 6"
           href="#"
-          class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"
+          class="max-w-sm mx-auto bg-base-100 shadow overflow-hidden rounded"
         >
           <img
             role="presentation"
-            class="object-cover w-full rounded h-44 dark:bg-gray-500"
-            src="https://source.unsplash.com/random/480x360?1"
+            class="object-cover w-full rounded-t h-44 bg-base-300"
+            :src="`https://wcao.cc/r/a/animal?${item}`"
           />
           <div class="p-6 space-y-2">
-            <h3
-              class="text-2xl font-semibold group-hover:underline group-focus:underline"
-            >
-              In usu laoreet repudiare legendos
+            <h3 class="text-2xl font-semibold">
+              {{ $faker.commerce.productName() }}
             </h3>
-            <span class="text-xs dark:text-gray-400">January 21, 2021</span>
-            <p>
-              Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-              neglegentur, ex has tantas percipit perfecto. At per tempor
-              albucius perfecto, ei probatus consulatu patrioque mea, ei vocent
-              delicata indoctum pri.
-            </p>
-          </div>
-        </a>
-        <a
-          rel="noopener noreferrer"
-          href="#"
-          class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"
-        >
-          <img
-            role="presentation"
-            class="object-cover w-full rounded h-44 dark:bg-gray-500"
-            src="https://source.unsplash.com/random/480x360?2"
-          />
-          <div class="p-6 space-y-2">
-            <h3
-              class="text-2xl font-semibold group-hover:underline group-focus:underline"
-            >
-              In usu laoreet repudiare legendos
-            </h3>
-            <span class="text-xs dark:text-gray-400">January 22, 2021</span>
-            <p>
-              Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-              neglegentur, ex has tantas percipit perfecto. At per tempor
-              albucius perfecto, ei probatus consulatu patrioque mea, ei vocent
-              delicata indoctum pri.
-            </p>
-          </div>
-        </a>
-        <a
-          rel="noopener noreferrer"
-          href="#"
-          class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900"
-        >
-          <img
-            role="presentation"
-            class="object-cover w-full rounded h-44 dark:bg-gray-500"
-            src="https://source.unsplash.com/random/480x360?3"
-          />
-          <div class="p-6 space-y-2">
-            <h3
-              class="text-2xl font-semibold group-hover:underline group-focus:underline"
-            >
-              In usu laoreet repudiare legendos
-            </h3>
-            <span class="text-xs dark:text-gray-400">January 23, 2021</span>
-            <p>
-              Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-              neglegentur, ex has tantas percipit perfecto. At per tempor
-              albucius perfecto, ei probatus consulatu patrioque mea, ei vocent
-              delicata indoctum pri.
-            </p>
-          </div>
-        </a>
-        <a
-          rel="noopener noreferrer"
-          href="#"
-          class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"
-        >
-          <img
-            role="presentation"
-            class="object-cover w-full rounded h-44 dark:bg-gray-500"
-            src="https://source.unsplash.com/random/480x360?4"
-          />
-          <div class="p-6 space-y-2">
-            <h3
-              class="text-2xl font-semibold group-hover:underline group-focus:underline"
-            >
-              In usu laoreet repudiare legendos
-            </h3>
-            <span class="text-xs dark:text-gray-400">January 24, 2021</span>
-            <p>
-              Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-              neglegentur, ex has tantas percipit perfecto. At per tempor
-              albucius perfecto, ei probatus consulatu patrioque mea, ei vocent
-              delicata indoctum pri.
-            </p>
-          </div>
-        </a>
-        <a
-          rel="noopener noreferrer"
-          href="#"
-          class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"
-        >
-          <img
-            role="presentation"
-            class="object-cover w-full rounded h-44 dark:bg-gray-500"
-            src="https://source.unsplash.com/random/480x360?5"
-          />
-          <div class="p-6 space-y-2">
-            <h3
-              class="text-2xl font-semibold group-hover:underline group-focus:underline"
-            >
-              In usu laoreet repudiare legendos
-            </h3>
-            <span class="text-xs dark:text-gray-400">January 25, 2021</span>
-            <p>
-              Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-              neglegentur, ex has tantas percipit perfecto. At per tempor
-              albucius perfecto, ei probatus consulatu patrioque mea, ei vocent
-              delicata indoctum pri.
-            </p>
-          </div>
-        </a>
-        <a
-          rel="noopener noreferrer"
-          href="#"
-          class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block"
-        >
-          <img
-            role="presentation"
-            class="object-cover w-full rounded h-44 dark:bg-gray-500"
-            src="https://source.unsplash.com/random/480x360?6"
-          />
-          <div class="p-6 space-y-2">
-            <h3
-              class="text-2xl font-semibold group-hover:underline group-focus:underline"
-            >
-              In usu laoreet repudiare legendos
-            </h3>
-            <span class="text-xs dark:text-gray-400">January 26, 2021</span>
-            <p>
-              Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-              neglegentur, ex has tantas percipit perfecto. At per tempor
-              albucius perfecto, ei probatus consulatu patrioque mea, ei vocent
-              delicata indoctum pri.
+            <span class="text-xs text-base-content text-opacity-50">
+              {{ $Random.datetime("yyyy-MM-dd") }}
+            </span>
+            <p class="text-base-content/70">
+              {{ $faker.commerce.productDescription() }}
             </p>
           </div>
         </a>
@@ -181,11 +51,22 @@
       <div class="flex justify-center">
         <button
           type="button"
-          class="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400"
+          class="btn btn-ghost normal-case font-light btn-sm text-base-content/50"
         >
-          Load more posts...
+          {{ locales[language][0] }}
         </button>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+const { language } = useParams();
+
+const locales = {
+  en: ["Load more posts..."],
+  zh_CN: ["加载更多..."],
+  ja: ["さらに投稿を読み込む..."],
+  ko: ["더 많은 게시물 로드..."],
+};
+</script>

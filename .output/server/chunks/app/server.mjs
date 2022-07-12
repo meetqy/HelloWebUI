@@ -3869,7 +3869,7 @@ const _sfc_main$I = {
       ko: ["\uB354 \uB9CE\uC740 \uAC8C\uC2DC\uBB3C \uB85C\uB4DC..."]
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-200 text-base-content w-full" }, _attrs))}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"><a href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"><img src="https://wcao.cc/r/a/animal?7" alt="" class="object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"><div class="p-6 space-y-2 lg:col-span-5"><h3 class="text-2xl font-semibold sm:text-4xl">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
+      _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-200 text-base-content w-full" }, _attrs))}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"><a href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"><img src="https://wcao.cc/r/a/animal?7" alt="" class="object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"><div class="p-6 space-y-2 lg:col-span-5"><h3 class="text-2xl font-semibold sm:text-4xl">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70 overflow-hidden">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
       serverRenderer.exports.ssrRenderList(6, (item) => {
         _push(`<a href="#" class="max-w-sm mx-auto bg-base-100 shadow overflow-hidden rounded"><img role="presentation" class="object-cover w-full rounded-t h-44 bg-base-300"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item}`)}><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
       });
@@ -3891,20 +3891,32 @@ const _export_sfc = (sfc, props) => {
   return target;
 };
 const meta$i = void 0;
-const _sfc_main$H = {};
-function _sfc_ssrRender$x(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
-    id: "blog",
-    class: "bg-gray-100 dark:bg-gray-900 px-4 xl:px-4 py-14"
-  }, _attrs))}><div class="mx-auto container"><span role="contentinfo"><h1 tabindex="0" class="focus:outline-none text-center text-3xl lg:text-5xl tracking-wider text-gray-900 dark:text-white"> Latest from our Blog </h1></span><div tabindex="0" aria-label="Group of cards" class="focus:outline-none mt-12 lg:mt-24"><div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8"><div tabindex="0" class="focus:outline-none" aria-label="card 1"><img role="img" aria-label="code editor" tabindex="0" class="focus:outline-none w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(1).png" alt="code editor"><div class="py-4 px-8 w-full flex justify-between bg-indigo-700"><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> Bruce Wayne </p><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> 13TH Oct, 2020 </p></div><div class="bg-white dark:bg-gray-800 px-10 py-6 rounded-bl-3xl rounded-br-3xl"><h1 tabindex="0" class="focus:outline-none text-4xl text-gray-900 dark:text-white font-semibold tracking-wider"> Transactions </h1><p tabindex="0" class="focus:outline-none text-gray-700 dark:text-gray-200 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 w-11/12"> Find the latest events updates or create events, concerts, conferences, workshops, exhibitions, and cultural events in all cities of the US. The aim of Eventistan is to promote healthy and entertaining event.Find the latest events updates or create events, concerts, conferences, workshops, exhibitions, and cultural events in all cities of the US. The aim of Eventistan is to promote healthy and entertaining event. </p><div class="w-full flex justify-end"><button class="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer"><span class="text-base tracking-wide text-indigo-700">Read more</span><img class="ml-3 lg:ml-6" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/2-column-with-main-and-supporting-svg1.svg" alt="arrow"></button></div><div class="h-5 w-2"></div></div></div><div><div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8"><div tabindex="0" class="focus:outline-none" aria-label="card 2"><img tabindex="0" role="img" aria-label="gaming" class="focus:outline-none w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(2).png" alt="games"><div class="py-2 px-4 w-full flex justify-between bg-indigo-700"><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> Bruce Wayne </p><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> 13TH Oct, 2020 </p></div><div class="bg-white dark:bg-gray-800 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"><h1 tabindex="0" class="focus:outline-none text-lg text-gray-900 dark:text-white font-semibold tracking-wider"> Transactions </h1><p tabindex="0" class="focus:outline-none text-gray-700 dark:text-gray-200 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"> Find the latest events updates or create events, concerts, conferences, workshops... </p></div></div><div tabindex="0" class="focus:outline-none" aria-label="card 3"><img tabindex="0" role="img" aria-label="gaming" class="focus:outline-none w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(3).png" alt="notes"><div class="py-2 px-4 w-full flex justify-between bg-indigo-700"><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> Bruce Wayne </p><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> 13TH Oct, 2020 </p></div><div class="bg-white dark:bg-gray-800 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"><h1 tabindex="0" class="focus:outline-none text-lg text-gray-900 dark:text-white font-semibold tracking-wider"> Transactions </h1><p tabindex="0" class="focus:outline-none text-gray-700 dark:text-gray-200 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"> Find the latest events updates or create events, concerts, conferences, workshops... </p></div></div></div><div class="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8"><div tabindex="0" class="focus:outline-none" aria-label="card 4"><img tabindex="0" role="img" aria-label="laptop" class="focus:outline-none w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(4).png" alt="laptop"><div class="py-2 px-4 w-full flex justify-between bg-indigo-700"><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> Bruce Wayne </p><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> 13TH Oct, 2020 </p></div><div class="bg-white dark:bg-gray-800 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"><h1 tabindex="0" class="focus:outline-none text-lg text-gray-900 dark:text-white font-semibold tracking-wider"> Transactions </h1><p tabindex="0" class="focus:outline-none text-gray-700 dark:text-gray-200 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"> Find the latest events updates or create events, concerts, conferences, workshops... </p></div></div><div tabindex="0" class="focus:outline-none" aria-label="card 5"><img tabindex="0" role="img" aria-label="worker" class="focus:outline-none w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(5).png" alt="worker"><div class="py-2 px-4 w-full flex justify-between bg-indigo-700"><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> Bruce Wayne </p><p tabindex="0" class="focus:outline-none text-sm text-white font-semibold tracking-wide"> 13TH Oct, 2020 </p></div><div class="bg-white dark:bg-gray-800 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"><h1 tabindex="0" class="focus:outline-none text-lg text-gray-900 dark:text-white font-semibold tracking-wider"> Transactions </h1><p tabindex="0" class="focus:outline-none text-gray-700 dark:text-gray-200 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"> Find the latest events updates or create events, concerts, conferences, workshops... </p></div></div></div></div></div></div></div></div>`);
-}
+const _sfc_main$H = {
+  __name: "2",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { language } = useParams();
+    const locales2 = {
+      en: ["Welcome to my Blog."],
+      zh_CN: ["\u6B22\u8FCE\u6765\u5230\u6211\u7684\u535A\u5BA2\u3002"],
+      ja: ["\u79C1\u306E\u30D6\u30ED\u30B0\u3078\u3088\u3046\u3053\u305D\u3002"],
+      ko: ["\uB0B4 \uBE14\uB85C\uADF8\uC5D0 \uC624\uC2E0 \uAC83\uC744 \uD658\uC601\uD569\uB2C8\uB2E4."]
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-200 w-full py-12" }, _attrs))}><div class="mx-auto container prose"><h1 class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</h1><div class="mt-12 lg:mt-24"><div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"><div><img role="img" class="w-full rounded-t-box" src="https://wcao.cc/r/a/animal?1"><div class="py-4 px-8 w-full flex justify-between bg-primary"><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 px-10 py-6 rounded-b-box"><h1 class="text-4xl text-base-content text-opacity-90 font-semibold tracking-wider">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><div class="w-full flex justify-end"><button class="btn capitalize btn-primary btn-sm btn-link mt-10"><span class="text-base tracking-wide font-light mr-2"> Read more </span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></button></div></div></div><div class="grid lg:grid-cols-2 grid-rows-2 gap-8 grid-cols-1"><!--[-->`);
+      serverRenderer.exports.ssrRenderList(4, (item) => {
+        _push(`<div class="rounded-box overflow-hidden bg-base-100 shadow"><img class="w-full max-h-52"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item}`)}><div class="py-2 px-4 w-full flex justify-between bg-primary"><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 px-3 lg:px-6 py-4"><h1 class="text-lg text-base-content text-opacity-90 font-semibold tracking-wider">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content line-clamp-3 text-opacity-70 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}... </p></div></div>`);
+      });
+      _push(`<!--]--></div></div></div></div></div>`);
+    };
+  }
+};
 const _sfc_setup$H = _sfc_main$H.setup;
 _sfc_main$H.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/2.vue");
   return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
 };
-const __nuxt_component_1$d = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["ssrRender", _sfc_ssrRender$x]]);
 const meta$h = void 0;
 const _sfc_main$G = {};
 function _sfc_ssrRender$w(_ctx, _push, _parent, _attrs) {
@@ -60622,7 +60634,7 @@ const product_description = [
   "\uC6D0\uB8CC\uBD80\uD130 \uAC00\uACF5\uD488\uAE4C\uC9C0 \uBAA8\uB4E0 \uAC83\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4. Sojitz Foods\uB294 \uC124\uD0D5, \uBC00\uAC00\uB8E8 \uB4F1\uC758 \uC6D0\uC7AC\uB8CC\uB294 \uBB3C\uB860, \uC9C1\uC811 \uC0AC\uC11C \uBA39\uC744 \uC218 \uC788\uB294 \uAC00\uACF5\uC2DD\uD488\uAE4C\uC9C0 \uB2E4\uC591\uD55C \uC6D0\uC7AC\uB8CC\uB97C \uCDE8\uAE09\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.",
   "\uADF8\uB9BC \uAD34\uBB3C \uADF8\uB9AC\uAE30 \uC778\uACF5\uBB3C, 3056 \uBB34\uB8CC \uC81C\uD488 \uC18C\uAC1C \uC0AC\uC9C4, \uC81C\uD488 \uC18C\uAC1C \uD15C\uD50C\uB9BF \uB514\uC790\uC778, \uC81C\uD488 \uC18C\uAC1C \uBC30\uACBD \uC790\uB8CC \uB2E4\uC6B4\uB85C\uB4DC\uB97C \uC81C\uACF5\uD558\uC5EC \uC628\uB77C\uC778 \uC0AC\uC9C4\uC744 \uB514\uC790\uC778\uD558\uACE0 \uB9CC\uB4E4 \uC218 \uC788\uC2B5\uB2C8\uB2E4.",
   "\uC0C1\uD488\uC18C\uAC1C \uAC8C\uC2DC\uD310\uC740 \uC5B4\uB514\uC11C \uAD6C\uB9E4\uD558\uB098\uC694? \uBB3C\uB860 \uD574\uC678 \uD0C0\uC624\uBC14\uC624\uB85C \uC624\uC138\uC694. \uD604\uC7AC \uD0C0\uC624\uBC14\uC624\uC5D0\uB294 167\uAC1C\uC758 \uC81C\uD488\uC18C\uAC1C \uAC8C\uC2DC\uD310 \uAD00\uB828 \uC0C1\uD488\uC774 \uD310\uB9E4\uB418\uACE0 \uC788\uC2B5\uB2C8\uB2E4.",
-  "JD.COM \uCEF4\uD4E8\uD130 \uC644\uC131 \uAE30\uACC4\uB294 \uCEF4\uD4E8\uD130-notebooks_gamebooks_ultrabooks_desktops_all-in-ones_servers_workstations_tablets\uC758 \uCD5C\uC2E0 \uACAC\uC801, \uD310\uCD09, \uB9AC\uBDF0, \uC1FC\uD551 \uAC00\uC774\uB4DC, \uC0AC\uC9C4 \uBC0F \uAE30\uD0C0 \uAD00\uB828 \uC815\uBCF4\uB97C \uC804\uBB38\uC801\uC73C\uB85C \uC81C\uACF5\uD569\uB2C8\uB2E4! \uB2F9\uC2E0\uC740 \uC990\uAC70\uC6B4 \uC628\uB77C\uC778 \uC1FC\uD551\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4",
+  "JD.COM \uCEF4\uD4E8\uD130 \uC644\uC131 \uAE30\uACC4\uB294 \uCEF4\uD4E8\uD130. \uC758 \uCD5C\uC2E0 \uACAC\uC801, \uD310\uCD09, \uB9AC\uBDF0, \uC1FC\uD551 \uAC00\uC774\uB4DC, \uC0AC\uC9C4 \uBC0F \uAE30\uD0C0 \uAD00\uB828 \uC815\uBCF4\uB97C \uC804\uBB38\uC801\uC73C\uB85C \uC81C\uACF5\uD569\uB2C8\uB2E4! \uB2F9\uC2E0\uC740 \uC990\uAC70\uC6B4 \uC628\uB77C\uC778 \uC1FC\uD551\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4",
   " \uD37C\uC2DC\uD53D \uC778\uD130\uB137\uC740 \uB178\uD2B8\uBD81 \uACAC\uC801, \uB9E4\uAC1C\uBCC0\uC218, \uD3C9\uAC00, \uBE44\uAD50, \uB9AC\uBDF0, \uD3EC\uB7FC \uB4F1 \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130\uC5D0 \uB300\uD55C \uD3EC\uAD04\uC801\uC778 \uC11C\uBE44\uC2A4 \uC815\uBCF4\uB97C \uC81C\uACF5\uD558\uC5EC \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130\uC5D0 \uB300\uD55C \uC644\uC804\uD55C \uC774\uD574\uB97C \uB3D5\uC2B5\uB2C8\uB2E4.",
   "ZOL \uBAA8\uBC14\uC77C \uBC84\uC804\uC740 \uB178\uD2B8\uBD81 \uACAC\uC801, \uB178\uD2B8\uBD81 \uB9E4\uAC1C\uBCC0\uC218, \uB178\uD2B8\uBD81 \uD3C9\uAC00, \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130 \uC0AC\uC9C4, \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130 \uB9AC\uBDF0 \uBC0F \uAE30\uD0C0 \uC790\uC138\uD55C \uB0B4\uC6A9\uC744 \uD3EC\uD568\uD55C \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130 \uC815\uBCF4\uB97C \uC81C\uACF5\uD558\uC5EC \uAC00\uC7A5 \uAC00\uCE58 \uC788\uB294 \uB178\uD2B8\uBD81 \uCEF4\uD4E8\uD130 \uAD6C\uB9E4\uB97C \uC81C\uACF5\uD569\uB2C8\uB2E4."
 ];
@@ -61459,25 +61471,25 @@ const _sfc_main$j = {
         icon: "\u{1F1E8}\u{1F1F3}",
         text: "zh_CN",
         desc: "\u4E2D\u6587",
-        title: "\u591A\u4E3B\u9898\u3001\u8BED\u8A00\u5207\u6362\u3001\u5728\u7EBF\u9884\u89C8\u6A21\u677F"
+        title: "\u591A\u4E3B\u9898\u3001\u8BED\u8A00\u5207\u6362\u3001\u5728\u7EBF\u9884\u89C8\u6A21\u677F\uFF0C\u6240\u6709\u6A21\u677F\u57FA\u4E8Etailwindcss\u3001daisy ui\u3002"
       },
       {
         icon: "\u{1F1FA}\u{1F1F8}",
         text: "en",
         desc: "english",
-        title: "Multiple themes, language switching, online preview templates"
+        title: "Multiple themes, language switching, online preview templates, all templates are based on tailwindcss, daisy ui."
       },
       {
         icon: "\u{1F1EF}\u{1F1F5}",
         text: "ja",
         desc: "\u30B8\u30E3\u30D1\u30F3",
-        title: "\u8907\u6570\u306E\u30C6\u30FC\u30DE\u3001\u8A00\u8A9E\u306E\u5207\u308A\u66FF\u3048\u3001\u30AA\u30F3\u30E9\u30A4\u30F3\u30D7\u30EC\u30D3\u30E5\u30FC\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8"
+        title: "\u8907\u6570\u306E\u30C6\u30FC\u30DE\u3001\u8A00\u8A9E\u306E\u5207\u308A\u66FF\u3048\u3001\u30AA\u30F3\u30E9\u30A4\u30F3\u30D7\u30EC\u30D3\u30E5\u30FC\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u3001\u3059\u3079\u3066\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u306F\u3001tailwindcss\u3001\u30C7\u30A4\u30B8\u30FCUI\u306B\u57FA\u3065\u3044\u3066\u3044\u307E\u3059\u3002"
       },
       {
         icon: "\u{1F1F0}\u{1F1F7}",
         text: "ko",
         desc: "\uD55C\uAD6D\uC5B4",
-        title: "\uC5EC\uB7EC \uD14C\uB9C8, \uC5B8\uC5B4 \uC804\uD658, \uC628\uB77C\uC778 \uBBF8\uB9AC\uBCF4\uAE30 \uD15C\uD50C\uB9BF"
+        title: "\uC5EC\uB7EC \uD14C\uB9C8, \uC5B8\uC5B4 \uC804\uD658, \uC628\uB77C\uC778 \uBBF8\uB9AC\uBCF4\uAE30 \uD15C\uD50C\uB9BF, \uBAA8\uB4E0 \uD15C\uD50C\uB9BF\uC740 tailwindcss, \uB370\uC774\uC9C0 UI\uB97C \uAE30\uBC18\uC73C\uB85C \uD569\uB2C8\uB2E4."
       }
     ];
     const setCurLang = (language2) => {
@@ -61581,7 +61593,7 @@ const _sfc_main$j = {
         });
         _push(`<!--]--></ul></div></div>`);
       } else {
-        _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center" }, _attrs))}>`);
+        _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center w-full" }, _attrs))}>`);
         serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div>`);
       }
@@ -61633,8 +61645,12 @@ const _1$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty
 const _sfc_main$h = {};
 function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Blog2 = __nuxt_component_1$d;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
+  const _component_Blog2 = _sfc_main$H;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+    middle: false,
+    daisyui: "",
+    lang: ""
+  }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(serverRenderer.exports.ssrRenderComponent(_component_Blog2, null, null, _parent2, _scopeId));
@@ -61749,7 +61765,10 @@ const _sfc_main$d = {};
 function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
   const _component_Card12 = _sfc_main$D;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+    daisyui: "",
+    lang: ""
+  }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(serverRenderer.exports.ssrRenderComponent(_component_Card12, null, null, _parent2, _scopeId));

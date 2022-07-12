@@ -68,7 +68,7 @@
           </div>
 
           <div
-            class="grid lg:grid-cols-2 grid-rows-2 gap-8 grid-cols-1"
+            class="grid md:grid-cols-2 grid-rows-2 gap-8 grid-cols-1"
             :class="n % 2 === 0 ? 'order-1' : 'order-2'"
           >
             <div

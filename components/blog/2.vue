@@ -1,6 +1,6 @@
 <template>
   <div class="bg-base-200 w-full py-12">
-    <div class="mx-auto container prose px-4 lg:px-0">
+    <div class="mx-auto container prose px-4">
       <h1
         class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90"
       >

@@ -37,7 +37,7 @@
           </svg>
         </button>
 
-        <div class="dropdown dropdown-end mr-2">
+        <div class="dropdown dropdown-end mr-2" v-if="props.lang">
           <label tabindex="0" class="btn btn-sm m-1 capitalize">language</label>
           <ul
             tabindex="0"

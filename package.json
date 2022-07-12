@@ -3,7 +3,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port 3008",
-    "generate": "nuxt generate",
+    "g": "nuxt generate",
     "preview": "export PORT=3008 &&  nuxt preview"
   },
   "devDependencies": {

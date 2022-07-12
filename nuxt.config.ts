@@ -4,6 +4,13 @@ import { defineNuxtConfig } from "nuxt";
 export default defineNuxtConfig({
   app: {
     baseURL: "/beauty-template",
+    head: {
+      script: [
+        {
+          src: "https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js",
+        },
+      ],
+    },
   },
   modules: ["@nuxtjs/strapi", "@nuxtjs/tailwindcss", "@vueuse/nuxt"],
   strapi: {

@@ -61565,7 +61565,7 @@ const _sfc_main$j = {
         } else {
           _push(`<!---->`);
         }
-        _push(`<button class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg></button><div class="dropdown dropdown-end"><label tabindex="0" class="btn btn-sm m-1 capitalize">language</label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
+        _push(`<button class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg></button><div class="dropdown dropdown-end mr-2"><label tabindex="0" class="btn btn-sm m-1 capitalize">language</label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
         serverRenderer.exports.ssrRenderList(langs, (item) => {
           _push(`<li class="flex">`);
           _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {
@@ -61589,7 +61589,7 @@ const _sfc_main$j = {
           }, _parent));
           _push(`</li>`);
         });
-        _push(`<!--]--></ul></div></div><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{ "items-center h-full -mt-12": props.middle }, "w-full flex justify-center"])}">`);
+        _push(`<!--]--></ul></div><button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{ "items-center h-full -mt-12": props.middle }, "w-full flex justify-center"])}">`);
         serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
         serverRenderer.exports.ssrRenderList(themes, (item) => {

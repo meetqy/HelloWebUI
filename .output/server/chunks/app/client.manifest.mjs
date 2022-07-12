@@ -1,6 +1,6 @@
 const client_manifest = {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-eebd914c.mjs",
+    "file": "entry-0f63d522.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -30,31 +30,31 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/blog/1.vue": {
-    "file": "1-440269ff.mjs",
+    "file": "1-b248cab0.mjs",
     "src": "pages/[[language]]/blog/1.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_language-96dcf65e.mjs",
+      "_language-24bb58a8.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
-  "_language-96dcf65e.mjs": {
-    "file": "language-96dcf65e.mjs",
+  "_language-24bb58a8.mjs": {
+    "file": "language-24bb58a8.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/[[language]]/blog/2.vue": {
-    "file": "2-463831da.mjs",
+    "file": "2-407649b5.mjs",
     "src": "pages/[[language]]/blog/2.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_language-96dcf65e.mjs",
+      "_language-24bb58a8.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/[[language]]/card/1.vue": {
-    "file": "1-017836f7.mjs",
+    "file": "1-bc6bcf6f.mjs",
     "src": "pages/[[language]]/card/1.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -62,7 +62,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/10.vue": {
-    "file": "10-fcd72efa.mjs",
+    "file": "10-d00800e3.mjs",
     "src": "pages/[[language]]/card/10.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -70,7 +70,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/11.vue": {
-    "file": "11-4141f6d2.mjs",
+    "file": "11-869c7662.mjs",
     "src": "pages/[[language]]/card/11.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -78,16 +78,16 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/12.vue": {
-    "file": "12-679b202a.mjs",
+    "file": "12-b771b5f1.mjs",
     "src": "pages/[[language]]/card/12.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_language-96dcf65e.mjs",
+      "_language-24bb58a8.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/[[language]]/card/13.vue": {
-    "file": "13-972b5d1a.mjs",
+    "file": "13-a5ac3a21.mjs",
     "src": "pages/[[language]]/card/13.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -95,7 +95,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/14.vue": {
-    "file": "14-a1fc7887.mjs",
+    "file": "14-e8d07553.mjs",
     "src": "pages/[[language]]/card/14.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -103,7 +103,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/15.vue": {
-    "file": "15-9ba53fff.mjs",
+    "file": "15-f86dcde3.mjs",
     "src": "pages/[[language]]/card/15.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -111,7 +111,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/16.vue": {
-    "file": "16-4e5605c4.mjs",
+    "file": "16-7455771c.mjs",
     "src": "pages/[[language]]/card/16.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -119,7 +119,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/17.vue": {
-    "file": "17-6fe1e632.mjs",
+    "file": "17-7b176b1f.mjs",
     "src": "pages/[[language]]/card/17.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -127,7 +127,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/2.vue": {
-    "file": "2-b0841a88.mjs",
+    "file": "2-ce78657d.mjs",
     "src": "pages/[[language]]/card/2.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -135,7 +135,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/3.vue": {
-    "file": "3-938fca4a.mjs",
+    "file": "3-f8891644.mjs",
     "src": "pages/[[language]]/card/3.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -143,7 +143,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/4.vue": {
-    "file": "4-1fba612e.mjs",
+    "file": "4-43f4c5d9.mjs",
     "src": "pages/[[language]]/card/4.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -151,7 +151,7 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/5.vue": {
-    "file": "5-e452e9e3.mjs",
+    "file": "5-6ef205f1.mjs",
     "src": "pages/[[language]]/card/5.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -159,34 +159,34 @@ const client_manifest = {
     ]
   },
   "pages/[[language]]/card/6.vue": {
-    "file": "6-f3988868.mjs",
+    "file": "6-bdd4bef8.mjs",
     "src": "pages/[[language]]/card/6.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_language-96dcf65e.mjs",
+      "_language-24bb58a8.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/[[language]]/card/7.vue": {
-    "file": "7-dcdc422d.mjs",
+    "file": "7-bc8d515b.mjs",
     "src": "pages/[[language]]/card/7.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_language-96dcf65e.mjs",
+      "_language-24bb58a8.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/[[language]]/card/8.vue": {
-    "file": "8-8e6d8407.mjs",
+    "file": "8-ba0a46ab.mjs",
     "src": "pages/[[language]]/card/8.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_language-96dcf65e.mjs",
+      "_language-24bb58a8.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/[[language]]/card/9.vue": {
-    "file": "9-e336ed12.mjs",
+    "file": "9-b6a9d288.mjs",
     "src": "pages/[[language]]/card/9.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -194,7 +194,7 @@ const client_manifest = {
     ]
   },
   "layouts/default.vue": {
-    "file": "default-927708b6.mjs",
+    "file": "default-3314588c.mjs",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [

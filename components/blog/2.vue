@@ -1,263 +1,99 @@
 <template>
-  <div id="blog" class="bg-gray-100 dark:bg-gray-900 px-4 xl:px-4 py-14">
-    <div class="mx-auto container">
-      <span role="contentinfo">
-        <h1
-          tabindex="0"
-          class="focus:outline-none text-center text-3xl lg:text-5xl tracking-wider text-gray-900 dark:text-white"
-        >
-          Latest from our Blog
-        </h1>
-      </span>
-      <div
-        tabindex="0"
-        aria-label="Group of cards"
-        class="focus:outline-none mt-12 lg:mt-24"
+  <div class="bg-base-200 w-full py-12">
+    <div class="mx-auto container prose">
+      <h1
+        class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90"
       >
+        {{ locales[language][0] }}
+      </h1>
+
+      <div class="mt-12 lg:mt-24">
         <div
-          class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8"
+          class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"
         >
-          <div tabindex="0" class="focus:outline-none" aria-label="card 1">
+          <div>
             <img
               role="img"
-              aria-label="code editor"
-              tabindex="0"
-              class="focus:outline-none w-full"
-              src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(1).png"
-              alt="code editor"
+              class="w-full rounded-t-box"
+              src="https://wcao.cc/r/a/animal?1"
             />
-            <div class="py-4 px-8 w-full flex justify-between bg-indigo-700">
-              <p
-                tabindex="0"
-                class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-              >
-                Bruce Wayne
+            <div class="py-4 px-8 w-full flex justify-between bg-primary">
+              <p class="text-sm text-base-100 font-semibold tracking-wide">
+                {{ $faker.name.findName() }}
               </p>
-              <p
-                tabindex="0"
-                class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-              >
-                13TH Oct, 2020
+              <p class="text-sm text-base-100 font-semibold tracking-wide">
+                {{ $Mock.mock("@datetime(yyyy-MM-dd)") }}
               </p>
             </div>
-            <div
-              class="bg-white dark:bg-gray-800 px-10 py-6 rounded-bl-3xl rounded-br-3xl"
-            >
+            <div class="bg-base-100 px-10 py-6 rounded-b-box">
               <h1
-                tabindex="0"
-                class="focus:outline-none text-4xl text-gray-900 dark:text-white font-semibold tracking-wider"
+                class="text-4xl text-base-content text-opacity-90 font-semibold tracking-wider"
               >
-                Transactions
+                {{ $faker.commerce.productName() }}
               </h1>
               <p
-                tabindex="0"
-                class="focus:outline-none text-gray-700 dark:text-gray-200 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 w-11/12"
+                class="text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6"
               >
-                Find the latest events updates or create events, concerts,
-                conferences, workshops, exhibitions, and cultural events in all
-                cities of the US. The aim of Eventistan is to promote healthy
-                and entertaining event.Find the latest events updates or create
-                events, concerts, conferences, workshops, exhibitions, and
-                cultural events in all cities of the US. The aim of Eventistan
-                is to promote healthy and entertaining event.
+                {{ $faker.commerce.productDescription() }}
+                {{ $faker.commerce.productDescription() }}
+                {{ $faker.commerce.productDescription() }}
+                {{ $faker.commerce.productDescription() }}
               </p>
+
               <div class="w-full flex justify-end">
                 <button
-                  class="focus:outline-none focus:ring-2 ring-offset-2 focus:ring-gray-600 hover:opacity-75 mt-4 justify-end flex items-center cursor-pointer"
+                  class="btn capitalize btn-primary btn-sm btn-link mt-10"
                 >
-                  <span class="text-base tracking-wide text-indigo-700"
-                    >Read more</span
+                  <span class="text-base tracking-wide font-light mr-2">
+                    Read more
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
                   >
-                  <img
-                    class="ml-3 lg:ml-6"
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/2-column-with-main-and-supporting-svg1.svg"
-                    alt="arrow"
-                  />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
                 </button>
               </div>
-              <div class="h-5 w-2"></div>
             </div>
           </div>
-          <div>
-            <div
-              class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8"
-            >
-              <div tabindex="0" class="focus:outline-none" aria-label="card 2">
-                <img
-                  tabindex="0"
-                  role="img"
-                  aria-label="gaming"
-                  class="focus:outline-none w-full"
-                  src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(2).png"
-                  alt="games"
-                />
-                <div
-                  class="py-2 px-4 w-full flex justify-between bg-indigo-700"
-                >
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                  >
-                    Bruce Wayne
-                  </p>
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                  >
-                    13TH Oct, 2020
-                  </p>
-                </div>
-                <div
-                  class="bg-white dark:bg-gray-800 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"
-                >
-                  <h1
-                    tabindex="0"
-                    class="focus:outline-none text-lg text-gray-900 dark:text-white font-semibold tracking-wider"
-                  >
-                    Transactions
-                  </h1>
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-gray-700 dark:text-gray-200 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
-                  >
-                    Find the latest events updates or create events, concerts,
-                    conferences, workshops...
-                  </p>
-                </div>
-              </div>
-              <div tabindex="0" class="focus:outline-none" aria-label="card 3">
-                <img
-                  tabindex="0"
-                  role="img"
-                  aria-label="gaming"
-                  class="focus:outline-none w-full"
-                  src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(3).png"
-                  alt="notes"
-                />
-                <div
-                  class="py-2 px-4 w-full flex justify-between bg-indigo-700"
-                >
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                  >
-                    Bruce Wayne
-                  </p>
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                  >
-                    13TH Oct, 2020
-                  </p>
-                </div>
-                <div
-                  class="bg-white dark:bg-gray-800 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"
-                >
-                  <h1
-                    tabindex="0"
-                    class="focus:outline-none text-lg text-gray-900 dark:text-white font-semibold tracking-wider"
-                  >
-                    Transactions
-                  </h1>
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-gray-700 dark:text-gray-200 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
-                  >
-                    Find the latest events updates or create events, concerts,
-                    conferences, workshops...
-                  </p>
-                </div>
-              </div>
-            </div>
 
+          <div class="grid lg:grid-cols-2 grid-rows-2 gap-8 grid-cols-1">
             <div
-              class="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8"
+              v-for="item in 4"
+              class="rounded-box overflow-hidden bg-base-100 shadow"
             >
-              <div tabindex="0" class="focus:outline-none" aria-label="card 4">
-                <img
-                  tabindex="0"
-                  role="img"
-                  aria-label="laptop"
-                  class="focus:outline-none w-full"
-                  src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(4).png"
-                  alt="laptop"
-                />
-                <div
-                  class="py-2 px-4 w-full flex justify-between bg-indigo-700"
-                >
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                  >
-                    Bruce Wayne
-                  </p>
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                  >
-                    13TH Oct, 2020
-                  </p>
-                </div>
-                <div
-                  class="bg-white dark:bg-gray-800 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"
-                >
-                  <h1
-                    tabindex="0"
-                    class="focus:outline-none text-lg text-gray-900 dark:text-white font-semibold tracking-wider"
-                  >
-                    Transactions
-                  </h1>
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-gray-700 dark:text-gray-200 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
-                  >
-                    Find the latest events updates or create events, concerts,
-                    conferences, workshops...
-                  </p>
-                </div>
+              <img
+                class="w-full max-h-52"
+                :src="`https://wcao.cc/r/a/animal?${item}`"
+              />
+              <div class="py-2 px-4 w-full flex justify-between bg-primary">
+                <p class="text-sm text-base-100 font-semibold tracking-wide">
+                  {{ $faker.name.findName() }}
+                </p>
+                <p class="text-sm text-base-100 font-semibold tracking-wide">
+                  {{ $Mock.mock("@datetime(yyyy-MM-dd)") }}
+                </p>
               </div>
-              <div tabindex="0" class="focus:outline-none" aria-label="card 5">
-                <img
-                  tabindex="0"
-                  role="img"
-                  aria-label="worker"
-                  class="focus:outline-none w-full"
-                  src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(5).png"
-                  alt="worker"
-                />
-                <div
-                  class="py-2 px-4 w-full flex justify-between bg-indigo-700"
+              <div class="bg-base-100 px-3 lg:px-6 py-4">
+                <h1
+                  class="text-lg text-base-content text-opacity-90 font-semibold tracking-wider"
                 >
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                  >
-                    Bruce Wayne
-                  </p>
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-sm text-white font-semibold tracking-wide"
-                  >
-                    13TH Oct, 2020
-                  </p>
-                </div>
-                <div
-                  class="bg-white dark:bg-gray-800 px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl"
+                  {{ $faker.commerce.productName() }}
+                </h1>
+                <p
+                  class="text-base-content line-clamp-3 text-opacity-70 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
                 >
-                  <h1
-                    tabindex="0"
-                    class="focus:outline-none text-lg text-gray-900 dark:text-white font-semibold tracking-wider"
-                  >
-                    Transactions
-                  </h1>
-                  <p
-                    tabindex="0"
-                    class="focus:outline-none text-gray-700 dark:text-gray-200 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"
-                  >
-                    Find the latest events updates or create events, concerts,
-                    conferences, workshops...
-                  </p>
-                </div>
+                  {{ $faker.commerce.productDescription() }}...
+                </p>
               </div>
             </div>
           </div>
@@ -266,3 +102,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const { language } = useParams();
+
+const locales = {
+  en: ["Welcome to my Blog."],
+  zh_CN: ["欢迎来到我的博客。"],
+  ja: ["私のブログへようこそ。"],
+  ko: ["내 블로그에 오신 것을 환영합니다."],
+};
+</script>

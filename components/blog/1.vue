@@ -17,7 +17,7 @@
           <span class="text-xs text-base-content text-opacity-50">{{
             $Random.datetime("yyyy-MM-dd")
           }}</span>
-          <p class="text-base-content/70">
+          <p class="text-base-content/70 overflow-hidden">
             {{ $faker.commerce.productDescription() }}
           </p>
         </div>

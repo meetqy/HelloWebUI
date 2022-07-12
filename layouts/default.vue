@@ -99,7 +99,7 @@
       </ul>
     </div>
   </div>
-  <div class="flex justify-center" v-else>
+  <div class="flex justify-center w-full" v-else>
     <slot></slot>
   </div>
 </template>
@@ -142,25 +142,29 @@ const langs = [
     icon: "🇨🇳",
     text: "zh_CN",
     desc: "中文",
-    title: "多主题、语言切换、在线预览模板",
+    title:
+      "多主题、语言切换、在线预览模板，所有模板基于tailwindcss、daisy ui。",
   },
   {
     icon: "🇺🇸",
     text: "en",
     desc: "english",
-    title: "Multiple themes, language switching, online preview templates",
+    title:
+      "Multiple themes, language switching, online preview templates, all templates are based on tailwindcss, daisy ui.",
   },
   {
     icon: "🇯🇵",
     text: "ja",
     desc: "ジャパン",
-    title: "複数のテーマ、言語の切り替え、オンラインプレビューテンプレート",
+    title:
+      "複数のテーマ、言語の切り替え、オンラインプレビューテンプレート、すべてのテンプレートは、tailwindcss、デイジーUIに基づいています。",
   },
   {
     icon: "🇰🇷",
     text: "ko",
     desc: "한국어",
-    title: "여러 테마, 언어 전환, 온라인 미리보기 템플릿",
+    title:
+      "여러 테마, 언어 전환, 온라인 미리보기 템플릿, 모든 템플릿은 tailwindcss, 데이지 UI를 기반으로 합니다.",
   },
 ];
 

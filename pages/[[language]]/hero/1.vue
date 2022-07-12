@@ -1,5 +1,5 @@
 <template>
   <nuxt-layout :middle="false">
-    <Section1 />
+    <Hero1 />
   </nuxt-layout>
 </template>

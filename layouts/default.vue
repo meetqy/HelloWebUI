@@ -32,12 +32,12 @@
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+              d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
             />
           </svg>
         </button>
 
-        <div class="dropdown dropdown-end">
+        <div class="dropdown dropdown-end mr-2">
           <label tabindex="0" class="btn btn-sm m-1 capitalize">language</label>
           <ul
             tabindex="0"
@@ -59,6 +59,23 @@
             </li>
           </ul>
         </div>
+
+        <button class="btn btn-sm btn-ghost" @click="openFull">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+            />
+          </svg>
+        </button>
       </div>
 
       <div
@@ -127,6 +144,13 @@ const url = computed(() => {
   const arr = route.path.split("/");
   return arr.slice(arr.length === 4 ? 2 : 1).join("/");
 });
+
+const openFull = () => {
+  const pa = "/beauty-template" + route.fullPath + "?full=true";
+  window.open(
+    (useIsProducton() ? "https://wcao.cc" : "http://localhost:3008") + pa
+  );
+};
 
 const setHead = (route) => {
   useHead({

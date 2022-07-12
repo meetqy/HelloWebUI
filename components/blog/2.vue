@@ -1,6 +1,6 @@
 <template>
   <div class="bg-base-200 w-full py-12">
-    <div class="mx-auto container prose">
+    <div class="mx-auto container prose px-4 lg:px-0">
       <h1
         class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90"
       >
@@ -9,13 +9,14 @@
 
       <div class="mt-12 lg:mt-24">
         <div
-          class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"
+          v-for="n in 3"
+          class="grid mb-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"
         >
-          <div>
+          <div :class="n % 2 === 0 ? 'order-2' : 'order-1'">
             <img
               role="img"
               class="w-full rounded-t-box"
-              src="https://wcao.cc/r/a/animal?1"
+              :src="`https://wcao.cc/r/a/animal?${n}`"
             />
             <div class="py-4 px-8 w-full flex justify-between bg-primary">
               <p class="text-sm text-base-100 font-semibold tracking-wide">
@@ -25,14 +26,14 @@
                 {{ $Mock.mock("@datetime(yyyy-MM-dd)") }}
               </p>
             </div>
-            <div class="bg-base-100 px-10 py-6 rounded-b-box">
+            <div class="bg-base-100 lg:px-10 px-4 lg:py-6 py-4 rounded-b-box">
               <h1
-                class="text-4xl text-base-content text-opacity-90 font-semibold tracking-wider"
+                class="lg:text-4xl text-base-content text-opacity-90 font-semibold tracking-wider"
               >
                 {{ $faker.commerce.productName() }}
               </h1>
               <p
-                class="text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6"
+                class="text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 lg:line-clamp-none line-clamp-3"
               >
                 {{ $faker.commerce.productDescription() }}
                 {{ $faker.commerce.productDescription() }}
@@ -66,14 +67,17 @@
             </div>
           </div>
 
-          <div class="grid lg:grid-cols-2 grid-rows-2 gap-8 grid-cols-1">
+          <div
+            class="grid lg:grid-cols-2 grid-rows-2 gap-8 grid-cols-1"
+            :class="n % 2 === 0 ? 'order-1' : 'order-2'"
+          >
             <div
               v-for="item in 4"
               class="rounded-box overflow-hidden bg-base-100 shadow"
             >
               <img
                 class="w-full max-h-52"
-                :src="`https://wcao.cc/r/a/animal?${item}`"
+                :src="`https://wcao.cc/r/a/animal?${item * n}`"
               />
               <div class="py-2 px-4 w-full flex justify-between bg-primary">
                 <p class="text-sm text-base-100 font-semibold tracking-wide">

@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "bundledDependencies": [
+    "source-map-support",
+    "h3",
+    "unenv",
+    "ohmyfetch",
+    "radix3",
+    "hookable",
+    "unstorage",
+    "pathe",
+    "scule",
+    "ohash",
+    "ufo",
+    "mockjs",
+    "qs",
+    "node-fetch-native",
+    "destr",
+    "cookie-es",
+    "source-map",
+    "buffer-from",
+    "side-channel",
+    "get-intrinsic",
+    "call-bind",
+    "object-inspect",
+    "has-symbols",
+    "function-bind",
+    "has"
+  ]
+}

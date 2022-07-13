@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl mt-16"
+    class="relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl"
   >
     <div class="card overflow-visible">
       <div

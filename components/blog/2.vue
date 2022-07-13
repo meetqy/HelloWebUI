@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-base-200 w-full py-12">
-    <div class="mx-auto container prose px-4">
+  <div class="bg-base-100 w-full">
+    <div class="mx-auto my-12 container prose px-4">
       <h1
         class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90"
       >
@@ -10,9 +10,12 @@
       <div class="mt-12 lg:mt-24">
         <div
           v-for="n in 3"
-          class="grid mb-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"
+          class="grid pb-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"
         >
-          <div :class="n % 2 === 0 ? 'order-2' : 'order-1'">
+          <div
+            :class="n % 2 === 0 ? 'order-2' : 'order-1'"
+            class="shadow rounded-box"
+          >
             <img
               role="img"
               class="w-full rounded-t-box"

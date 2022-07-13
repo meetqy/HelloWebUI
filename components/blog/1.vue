@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-base-200 text-base-content w-full">
+  <section class="bg-base-200 text-base-content pb-6 w-full">
     <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
       <a
         href="#"

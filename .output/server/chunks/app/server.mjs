@@ -3744,7 +3744,7 @@ const Components = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePr
   Html,
   Body
 }, Symbol.toStringTag, { value: "Module" }));
-const metaConfig = { "globalMeta": { "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "meta": [], "link": [], "style": [], "script": [] } };
+const metaConfig = { "globalMeta": { "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "meta": [], "link": [], "style": [], "script": [{ "src": "https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js" }] } };
 const metaMixin = {
   created() {
     const instance = vue_cjs_prod.getCurrentInstance();
@@ -3828,8 +3828,8 @@ const NuxtPage = vue_cjs_prod.defineComponent({
 });
 const defaultPageTransition = { name: "page", mode: "out-in" };
 const layouts = {
-  1: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return _1$8;
+  default: vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _default;
   }))
 };
 const defaultLayoutTransition = { name: "layout", mode: "out-in" };
@@ -3869,7 +3869,7 @@ const _sfc_main$M = {
       ko: ["\uB354 \uB9CE\uC740 \uAC8C\uC2DC\uBB3C \uB85C\uB4DC..."]
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-200 text-base-content w-full" }, _attrs))}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"><a href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"><img src="https://wcao.cc/r/a/animal?7" alt="" class="object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"><div class="p-6 space-y-2 lg:col-span-5"><h3 class="text-2xl font-semibold sm:text-4xl">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70 overflow-hidden">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
+      _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-200 text-base-content pb-6 w-full" }, _attrs))}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"><a href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"><img src="https://wcao.cc/r/a/animal?7" alt="" class="object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"><div class="p-6 space-y-2 lg:col-span-5"><h3 class="text-2xl font-semibold sm:text-4xl">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70 overflow-hidden">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
       serverRenderer.exports.ssrRenderList(6, (item) => {
         _push(`<a href="#" class="max-w-sm mx-auto bg-base-100 shadow overflow-hidden rounded"><img role="presentation" class="object-cover w-full rounded-t h-44 bg-base-300"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item}`)}><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
       });
@@ -3903,9 +3903,9 @@ const _sfc_main$L = {
       ko: ["\uB0B4 \uBE14\uB85C\uADF8\uC5D0 \uC624\uC2E0 \uAC83\uC744 \uD658\uC601\uD569\uB2C8\uB2E4."]
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-200 w-full py-12" }, _attrs))}><div class="mx-auto container prose px-4"><h1 class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</h1><div class="mt-12 lg:mt-24"><!--[-->`);
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 w-full" }, _attrs))}><div class="mx-auto my-12 container prose px-4"><h1 class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</h1><div class="mt-12 lg:mt-24"><!--[-->`);
       serverRenderer.exports.ssrRenderList(3, (n) => {
-        _push(`<div class="grid mb-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"><div class="${serverRenderer.exports.ssrRenderClass(n % 2 === 0 ? "order-2" : "order-1")}"><img role="img" class="w-full rounded-t-box"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${n}`)}><div class="py-4 px-8 w-full flex justify-between bg-primary"><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 lg:px-10 px-4 lg:py-6 py-4 rounded-b-box"><h1 class="lg:text-4xl text-base-content text-opacity-90 font-semibold tracking-wider">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 lg:line-clamp-none line-clamp-3">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><div class="w-full flex justify-end"><button class="btn capitalize btn-primary btn-sm btn-link mt-10"><span class="text-base tracking-wide font-light mr-2"> Read more </span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></button></div></div></div><div class="${serverRenderer.exports.ssrRenderClass([n % 2 === 0 ? "order-1" : "order-2", "grid md:grid-cols-2 grid-rows-2 gap-8 grid-cols-1"])}"><!--[-->`);
+        _push(`<div class="grid pb-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"><div class="${serverRenderer.exports.ssrRenderClass([n % 2 === 0 ? "order-2" : "order-1", "shadow rounded-box"])}"><img role="img" class="w-full rounded-t-box"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${n}`)}><div class="py-4 px-8 w-full flex justify-between bg-primary"><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 lg:px-10 px-4 lg:py-6 py-4 rounded-b-box"><h1 class="lg:text-4xl text-base-content text-opacity-90 font-semibold tracking-wider">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 lg:line-clamp-none line-clamp-3">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><div class="w-full flex justify-end"><button class="btn capitalize btn-primary btn-sm btn-link mt-10"><span class="text-base tracking-wide font-light mr-2"> Read more </span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></button></div></div></div><div class="${serverRenderer.exports.ssrRenderClass([n % 2 === 0 ? "order-1" : "order-2", "grid md:grid-cols-2 grid-rows-2 gap-8 grid-cols-1"])}"><!--[-->`);
         serverRenderer.exports.ssrRenderList(4, (item) => {
           _push(`<div class="rounded-box overflow-hidden bg-base-100 shadow"><img class="w-full max-h-52"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item * n}`)}><div class="py-2 px-4 w-full flex justify-between bg-primary"><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 px-3 lg:px-6 py-4"><h1 class="text-lg text-base-content text-opacity-90 font-semibold tracking-wider">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content line-clamp-3 text-opacity-70 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}... </p></div></div>`);
         });
@@ -4007,7 +4007,7 @@ const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["ssrRend
 const meta$d = void 0;
 const _sfc_main$E = {};
 function _sfc_ssrRender$v(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl mt-16" }, _attrs))}><div class="card overflow-visible"><div class="card-header mx-4 -mt-6 max-h-[400px] rounded-lg overflow-hidden"><a href="https://wcao.cc" blur-shadow-image="true"><img class="w-full" src="https://wcao.cc/r/a/girls" alt="tailwind-card-image"></a></div><div class="card-body"><a href="#"><h4 class="font-semibold">Material Design 3</h4></a><p class="opcacity-60 mb-4"> The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. </p><button class="btn capitalize" data-ripple-light="true"> Read More </button></div></div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl" }, _attrs))}><div class="card overflow-visible"><div class="card-header mx-4 -mt-6 max-h-[400px] rounded-lg overflow-hidden"><a href="https://wcao.cc" blur-shadow-image="true"><img class="w-full" src="https://wcao.cc/r/a/girls" alt="tailwind-card-image"></a></div><div class="card-body"><a href="#"><h4 class="font-semibold">Material Design 3</h4></a><p class="opcacity-60 mb-4"> The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. </p><button class="btn capitalize" data-ripple-light="true"> Read More </button></div></div></div>`);
 }
 const _sfc_setup$E = _sfc_main$E.setup;
 _sfc_main$E.setup = (props, ctx) => {
@@ -61487,7 +61487,7 @@ const plugins = normalizePlugins(_plugins);
 }
 const entry$1 = (ctx) => entry(ctx);
 const _sfc_main$l = {
-  __name: "1",
+  __name: "default",
   __ssrInlineRender: true,
   props: {
     lang: Boolean,
@@ -61600,7 +61600,7 @@ const _sfc_main$l = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_nuxt_link = __nuxt_component_0$1;
       if (!vue_cjs_prod.unref(full)) {
-        _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "drawer drawer-mobile" }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content bg-base-200 relative pt-12 min-h-screen"><div class="h-12 w-full bg-base-100 shadow-md fixed left-0 top-0 flex justify-end px-4 items-center">`);
+        _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "drawer drawer-mobile" }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content relative min-h-screen p-4"><div class="mockup-window border bg-base-100 shadow h-full relative"><div class="h-12 w-full absolute left-0 top-0 flex justify-end px-4 items-center border-b">`);
         if (!props.lang || !props.daisyui) {
           _push(`<button class="btn btn-ghost btn-sm hover:bg-transparent font-light mr-2"> \u5B8C\u5584\u4E2D... </button>`);
         } else {
@@ -61641,17 +61641,17 @@ const _sfc_main$l = {
         } else {
           _push(`<!---->`);
         }
-        _push(`<button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{ "items-center h-full -mt-12": props.middle }, "w-full flex justify-center"])}">`);
+        _push(`<button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div class="w-full h-full overflow-y-scroll bg-neutral"><div class="${serverRenderer.exports.ssrRenderClass([{ "items-center": props.middle }, "w-full min-h-full flex justify-center relative"])}">`);
         serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
-        _push(`</div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
+        _push(`</div></div></div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
         serverRenderer.exports.ssrRenderList(themes, (item) => {
           _push(`<li${serverRenderer.exports.ssrRenderAttr("data-theme", item)} class="${serverRenderer.exports.ssrRenderClass([{ "outline-dashed": vue_cjs_prod.unref(htmlMode) === item }, "my-2 shadow rounded-box"])}"><a href="javascript:;" class="flex justify-between hover:bg-transparent active:bg-transparent focus:bg-transparent"><span>${serverRenderer.exports.ssrInterpolate(item)}</span><div class="flex gap-1 h-4"><div class="bg-primary w-2 rounded"></div><div class="bg-secondary w-2 rounded"></div><div class="bg-accent w-2 rounded"></div><div class="bg-neutral w-2 rounded"></div></div></a></li>`);
         });
         _push(`<!--]--></ul></div></div>`);
       } else {
-        _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center w-full" }, _attrs))}>`);
+        _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center w-full min-h-screen bg-neutral-focus" }, _attrs))}><div class="hero-content">`);
         serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
-        _push(`</div>`);
+        _push(`</div></div>`);
       }
     };
   }
@@ -61659,10 +61659,10 @@ const _sfc_main$l = {
 const _sfc_setup$l = _sfc_main$l.setup;
 _sfc_main$l.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("layouts/1.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("layouts/default.vue");
   return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
-const _1$8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _default = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _sfc_main$l
 }, Symbol.toStringTag, { value: "Module" }));

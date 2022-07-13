@@ -1,6 +1,5 @@
 <template>
-    <nuxt-layout daisyui>
-      <Card17 />
-    </nuxt-layout>
-  </template>
-  
+  <nuxt-layout daisyui lang>
+    <Card17 />
+  </nuxt-layout>
+</template>

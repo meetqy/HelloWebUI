@@ -1,6 +1,6 @@
 <template>
   <article
-    class="mb-4 break-inside rounded-xl bg-base-100 flex flex-col bg-clip-border"
+    class="mb-4 break-inside rounded-xl bg-base-100 flex flex-col bg-clip-border max-w-xl"
   >
     <div class="flex p-6 items-center justify-between">
       <div class="flex">
@@ -12,18 +12,22 @@
         </a>
         <div class="flex flex-col">
           <div class="flex items-center">
-            <a class="inline-block text-lg font-bold mr-2" href="#"
-              >Annette Black</a
-            >
-            <span class="text-accent-focus text-opacity-50">3 minutes ago</span>
+            <a class="inline-block text-lg font-bold mr-2" href="#">
+              {{ $faker.name.findName() }}
+            </a>
+            <span class="text-accent-focus text-opacity-50">
+              {{ $Random.natural(1, 59) }} {{ locales[language][0] }}
+            </span>
           </div>
-          <div class="text-accent-focus text-opacity-50">Medical Assistant</div>
+          <div class="text-accent-focus text-opacity-50">
+            {{ $faker.name.jobType() }}
+          </div>
         </div>
       </div>
     </div>
     <div class="p-6 bg-primary bg-opacity-50">
       <h2 class="text-3xl font-extrabold text-base-100">
-        Web Design templates Selection
+        {{ $faker.commerce.productDescription() }}
       </h2>
     </div>
     <div class="p-6">
@@ -38,21 +42,31 @@
           <span class="-m-1 rounded-full border-2 border-base-100">
             <img class="w-6" src="https://wcao.cc/r/a/emoji?13" />
           </span>
-          <span class="text-lg font-bold ml-3">237</span>
+          <span class="text-lg font-bold ml-3">
+            {{ $Random.natural(10, 999) }}
+          </span>
         </a>
-        <a class="ml-auto" href="#">23 comentarios</a>
+        <a class="ml-auto" href="#">
+          {{ $Random.natural(1, 99) }} {{ locales[language][1] }}
+        </a>
       </div>
       <div class="mt-6 mb-6 h-px bg-accent-focus bg-opacity-20"></div>
       <div class="flex items-center justify-between mb-6">
-        <button class="btn capitalize btn-ghost">Me gusta</button>
-        <button class="btn capitalize btn-ghost">Comentar</button>
-        <button class="btn capitalize btn-ghost">Compartir</button>
+        <button class="btn capitalize btn-ghost">
+          {{ locales[language][2] }}
+        </button>
+        <button class="btn capitalize btn-ghost">
+          {{ locales[language][3] }}
+        </button>
+        <button class="btn capitalize btn-ghost">
+          {{ locales[language][4] }}
+        </button>
       </div>
       <div class="relative">
         <input
           class="input w-full input-md bg-accent-content bg-opacity-10"
           type="text"
-          placeholder="Write a comment"
+          :placeholder="locales[language][5]"
         />
         <span class="flex absolute right-3 top-2/4 -mt-3 items-center">
           <svg
@@ -77,3 +91,28 @@
     </div>
   </article>
 </template>
+
+<script setup>
+const { language } = useParams();
+
+const locales = {
+  en: [
+    "minutes ago",
+    "comentarios",
+    "Me gusta",
+    "Comentar",
+    "Compartir",
+    "Write a comment",
+  ],
+  zh_CN: ["分钟前", "评论", "我喜欢", "评论数", "比较器", "写评论"],
+  ja: [
+    "数分前",
+    "コメンタリオス",
+    "私グスタ",
+    "コメンター",
+    "コンパートメント",
+    "コメントを書く",
+  ],
+  ko: ["몇분 전에", "논평", "나 구스타", "논평", "콤파르티르", "코멘트 쓰기"],
+};
+</script>

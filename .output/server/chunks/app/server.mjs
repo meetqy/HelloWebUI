@@ -3923,7 +3923,7 @@ _sfc_main$R.setup = (props, ctx) => {
 };
 const meta$m = void 0;
 const _sfc_main$Q = {};
-function _sfc_ssrRender$G(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$F(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><div class="flex justify-end px-4 pt-4"><button id="dropdownButton" data-dropdown-toggle="dropdown" class="btn btn-ghost" type="button"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div><div class="flex flex-col items-center pb-10 px-24"><img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://wcao.cc/image-space/api/avatar" alt="Bonnie image"><h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h5><span class="text-sm text-base-content text-opacity-50 text-center">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobTitle())}</span><div class="flex mt-4 space-x-3 lg:mt-6"><a href="#" class="btn btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><a href="#" class="btn btn-outline btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
 }
 const _sfc_setup$Q = _sfc_main$Q.setup;
@@ -3932,10 +3932,10 @@ _sfc_main$Q.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/1.vue");
   return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
-const __nuxt_component_1$h = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["ssrRender", _sfc_ssrRender$G]]);
+const __nuxt_component_1$g = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["ssrRender", _sfc_ssrRender$F]]);
 const meta$l = void 0;
 const _sfc_main$P = {};
-function _sfc_ssrRender$F(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$E(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 max-w-md w-full bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><h5 class="mb-4 text-xl font-medium text-base-content text-opacity-50"> Standard plan </h5><div class="flex items-baseline text-base-content text-opacity-90"><span class="text-3xl font-semibold">$</span><span class="text-5xl font-extrabold tracking-tight">49</span><span class="ml-1 text-xl font-normal text-base-content text-opacity-50">/month</span></div><ul role="list" class="my-7 space-y-5"><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">2 team members</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">20GB Cloud storage</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Integration help</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Sketch Files</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">API Access</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Complete documentation</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">24\xD77 phone &amp; email support</span></li></ul><button type="button" class="btn capitalize btn-primary"> Choose plan </button></div>`);
 }
 const _sfc_setup$P = _sfc_main$P.setup;
@@ -3944,10 +3944,10 @@ _sfc_main$P.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/10.vue");
   return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
-const __nuxt_component_1$g = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["ssrRender", _sfc_ssrRender$F]]);
+const __nuxt_component_1$f = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["ssrRender", _sfc_ssrRender$E]]);
 const meta$k = void 0;
 const _sfc_main$O = {};
-function _sfc_ssrRender$E(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$D(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center" }, _attrs))}><div class="block rounded-lg shadow-lg bg-base-100 max-w-sm text-center"><div class="py-3 px-6 border-b border-base-content border-opacity-30"> Featured </div><div class="p-6"><h5 class="text-base-content text-opacity-90 text-xl font-medium mb-2"> Special title treatment </h5><p class="text-base-content text-opacity-70 text-base mb-4"> With supporting text below as a natural lead-in to additional content. </p><button type="button" class="btn capitalize btn-primary btn-sm"> Button </button></div><div class="py-3 px-6 border-t border-base-content border-opacity-30 text-base-content text-opacity-60"> 2 days ago </div></div></div>`);
 }
 const _sfc_setup$O = _sfc_main$O.setup;
@@ -3956,7 +3956,7 @@ _sfc_main$O.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/11.vue");
   return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
-const __nuxt_component_1$f = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$E]]);
+const __nuxt_component_1$e = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$D]]);
 const meta$j = void 0;
 const _sfc_main$N = {
   __name: "12",
@@ -3982,7 +3982,7 @@ _sfc_main$N.setup = (props, ctx) => {
 };
 const meta$i = void 0;
 const _sfc_main$M = {};
-function _sfc_ssrRender$D(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$C(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mx-auto max-w-lg" }, _attrs))}><div class="border bg-base-300 bg-opacity-25 rounded-lg p-6 text-base-content text-opacity-10 relative z-10" style="${serverRenderer.exports.ssrRenderStyle({ "cursor": "auto" })}"><div class="flex flex-wrap items-center"><div class="flex w-full h-48 md:h-64 lg:h-72 relative"><div class="w-8/12 pr-4 relative"><img src="https://wcao.cc/r/a/avatar?1" class="w-full h-full object-cover object-top rounded-lg bg-base-100"></div><div class="w-4/12 h-full"><div class="flex flex-col w-full h-full"><div class="flex-1 pb-2"><div class="w-full h-full relative"><img src="https://wcao.cc/r/a/avatar?2" class="absolute top-0 w-full h-full object-cover object-center rounded-lg bg-base-100"></div></div><div class="flex-1 pt-2"><div class="w-full h-full relative"><img src="https://wcao.cc/r/a/avatar?3" class="absolute top-0 w-full h-full object-cover object-bottom rounded-lg bg-base-100"></div></div></div></div></div><div class="w-full pt-8 flex flex-col justify-between"><div><h2 class="font-bold text-xl text-base-content"> Tailmail - Tailwind CSS Email Design Kit </h2><div class="flex flex-wrap text-center pt-4 mb-2"><div class="badge badge-accent mr-2">Tailwind CSS</div><div class="badge badge-accent mr-2">React</div><div class="badge badge-accent mr-2">Next.js</div></div><p class="text-xs leading-relaxed text-base-content text-opacity-50"> This revolutionary email design kit is going to transform the way in which you send modern emails. </p><ul class="text-xs mt-4 list-disc list-inside text-base-content text-opacity-50 leading-relaxed"><li>Responsive</li><li>Mobile-friendly</li><li>Media queries</li><li>20MB of JavaScript</li></ul></div><div class="w-full sm:flex-1 grid gap-4 grid-cols-2 pt-6"><a href="javascript:;" class="btn capitalize glass btn-info"> Preview </a><button x-on:click="pay(&#39;Essential&#39;)" class="btn capitalize btn-success"> Buy now </button></div></div></div></div></div>`);
 }
 const _sfc_setup$M = _sfc_main$M.setup;
@@ -3991,10 +3991,10 @@ _sfc_main$M.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/13.vue");
   return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
 };
-const __nuxt_component_1$e = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["ssrRender", _sfc_ssrRender$D]]);
+const __nuxt_component_1$d = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["ssrRender", _sfc_ssrRender$C]]);
 const meta$h = void 0;
 const _sfc_main$L = {};
-function _sfc_ssrRender$C(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$B(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex items-center justify-center" }, _attrs))}><div class="max-w-md md:max-w-2xl px-2"><div class="bg-base-100 shadow-xl rounded-lg overflow-hidden md:flex"><div class="bg-cover bg-bottom h-56 md:h-auto md:w-56" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url(https://wcao.cc/r/a/sgwg)" })}"></div><div><div class="p-4 md:p-5"><p class="font-bold text-xl md:text-2xl">Amsterdam Walking Tour</p><p class="text-base-content text-opacity-70 md:text-lg"> Explore popular tourist destinations as well as hidden local favourites. </p></div><div class="p-4 md:p-5 bg-base-200"><div class="sm:flex sm:justify-between sm:items-center"><div><div class="text-lg text-base-content text-opacity-70"><span class="text-base-content text-opacity-90 font-bold">17</span> per person* </div><div class="flex items-center"><div class="inline-flex -mx-px"><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg></div><div class="text-base-content text-opacity-60 ml-2 text-sm md:text-base mt-1"> 28 reviews </div></div></div><button class="mt-3 sm:mt-0 btn btn-primary">Book now</button></div><div class="mt-3 text-base-content text-opacity-60 text-sm md:text-base"> *Prices may vary depending on selected date. </div></div></div></div></div></div>`);
 }
 const _sfc_setup$L = _sfc_main$L.setup;
@@ -4003,10 +4003,10 @@ _sfc_main$L.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/14.vue");
   return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
 };
-const __nuxt_component_1$d = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["ssrRender", _sfc_ssrRender$C]]);
+const __nuxt_component_1$c = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["ssrRender", _sfc_ssrRender$B]]);
 const meta$g = void 0;
 const _sfc_main$K = {};
-function _sfc_ssrRender$B(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$A(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl" }, _attrs))}><div class="card overflow-visible"><div class="card-header mx-4 -mt-6 max-h-[400px] rounded-lg overflow-hidden"><a href="https://wcao.cc" blur-shadow-image="true"><img class="w-full" src="https://wcao.cc/r/a/girls" alt="tailwind-card-image"></a></div><div class="card-body"><a href="#"><h4 class="font-semibold">Material Design 3</h4></a><p class="opcacity-60 mb-4"> The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. </p><button class="btn capitalize" data-ripple-light="true"> Read More </button></div></div></div>`);
 }
 const _sfc_setup$K = _sfc_main$K.setup;
@@ -4015,10 +4015,10 @@ _sfc_main$K.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/15.vue");
   return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
 };
-const __nuxt_component_1$c = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["ssrRender", _sfc_ssrRender$B]]);
+const __nuxt_component_1$b = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["ssrRender", _sfc_ssrRender$A]]);
 const meta$f = void 0;
 const _sfc_main$J = {};
-function _sfc_ssrRender$A(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$z(_ctx, _push, _parent, _attrs) {
   _push(`<article${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mb-4 break-inside p-6 rounded-xl bg-base-100 flex flex-col bg-clip-border" }, _attrs))}><div class="flex pb-6 items-center justify-between"><div class="flex"><a class="inline-block mr-4" href="#"><img class="rounded-full max-w-none w-14 h-14" src="https://wcao.cc/r/a/avatar"></a><div class="flex flex-col"><div class="flex items-center"><a class="inline-block text-lg font-bold mr-2" href="#">Savannah Nguyen</a></div><div class="text-accent-focus text-opacity-50">January 22, 2021</div></div></div></div><h2 class="text-3xl font-extrabold">Web Design templates Selection</h2><div class="py-4"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div><div class="py-4"><a class="inline-flex items-center" href="#"><span class="mr-2"><svg class="fill-rose-600" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path></svg></span><span class="text-lg font-bold">15</span></a></div><div class="relative"><input class="pt-2 pb-2 pl-3 w-full h-11 bg-accent-focus bg-opacity-10 rounded-lg placeholder:text-accent-focus text-opacity-60 font-medium pr-20" type="text" placeholder="Write a comment"><span class="flex absolute right-3 top-2/4 -mt-3 items-center"><svg class="mr-2" style="${serverRenderer.exports.ssrRenderStyle({ "width": "26px", "height": "26px" })}" viewBox="0 0 24 24"><path fill="currentColor" d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z"></path></svg><svg class="fill-primary" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path></svg></span></div></article>`);
 }
 const _sfc_setup$J = _sfc_main$J.setup;
@@ -4027,19 +4027,44 @@ _sfc_main$J.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/16.vue");
   return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
 };
-const __nuxt_component_1$b = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["ssrRender", _sfc_ssrRender$A]]);
+const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["ssrRender", _sfc_ssrRender$z]]);
 const meta$e = void 0;
-const _sfc_main$I = {};
-function _sfc_ssrRender$z(_ctx, _push, _parent, _attrs) {
-  _push(`<article${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mb-4 break-inside rounded-xl bg-base-100 flex flex-col bg-clip-border" }, _attrs))}><div class="flex p-6 items-center justify-between"><div class="flex"><a class="inline-block mr-4" href="#"><img class="rounded-full max-w-none w-14 h-14" src="https://wcao.cc/r/a/avatar"></a><div class="flex flex-col"><div class="flex items-center"><a class="inline-block text-lg font-bold mr-2" href="#">Annette Black</a><span class="text-accent-focus text-opacity-50">3 minutes ago</span></div><div class="text-accent-focus text-opacity-50">Medical Assistant</div></div></div></div><div class="p-6 bg-primary bg-opacity-50"><h2 class="text-3xl font-extrabold text-base-100"> Web Design templates Selection </h2></div><div class="p-6"><div class="flex justify-between items-center"><a class="inline-flex items-center" href="#"><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji"></span><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji?12"></span><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji?13"></span><span class="text-lg font-bold ml-3">237</span></a><a class="ml-auto" href="#">23 comentarios</a></div><div class="mt-6 mb-6 h-px bg-accent-focus bg-opacity-20"></div><div class="flex items-center justify-between mb-6"><button class="btn capitalize btn-ghost">Me gusta</button><button class="btn capitalize btn-ghost">Comentar</button><button class="btn capitalize btn-ghost">Compartir</button></div><div class="relative"><input class="input w-full input-md bg-accent-content bg-opacity-10" type="text" placeholder="Write a comment"><span class="flex absolute right-3 top-2/4 -mt-3 items-center"><svg class="mr-2" style="${serverRenderer.exports.ssrRenderStyle({ "width": "26px", "height": "26px" })}" viewBox="0 0 24 24"><path fill="currentColor" d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z"></path></svg><svg class="fill-primary" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path></svg></span></div></div></article>`);
-}
+const _sfc_main$I = {
+  __name: "17",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { language } = useParams();
+    const locales2 = {
+      en: [
+        "minutes ago",
+        "comentarios",
+        "Me gusta",
+        "Comentar",
+        "Compartir",
+        "Write a comment"
+      ],
+      zh_CN: ["\u5206\u949F\u524D", "\u8BC4\u8BBA", "\u6211\u559C\u6B22", "\u8BC4\u8BBA\u6570", "\u6BD4\u8F83\u5668", "\u5199\u8BC4\u8BBA"],
+      ja: [
+        "\u6570\u5206\u524D",
+        "\u30B3\u30E1\u30F3\u30BF\u30EA\u30AA\u30B9",
+        "\u79C1\u30B0\u30B9\u30BF",
+        "\u30B3\u30E1\u30F3\u30BF\u30FC",
+        "\u30B3\u30F3\u30D1\u30FC\u30C8\u30E1\u30F3\u30C8",
+        "\u30B3\u30E1\u30F3\u30C8\u3092\u66F8\u304F"
+      ],
+      ko: ["\uBA87\uBD84 \uC804\uC5D0", "\uB17C\uD3C9", "\uB098 \uAD6C\uC2A4\uD0C0", "\uB17C\uD3C9", "\uCF64\uD30C\uB974\uD2F0\uB974", "\uCF54\uBA58\uD2B8 \uC4F0\uAE30"]
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<article${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mb-4 break-inside rounded-xl bg-base-100 flex flex-col bg-clip-border max-w-xl" }, _attrs))}><div class="flex p-6 items-center justify-between"><div class="flex"><a class="inline-block mr-4" href="#"><img class="rounded-full max-w-none w-14 h-14" src="https://wcao.cc/r/a/avatar"></a><div class="flex flex-col"><div class="flex items-center"><a class="inline-block text-lg font-bold mr-2" href="#">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</a><span class="text-accent-focus text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.natural(1, 59))} ${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</span></div><div class="text-accent-focus text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobType())}</div></div></div></div><div class="p-6 bg-primary bg-opacity-50"><h2 class="text-3xl font-extrabold text-base-100">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</h2></div><div class="p-6"><div class="flex justify-between items-center"><a class="inline-flex items-center" href="#"><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji"></span><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji?12"></span><span class="-m-1 rounded-full border-2 border-base-100"><img class="w-6" src="https://wcao.cc/r/a/emoji?13"></span><span class="text-lg font-bold ml-3">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.natural(10, 999))}</span></a><a class="ml-auto" href="#">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.natural(1, 99))} ${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][1])}</a></div><div class="mt-6 mb-6 h-px bg-accent-focus bg-opacity-20"></div><div class="flex items-center justify-between mb-6"><button class="btn capitalize btn-ghost">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][2])}</button><button class="btn capitalize btn-ghost">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][3])}</button><button class="btn capitalize btn-ghost">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][4])}</button></div><div class="relative"><input class="input w-full input-md bg-accent-content bg-opacity-10" type="text"${serverRenderer.exports.ssrRenderAttr("placeholder", locales2[vue_cjs_prod.unref(language)][5])}><span class="flex absolute right-3 top-2/4 -mt-3 items-center"><svg class="mr-2" style="${serverRenderer.exports.ssrRenderStyle({ "width": "26px", "height": "26px" })}" viewBox="0 0 24 24"><path fill="currentColor" d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z"></path></svg><svg class="fill-primary" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path></svg></span></div></div></article>`);
+    };
+  }
+};
 const _sfc_setup$I = _sfc_main$I.setup;
 _sfc_main$I.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/17.vue");
   return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
 };
-const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["ssrRender", _sfc_ssrRender$z]]);
 const meta$d = void 0;
 const _sfc_main$H = {};
 function _sfc_ssrRender$y(_ctx, _push, _parent, _attrs) {
@@ -61806,7 +61831,7 @@ const _2$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty
 const _sfc_main$l = {};
 function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card1 = __nuxt_component_1$h;
+  const _component_Card1 = __nuxt_component_1$g;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -61837,7 +61862,7 @@ const _1$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty
 const _sfc_main$k = {};
 function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card10 = __nuxt_component_1$g;
+  const _component_Card10 = __nuxt_component_1$f;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -61865,7 +61890,7 @@ const _10$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
 const _sfc_main$j = {};
 function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card11 = __nuxt_component_1$f;
+  const _component_Card11 = __nuxt_component_1$e;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -61924,7 +61949,7 @@ const _12$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
 const _sfc_main$h = {};
 function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card13 = __nuxt_component_1$e;
+  const _component_Card13 = __nuxt_component_1$d;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -61952,7 +61977,7 @@ const _13$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
 const _sfc_main$g = {};
 function _sfc_ssrRender$g(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card14 = __nuxt_component_1$d;
+  const _component_Card14 = __nuxt_component_1$c;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -61980,7 +62005,7 @@ const _14$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
 const _sfc_main$f = {};
 function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card15 = __nuxt_component_1$c;
+  const _component_Card15 = __nuxt_component_1$b;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -62008,7 +62033,7 @@ const _15$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
 const _sfc_main$e = {};
 function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card16 = __nuxt_component_1$b;
+  const _component_Card16 = __nuxt_component_1$a;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -62036,8 +62061,11 @@ const _16$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
 const _sfc_main$d = {};
 function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card17 = __nuxt_component_1$a;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
+  const _component_Card17 = _sfc_main$I;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+    daisyui: "",
+    lang: ""
+  }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(serverRenderer.exports.ssrRenderComponent(_component_Card17, null, null, _parent2, _scopeId));

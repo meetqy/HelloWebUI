@@ -61641,7 +61641,7 @@ const _sfc_main$l = {
         } else {
           _push(`<!---->`);
         }
-        _push(`<button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div class="w-full h-full overflow-y-scroll bg-neutral"><div class="${serverRenderer.exports.ssrRenderClass([{ "items-center": props.middle }, "w-full min-h-full flex justify-center relative"])}">`);
+        _push(`<button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div class="w-full h-full overflow-y-scroll bg-neutral"><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{ "items-center": props.middle }, "w-full min-h-full flex justify-center relative"])}">`);
         serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div></div></div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
         serverRenderer.exports.ssrRenderList(themes, (item) => {

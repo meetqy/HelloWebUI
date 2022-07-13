@@ -84,6 +84,7 @@
         <div class="w-full h-full overflow-y-scroll bg-neutral">
           <div
             class="w-full min-h-full flex justify-center relative"
+            id="template-wrapper"
             :class="{ 'items-center': props.middle }"
           >
             <slot></slot>

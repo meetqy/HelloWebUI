@@ -85,7 +85,7 @@
           <div
             class="w-full min-h-full flex justify-center relative"
             id="template-wrapper"
-            :class="{ 'items-center': props.middle }"
+            :class="{ 'items-center -mt-4': props.middle }"
           >
             <slot></slot>
           </div>
@@ -122,10 +122,11 @@
       </ul>
     </div>
   </div>
-  <div class="flex justify-center w-full min-h-screen bg-neutral-focus" v-else>
-    <div class="hero-content">
-      <slot></slot>
-    </div>
+  <div
+    class="flex justify-center items-center w-full min-h-screen bg-neutral-focus"
+    v-else
+  >
+    <slot></slot>
   </div>
 </template>
 

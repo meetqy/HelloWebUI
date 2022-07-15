@@ -3,18 +3,17 @@
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <h2 class="text-xs text-primary tracking-widest font-medium mb-1">
-          ROOF PARTY POLAROID
+          {{ $faker.commerce.productMaterial() }}
         </h2>
         <h1
           class="sm:text-3xl text-2xl font-medium mb-4 text-base-content text-opacity-90"
         >
-          Master Cleanse Reliac Heirloom
+          {{ $faker.commerce.productName() }}
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-          gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-          heard of them man bun deep jianbing selfies heirloom prism food truck
-          ugh squid celiac humblebrag.
+          {{ $faker.commerce.productDescription() }}.
+          {{ $faker.commerce.productDescription() }}.
+          {{ $faker.commerce.productDescription() }}.
         </p>
       </div>
 
@@ -26,14 +25,13 @@
           <h2
             class="text-lg sm:text-xl text-base-content text-opacity-90 font-medium mb-2"
           >
-            Shooting Stars
+            {{ $faker.commerce.productName() }}
           </h2>
           <p class="leading-relaxed text-base mb-4">
-            Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-            hexagon disrupt edison bulbche.
+            {{ $faker.commerce.productDescription() }}
           </p>
           <a class="text-primary inline-flex items-center">
-            Learn More
+            {{ $faker.word.adverb() }}
             <svg
               fill="none"
               stroke="currentColor"
@@ -50,7 +48,9 @@
       </div>
 
       <div class="flex justify-center mt-16">
-        <button class="btn capitalize btn-primary">Button</button>
+        <button class="btn capitalize btn-primary">
+          {{ $faker.word.preposition() }}
+        </button>
       </div>
     </div>
   </section>

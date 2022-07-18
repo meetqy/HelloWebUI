@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port 3008",
+    "dev": "nuxt dev -p 3008 -o",
     "g": "nuxt generate",
     "preview": "export PORT=3008 &&  nuxt preview"
   },

@@ -3857,7 +3857,7 @@ const useParams = () => {
   }
   return params;
 };
-const _sfc_main$U = {
+const _sfc_main$W = {
   __name: "1",
   __ssrInlineRender: true,
   setup(__props) {
@@ -3877,11 +3877,11 @@ const _sfc_main$U = {
     };
   }
 };
-const _sfc_setup$U = _sfc_main$U.setup;
-_sfc_main$U.setup = (props, ctx) => {
+const _sfc_setup$W = _sfc_main$W.setup;
+_sfc_main$W.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/1.vue");
-  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
+  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
 };
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -3890,8 +3890,8 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const meta$o = void 0;
-const _sfc_main$T = {
+const meta$p = void 0;
+const _sfc_main$V = {
   __name: "2",
   __ssrInlineRender: true,
   setup(__props) {
@@ -3915,50 +3915,62 @@ const _sfc_main$T = {
     };
   }
 };
+const _sfc_setup$V = _sfc_main$V.setup;
+_sfc_main$V.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/2.vue");
+  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
+};
+const meta$o = void 0;
+const _sfc_main$U = {};
+function _sfc_ssrRender$I(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-white text-gray-600 work-sans leading-normal text-base tracking-normal w-full" }, _attrs))}><nav id="header" class="w-full z-30 top-0 py-1"><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"><label for="menu-toggle" class="cursor-pointer md:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label><input class="hidden" type="checkbox" id="menu-toggle"><div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu"><nav><ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"><li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Shop</a></li><li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">About</a></li></ul></nav></div><div class="order-1 md:order-2"><a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl" href="#"><svg class="fill-current text-gray-800 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z"></path></svg> NORDICS </a></div><div class="order-2 md:order-3 flex items-center" id="nav-content"><a class="inline-block no-underline hover:text-black" href="#"><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle fill="none" cx="12" cy="7" r="3"></circle><path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"></path></svg></a><a class="pl-3 inline-block no-underline hover:text-black" href="#"><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z"></path><circle cx="10.5" cy="18.5" r="1.5"></circle><circle cx="17.5" cy="18.5" r="1.5"></circle></svg></a></div></div></nav><section class="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right" style="${serverRenderer.exports.ssrRenderStyle({ "max-width": "1600px", "height": "32rem", "background-image": "url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')" })}"><div class="container mx-auto"><div class="flex flex-col w-full lg:w-1/2 justify-center items-start px-6 tracking-wide"><h1 class="text-black text-2xl my-4"> Stripy Zig Zag Jigsaw Pillow and Duvet Set </h1><a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">products</a></div></div></section><section class="bg-white py-8"><div class="container mx-auto flex items-center flex-wrap pt-4 pb-12"><nav id="store" class="w-full z-30 top-0 px-6 py-1"><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3"><a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl" href="#"> Store </a><div class="flex items-center" id="store-nav-content"><a class="pl-3 inline-block no-underline hover:text-black" href="#"><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z"></path></svg></a><a class="pl-3 inline-block no-underline hover:text-black" href="#"><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"></path></svg></a></div></div></nav><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div></div></section><section class="bg-white py-8"><div class="container py-8 px-6 mx-auto"><a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8" href="#"> About </a><p class="mt-8 mb-8"> This template is inspired by the stunning nordic minamalist design - in particular: <br><a class="text-gray-800 underline hover:text-gray-900" href="http://savoy.nordicmade.com/" target="_blank">Savoy Theme</a> created by <a class="text-gray-800 underline hover:text-gray-900" href="https://nordicmade.com/">https://nordicmade.com/</a> and <a class="text-gray-800 underline hover:text-gray-900" href="https://www.metricdesign.no/" target="_blank">https://www.metricdesign.no/</a></p><p class="mb-8"> Lorem ipsum dolor sit amet, consectetur <a href="#">random link</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac. </p></div></section><footer class="container mx-auto bg-white py-8 border-t border-gray-400"><div class="container flex px-3 py-8"><div class="w-full mx-auto flex flex-wrap"><div class="flex w-full lg:w-1/2"><div class="px-3 md:px-0"><h3 class="font-bold text-gray-900">About</h3><p class="py-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia. </p></div></div><div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right"><div class="px-3 md:px-0"><h3 class="font-bold text-gray-900">Social</h3><ul class="list-reset items-center pt-3"><li><a class="inline-block no-underline hover:text-black hover:underline py-1" href="#">Add social links</a></li></ul></div></div></div></div></footer></div>`);
+}
+const _sfc_setup$U = _sfc_main$U.setup;
+_sfc_main$U.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/3.vue");
+  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
+};
+const __nuxt_component_1$h = /* @__PURE__ */ _export_sfc(_sfc_main$U, [["ssrRender", _sfc_ssrRender$I]]);
+const meta$n = void 0;
+const _sfc_main$T = {};
+function _sfc_ssrRender$H(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><div class="flex justify-end px-4 pt-4"><button id="dropdownButton" data-dropdown-toggle="dropdown" class="btn btn-ghost" type="button"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div><div class="flex flex-col items-center pb-10 px-24"><img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://wcao.cc/image-space/api/avatar" alt="Bonnie image"><h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h5><span class="text-sm text-base-content text-opacity-50 text-center">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobTitle())}</span><div class="flex mt-4 space-x-3 lg:mt-6"><a href="#" class="btn btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><a href="#" class="btn btn-outline btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
+}
 const _sfc_setup$T = _sfc_main$T.setup;
 _sfc_main$T.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/2.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/1.vue");
   return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
 };
-const meta$n = void 0;
+const __nuxt_component_1$g = /* @__PURE__ */ _export_sfc(_sfc_main$T, [["ssrRender", _sfc_ssrRender$H]]);
+const meta$m = void 0;
 const _sfc_main$S = {};
 function _sfc_ssrRender$G(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><div class="flex justify-end px-4 pt-4"><button id="dropdownButton" data-dropdown-toggle="dropdown" class="btn btn-ghost" type="button"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div><div class="flex flex-col items-center pb-10 px-24"><img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://wcao.cc/image-space/api/avatar" alt="Bonnie image"><h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h5><span class="text-sm text-base-content text-opacity-50 text-center">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobTitle())}</span><div class="flex mt-4 space-x-3 lg:mt-6"><a href="#" class="btn btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><a href="#" class="btn btn-outline btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 max-w-md w-full bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><h5 class="mb-4 text-xl font-medium text-base-content text-opacity-50"> Standard plan </h5><div class="flex items-baseline text-base-content text-opacity-90"><span class="text-3xl font-semibold">$</span><span class="text-5xl font-extrabold tracking-tight">49</span><span class="ml-1 text-xl font-normal text-base-content text-opacity-50">/month</span></div><ul role="list" class="my-7 space-y-5"><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">2 team members</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">20GB Cloud storage</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Integration help</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Sketch Files</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">API Access</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Complete documentation</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">24\xD77 phone &amp; email support</span></li></ul><button type="button" class="btn capitalize btn-primary"> Choose plan </button></div>`);
 }
 const _sfc_setup$S = _sfc_main$S.setup;
 _sfc_main$S.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/1.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/10.vue");
   return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
 };
-const __nuxt_component_1$g = /* @__PURE__ */ _export_sfc(_sfc_main$S, [["ssrRender", _sfc_ssrRender$G]]);
-const meta$m = void 0;
+const __nuxt_component_1$f = /* @__PURE__ */ _export_sfc(_sfc_main$S, [["ssrRender", _sfc_ssrRender$G]]);
+const meta$l = void 0;
 const _sfc_main$R = {};
 function _sfc_ssrRender$F(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 max-w-md w-full bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><h5 class="mb-4 text-xl font-medium text-base-content text-opacity-50"> Standard plan </h5><div class="flex items-baseline text-base-content text-opacity-90"><span class="text-3xl font-semibold">$</span><span class="text-5xl font-extrabold tracking-tight">49</span><span class="ml-1 text-xl font-normal text-base-content text-opacity-50">/month</span></div><ul role="list" class="my-7 space-y-5"><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">2 team members</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">20GB Cloud storage</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Integration help</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Sketch Files</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">API Access</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Complete documentation</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">24\xD77 phone &amp; email support</span></li></ul><button type="button" class="btn capitalize btn-primary"> Choose plan </button></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center" }, _attrs))}><div class="block rounded-lg shadow-lg bg-base-100 max-w-sm text-center"><div class="py-3 px-6 border-b border-base-content border-opacity-30"> Featured </div><div class="p-6"><h5 class="text-base-content text-opacity-90 text-xl font-medium mb-2"> Special title treatment </h5><p class="text-base-content text-opacity-70 text-base mb-4"> With supporting text below as a natural lead-in to additional content. </p><button type="button" class="btn capitalize btn-primary btn-sm"> Button </button></div><div class="py-3 px-6 border-t border-base-content border-opacity-30 text-base-content text-opacity-60"> 2 days ago </div></div></div>`);
 }
 const _sfc_setup$R = _sfc_main$R.setup;
 _sfc_main$R.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/10.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/11.vue");
   return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
 };
-const __nuxt_component_1$f = /* @__PURE__ */ _export_sfc(_sfc_main$R, [["ssrRender", _sfc_ssrRender$F]]);
-const meta$l = void 0;
-const _sfc_main$Q = {};
-function _sfc_ssrRender$E(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center" }, _attrs))}><div class="block rounded-lg shadow-lg bg-base-100 max-w-sm text-center"><div class="py-3 px-6 border-b border-base-content border-opacity-30"> Featured </div><div class="p-6"><h5 class="text-base-content text-opacity-90 text-xl font-medium mb-2"> Special title treatment </h5><p class="text-base-content text-opacity-70 text-base mb-4"> With supporting text below as a natural lead-in to additional content. </p><button type="button" class="btn capitalize btn-primary btn-sm"> Button </button></div><div class="py-3 px-6 border-t border-base-content border-opacity-30 text-base-content text-opacity-60"> 2 days ago </div></div></div>`);
-}
-const _sfc_setup$Q = _sfc_main$Q.setup;
-_sfc_main$Q.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/11.vue");
-  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
-};
-const __nuxt_component_1$e = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["ssrRender", _sfc_ssrRender$E]]);
+const __nuxt_component_1$e = /* @__PURE__ */ _export_sfc(_sfc_main$R, [["ssrRender", _sfc_ssrRender$F]]);
 const meta$k = void 0;
-const _sfc_main$P = {
+const _sfc_main$Q = {
   __name: "12",
   __ssrInlineRender: true,
   setup(__props) {
@@ -3974,66 +3986,66 @@ const _sfc_main$P = {
     };
   }
 };
-const _sfc_setup$P = _sfc_main$P.setup;
-_sfc_main$P.setup = (props, ctx) => {
+const _sfc_setup$Q = _sfc_main$Q.setup;
+_sfc_main$Q.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/12.vue");
-  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
 const meta$j = void 0;
-const _sfc_main$O = {};
-function _sfc_ssrRender$D(_ctx, _push, _parent, _attrs) {
+const _sfc_main$P = {};
+function _sfc_ssrRender$E(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mx-auto max-w-lg" }, _attrs))}><div class="bg-base-100 rounded-lg p-6 text-base-content text-opacity-10 relative z-10" style="${serverRenderer.exports.ssrRenderStyle({ "cursor": "auto" })}"><div class="flex flex-wrap items-center"><div class="flex w-full h-48 md:h-64 lg:h-72 relative"><div class="w-8/12 pr-4 relative"><img src="https://p.wcao.cc/w300?1" class="w-full h-full object-cover object-top rounded-lg bg-base-100"></div><div class="w-4/12 h-full"><div class="flex flex-col w-full h-full"><div class="flex-1 pb-2"><div class="w-full h-full relative"><img src="https://p.wcao.cc/w300?2" class="absolute top-0 w-full h-full object-cover object-center rounded-lg bg-base-100"></div></div><div class="flex-1 pt-2"><div class="w-full h-full relative"><img src="https://p.wcao.cc/w300?3" class="absolute top-0 w-full h-full object-cover object-bottom rounded-lg bg-base-100"></div></div></div></div></div><div class="w-full pt-8 flex flex-col justify-between"><div><h2 class="font-bold text-xl text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h2><div class="flex flex-wrap text-center pt-4 mb-2"><div class="badge mr-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</div><div class="badge mr-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</div><div class="badge mr-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</div></div><p class="text-xs leading-relaxed text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><ul class="text-xs mt-4 list-disc list-inside text-base-content text-opacity-50 leading-relaxed"><!--[-->`);
   serverRenderer.exports.ssrRenderList(4, (item) => {
     _push(`<li>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</li>`);
   });
   _push(`<!--]--></ul></div><div class="w-full sm:flex-1 grid gap-4 grid-cols-2 pt-6"><a href="javascript:;" class="btn capitalize text-base-content glass btn-info">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</a><button x-on:click="pay(&#39;Essential&#39;)" class="btn capitalize btn-success">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</button></div></div></div></div></div>`);
 }
+const _sfc_setup$P = _sfc_main$P.setup;
+_sfc_main$P.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/13.vue");
+  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+};
+const __nuxt_component_1$d = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["ssrRender", _sfc_ssrRender$E]]);
+const meta$i = void 0;
+const _sfc_main$O = {};
+function _sfc_ssrRender$D(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex items-center justify-center" }, _attrs))}><div class="max-w-md md:max-w-2xl px-2"><div class="bg-base-100 shadow-xl rounded-lg overflow-hidden md:flex"><div class="bg-cover bg-bottom h-56 md:h-auto md:w-56" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url(https://wcao.cc/r/a/sgwg)" })}"></div><div><div class="p-4 md:p-5"><p class="font-bold text-xl md:text-2xl">Amsterdam Walking Tour</p><p class="text-base-content text-opacity-70 md:text-lg"> Explore popular tourist destinations as well as hidden local favourites. </p></div><div class="p-4 md:p-5 bg-base-200"><div class="sm:flex sm:justify-between sm:items-center"><div><div class="text-lg text-base-content text-opacity-70"><span class="text-base-content text-opacity-90 font-bold">17</span> per person* </div><div class="flex items-center"><div class="inline-flex -mx-px"><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg></div><div class="text-base-content text-opacity-60 ml-2 text-sm md:text-base mt-1"> 28 reviews </div></div></div><button class="mt-3 sm:mt-0 btn btn-primary">Book now</button></div><div class="mt-3 text-base-content text-opacity-60 text-sm md:text-base"> *Prices may vary depending on selected date. </div></div></div></div></div></div>`);
+}
 const _sfc_setup$O = _sfc_main$O.setup;
 _sfc_main$O.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/13.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/14.vue");
   return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
-const __nuxt_component_1$d = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$D]]);
-const meta$i = void 0;
+const __nuxt_component_1$c = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$D]]);
+const meta$h = void 0;
 const _sfc_main$N = {};
 function _sfc_ssrRender$C(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex items-center justify-center" }, _attrs))}><div class="max-w-md md:max-w-2xl px-2"><div class="bg-base-100 shadow-xl rounded-lg overflow-hidden md:flex"><div class="bg-cover bg-bottom h-56 md:h-auto md:w-56" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url(https://wcao.cc/r/a/sgwg)" })}"></div><div><div class="p-4 md:p-5"><p class="font-bold text-xl md:text-2xl">Amsterdam Walking Tour</p><p class="text-base-content text-opacity-70 md:text-lg"> Explore popular tourist destinations as well as hidden local favourites. </p></div><div class="p-4 md:p-5 bg-base-200"><div class="sm:flex sm:justify-between sm:items-center"><div><div class="text-lg text-base-content text-opacity-70"><span class="text-base-content text-opacity-90 font-bold">17</span> per person* </div><div class="flex items-center"><div class="inline-flex -mx-px"><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg></div><div class="text-base-content text-opacity-60 ml-2 text-sm md:text-base mt-1"> 28 reviews </div></div></div><button class="mt-3 sm:mt-0 btn btn-primary">Book now</button></div><div class="mt-3 text-base-content text-opacity-60 text-sm md:text-base"> *Prices may vary depending on selected date. </div></div></div></div></div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl" }, _attrs))}><div class="card overflow-visible"><div class="card-header mx-4 -mt-6 max-h-[400px] rounded-lg overflow-hidden"><a href="https://wcao.cc" blur-shadow-image="true"><img class="w-full" src="https://wcao.cc/r/a/girls" alt="tailwind-card-image"></a></div><div class="card-body"><a href="#"><h4 class="font-semibold">Material Design 3</h4></a><p class="opcacity-60 mb-4"> The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. </p><button class="btn capitalize" data-ripple-light="true"> Read More </button></div></div></div>`);
 }
 const _sfc_setup$N = _sfc_main$N.setup;
 _sfc_main$N.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/14.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/15.vue");
   return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
 };
-const __nuxt_component_1$c = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["ssrRender", _sfc_ssrRender$C]]);
-const meta$h = void 0;
+const __nuxt_component_1$b = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["ssrRender", _sfc_ssrRender$C]]);
+const meta$g = void 0;
 const _sfc_main$M = {};
 function _sfc_ssrRender$B(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-base-100 w-full mb-6 shadow-lg rounded-xl" }, _attrs))}><div class="card overflow-visible"><div class="card-header mx-4 -mt-6 max-h-[400px] rounded-lg overflow-hidden"><a href="https://wcao.cc" blur-shadow-image="true"><img class="w-full" src="https://wcao.cc/r/a/girls" alt="tailwind-card-image"></a></div><div class="card-body"><a href="#"><h4 class="font-semibold">Material Design 3</h4></a><p class="opcacity-60 mb-4"> The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. </p><button class="btn capitalize" data-ripple-light="true"> Read More </button></div></div></div>`);
+  _push(`<article${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mb-4 break-inside p-6 rounded-xl bg-base-100 flex flex-col bg-clip-border" }, _attrs))}><div class="flex pb-6 items-center justify-between"><div class="flex"><a class="inline-block mr-4" href="#"><img class="rounded-full max-w-none w-14 h-14" src="https://wcao.cc/r/a/avatar"></a><div class="flex flex-col"><div class="flex items-center"><a class="inline-block text-lg font-bold mr-2" href="#">Savannah Nguyen</a></div><div class="text-accent-focus text-opacity-50">January 22, 2021</div></div></div></div><h2 class="text-3xl font-extrabold">Web Design templates Selection</h2><div class="py-4"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div><div class="py-4"><a class="inline-flex items-center" href="#"><span class="mr-2"><svg class="fill-rose-600" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path></svg></span><span class="text-lg font-bold">15</span></a></div><div class="relative"><input class="pt-2 pb-2 pl-3 w-full h-11 bg-accent-focus bg-opacity-10 rounded-lg placeholder:text-accent-focus text-opacity-60 font-medium pr-20" type="text" placeholder="Write a comment"><span class="flex absolute right-3 top-2/4 -mt-3 items-center"><svg class="mr-2" style="${serverRenderer.exports.ssrRenderStyle({ "width": "26px", "height": "26px" })}" viewBox="0 0 24 24"><path fill="currentColor" d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z"></path></svg><svg class="fill-primary" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path></svg></span></div></article>`);
 }
 const _sfc_setup$M = _sfc_main$M.setup;
 _sfc_main$M.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/15.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/16.vue");
   return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
 };
-const __nuxt_component_1$b = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["ssrRender", _sfc_ssrRender$B]]);
-const meta$g = void 0;
-const _sfc_main$L = {};
-function _sfc_ssrRender$A(_ctx, _push, _parent, _attrs) {
-  _push(`<article${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mb-4 break-inside p-6 rounded-xl bg-base-100 flex flex-col bg-clip-border" }, _attrs))}><div class="flex pb-6 items-center justify-between"><div class="flex"><a class="inline-block mr-4" href="#"><img class="rounded-full max-w-none w-14 h-14" src="https://wcao.cc/r/a/avatar"></a><div class="flex flex-col"><div class="flex items-center"><a class="inline-block text-lg font-bold mr-2" href="#">Savannah Nguyen</a></div><div class="text-accent-focus text-opacity-50">January 22, 2021</div></div></div></div><h2 class="text-3xl font-extrabold">Web Design templates Selection</h2><div class="py-4"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div><div class="py-4"><a class="inline-flex items-center" href="#"><span class="mr-2"><svg class="fill-rose-600" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path></svg></span><span class="text-lg font-bold">15</span></a></div><div class="relative"><input class="pt-2 pb-2 pl-3 w-full h-11 bg-accent-focus bg-opacity-10 rounded-lg placeholder:text-accent-focus text-opacity-60 font-medium pr-20" type="text" placeholder="Write a comment"><span class="flex absolute right-3 top-2/4 -mt-3 items-center"><svg class="mr-2" style="${serverRenderer.exports.ssrRenderStyle({ "width": "26px", "height": "26px" })}" viewBox="0 0 24 24"><path fill="currentColor" d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z"></path></svg><svg class="fill-primary" style="${serverRenderer.exports.ssrRenderStyle({ "width": "24px", "height": "24px" })}" viewBox="0 0 24 24"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path></svg></span></div></article>`);
-}
-const _sfc_setup$L = _sfc_main$L.setup;
-_sfc_main$L.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/16.vue");
-  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
-};
-const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["ssrRender", _sfc_ssrRender$A]]);
+const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["ssrRender", _sfc_ssrRender$B]]);
 const meta$f = void 0;
-const _sfc_main$K = {
+const _sfc_main$L = {
   __name: "17",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4063,65 +4075,65 @@ const _sfc_main$K = {
     };
   }
 };
+const _sfc_setup$L = _sfc_main$L.setup;
+_sfc_main$L.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/17.vue");
+  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
+};
+const meta$e = void 0;
+const _sfc_main$K = {};
+function _sfc_ssrRender$A(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-sm bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><a href="#"><div class="h-64 w-full overflow-hidden"><img class="rounded-t-lg w-full" src="https://wcao.cc/image-space/api/girls?xxx" alt=""></div></a><div class="p-5"><a href="#"><h3 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3></a><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center btn btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adjective())} <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a></div></div>`);
+}
 const _sfc_setup$K = _sfc_main$K.setup;
 _sfc_main$K.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/17.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/2.vue");
   return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
 };
-const meta$e = void 0;
+const __nuxt_component_1$9 = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["ssrRender", _sfc_ssrRender$A]]);
+const meta$d = void 0;
 const _sfc_main$J = {};
 function _sfc_ssrRender$z(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-sm bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><a href="#"><div class="h-64 w-full overflow-hidden"><img class="rounded-t-lg w-full" src="https://wcao.cc/image-space/api/girls?xxx" alt=""></div></a><div class="p-5"><a href="#"><h3 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3></a><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center btn btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adjective())} <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a></div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-2xl px-8 py-4 mx-auto bg-base-100 rounded-lg shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.date.month())} 2019 </span><a class="btn btn-primary btn-sm">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div><div class="mt-2"><a href="#" class="text-2xl font-bold text-base-content text-opacity-70 hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</a><p class="mt-2 text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div class="flex items-center justify-between mt-4"><a href="#" class="btn btn-link hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><div class="flex items-center"><img class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" src="https://wcao.cc/image-space/api/avatar?xxx " alt="avatar"><a class="font-bold text-base-content text-opacity-70 cursor-pointer">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</a></div></div></div>`);
 }
 const _sfc_setup$J = _sfc_main$J.setup;
 _sfc_main$J.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/2.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/3.vue");
   return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
 };
-const __nuxt_component_1$9 = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["ssrRender", _sfc_ssrRender$z]]);
-const meta$d = void 0;
+const __nuxt_component_1$8 = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["ssrRender", _sfc_ssrRender$z]]);
+const meta$c = void 0;
 const _sfc_main$I = {};
 function _sfc_ssrRender$y(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-2xl px-8 py-4 mx-auto bg-base-100 rounded-lg shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.date.month())} 2019 </span><a class="btn btn-primary btn-sm">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div><div class="mt-2"><a href="#" class="text-2xl font-bold text-base-content text-opacity-70 hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</a><p class="mt-2 text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div class="flex items-center justify-between mt-4"><a href="#" class="btn btn-link hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><div class="flex items-center"><img class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" src="https://wcao.cc/image-space/api/avatar?xxx " alt="avatar"><a class="font-bold text-base-content text-opacity-70 cursor-pointer">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</a></div></div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "w-full max-w-sm px-4 py-3 mx-auto bg-base-100 rounded-md shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.product())}</span><span class="px-3 py-1 text-xs btn btn-primary btn-sm uppercase rounded-full">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productMaterial())}</span></div><div><h1 class="mt-2 text-lg font-semibold text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="mt-2 text-sm text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div><div class="flex items-center mt-2 text-base-content text-opacity-70"><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.conjunction())}:</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</a><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.noun())}</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.interjection())}</a></div><div class="flex items-center justify-center mt-4"><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"></path></svg></a><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8283 12L16.2426 13.4142L19.071 10.5858C20.6331 9.02365 20.6331 6.49099 19.071 4.9289C17.5089 3.3668 14.9762 3.3668 13.4141 4.9289L10.5857 7.75732L11.9999 9.17154L14.8283 6.34311C15.6094 5.56206 16.8757 5.56206 17.6568 6.34311C18.4378 7.12416 18.4378 8.39049 17.6568 9.17154L14.8283 12Z"></path><path d="M12 14.8285L13.4142 16.2427L10.5858 19.0711C9.02365 20.6332 6.49099 20.6332 4.9289 19.0711C3.3668 17.509 3.3668 14.9764 4.9289 13.4143L7.75732 10.5858L9.17154 12L6.34311 14.8285C5.56206 15.6095 5.56206 16.8758 6.34311 17.6569C7.12416 18.4379 8.39049 18.4379 9.17154 17.6569L12 14.8285Z"></path><path d="M14.8284 10.5857C15.2189 10.1952 15.2189 9.56199 14.8284 9.17147C14.4379 8.78094 13.8047 8.78094 13.4142 9.17147L9.17154 13.4141C8.78101 13.8046 8.78101 14.4378 9.17154 14.8283C9.56206 15.2188 10.1952 15.2188 10.5857 14.8283L14.8284 10.5857Z"></path></svg></a></div></div></div>`);
 }
 const _sfc_setup$I = _sfc_main$I.setup;
 _sfc_main$I.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/3.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/4.vue");
   return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
 };
-const __nuxt_component_1$8 = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["ssrRender", _sfc_ssrRender$y]]);
-const meta$c = void 0;
+const __nuxt_component_1$7 = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["ssrRender", _sfc_ssrRender$y]]);
+const meta$b = void 0;
 const _sfc_main$H = {};
 function _sfc_ssrRender$x(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "w-full max-w-sm px-4 py-3 mx-auto bg-base-100 rounded-md shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.product())}</span><span class="px-3 py-1 text-xs btn btn-primary btn-sm uppercase rounded-full">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productMaterial())}</span></div><div><h1 class="mt-2 text-lg font-semibold text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="mt-2 text-sm text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div><div class="flex items-center mt-2 text-base-content text-opacity-70"><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.conjunction())}:</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</a><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.noun())}</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.interjection())}</a></div><div class="flex items-center justify-center mt-4"><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"></path></svg></a><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8283 12L16.2426 13.4142L19.071 10.5858C20.6331 9.02365 20.6331 6.49099 19.071 4.9289C17.5089 3.3668 14.9762 3.3668 13.4141 4.9289L10.5857 7.75732L11.9999 9.17154L14.8283 6.34311C15.6094 5.56206 16.8757 5.56206 17.6568 6.34311C18.4378 7.12416 18.4378 8.39049 17.6568 9.17154L14.8283 12Z"></path><path d="M12 14.8285L13.4142 16.2427L10.5858 19.0711C9.02365 20.6332 6.49099 20.6332 4.9289 19.0711C3.3668 17.509 3.3668 14.9764 4.9289 13.4143L7.75732 10.5858L9.17154 12L6.34311 14.8285C5.56206 15.6095 5.56206 16.8758 6.34311 17.6569C7.12416 18.4379 8.39049 18.4379 9.17154 17.6569L12 14.8285Z"></path><path d="M14.8284 10.5857C15.2189 10.1952 15.2189 9.56199 14.8284 9.17147C14.4379 8.78094 13.8047 8.78094 13.4142 9.17147L9.17154 13.4141C8.78101 13.8046 8.78101 14.4378 9.17154 14.8283C9.56206 15.2188 10.1952 15.2188 10.5857 14.8283L14.8284 10.5857Z"></path></svg></a></div></div></div>`);
-}
-const _sfc_setup$H = _sfc_main$H.setup;
-_sfc_main$H.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/4.vue");
-  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
-};
-const __nuxt_component_1$7 = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["ssrRender", _sfc_ssrRender$x]]);
-const meta$b = void 0;
-const _sfc_main$G = {};
-function _sfc_ssrRender$w(_ctx, _push, _parent, _attrs) {
   _push(`<a${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
     href: "#",
     class: "flex flex-col items-center bg-base-100 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-base-200"
   }, _attrs))}><img class="object-cover mt-4 sm:mt-0 w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://wcao.cc/image-space/api/ultraman-card?xxx" alt=""><div class="flex flex-col justify-between p-4 leading-normal"><h5 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h5><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
 }
-const _sfc_setup$G = _sfc_main$G.setup;
-_sfc_main$G.setup = (props, ctx) => {
+const _sfc_setup$H = _sfc_main$H.setup;
+_sfc_main$H.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/5.vue");
-  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
+  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
 };
-const __nuxt_component_1$6 = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["ssrRender", _sfc_ssrRender$w]]);
+const __nuxt_component_1$6 = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["ssrRender", _sfc_ssrRender$x]]);
 const meta$a = void 0;
-const _sfc_main$F = {
+const _sfc_main$G = {
   __name: "6",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4173,14 +4185,14 @@ const _sfc_main$F = {
     };
   }
 };
-const _sfc_setup$F = _sfc_main$F.setup;
-_sfc_main$F.setup = (props, ctx) => {
+const _sfc_setup$G = _sfc_main$G.setup;
+_sfc_main$G.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/6.vue");
-  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
+  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
 };
 const meta$9 = void 0;
-const _sfc_main$E = {
+const _sfc_main$F = {
   __name: "7",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4190,14 +4202,14 @@ const _sfc_main$E = {
     };
   }
 };
-const _sfc_setup$E = _sfc_main$E.setup;
-_sfc_main$E.setup = (props, ctx) => {
+const _sfc_setup$F = _sfc_main$F.setup;
+_sfc_main$F.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/7.vue");
-  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
+  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
 const meta$8 = void 0;
-const _sfc_main$D = {
+const _sfc_main$E = {
   __name: "8",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4241,38 +4253,38 @@ const _sfc_main$D = {
     };
   }
 };
+const _sfc_setup$E = _sfc_main$E.setup;
+_sfc_main$E.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/8.vue");
+  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
+};
+const meta$7 = void 0;
+const _sfc_main$D = {};
+function _sfc_ssrRender$w(_ctx, _push, _parent, _attrs) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full max-w-md bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><div class="flex justify-between items-center mb-4"><h5 class="text-xl font-bold leading-none text-base-content text-opacity-90"> Latest Customers </h5><a href="#" class="text-sm font-medium text-primary hover:underline"> View all </a></div><div class="flow-root"><ul role="list" class="divide-y divide-base-200"><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?1" alt="Neil image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Neil Sims </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $320 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?2" alt="Bonnie image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Bonnie Green </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $3467 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?3" alt="Michael image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Michael Gough </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $67 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?4" alt="Lana image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Lana Byrd </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $367 </div></div></li><li class="pt-3 pb-0 sm:pt-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?5" alt="Thomas image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Thomes Lean </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $2367 </div></div></li></ul></div></div>`);
+}
 const _sfc_setup$D = _sfc_main$D.setup;
 _sfc_main$D.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/8.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/9.vue");
   return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const meta$7 = void 0;
+const __nuxt_component_1$5 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["ssrRender", _sfc_ssrRender$w]]);
+const meta$6 = void 0;
 const _sfc_main$C = {};
 function _sfc_ssrRender$v(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full max-w-md bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><div class="flex justify-between items-center mb-4"><h5 class="text-xl font-bold leading-none text-base-content text-opacity-90"> Latest Customers </h5><a href="#" class="text-sm font-medium text-primary hover:underline"> View all </a></div><div class="flow-root"><ul role="list" class="divide-y divide-base-200"><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?1" alt="Neil image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Neil Sims </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $320 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?2" alt="Bonnie image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Bonnie Green </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $3467 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?3" alt="Michael image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Michael Gough </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $67 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?4" alt="Lana image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Lana Byrd </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $367 </div></div></li><li class="pt-3 pb-0 sm:pt-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?5" alt="Thomas image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Thomes Lean </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $2367 </div></div></li></ul></div></div>`);
+  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-white dark:bg-gray-900" }, _attrs))}><div class="container px-6 py-10 mx-auto"><h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> our team </h1><p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum. </p><div class="flex items-center justify-center"><div class="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl"><button class="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12"> design </button><button class="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12"> development </button><button class="px-4 py-2 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12"> marketing </button></div></div><div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3"><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> arthur melo </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> design director </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=764&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> Pamela Anderson </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> Lead Developer </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> John Doe </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> Full stack developer </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div></div></div></section>`);
 }
 const _sfc_setup$C = _sfc_main$C.setup;
 _sfc_main$C.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/9.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/hero/1.vue");
   return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
-const __nuxt_component_1$5 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["ssrRender", _sfc_ssrRender$v]]);
-const meta$6 = void 0;
-const _sfc_main$B = {};
-function _sfc_ssrRender$u(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-white dark:bg-gray-900" }, _attrs))}><div class="container px-6 py-10 mx-auto"><h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> our team </h1><p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum. </p><div class="flex items-center justify-center"><div class="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl"><button class="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12"> design </button><button class="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12"> development </button><button class="px-4 py-2 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12"> marketing </button></div></div><div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3"><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> arthur melo </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> design director </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=764&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> Pamela Anderson </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> Lead Developer </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> John Doe </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> Full stack developer </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div></div></div></section>`);
-}
-const _sfc_setup$B = _sfc_main$B.setup;
-_sfc_main$B.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/hero/1.vue");
-  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
-};
-const __nuxt_component_1$4 = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender$u]]);
+const __nuxt_component_1$4 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["ssrRender", _sfc_ssrRender$v]]);
 const meta$5 = void 0;
-const _sfc_main$A = {
+const _sfc_main$B = {
   __name: "1",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4299,64 +4311,64 @@ const _sfc_main$A = {
     };
   }
 };
-const _sfc_setup$A = _sfc_main$A.setup;
-_sfc_main$A.setup = (props, ctx) => {
+const _sfc_setup$B = _sfc_main$B.setup;
+_sfc_main$B.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/1.vue");
-  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
 const meta$4 = void 0;
-const _sfc_main$z = {};
-function _sfc_ssrRender$t(_ctx, _push, _parent, _attrs) {
+const _sfc_main$A = {};
+function _sfc_ssrRender$u(_ctx, _push, _parent, _attrs) {
   _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-base-content text-opacity-60 bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto"><div class="flex flex-col text-center w-full mb-20"><h2 class="text-xs text-primary tracking-widest font-medium mb-1">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productMaterial())}</h2><h1 class="sm:text-3xl text-2xl font-medium mb-4 text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="lg:w-2/3 mx-auto leading-relaxed text-base">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. </p></div><div class="flex flex-wrap"><!--[-->`);
   serverRenderer.exports.ssrRenderList(4, (item) => {
     _push(`<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-base-content border-opacity-20"><h2 class="text-lg sm:text-xl text-base-content text-opacity-90 font-medium mb-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h2><p class="leading-relaxed text-base mb-4">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a class="text-primary inline-flex items-center">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())} <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div>`);
   });
   _push(`<!--]--></div><div class="flex justify-center mt-16"><button class="btn capitalize btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.preposition())}</button></div></div></section>`);
 }
+const _sfc_setup$A = _sfc_main$A.setup;
+_sfc_main$A.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/2.vue");
+  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+};
+const __nuxt_component_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$u]]);
+const meta$3 = void 0;
+const _sfc_main$z = {};
+function _sfc_ssrRender$t(_ctx, _push, _parent, _attrs) {
+  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto"><div class="flex flex-wrap w-full mb-20"><div class="lg:w-1/2 w-full mb-6 lg:mb-0"><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"> Pitchfork Kickstarter Taxidermy </h1><div class="h-1 w-20 bg-indigo-500 rounded"></div></div><p class="lg:w-1/2 w-full leading-relaxed text-gray-500"> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven&#39;t heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag. </p></div><div class="flex flex-wrap -m-4"><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Chichen Itza </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Colosseum Roma </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Great Pyramid of Giza </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> San Francisco </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div></div></div></section>`);
+}
 const _sfc_setup$z = _sfc_main$z.setup;
 _sfc_main$z.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/2.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/3.vue");
   return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
-const __nuxt_component_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$t]]);
-const meta$3 = void 0;
+const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$t]]);
+const meta$2 = void 0;
 const _sfc_main$y = {};
 function _sfc_ssrRender$s(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto"><div class="flex flex-wrap w-full mb-20"><div class="lg:w-1/2 w-full mb-6 lg:mb-0"><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"> Pitchfork Kickstarter Taxidermy </h1><div class="h-1 w-20 bg-indigo-500 rounded"></div></div><p class="lg:w-1/2 w-full leading-relaxed text-gray-500"> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven&#39;t heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag. </p></div><div class="flex flex-wrap -m-4"><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Chichen Itza </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Colosseum Roma </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Great Pyramid of Giza </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> San Francisco </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div></div></div></section>`);
+  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto"><div class="flex flex-wrap w-full mb-20 flex-col items-center text-center"><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"> Pitchfork Kickstarter Taxidermy </h1><p class="lg:w-1/2 w-full leading-relaxed text-gray-500"> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. </p></div><div class="flex flex-wrap -m-4"><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Shooting Stars </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> The Catalyzer </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Neptune </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Melanchole </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Bunker </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Ramona Falls </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div></div><button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Button </button></div></section>`);
 }
 const _sfc_setup$y = _sfc_main$y.setup;
 _sfc_main$y.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/3.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/4.vue");
   return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
-const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$s]]);
-const meta$2 = void 0;
+const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$s]]);
+const meta$1 = void 0;
 const _sfc_main$x = {};
 function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto"><div class="flex flex-wrap w-full mb-20 flex-col items-center text-center"><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"> Pitchfork Kickstarter Taxidermy </h1><p class="lg:w-1/2 w-full leading-relaxed text-gray-500"> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. </p></div><div class="flex flex-wrap -m-4"><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Shooting Stars </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> The Catalyzer </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Neptune </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Melanchole </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Bunker </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Ramona Falls </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div></div><button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Button </button></div></section>`);
+  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto flex flex-wrap"><div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden"><img alt="feature" class="object-cover object-center h-full w-full" src="https://picsum.photos/460/500"></div><div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center"><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Shooting Stars </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> The Catalyzer </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Neptune </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div></div></div></section>`);
 }
 const _sfc_setup$x = _sfc_main$x.setup;
 _sfc_main$x.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/4.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/5.vue");
   return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
-const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$r]]);
-const meta$1 = void 0;
-const _sfc_main$w = {};
-function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto flex flex-wrap"><div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden"><img alt="feature" class="object-cover object-center h-full w-full" src="https://picsum.photos/460/500"></div><div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center"><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Shooting Stars </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> The Catalyzer </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Neptune </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div></div></div></section>`);
-}
-const _sfc_setup$w = _sfc_main$w.setup;
-_sfc_main$w.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/5.vue");
-  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
-};
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$q]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["ssrRender", _sfc_ssrRender$r]]);
 const meta = void 0;
 const routes = [
   {
@@ -4364,7 +4376,7 @@ const routes = [
     path: "/:language?/blog/1",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/blog/1.vue",
     children: [],
-    meta: meta$o,
+    meta: meta$p,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _1$7;
@@ -4375,10 +4387,21 @@ const routes = [
     path: "/:language?/blog/2",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/blog/2.vue",
     children: [],
-    meta: meta$n,
+    meta: meta$o,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _2$5;
+    })
+  },
+  {
+    name: "language-blog-3",
+    path: "/:language?/blog/3",
+    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/blog/3.vue",
+    children: [],
+    meta: meta$n,
+    alias: [],
+    component: () => Promise.resolve().then(function() {
+      return _3$5;
     })
   },
   {
@@ -61411,7 +61434,7 @@ var SwipeDirection;
   SwipeDirection2["NONE"] = "NONE";
 })(SwipeDirection || (SwipeDirection = {}));
 vue_cjs_prod.ref([]);
-const _sfc_main$v = {
+const _sfc_main$w = {
   __name: "error-404",
   __ssrInlineRender: true,
   props: {
@@ -61473,14 +61496,14 @@ const _sfc_main$v = {
     };
   }
 };
-const _sfc_setup$v = _sfc_main$v.setup;
-_sfc_main$v.setup = (props, ctx) => {
+const _sfc_setup$w = _sfc_main$w.setup;
+_sfc_main$w.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-404.vue");
-  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
+  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-const Error404 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["__scopeId", "data-v-011aae6d"]]);
-const _sfc_main$u = {
+const Error404 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["__scopeId", "data-v-011aae6d"]]);
+const _sfc_main$v = {
   __name: "error-500",
   __ssrInlineRender: true,
   props: {
@@ -61521,14 +61544,14 @@ const _sfc_main$u = {
     };
   }
 };
-const _sfc_setup$u = _sfc_main$u.setup;
-_sfc_main$u.setup = (props, ctx) => {
+const _sfc_setup$v = _sfc_main$v.setup;
+_sfc_main$v.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-500.vue");
-  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
+  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
 };
-const Error500 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-6aee6495"]]);
-const _sfc_main$s = {
+const Error500 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["__scopeId", "data-v-6aee6495"]]);
+const _sfc_main$t = {
   __name: "nuxt-error-page",
   __ssrInlineRender: true,
   props: {
@@ -61556,13 +61579,13 @@ const _sfc_main$s = {
     };
   }
 };
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
+const _sfc_setup$t = _sfc_main$t.setup;
+_sfc_main$t.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
+  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
-const _sfc_main$r = {
+const _sfc_main$s = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
@@ -61580,7 +61603,7 @@ const _sfc_main$r = {
       serverRenderer.exports.ssrRenderSuspense(_push, {
         default: () => {
           if (vue_cjs_prod.unref(error)) {
-            _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(_sfc_main$s), { error: vue_cjs_prod.unref(error) }, null, _parent));
+            _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(_sfc_main$t), { error: vue_cjs_prod.unref(error) }, null, _parent));
           } else {
             _push(serverRenderer.exports.ssrRenderComponent(_component_App, null, null, _parent));
           }
@@ -61590,26 +61613,26 @@ const _sfc_main$r = {
     };
   }
 };
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-root.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-const _sfc_main$q = {};
-function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
+const _sfc_main$r = {};
+function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_page = vue_cjs_prod.resolveComponent("nuxt-page");
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ id: "beauty-template" }, _attrs))}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_page, null, null, _parent));
   _push(`</div>`);
 }
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$p]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$q]]);
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch$1.create({
     baseURL: baseURL()
@@ -61619,7 +61642,7 @@ let entry;
 const plugins = normalizePlugins(_plugins);
 {
   entry = async function createNuxtAppServer(ssrContext) {
-    const vueApp = vue_cjs_prod.createApp(_sfc_main$r);
+    const vueApp = vue_cjs_prod.createApp(_sfc_main$s);
     vueApp.component("App", AppComponent);
     const nuxt = createNuxtApp({ vueApp, ssrContext });
     try {
@@ -61633,7 +61656,7 @@ const plugins = normalizePlugins(_plugins);
   };
 }
 const entry$1 = (ctx) => entry(ctx);
-const _sfc_main$p = {
+const _sfc_main$q = {
   __name: "default",
   __ssrInlineRender: true,
   props: {
@@ -61803,20 +61826,20 @@ const _sfc_main$p = {
     };
   }
 };
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
+const _sfc_setup$q = _sfc_main$q.setup;
+_sfc_main$q.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("layouts/default.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
 };
 const _default = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _sfc_main$p
+  "default": _sfc_main$q
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$o = {};
-function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
+const _sfc_main$p = {};
+function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Blog1 = _sfc_main$U;
+  const _component_Blog1 = _sfc_main$W;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     middle: false,
     lang: "",
@@ -61834,21 +61857,21 @@ function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/blog/1.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
 };
-const _1$6 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o]]);
+const _1$6 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$p]]);
 const _1$7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _1$6
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$n = {};
-function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
+const _sfc_main$o = {};
+function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Blog2 = _sfc_main$T;
+  const _component_Blog2 = _sfc_main$V;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     middle: false,
     daisyui: "",
@@ -61866,16 +61889,44 @@ function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$n = _sfc_main$n.setup;
-_sfc_main$n.setup = (props, ctx) => {
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/blog/2.vue");
-  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
-const _2$4 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$n]]);
+const _2$4 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o]]);
 const _2$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _2$4
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$n = {};
+function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0;
+  const _component_Blog3 = __nuxt_component_1$h;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_Blog3, null, null, _parent2, _scopeId));
+      } else {
+        return [
+          vue_cjs_prod.createVNode(_component_Blog3)
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+}
+const _sfc_setup$n = _sfc_main$n.setup;
+_sfc_main$n.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/blog/3.vue");
+  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+};
+const _3$4 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$n]]);
+const _3$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  "default": _3$4
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$m = {};
 function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
@@ -61967,7 +62018,7 @@ const _11$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
 const _sfc_main$j = {};
 function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card12 = _sfc_main$P;
+  const _component_Card12 = _sfc_main$Q;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     daisyui: "",
     lang: ""
@@ -62113,7 +62164,7 @@ const _16$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
 const _sfc_main$e = {};
 function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card17 = _sfc_main$K;
+  const _component_Card17 = _sfc_main$L;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     daisyui: "",
     lang: ""
@@ -62268,7 +62319,7 @@ const _5$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty
 const _sfc_main$9 = {};
 function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card6 = _sfc_main$F;
+  const _component_Card6 = _sfc_main$G;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62299,7 +62350,7 @@ const _6$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty
 const _sfc_main$8 = {};
 function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card7 = _sfc_main$E;
+  const _component_Card7 = _sfc_main$F;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62330,7 +62381,7 @@ const _7$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty
 const _sfc_main$7 = {};
 function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card8 = _sfc_main$D;
+  const _component_Card8 = _sfc_main$E;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62417,7 +62468,7 @@ const _1$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty
 const _sfc_main$4 = {};
 function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Section1 = _sfc_main$A;
+  const _component_Section1 = _sfc_main$B;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     daisyui: "",
     lang: ""

@@ -843,9 +843,9 @@ var vueRouter_cjs_prod = {};
     function listen(callback) {
       listeners.push(callback);
       const teardown = () => {
-        const index = listeners.indexOf(callback);
-        if (index > -1)
-          listeners.splice(index, 1);
+        const index2 = listeners.indexOf(callback);
+        if (index2 > -1)
+          listeners.splice(index2, 1);
       };
       teardowns.push(teardown);
       return teardown;
@@ -996,9 +996,9 @@ var vueRouter_cjs_prod = {};
       listen(callback) {
         listeners.push(callback);
         return () => {
-          const index = listeners.indexOf(callback);
-          if (index > -1)
-            listeners.splice(index, 1);
+          const index2 = listeners.indexOf(callback);
+          if (index2 > -1)
+            listeners.splice(index2, 1);
         };
       },
       destroy() {
@@ -1457,9 +1457,9 @@ var vueRouter_cjs_prod = {};
           matcher.alias.forEach(removeRoute);
         }
       } else {
-        const index = matchers.indexOf(matcherRef);
-        if (index > -1) {
-          matchers.splice(index, 1);
+        const index2 = matchers.indexOf(matcherRef);
+        if (index2 > -1) {
+          matchers.splice(index2, 1);
           if (matcherRef.record.name)
             matcherMap.delete(matcherRef.record.name);
           matcherRef.children.forEach(removeRoute);
@@ -1792,11 +1792,11 @@ var vueRouter_cjs_prod = {};
       const currentMatched = currentRoute.matched;
       if (!routeMatched || !currentMatched.length)
         return -1;
-      const index = currentMatched.findIndex(isSameRouteRecord.bind(null, routeMatched));
-      if (index > -1)
-        return index;
+      const index2 = currentMatched.findIndex(isSameRouteRecord.bind(null, routeMatched));
+      if (index2 > -1)
+        return index2;
       const parentRecordPath = getOriginalPath(matched[length - 2]);
-      return length > 1 && getOriginalPath(routeMatched) === parentRecordPath && currentMatched[currentMatched.length - 1].path !== parentRecordPath ? currentMatched.findIndex(isSameRouteRecord.bind(null, matched[length - 2])) : index;
+      return length > 1 && getOriginalPath(routeMatched) === parentRecordPath && currentMatched[currentMatched.length - 1].path !== parentRecordPath ? currentMatched.findIndex(isSameRouteRecord.bind(null, matched[length - 2])) : index2;
     });
     const isActive = vue.computed(() => activeRecordIndex.value > -1 && includesParams(currentRoute.params, route.value.params));
     const isExactActive = vue.computed(() => activeRecordIndex.value > -1 && activeRecordIndex.value === currentRoute.matched.length - 1 && isSameRouteLocationParams(currentRoute.params, route.value.params));
@@ -2724,7 +2724,7 @@ function defineNuxtLink(options) {
     }
   });
 }
-const __nuxt_component_0$1 = defineNuxtLink({ componentName: "NuxtLink" });
+const __nuxt_component_0$3 = defineNuxtLink({ componentName: "NuxtLink" });
 var shared_cjs_prod = {};
 Object.defineProperty(shared_cjs_prod, "__esModule", { value: true });
 function makeMap(str, expectsLowerCase) {
@@ -2911,10 +2911,10 @@ function escapeHtml(string) {
   }
   let html = "";
   let escaped;
-  let index;
+  let index2;
   let lastIndex = 0;
-  for (index = match.index; index < str.length; index++) {
-    switch (str.charCodeAt(index)) {
+  for (index2 = match.index; index2 < str.length; index2++) {
+    switch (str.charCodeAt(index2)) {
       case 34:
         escaped = "&quot;";
         break;
@@ -2933,13 +2933,13 @@ function escapeHtml(string) {
       default:
         continue;
     }
-    if (lastIndex !== index) {
-      html += str.slice(lastIndex, index);
+    if (lastIndex !== index2) {
+      html += str.slice(lastIndex, index2);
     }
-    lastIndex = index + 1;
+    lastIndex = index2 + 1;
     html += escaped;
   }
-  return lastIndex !== index ? html + str.slice(lastIndex, index) : html;
+  return lastIndex !== index2 ? html + str.slice(lastIndex, index2) : html;
 }
 const commentStripRE = /^-?>|<!--|-->|--!>|<!-$/g;
 function escapeHtmlComment(src) {
@@ -3366,18 +3366,18 @@ var createHead = () => {
           if (tag.tag === "meta" || tag.tag === "base" || tag.tag === "script") {
             const key = getTagKey(tag.props);
             if (key) {
-              let index = -1;
+              let index2 = -1;
               for (let i = 0; i < deduped.length; i++) {
                 const prev = deduped[i];
                 const prevValue = prev.props[key.name];
                 const nextValue = tag.props[key.name];
                 if (prev.tag === tag.tag && prevValue === nextValue) {
-                  index = i;
+                  index2 = i;
                   break;
                 }
               }
-              if (index !== -1) {
-                deduped.splice(index, 1);
+              if (index2 !== -1) {
+                deduped.splice(index2, 1);
               }
             }
           }
@@ -3833,7 +3833,7 @@ const layouts = {
   }))
 };
 const defaultLayoutTransition = { name: "layout", mode: "out-in" };
-const __nuxt_component_0 = vue_cjs_prod.defineComponent({
+const __nuxt_component_0$2 = vue_cjs_prod.defineComponent({
   props: {
     name: {
       type: [String, Boolean, Object],
@@ -3857,7 +3857,7 @@ const useParams = () => {
   }
   return params;
 };
-const _sfc_main$V = {
+const _sfc_main$Q = {
   __name: "1",
   __ssrInlineRender: true,
   setup(__props) {
@@ -3869,29 +3869,80 @@ const _sfc_main$V = {
       ko: ["\uB354 \uB9CE\uC740 \uAC8C\uC2DC\uBB3C \uB85C\uB4DC..."]
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-200 text-base-content pb-6 w-full" }, _attrs))}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"><a href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"><img src="https://wcao.cc/r/a/animal?7" alt="" class="object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"><div class="p-6 space-y-2 lg:col-span-5"><h3 class="text-2xl font-semibold sm:text-4xl">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70 overflow-hidden">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
-      serverRenderer.exports.ssrRenderList(6, (item) => {
-        _push(`<a href="#" class="max-w-sm mx-auto bg-base-100 shadow overflow-hidden rounded"><img role="presentation" class="object-cover w-full rounded-t h-44 bg-base-300"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item}`)}><div class="p-6 space-y-2"><h3 class="text-2xl font-semibold">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
-      });
-      _push(`<!--]--></div><div class="flex justify-center"><button type="button" class="btn btn-ghost normal-case font-light btn-sm text-base-content/50">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</button></div></div></section>`);
+      const _component_nuxt_layout = __nuxt_component_0$2;
+      _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+        middle: false,
+        lang: "",
+        daisyui: ""
+      }, _attrs), {
+        default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(`<section class="bg-base-200 text-base-content pb-6 w-full"${_scopeId}><div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12"${_scopeId}><a href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"${_scopeId}><img src="https://wcao.cc/r/a/animal?7" alt="" class="object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"${_scopeId}><div class="p-6 space-y-2 lg:col-span-5"${_scopeId}><h3 class="text-2xl font-semibold sm:text-4xl"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70 overflow-hidden"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a><div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"${_scopeId}><!--[-->`);
+            serverRenderer.exports.ssrRenderList(6, (item) => {
+              _push2(`<a href="#" class="max-w-sm mx-auto bg-base-100 shadow overflow-hidden rounded"${_scopeId}><img role="presentation" class="object-cover w-full rounded-t h-44 bg-base-300"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item}`)}${_scopeId}><div class="p-6 space-y-2"${_scopeId}><h3 class="text-2xl font-semibold"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3><span class="text-xs text-base-content text-opacity-50"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$Random.datetime("yyyy-MM-dd"))}</span><p class="text-base-content/70"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
+            });
+            _push2(`<!--]--></div><div class="flex justify-center"${_scopeId}><button type="button" class="btn btn-ghost normal-case font-light btn-sm text-base-content/50"${_scopeId}>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</button></div></div></section>`);
+          } else {
+            return [
+              vue_cjs_prod.createVNode("section", { class: "bg-base-200 text-base-content pb-6 w-full" }, [
+                vue_cjs_prod.createVNode("div", { class: "container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12" }, [
+                  vue_cjs_prod.createVNode("a", {
+                    href: "#",
+                    class: "block max-w-sm gap-3 mx-auto sm:max-w-full lg:grid lg:grid-cols-12 bg-base-100 rounded overflow-hidden shadow"
+                  }, [
+                    vue_cjs_prod.createVNode("img", {
+                      src: "https://wcao.cc/r/a/animal?7",
+                      alt: "",
+                      class: "object-cover w-full h-64 rounded-l sm:h-96 lg:col-span-7 bg-base-300 overflow-hidden"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "p-6 space-y-2 lg:col-span-5" }, [
+                      vue_cjs_prod.createVNode("h3", { class: "text-2xl font-semibold sm:text-4xl" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productName()), 1),
+                      vue_cjs_prod.createVNode("span", { class: "text-xs text-base-content text-opacity-50" }, vue_cjs_prod.toDisplayString(_ctx.$Random.datetime("yyyy-MM-dd")), 1),
+                      vue_cjs_prod.createVNode("p", { class: "text-base-content/70 overflow-hidden" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()), 1)
+                    ])
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.Fragment, null, vue_cjs_prod.renderList(6, (item) => {
+                      return vue_cjs_prod.createVNode("a", {
+                        href: "#",
+                        class: "max-w-sm mx-auto bg-base-100 shadow overflow-hidden rounded"
+                      }, [
+                        vue_cjs_prod.createVNode("img", {
+                          role: "presentation",
+                          class: "object-cover w-full rounded-t h-44 bg-base-300",
+                          src: `https://wcao.cc/r/a/animal?${item}`
+                        }, null, 8, ["src"]),
+                        vue_cjs_prod.createVNode("div", { class: "p-6 space-y-2" }, [
+                          vue_cjs_prod.createVNode("h3", { class: "text-2xl font-semibold" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productName()), 1),
+                          vue_cjs_prod.createVNode("span", { class: "text-xs text-base-content text-opacity-50" }, vue_cjs_prod.toDisplayString(_ctx.$Random.datetime("yyyy-MM-dd")), 1),
+                          vue_cjs_prod.createVNode("p", { class: "text-base-content/70" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()), 1)
+                        ])
+                      ]);
+                    }), 64))
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "flex justify-center" }, [
+                    vue_cjs_prod.createVNode("button", {
+                      type: "button",
+                      class: "btn btn-ghost normal-case font-light btn-sm text-base-content/50"
+                    }, vue_cjs_prod.toDisplayString(locales2[vue_cjs_prod.unref(language)][0]), 1)
+                  ])
+                ])
+              ])
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
     };
   }
 };
-const _sfc_setup$V = _sfc_main$V.setup;
-_sfc_main$V.setup = (props, ctx) => {
+const _sfc_setup$Q = _sfc_main$Q.setup;
+_sfc_main$Q.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/1.vue");
-  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
+  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
-const _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
-  }
-  return target;
-};
-const meta$q = void 0;
-const _sfc_main$U = {
+const _sfc_main$P = {
   __name: "2",
   __ssrInlineRender: true,
   setup(__props) {
@@ -3903,74 +3954,561 @@ const _sfc_main$U = {
       ko: ["\uB0B4 \uBE14\uB85C\uADF8\uC5D0 \uC624\uC2E0 \uAC83\uC744 \uD658\uC601\uD569\uB2C8\uB2E4."]
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 w-full" }, _attrs))}><div class="mx-auto my-12 container prose px-4"><h1 class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</h1><div class="mt-12 lg:mt-24"><!--[-->`);
-      serverRenderer.exports.ssrRenderList(3, (n) => {
-        _push(`<div class="grid pb-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"><div class="${serverRenderer.exports.ssrRenderClass([n % 2 === 0 ? "order-2" : "order-1", "shadow rounded-box"])}"><img role="img" class="w-full rounded-t-box"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${n}`)}><div class="py-4 px-8 w-full flex justify-between bg-primary"><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 lg:px-10 px-4 lg:py-6 py-4 rounded-b-box"><h1 class="lg:text-4xl text-base-content text-opacity-90 font-semibold tracking-wider">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 lg:line-clamp-none line-clamp-3">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><div class="w-full flex justify-end"><button class="btn capitalize btn-primary btn-sm btn-link mt-10"><span class="text-base tracking-wide font-light mr-2"> Read more </span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></button></div></div></div><div class="${serverRenderer.exports.ssrRenderClass([n % 2 === 0 ? "order-1" : "order-2", "grid md:grid-cols-2 grid-rows-2 gap-8 grid-cols-1"])}"><!--[-->`);
-        serverRenderer.exports.ssrRenderList(4, (item) => {
-          _push(`<div class="rounded-box overflow-hidden bg-base-100 shadow"><img class="w-full max-h-52"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item * n}`)}><div class="py-2 px-4 w-full flex justify-between bg-primary"><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide">${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 px-3 lg:px-6 py-4"><h1 class="text-lg text-base-content text-opacity-90 font-semibold tracking-wider">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content line-clamp-3 text-opacity-70 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}... </p></div></div>`);
-        });
-        _push(`<!--]--></div></div>`);
-      });
-      _push(`<!--]--></div></div></div>`);
+      const _component_nuxt_layout = __nuxt_component_0$2;
+      _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+        middle: false,
+        daisyui: "",
+        lang: ""
+      }, _attrs), {
+        default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(`<div class="bg-base-100 w-full"${_scopeId}><div class="mx-auto my-12 container prose px-4"${_scopeId}><h1 class="text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90"${_scopeId}>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</h1><div class="mt-12 lg:mt-24"${_scopeId}><!--[-->`);
+            serverRenderer.exports.ssrRenderList(3, (n) => {
+              _push2(`<div class="grid pb-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden"${_scopeId}><div class="${serverRenderer.exports.ssrRenderClass([n % 2 === 0 ? "order-2" : "order-1", "shadow rounded-box"])}"${_scopeId}><img role="img" class="w-full rounded-t-box"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${n}`)}${_scopeId}><div class="py-4 px-8 w-full flex justify-between bg-primary"${_scopeId}><p class="text-sm text-base-100 font-semibold tracking-wide"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 lg:px-10 px-4 lg:py-6 py-4 rounded-b-box"${_scopeId}><h1 class="lg:text-4xl text-base-content text-opacity-90 font-semibold tracking-wider"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 lg:line-clamp-none line-clamp-3"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><div class="w-full flex justify-end"${_scopeId}><button class="btn capitalize btn-primary btn-sm btn-link mt-10"${_scopeId}><span class="text-base tracking-wide font-light mr-2"${_scopeId}> Read more </span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"${_scopeId}></path></svg></button></div></div></div><div class="${serverRenderer.exports.ssrRenderClass([n % 2 === 0 ? "order-1" : "order-2", "grid md:grid-cols-2 grid-rows-2 gap-8 grid-cols-1"])}"${_scopeId}><!--[-->`);
+              serverRenderer.exports.ssrRenderList(4, (item) => {
+                _push2(`<div class="rounded-box overflow-hidden bg-base-100 shadow"${_scopeId}><img class="w-full max-h-52"${serverRenderer.exports.ssrRenderAttr("src", `https://wcao.cc/r/a/animal?${item * n}`)}${_scopeId}><div class="py-2 px-4 w-full flex justify-between bg-primary"${_scopeId}><p class="text-sm text-base-100 font-semibold tracking-wide"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</p><p class="text-sm text-base-100 font-semibold tracking-wide"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)"))}</p></div><div class="bg-base-100 px-3 lg:px-6 py-4"${_scopeId}><h1 class="text-lg text-base-content text-opacity-90 font-semibold tracking-wider"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="text-base-content line-clamp-3 text-opacity-70 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}... </p></div></div>`);
+              });
+              _push2(`<!--]--></div></div>`);
+            });
+            _push2(`<!--]--></div></div></div>`);
+          } else {
+            return [
+              vue_cjs_prod.createVNode("div", { class: "bg-base-100 w-full" }, [
+                vue_cjs_prod.createVNode("div", { class: "mx-auto my-12 container prose px-4" }, [
+                  vue_cjs_prod.createVNode("h1", { class: "text-center text-3xl lg:text-5xl tracking-wider text-base-content text-opacity-90" }, vue_cjs_prod.toDisplayString(locales2[vue_cjs_prod.unref(language)][0]), 1),
+                  vue_cjs_prod.createVNode("div", { class: "mt-12 lg:mt-24" }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.Fragment, null, vue_cjs_prod.renderList(3, (n) => {
+                      return vue_cjs_prod.createVNode("div", { class: "grid pb-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 overflow-hidden" }, [
+                        vue_cjs_prod.createVNode("div", {
+                          class: [n % 2 === 0 ? "order-2" : "order-1", "shadow rounded-box"]
+                        }, [
+                          vue_cjs_prod.createVNode("img", {
+                            role: "img",
+                            class: "w-full rounded-t-box",
+                            src: `https://wcao.cc/r/a/animal?${n}`
+                          }, null, 8, ["src"]),
+                          vue_cjs_prod.createVNode("div", { class: "py-4 px-8 w-full flex justify-between bg-primary" }, [
+                            vue_cjs_prod.createVNode("p", { class: "text-sm text-base-100 font-semibold tracking-wide" }, vue_cjs_prod.toDisplayString(_ctx.$faker.name.findName()), 1),
+                            vue_cjs_prod.createVNode("p", { class: "text-sm text-base-100 font-semibold tracking-wide" }, vue_cjs_prod.toDisplayString(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)")), 1)
+                          ]),
+                          vue_cjs_prod.createVNode("div", { class: "bg-base-100 lg:px-10 px-4 lg:py-6 py-4 rounded-b-box" }, [
+                            vue_cjs_prod.createVNode("h1", { class: "lg:text-4xl text-base-content text-opacity-90 font-semibold tracking-wider" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productName()), 1),
+                            vue_cjs_prod.createVNode("p", { class: "text-base-content text-opacity-70 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 lg:line-clamp-none line-clamp-3" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()), 1),
+                            vue_cjs_prod.createVNode("div", { class: "w-full flex justify-end" }, [
+                              vue_cjs_prod.createVNode("button", { class: "btn capitalize btn-primary btn-sm btn-link mt-10" }, [
+                                vue_cjs_prod.createVNode("span", { class: "text-base tracking-wide font-light mr-2" }, " Read more "),
+                                (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  class: "h-6 w-6",
+                                  fill: "none",
+                                  viewBox: "0 0 24 24",
+                                  stroke: "currentColor",
+                                  "stroke-width": "2"
+                                }, [
+                                  vue_cjs_prod.createVNode("path", {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    d: "M17 8l4 4m0 0l-4 4m4-4H3"
+                                  })
+                                ]))
+                              ])
+                            ])
+                          ])
+                        ], 2),
+                        vue_cjs_prod.createVNode("div", {
+                          class: ["grid md:grid-cols-2 grid-rows-2 gap-8 grid-cols-1", n % 2 === 0 ? "order-1" : "order-2"]
+                        }, [
+                          (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.Fragment, null, vue_cjs_prod.renderList(4, (item) => {
+                            return vue_cjs_prod.createVNode("div", { class: "rounded-box overflow-hidden bg-base-100 shadow" }, [
+                              vue_cjs_prod.createVNode("img", {
+                                class: "w-full max-h-52",
+                                src: `https://wcao.cc/r/a/animal?${item * n}`
+                              }, null, 8, ["src"]),
+                              vue_cjs_prod.createVNode("div", { class: "py-2 px-4 w-full flex justify-between bg-primary" }, [
+                                vue_cjs_prod.createVNode("p", { class: "text-sm text-base-100 font-semibold tracking-wide" }, vue_cjs_prod.toDisplayString(_ctx.$faker.name.findName()), 1),
+                                vue_cjs_prod.createVNode("p", { class: "text-sm text-base-100 font-semibold tracking-wide" }, vue_cjs_prod.toDisplayString(_ctx.$Mock.mock("@datetime(yyyy-MM-dd)")), 1)
+                              ]),
+                              vue_cjs_prod.createVNode("div", { class: "bg-base-100 px-3 lg:px-6 py-4" }, [
+                                vue_cjs_prod.createVNode("h1", { class: "text-lg text-base-content text-opacity-90 font-semibold tracking-wider" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productName()), 1),
+                                vue_cjs_prod.createVNode("p", { class: "text-base-content line-clamp-3 text-opacity-70 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + "... ", 1)
+                              ])
+                            ]);
+                          }), 64))
+                        ], 2)
+                      ]);
+                    }), 64))
+                  ])
+                ])
+              ])
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
     };
   }
 };
-const _sfc_setup$U = _sfc_main$U.setup;
-_sfc_main$U.setup = (props, ctx) => {
+const _sfc_setup$P = _sfc_main$P.setup;
+_sfc_main$P.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/2.vue");
-  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
+  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
-const meta$p = void 0;
-const _sfc_main$T = {};
-function _sfc_ssrRender$H(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-white text-gray-600 work-sans leading-normal text-base tracking-normal w-full" }, _attrs))}><nav id="header" class="w-full z-30 top-0 py-1"><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"><label for="menu-toggle" class="cursor-pointer md:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label><input class="hidden" type="checkbox" id="menu-toggle"><div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu"><nav><ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"><li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Shop</a></li><li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">About</a></li></ul></nav></div><div class="order-1 md:order-2"><a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl" href="#"><svg class="fill-current text-gray-800 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z"></path></svg> NORDICS </a></div><div class="order-2 md:order-3 flex items-center" id="nav-content"><a class="inline-block no-underline hover:text-black" href="#"><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle fill="none" cx="12" cy="7" r="3"></circle><path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"></path></svg></a><a class="pl-3 inline-block no-underline hover:text-black" href="#"><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z"></path><circle cx="10.5" cy="18.5" r="1.5"></circle><circle cx="17.5" cy="18.5" r="1.5"></circle></svg></a></div></div></nav><section class="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right" style="${serverRenderer.exports.ssrRenderStyle({ "max-width": "1600px", "height": "32rem", "background-image": "url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')" })}"><div class="container mx-auto"><div class="flex flex-col w-full lg:w-1/2 justify-center items-start px-6 tracking-wide"><h1 class="text-black text-2xl my-4"> Stripy Zig Zag Jigsaw Pillow and Duvet Set </h1><a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">products</a></div></div></section><section class="bg-white py-8"><div class="container mx-auto flex items-center flex-wrap pt-4 pb-12"><nav id="store" class="w-full z-30 top-0 px-6 py-1"><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3"><a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl" href="#"> Store </a><div class="flex items-center" id="store-nav-content"><a class="pl-3 inline-block no-underline hover:text-black" href="#"><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z"></path></svg></a><a class="pl-3 inline-block no-underline hover:text-black" href="#"><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"></path></svg></a></div></div></nav><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"><a href="#"><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"><div class="pt-3 flex items-center justify-between"><p class="">Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path></svg></div><p class="pt-1 text-gray-900">\xA39.99</p></a></div></div></section><section class="bg-white py-8"><div class="container py-8 px-6 mx-auto"><a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8" href="#"> About </a><p class="mt-8 mb-8"> This template is inspired by the stunning nordic minamalist design - in particular: <br><a class="text-gray-800 underline hover:text-gray-900" href="http://savoy.nordicmade.com/" target="_blank">Savoy Theme</a> created by <a class="text-gray-800 underline hover:text-gray-900" href="https://nordicmade.com/">https://nordicmade.com/</a> and <a class="text-gray-800 underline hover:text-gray-900" href="https://www.metricdesign.no/" target="_blank">https://www.metricdesign.no/</a></p><p class="mb-8"> Lorem ipsum dolor sit amet, consectetur <a href="#">random link</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac. </p></div></section><footer class="container mx-auto bg-white py-8 border-t border-gray-400"><div class="container flex px-3 py-8"><div class="w-full mx-auto flex flex-wrap"><div class="flex w-full lg:w-1/2"><div class="px-3 md:px-0"><h3 class="font-bold text-gray-900">About</h3><p class="py-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia. </p></div></div><div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right"><div class="px-3 md:px-0"><h3 class="font-bold text-gray-900">Social</h3><ul class="list-reset items-center pt-3"><li><a class="inline-block no-underline hover:text-black hover:underline py-1" href="#">Add social links</a></li></ul></div></div></div></div></footer></div>`);
+const _export_sfc = (sfc, props) => {
+  const target = sfc.__vccOpts || sfc;
+  for (const [key, val] of props) {
+    target[key] = val;
+  }
+  return target;
+};
+const _sfc_main$O = {};
+function _sfc_ssrRender$x(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<div class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal w-full"${_scopeId}><nav id="header" class="w-full z-30 top-0 py-1"${_scopeId}><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"${_scopeId}><label for="menu-toggle" class="cursor-pointer md:hidden block"${_scopeId}><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"${_scopeId}><title${_scopeId}>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"${_scopeId}></path></svg></label><input class="hidden" type="checkbox" id="menu-toggle"${_scopeId}><div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu"${_scopeId}><nav${_scopeId}><ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"${_scopeId}><li${_scopeId}><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#"${_scopeId}>Shop</a></li><li${_scopeId}><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#"${_scopeId}>About</a></li></ul></nav></div><div class="order-1 md:order-2"${_scopeId}><a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl" href="#"${_scopeId}><svg class="fill-current text-gray-800 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z"${_scopeId}></path></svg> NORDICS </a></div><div class="order-2 md:order-3 flex items-center" id="nav-content"${_scopeId}><a class="inline-block no-underline hover:text-black" href="#"${_scopeId}><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><circle fill="none" cx="12" cy="7" r="3"${_scopeId}></circle><path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"${_scopeId}></path></svg></a><a class="pl-3 inline-block no-underline hover:text-black" href="#"${_scopeId}><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z"${_scopeId}></path><circle cx="10.5" cy="18.5" r="1.5"${_scopeId}></circle><circle cx="17.5" cy="18.5" r="1.5"${_scopeId}></circle></svg></a></div></div></nav><section class="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right" style="${serverRenderer.exports.ssrRenderStyle({ "max-width": "1600px", "height": "32rem", "background-image": "url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')" })}"${_scopeId}><div class="container mx-auto"${_scopeId}><div class="flex flex-col w-full lg:w-1/2 justify-center items-start px-6 tracking-wide"${_scopeId}><h1 class="text-black text-2xl my-4"${_scopeId}> Stripy Zig Zag Jigsaw Pillow and Duvet Set </h1><a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#"${_scopeId}>products</a></div></div></section><section class="bg-white py-8"${_scopeId}><div class="container mx-auto flex items-center flex-wrap pt-4 pb-12"${_scopeId}><nav id="store" class="w-full z-30 top-0 px-6 py-1"${_scopeId}><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3"${_scopeId}><a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl" href="#"${_scopeId}> Store </a><div class="flex items-center" id="store-nav-content"${_scopeId}><a class="pl-3 inline-block no-underline hover:text-black" href="#"${_scopeId}><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z"${_scopeId}></path></svg></a><a class="pl-3 inline-block no-underline hover:text-black" href="#"${_scopeId}><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"${_scopeId}></path></svg></a></div></div></nav><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div></div></section><section class="bg-white py-8"${_scopeId}><div class="container py-8 px-6 mx-auto"${_scopeId}><a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8" href="#"${_scopeId}> About </a><p class="mt-8 mb-8"${_scopeId}> This template is inspired by the stunning nordic minamalist design - in particular: <br${_scopeId}><a class="text-gray-800 underline hover:text-gray-900" href="http://savoy.nordicmade.com/" target="_blank"${_scopeId}>Savoy Theme</a> created by <a class="text-gray-800 underline hover:text-gray-900" href="https://nordicmade.com/"${_scopeId}>https://nordicmade.com/</a> and <a class="text-gray-800 underline hover:text-gray-900" href="https://www.metricdesign.no/" target="_blank"${_scopeId}>https://www.metricdesign.no/</a></p><p class="mb-8"${_scopeId}> Lorem ipsum dolor sit amet, consectetur <a href="#"${_scopeId}>random link</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac. </p></div></section><footer class="container mx-auto bg-white py-8 border-t border-gray-400"${_scopeId}><div class="container flex px-3 py-8"${_scopeId}><div class="w-full mx-auto flex flex-wrap"${_scopeId}><div class="flex w-full lg:w-1/2"${_scopeId}><div class="px-3 md:px-0"${_scopeId}><h3 class="font-bold text-gray-900"${_scopeId}>About</h3><p class="py-4"${_scopeId}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia. </p></div></div><div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right"${_scopeId}><div class="px-3 md:px-0"${_scopeId}><h3 class="font-bold text-gray-900"${_scopeId}>Social</h3><ul class="list-reset items-center pt-3"${_scopeId}><li${_scopeId}><a class="inline-block no-underline hover:text-black hover:underline py-1" href="#"${_scopeId}>Add social links</a></li></ul></div></div></div></div></footer></div>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("div", { class: "bg-white text-gray-600 work-sans leading-normal text-base tracking-normal w-full" }, [
+            vue_cjs_prod.createVNode("nav", {
+              id: "header",
+              class: "w-full z-30 top-0 py-1"
+            }, [
+              vue_cjs_prod.createVNode("div", { class: "w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3" }, [
+                vue_cjs_prod.createVNode("label", {
+                  for: "menu-toggle",
+                  class: "cursor-pointer md:hidden block"
+                }, [
+                  (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                    class: "fill-current text-gray-900",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "20",
+                    height: "20",
+                    viewBox: "0 0 20 20"
+                  }, [
+                    vue_cjs_prod.createVNode("title", null, "menu"),
+                    vue_cjs_prod.createVNode("path", { d: "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" })
+                  ]))
+                ]),
+                vue_cjs_prod.createVNode("input", {
+                  class: "hidden",
+                  type: "checkbox",
+                  id: "menu-toggle"
+                }),
+                vue_cjs_prod.createVNode("div", {
+                  class: "hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1",
+                  id: "menu"
+                }, [
+                  vue_cjs_prod.createVNode("nav", null, [
+                    vue_cjs_prod.createVNode("ul", { class: "md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0" }, [
+                      vue_cjs_prod.createVNode("li", null, [
+                        vue_cjs_prod.createVNode("a", {
+                          class: "inline-block no-underline hover:text-black hover:underline py-2 px-4",
+                          href: "#"
+                        }, "Shop")
+                      ]),
+                      vue_cjs_prod.createVNode("li", null, [
+                        vue_cjs_prod.createVNode("a", {
+                          class: "inline-block no-underline hover:text-black hover:underline py-2 px-4",
+                          href: "#"
+                        }, "About")
+                      ])
+                    ])
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "order-1 md:order-2" }, [
+                  vue_cjs_prod.createVNode("a", {
+                    class: "flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl",
+                    href: "#"
+                  }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                      class: "fill-current text-gray-800 mr-2",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      width: "24",
+                      height: "24",
+                      viewBox: "0 0 24 24"
+                    }, [
+                      vue_cjs_prod.createVNode("path", { d: "M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z" })
+                    ])),
+                    vue_cjs_prod.createTextVNode(" NORDICS ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", {
+                  class: "order-2 md:order-3 flex items-center",
+                  id: "nav-content"
+                }, [
+                  vue_cjs_prod.createVNode("a", {
+                    class: "inline-block no-underline hover:text-black",
+                    href: "#"
+                  }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                      class: "fill-current hover:text-black",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      width: "24",
+                      height: "24",
+                      viewBox: "0 0 24 24"
+                    }, [
+                      vue_cjs_prod.createVNode("circle", {
+                        fill: "none",
+                        cx: "12",
+                        cy: "7",
+                        r: "3"
+                      }),
+                      vue_cjs_prod.createVNode("path", { d: "M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" })
+                    ]))
+                  ]),
+                  vue_cjs_prod.createVNode("a", {
+                    class: "pl-3 inline-block no-underline hover:text-black",
+                    href: "#"
+                  }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                      class: "fill-current hover:text-black",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      width: "24",
+                      height: "24",
+                      viewBox: "0 0 24 24"
+                    }, [
+                      vue_cjs_prod.createVNode("path", { d: "M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z" }),
+                      vue_cjs_prod.createVNode("circle", {
+                        cx: "10.5",
+                        cy: "18.5",
+                        r: "1.5"
+                      }),
+                      vue_cjs_prod.createVNode("circle", {
+                        cx: "17.5",
+                        cy: "18.5",
+                        r: "1.5"
+                      })
+                    ]))
+                  ])
+                ])
+              ])
+            ]),
+            vue_cjs_prod.createVNode("section", {
+              class: "w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right",
+              style: { "max-width": "1600px", "height": "32rem", "background-image": "url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')" }
+            }, [
+              vue_cjs_prod.createVNode("div", { class: "container mx-auto" }, [
+                vue_cjs_prod.createVNode("div", { class: "flex flex-col w-full lg:w-1/2 justify-center items-start px-6 tracking-wide" }, [
+                  vue_cjs_prod.createVNode("h1", { class: "text-black text-2xl my-4" }, " Stripy Zig Zag Jigsaw Pillow and Duvet Set "),
+                  vue_cjs_prod.createVNode("a", {
+                    class: "text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black",
+                    href: "#"
+                  }, "products")
+                ])
+              ])
+            ]),
+            vue_cjs_prod.createVNode("section", { class: "bg-white py-8" }, [
+              vue_cjs_prod.createVNode("div", { class: "container mx-auto flex items-center flex-wrap pt-4 pb-12" }, [
+                vue_cjs_prod.createVNode("nav", {
+                  id: "store",
+                  class: "w-full z-30 top-0 px-6 py-1"
+                }, [
+                  vue_cjs_prod.createVNode("div", { class: "w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3" }, [
+                    vue_cjs_prod.createVNode("a", {
+                      class: "uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl",
+                      href: "#"
+                    }, " Store "),
+                    vue_cjs_prod.createVNode("div", {
+                      class: "flex items-center",
+                      id: "store-nav-content"
+                    }, [
+                      vue_cjs_prod.createVNode("a", {
+                        class: "pl-3 inline-block no-underline hover:text-black",
+                        href: "#"
+                      }, [
+                        (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                          class: "fill-current hover:text-black",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          width: "24",
+                          height: "24",
+                          viewBox: "0 0 24 24"
+                        }, [
+                          vue_cjs_prod.createVNode("path", { d: "M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" })
+                        ]))
+                      ]),
+                      vue_cjs_prod.createVNode("a", {
+                        class: "pl-3 inline-block no-underline hover:text-black",
+                        href: "#"
+                      }, [
+                        (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                          class: "fill-current hover:text-black",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          width: "24",
+                          height: "24",
+                          viewBox: "0 0 24 24"
+                        }, [
+                          vue_cjs_prod.createVNode("path", { d: "M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" })
+                        ]))
+                      ])
+                    ])
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
+                  vue_cjs_prod.createVNode("a", { href: "#" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "hover:grow hover:shadow-lg",
+                      src: "https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
+                  vue_cjs_prod.createVNode("a", { href: "#" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "hover:grow hover:shadow-lg",
+                      src: "https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
+                  vue_cjs_prod.createVNode("a", { href: "#" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "hover:grow hover:shadow-lg",
+                      src: "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
+                  vue_cjs_prod.createVNode("a", { href: "#" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "hover:grow hover:shadow-lg",
+                      src: "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
+                  vue_cjs_prod.createVNode("a", { href: "#" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "hover:grow hover:shadow-lg",
+                      src: "https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
+                  vue_cjs_prod.createVNode("a", { href: "#" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "hover:grow hover:shadow-lg",
+                      src: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
+                  vue_cjs_prod.createVNode("a", { href: "#" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "hover:grow hover:shadow-lg",
+                      src: "https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
+                  vue_cjs_prod.createVNode("a", { href: "#" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "hover:grow hover:shadow-lg",
+                      src: "https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80"
+                    }),
+                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
+                  ])
+                ])
+              ])
+            ]),
+            vue_cjs_prod.createVNode("section", { class: "bg-white py-8" }, [
+              vue_cjs_prod.createVNode("div", { class: "container py-8 px-6 mx-auto" }, [
+                vue_cjs_prod.createVNode("a", {
+                  class: "uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8",
+                  href: "#"
+                }, " About "),
+                vue_cjs_prod.createVNode("p", { class: "mt-8 mb-8" }, [
+                  vue_cjs_prod.createTextVNode(" This template is inspired by the stunning nordic minamalist design - in particular: "),
+                  vue_cjs_prod.createVNode("br"),
+                  vue_cjs_prod.createVNode("a", {
+                    class: "text-gray-800 underline hover:text-gray-900",
+                    href: "http://savoy.nordicmade.com/",
+                    target: "_blank"
+                  }, "Savoy Theme"),
+                  vue_cjs_prod.createTextVNode(" created by "),
+                  vue_cjs_prod.createVNode("a", {
+                    class: "text-gray-800 underline hover:text-gray-900",
+                    href: "https://nordicmade.com/"
+                  }, "https://nordicmade.com/"),
+                  vue_cjs_prod.createTextVNode(" and "),
+                  vue_cjs_prod.createVNode("a", {
+                    class: "text-gray-800 underline hover:text-gray-900",
+                    href: "https://www.metricdesign.no/",
+                    target: "_blank"
+                  }, "https://www.metricdesign.no/")
+                ]),
+                vue_cjs_prod.createVNode("p", { class: "mb-8" }, [
+                  vue_cjs_prod.createTextVNode(" Lorem ipsum dolor sit amet, consectetur "),
+                  vue_cjs_prod.createVNode("a", { href: "#" }, "random link"),
+                  vue_cjs_prod.createTextVNode(" adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac. ")
+                ])
+              ])
+            ]),
+            vue_cjs_prod.createVNode("footer", { class: "container mx-auto bg-white py-8 border-t border-gray-400" }, [
+              vue_cjs_prod.createVNode("div", { class: "container flex px-3 py-8" }, [
+                vue_cjs_prod.createVNode("div", { class: "w-full mx-auto flex flex-wrap" }, [
+                  vue_cjs_prod.createVNode("div", { class: "flex w-full lg:w-1/2" }, [
+                    vue_cjs_prod.createVNode("div", { class: "px-3 md:px-0" }, [
+                      vue_cjs_prod.createVNode("h3", { class: "font-bold text-gray-900" }, "About"),
+                      vue_cjs_prod.createVNode("p", { class: "py-4" }, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia. ")
+                    ])
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "flex w-full lg:w-1/2 lg:justify-end lg:text-right" }, [
+                    vue_cjs_prod.createVNode("div", { class: "px-3 md:px-0" }, [
+                      vue_cjs_prod.createVNode("h3", { class: "font-bold text-gray-900" }, "Social"),
+                      vue_cjs_prod.createVNode("ul", { class: "list-reset items-center pt-3" }, [
+                        vue_cjs_prod.createVNode("li", null, [
+                          vue_cjs_prod.createVNode("a", {
+                            class: "inline-block no-underline hover:text-black hover:underline py-1",
+                            href: "#"
+                          }, "Add social links")
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
 }
-const _sfc_setup$T = _sfc_main$T.setup;
-_sfc_main$T.setup = (props, ctx) => {
+const _sfc_setup$O = _sfc_main$O.setup;
+_sfc_main$O.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/3.vue");
-  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
+  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
-const __nuxt_component_1$g = /* @__PURE__ */ _export_sfc(_sfc_main$T, [["ssrRender", _sfc_ssrRender$H]]);
-const meta$o = void 0;
-const _sfc_main$S = {};
-function _sfc_ssrRender$G(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_2$1 = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$x]]);
+const meta$l = void 0;
+const _sfc_main$N = {};
+function _sfc_ssrRender$w(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><div class="flex justify-end px-4 pt-4"><button id="dropdownButton" data-dropdown-toggle="dropdown" class="btn btn-ghost" type="button"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div><div class="flex flex-col items-center pb-10 px-24"><img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://wcao.cc/image-space/api/avatar" alt="Bonnie image"><h5 class="mb-1 text-xl font-medium text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h5><span class="text-sm text-base-content text-opacity-50 text-center">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.jobTitle())}</span><div class="flex mt-4 space-x-3 lg:mt-6"><a href="#" class="btn btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><a href="#" class="btn btn-outline btn-sm capitalize">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div></div></div>`);
 }
-const _sfc_setup$S = _sfc_main$S.setup;
-_sfc_main$S.setup = (props, ctx) => {
+const _sfc_setup$N = _sfc_main$N.setup;
+_sfc_main$N.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/1.vue");
-  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
+  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
 };
-const __nuxt_component_1$f = /* @__PURE__ */ _export_sfc(_sfc_main$S, [["ssrRender", _sfc_ssrRender$G]]);
-const meta$n = void 0;
-const _sfc_main$R = {};
-function _sfc_ssrRender$F(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["ssrRender", _sfc_ssrRender$w]]);
+const meta$k = void 0;
+const _sfc_main$M = {};
+function _sfc_ssrRender$v(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 max-w-md w-full bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><h5 class="mb-4 text-xl font-medium text-base-content text-opacity-50"> Standard plan </h5><div class="flex items-baseline text-base-content text-opacity-90"><span class="text-3xl font-semibold">$</span><span class="text-5xl font-extrabold tracking-tight">49</span><span class="ml-1 text-xl font-normal text-base-content text-opacity-50">/month</span></div><ul role="list" class="my-7 space-y-5"><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">2 team members</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">20GB Cloud storage</span></li><li class="flex space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Integration help</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Sketch Files</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">API Access</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">Complete documentation</span></li><li class="flex space-x-3 line-through decoration-base-content decoration-opacity-50"><svg class="flex-shrink-0 w-5 h-5 text-base-content text-opacity-40" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-base font-normal leading-tight text-base-content text-opacity-50">24\xD77 phone &amp; email support</span></li></ul><button type="button" class="btn capitalize btn-primary"> Choose plan </button></div>`);
 }
-const _sfc_setup$R = _sfc_main$R.setup;
-_sfc_main$R.setup = (props, ctx) => {
+const _sfc_setup$M = _sfc_main$M.setup;
+_sfc_main$M.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/10.vue");
-  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
+  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
 };
-const __nuxt_component_1$e = /* @__PURE__ */ _export_sfc(_sfc_main$R, [["ssrRender", _sfc_ssrRender$F]]);
-const meta$m = void 0;
-const _sfc_main$Q = {};
-function _sfc_ssrRender$E(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_1$9 = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["ssrRender", _sfc_ssrRender$v]]);
+const meta$j = void 0;
+const _sfc_main$L = {};
+function _sfc_ssrRender$u(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex justify-center" }, _attrs))}><div class="block rounded-lg shadow-lg bg-base-100 max-w-sm text-center"><div class="py-3 px-6 border-b border-base-content border-opacity-30"> Featured </div><div class="p-6"><h5 class="text-base-content text-opacity-90 text-xl font-medium mb-2"> Special title treatment </h5><p class="text-base-content text-opacity-70 text-base mb-4"> With supporting text below as a natural lead-in to additional content. </p><button type="button" class="btn capitalize btn-primary btn-sm"> Button </button></div><div class="py-3 px-6 border-t border-base-content border-opacity-30 text-base-content text-opacity-60"> 2 days ago </div></div></div>`);
 }
-const _sfc_setup$Q = _sfc_main$Q.setup;
-_sfc_main$Q.setup = (props, ctx) => {
+const _sfc_setup$L = _sfc_main$L.setup;
+_sfc_main$L.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/11.vue");
-  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
+  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
 };
-const __nuxt_component_1$d = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["ssrRender", _sfc_ssrRender$E]]);
-const meta$l = void 0;
-const _sfc_main$P = {
+const __nuxt_component_1$8 = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["ssrRender", _sfc_ssrRender$u]]);
+const meta$i = void 0;
+const _sfc_main$K = {
   __name: "12",
   __ssrInlineRender: true,
   setup(__props) {
@@ -3986,96 +4524,96 @@ const _sfc_main$P = {
     };
   }
 };
-const _sfc_setup$P = _sfc_main$P.setup;
-_sfc_main$P.setup = (props, ctx) => {
+const _sfc_setup$K = _sfc_main$K.setup;
+_sfc_main$K.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/12.vue");
-  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
 };
-const meta$k = void 0;
-const _sfc_main$O = {};
-function _sfc_ssrRender$D(_ctx, _push, _parent, _attrs) {
+const meta$h = void 0;
+const _sfc_main$J = {};
+function _sfc_ssrRender$t(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mx-auto max-w-lg" }, _attrs))}><div class="bg-base-100 rounded-lg p-6 text-base-content text-opacity-10 relative z-10" style="${serverRenderer.exports.ssrRenderStyle({ "cursor": "auto" })}"><div class="flex flex-wrap items-center"><div class="flex w-full h-48 md:h-64 lg:h-72 relative"><div class="w-8/12 pr-4 relative"><img src="https://p.wcao.cc/w300?1" class="w-full h-full object-cover object-top rounded-lg bg-base-100"></div><div class="w-4/12 h-full"><div class="flex flex-col w-full h-full"><div class="flex-1 pb-2"><div class="w-full h-full relative"><img src="https://p.wcao.cc/w300?2" class="absolute top-0 w-full h-full object-cover object-center rounded-lg bg-base-100"></div></div><div class="flex-1 pt-2"><div class="w-full h-full relative"><img src="https://p.wcao.cc/w300?3" class="absolute top-0 w-full h-full object-cover object-bottom rounded-lg bg-base-100"></div></div></div></div></div><div class="w-full pt-8 flex flex-col justify-between"><div><h2 class="font-bold text-xl text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h2><div class="flex flex-wrap text-center pt-4 mb-2"><div class="badge mr-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</div><div class="badge mr-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</div><div class="badge mr-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</div></div><p class="text-xs leading-relaxed text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><ul class="text-xs mt-4 list-disc list-inside text-base-content text-opacity-50 leading-relaxed"><!--[-->`);
   serverRenderer.exports.ssrRenderList(4, (item) => {
     _push(`<li>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</li>`);
   });
   _push(`<!--]--></ul></div><div class="w-full sm:flex-1 grid gap-4 grid-cols-2 pt-6"><a href="javascript:;" class="btn capitalize text-base-content glass btn-info">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</a><button x-on:click="pay(&#39;Essential&#39;)" class="btn capitalize btn-success">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</button></div></div></div></div></div>`);
 }
-const _sfc_setup$O = _sfc_main$O.setup;
-_sfc_main$O.setup = (props, ctx) => {
+const _sfc_setup$J = _sfc_main$J.setup;
+_sfc_main$J.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/13.vue");
-  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
+  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
 };
-const __nuxt_component_1$c = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$D]]);
-const meta$j = void 0;
-const _sfc_main$N = {};
-function _sfc_ssrRender$C(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_1$7 = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["ssrRender", _sfc_ssrRender$t]]);
+const meta$g = void 0;
+const _sfc_main$I = {};
+function _sfc_ssrRender$s(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex items-center justify-center" }, _attrs))}><div class="max-w-md md:max-w-2xl px-2"><div class="bg-base-100 shadow-xl rounded-lg overflow-hidden md:flex"><div class="bg-cover bg-bottom h-56 md:h-auto md:w-56" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url(https://wcao.cc/r/a/sgwg)" })}"></div><div><div class="p-4 md:p-5"><p class="font-bold text-xl md:text-2xl">Amsterdam Walking Tour</p><p class="text-base-content text-opacity-70 md:text-lg"> Explore popular tourist destinations as well as hidden local favourites. </p></div><div class="p-4 md:p-5 bg-base-200"><div class="sm:flex sm:justify-between sm:items-center"><div><div class="text-lg text-base-content text-opacity-70"><span class="text-base-content text-opacity-90 font-bold">17</span> per person* </div><div class="flex items-center"><div class="inline-flex -mx-px"><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg><svg class="w-4 h-4 mx-px fill-current text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M6.43 12l-2.36 1.64a1 1 0 0 1-1.53-1.11l.83-2.75a1 1 0 0 0-.35-1.09L.73 6.96a1 1 0 0 1 .59-1.8l2.87-.06a1 1 0 0 0 .92-.67l.95-2.71a1 1 0 0 1 1.88 0l.95 2.71c.13.4.5.66.92.67l2.87.06a1 1 0 0 1 .59 1.8l-2.3 1.73a1 1 0 0 0-.34 1.09l.83 2.75a1 1 0 0 1-1.53 1.1L7.57 12a1 1 0 0 0-1.14 0z"></path></svg></div><div class="text-base-content text-opacity-60 ml-2 text-sm md:text-base mt-1"> 28 reviews </div></div></div><button class="mt-3 sm:mt-0 btn btn-primary">Book now</button></div><div class="mt-3 text-base-content text-opacity-60 text-sm md:text-base"> *Prices may vary depending on selected date. </div></div></div></div></div></div>`);
 }
-const _sfc_setup$N = _sfc_main$N.setup;
-_sfc_main$N.setup = (props, ctx) => {
+const _sfc_setup$I = _sfc_main$I.setup;
+_sfc_main$I.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/14.vue");
-  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
+  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
 };
-const __nuxt_component_1$b = /* @__PURE__ */ _export_sfc(_sfc_main$N, [["ssrRender", _sfc_ssrRender$C]]);
-const meta$i = void 0;
-const meta$h = void 0;
-const meta$g = void 0;
+const __nuxt_component_1$6 = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["ssrRender", _sfc_ssrRender$s]]);
 const meta$f = void 0;
-const _sfc_main$M = {};
-function _sfc_ssrRender$B(_ctx, _push, _parent, _attrs) {
+const meta$e = void 0;
+const meta$d = void 0;
+const meta$c = void 0;
+const _sfc_main$H = {};
+function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-sm bg-base-100 rounded-lg border border-base-200 shadow-md" }, _attrs))}><a href="#"><div class="h-64 w-full overflow-hidden"><img class="rounded-t-lg w-full" src="https://wcao.cc/image-space/api/girls?xxx" alt=""></div></a><div class="p-5"><a href="#"><h3 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h3></a><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center btn btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adjective())} <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a></div></div>`);
 }
-const _sfc_setup$M = _sfc_main$M.setup;
-_sfc_main$M.setup = (props, ctx) => {
+const _sfc_setup$H = _sfc_main$H.setup;
+_sfc_main$H.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/2.vue");
-  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
+  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
 };
-const __nuxt_component_1$a = /* @__PURE__ */ _export_sfc(_sfc_main$M, [["ssrRender", _sfc_ssrRender$B]]);
-const meta$e = void 0;
-const _sfc_main$L = {};
-function _sfc_ssrRender$A(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_1$5 = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["ssrRender", _sfc_ssrRender$r]]);
+const meta$b = void 0;
+const _sfc_main$G = {};
+function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "max-w-2xl px-8 py-4 mx-auto bg-base-100 rounded-lg shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.date.month())} 2019 </span><a class="btn btn-primary btn-sm">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a></div><div class="mt-2"><a href="#" class="text-2xl font-bold text-base-content text-opacity-70 hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</a><p class="mt-2 text-base-content text-opacity-60">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div class="flex items-center justify-between mt-4"><a href="#" class="btn btn-link hover:underline">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</a><div class="flex items-center"><img class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block" src="https://wcao.cc/image-space/api/avatar?xxx " alt="avatar"><a class="font-bold text-base-content text-opacity-70 cursor-pointer">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</a></div></div></div>`);
 }
-const _sfc_setup$L = _sfc_main$L.setup;
-_sfc_main$L.setup = (props, ctx) => {
+const _sfc_setup$G = _sfc_main$G.setup;
+_sfc_main$G.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/3.vue");
-  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
+  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
 };
-const __nuxt_component_1$9 = /* @__PURE__ */ _export_sfc(_sfc_main$L, [["ssrRender", _sfc_ssrRender$A]]);
-const meta$d = void 0;
-const _sfc_main$K = {};
-function _sfc_ssrRender$z(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_1$4 = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["ssrRender", _sfc_ssrRender$q]]);
+const meta$a = void 0;
+const _sfc_main$F = {};
+function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "w-full max-w-sm px-4 py-3 mx-auto bg-base-100 rounded-md shadow-md" }, _attrs))}><div class="flex items-center justify-between"><span class="text-sm font-light text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.product())}</span><span class="px-3 py-1 text-xs btn btn-primary btn-sm uppercase rounded-full">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productMaterial())}</span></div><div><h1 class="mt-2 text-lg font-semibold text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="mt-2 text-sm text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div><div><div class="flex items-center mt-2 text-base-content text-opacity-70"><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.conjunction())}:</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</a><span>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.noun())}</span><a class="btn btn-link">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.interjection())}</a></div><div class="flex items-center justify-center mt-4"><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"></path></svg></a><a class="mr-2 btn btn-link"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8283 12L16.2426 13.4142L19.071 10.5858C20.6331 9.02365 20.6331 6.49099 19.071 4.9289C17.5089 3.3668 14.9762 3.3668 13.4141 4.9289L10.5857 7.75732L11.9999 9.17154L14.8283 6.34311C15.6094 5.56206 16.8757 5.56206 17.6568 6.34311C18.4378 7.12416 18.4378 8.39049 17.6568 9.17154L14.8283 12Z"></path><path d="M12 14.8285L13.4142 16.2427L10.5858 19.0711C9.02365 20.6332 6.49099 20.6332 4.9289 19.0711C3.3668 17.509 3.3668 14.9764 4.9289 13.4143L7.75732 10.5858L9.17154 12L6.34311 14.8285C5.56206 15.6095 5.56206 16.8758 6.34311 17.6569C7.12416 18.4379 8.39049 18.4379 9.17154 17.6569L12 14.8285Z"></path><path d="M14.8284 10.5857C15.2189 10.1952 15.2189 9.56199 14.8284 9.17147C14.4379 8.78094 13.8047 8.78094 13.4142 9.17147L9.17154 13.4141C8.78101 13.8046 8.78101 14.4378 9.17154 14.8283C9.56206 15.2188 10.1952 15.2188 10.5857 14.8283L14.8284 10.5857Z"></path></svg></a></div></div></div>`);
 }
-const _sfc_setup$K = _sfc_main$K.setup;
-_sfc_main$K.setup = (props, ctx) => {
+const _sfc_setup$F = _sfc_main$F.setup;
+_sfc_main$F.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/4.vue");
-  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
+  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
-const __nuxt_component_1$8 = /* @__PURE__ */ _export_sfc(_sfc_main$K, [["ssrRender", _sfc_ssrRender$z]]);
-const meta$c = void 0;
-const _sfc_main$J = {};
-function _sfc_ssrRender$y(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["ssrRender", _sfc_ssrRender$p]]);
+const meta$9 = void 0;
+const _sfc_main$E = {};
+function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
   _push(`<a${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
     href: "#",
     class: "flex flex-col items-center bg-base-100 rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-base-200"
   }, _attrs))}><img class="object-cover mt-4 sm:mt-0 w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://wcao.cc/image-space/api/ultraman-card?xxx" alt=""><div class="flex flex-col justify-between p-4 leading-normal"><h5 class="mb-2 text-2xl font-bold tracking-tight text-base-content">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h5><p class="mb-3 font-normal text-base-content text-opacity-80">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></a>`);
 }
-const _sfc_setup$J = _sfc_main$J.setup;
-_sfc_main$J.setup = (props, ctx) => {
+const _sfc_setup$E = _sfc_main$E.setup;
+_sfc_main$E.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/5.vue");
-  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
+  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
-const __nuxt_component_1$7 = /* @__PURE__ */ _export_sfc(_sfc_main$J, [["ssrRender", _sfc_ssrRender$y]]);
-const meta$b = void 0;
-const _sfc_main$I = {
+const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["ssrRender", _sfc_ssrRender$o]]);
+const meta$8 = void 0;
+const _sfc_main$D = {
   __name: "6",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4127,14 +4665,14 @@ const _sfc_main$I = {
     };
   }
 };
-const _sfc_setup$I = _sfc_main$I.setup;
-_sfc_main$I.setup = (props, ctx) => {
+const _sfc_setup$D = _sfc_main$D.setup;
+_sfc_main$D.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/6.vue");
-  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
+  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const meta$a = void 0;
-const _sfc_main$H = {
+const meta$7 = void 0;
+const _sfc_main$C = {
   __name: "7",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4144,14 +4682,14 @@ const _sfc_main$H = {
     };
   }
 };
-const _sfc_setup$H = _sfc_main$H.setup;
-_sfc_main$H.setup = (props, ctx) => {
+const _sfc_setup$C = _sfc_main$C.setup;
+_sfc_main$C.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/7.vue");
-  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
+  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
-const meta$9 = void 0;
-const _sfc_main$G = {
+const meta$6 = void 0;
+const _sfc_main$B = {
   __name: "8",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4195,53 +4733,403 @@ const _sfc_main$G = {
     };
   }
 };
-const _sfc_setup$G = _sfc_main$G.setup;
-_sfc_main$G.setup = (props, ctx) => {
+const _sfc_setup$B = _sfc_main$B.setup;
+_sfc_main$B.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/8.vue");
-  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
+  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
-const meta$8 = void 0;
-const _sfc_main$F = {};
-function _sfc_ssrRender$x(_ctx, _push, _parent, _attrs) {
+const meta$5 = void 0;
+const _sfc_main$A = {};
+function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-4 w-full max-w-md bg-base-100 rounded-lg border shadow-md sm:p-8" }, _attrs))}><div class="flex justify-between items-center mb-4"><h5 class="text-xl font-bold leading-none text-base-content text-opacity-90"> Latest Customers </h5><a href="#" class="text-sm font-medium text-primary hover:underline"> View all </a></div><div class="flow-root"><ul role="list" class="divide-y divide-base-200"><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?1" alt="Neil image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Neil Sims </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $320 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?2" alt="Bonnie image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Bonnie Green </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $3467 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?3" alt="Michael image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Michael Gough </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $67 </div></div></li><li class="py-3 sm:py-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?4" alt="Lana image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Lana Byrd </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $367 </div></div></li><li class="pt-3 pb-0 sm:pt-4"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img class="w-12 h-12 rounded-full" src="https://wcao.cc/r/a/avatar?5" alt="Thomas image"></div><div class="flex-1 min-w-0"><p class="text-sm font-medium text-base-content text-opacity-90 truncate"> Thomes Lean </p><p class="text-sm text-base-content text-opacity-50 truncate"> email@windster.com </p></div><div class="inline-flex items-center text-base font-semibold text-base-content text-opacity-90"> $2367 </div></div></li></ul></div></div>`);
 }
-const _sfc_setup$F = _sfc_main$F.setup;
-_sfc_main$F.setup = (props, ctx) => {
+const _sfc_setup$A = _sfc_main$A.setup;
+_sfc_main$A.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/card/9.vue");
-  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
+  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
-const __nuxt_component_1$6 = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["ssrRender", _sfc_ssrRender$x]]);
-const meta$7 = void 0;
-const _sfc_main$E = {};
-function _sfc_ssrRender$w(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-white dark:bg-gray-900" }, _attrs))}><div class="container px-6 py-10 mx-auto"><h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> our team </h1><p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum. </p><div class="flex items-center justify-center"><div class="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl"><button class="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12"> design </button><button class="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12"> development </button><button class="px-4 py-2 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12"> marketing </button></div></div><div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3"><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> arthur melo </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> design director </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=764&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> Pamela Anderson </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> Lead Developer </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div><div class="flex flex-col items-center"><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt=""><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"> John Doe </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"> Full stack developer </p><div class="flex mt-3 -mx-2"><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"></path></svg></a></div></div></div></div></section>`);
+const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$n]]);
+const meta$4 = void 0;
+const _sfc_main$z = {};
+function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<section class="bg-white dark:bg-gray-900"${_scopeId}><div class="container px-6 py-10 mx-auto"${_scopeId}><h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white"${_scopeId}> our team </h1><p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300"${_scopeId}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum. </p><div class="flex items-center justify-center"${_scopeId}><div class="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl"${_scopeId}><button class="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12"${_scopeId}> design </button><button class="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12"${_scopeId}> development </button><button class="px-4 py-2 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12"${_scopeId}> marketing </button></div></div><div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3"${_scopeId}><div class="flex flex-col items-center"${_scopeId}><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt=""${_scopeId}><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"${_scopeId}> arthur melo </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"${_scopeId}> design director </p><div class="flex mt-3 -mx-2"${_scopeId}><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"${_scopeId}></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"${_scopeId}></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"${_scopeId}></path></svg></a></div></div><div class="flex flex-col items-center"${_scopeId}><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=764&amp;q=80" alt=""${_scopeId}><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"${_scopeId}> Pamela Anderson </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"${_scopeId}> Lead Developer </p><div class="flex mt-3 -mx-2"${_scopeId}><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"${_scopeId}></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"${_scopeId}></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"${_scopeId}></path></svg></a></div></div><div class="flex flex-col items-center"${_scopeId}><img class="object-cover w-full rounded-xl aspect-square" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" alt=""${_scopeId}><h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white"${_scopeId}> John Doe </h1><p class="mt-2 text-gray-500 capitalize dark:text-gray-300"${_scopeId}> Full stack developer </p><div class="flex mt-3 -mx-2"${_scopeId}><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z"${_scopeId}></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z"${_scopeId}></path></svg></a><a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github"${_scopeId}><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"${_scopeId}><path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z"${_scopeId}></path></svg></a></div></div></div></div></section>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("section", { class: "bg-white dark:bg-gray-900" }, [
+            vue_cjs_prod.createVNode("div", { class: "container px-6 py-10 mx-auto" }, [
+              vue_cjs_prod.createVNode("h1", { class: "text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white" }, " our team "),
+              vue_cjs_prod.createVNode("p", { class: "max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300" }, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum. "),
+              vue_cjs_prod.createVNode("div", { class: "flex items-center justify-center" }, [
+                vue_cjs_prod.createVNode("div", { class: "flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl" }, [
+                  vue_cjs_prod.createVNode("button", { class: "px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12" }, " design "),
+                  vue_cjs_prod.createVNode("button", { class: "px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12" }, " development "),
+                  vue_cjs_prod.createVNode("button", { class: "px-4 py-2 text-sm font-medium text-blue-600 capitalize md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12" }, " marketing ")
+                ])
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3" }, [
+                vue_cjs_prod.createVNode("div", { class: "flex flex-col items-center" }, [
+                  vue_cjs_prod.createVNode("img", {
+                    class: "object-cover w-full rounded-xl aspect-square",
+                    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+                    alt: ""
+                  }),
+                  vue_cjs_prod.createVNode("h1", { class: "mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white" }, " arthur melo "),
+                  vue_cjs_prod.createVNode("p", { class: "mt-2 text-gray-500 capitalize dark:text-gray-300" }, " design director "),
+                  vue_cjs_prod.createVNode("div", { class: "flex mt-3 -mx-2" }, [
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Reddit"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Facebook"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Github"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z" })
+                      ]))
+                    ])
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "flex flex-col items-center" }, [
+                  vue_cjs_prod.createVNode("img", {
+                    class: "object-cover w-full rounded-xl aspect-square",
+                    src: "https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+                    alt: ""
+                  }),
+                  vue_cjs_prod.createVNode("h1", { class: "mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white" }, " Pamela Anderson "),
+                  vue_cjs_prod.createVNode("p", { class: "mt-2 text-gray-500 capitalize dark:text-gray-300" }, " Lead Developer "),
+                  vue_cjs_prod.createVNode("div", { class: "flex mt-3 -mx-2" }, [
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Reddit"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Facebook"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Github"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z" })
+                      ]))
+                    ])
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "flex flex-col items-center" }, [
+                  vue_cjs_prod.createVNode("img", {
+                    class: "object-cover w-full rounded-xl aspect-square",
+                    src: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+                    alt: ""
+                  }),
+                  vue_cjs_prod.createVNode("h1", { class: "mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white" }, " John Doe "),
+                  vue_cjs_prod.createVNode("p", { class: "mt-2 text-gray-500 capitalize dark:text-gray-300" }, " Full stack developer "),
+                  vue_cjs_prod.createVNode("div", { class: "flex mt-3 -mx-2" }, [
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Reddit"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Facebook"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      href: "#",
+                      class: "mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300",
+                      "aria-label": "Github"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "w-6 h-6 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z" })
+                      ]))
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
 }
-const _sfc_setup$E = _sfc_main$E.setup;
-_sfc_main$E.setup = (props, ctx) => {
+const _sfc_setup$z = _sfc_main$z.setup;
+_sfc_main$z.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/hero/1.vue");
-  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
+  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
-const __nuxt_component_1$5 = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["ssrRender", _sfc_ssrRender$w]]);
-const meta$6 = void 0;
-const _sfc_main$D = {};
-function _sfc_ssrRender$v(_ctx, _push, _parent, _attrs) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
-    class: "font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover w-full",
-    style: { "background-image": "url('https://source.unsplash.com/1080x0?nature')" }
-  }, _attrs))}><div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"><div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"><div class="p-4 md:p-12 text-center lg:text-left"><div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url('https://source.unsplash.com/192x192?fashion')" })}"></div><h1 class="text-3xl font-bold pt-8 lg:pt-0">Your Name</h1><div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div><p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"></path></svg> What you do </p><p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"></path></svg> Your Location - 25.0000\xB0 N, 71.0000\xB0 W </p><p class="pt-8 text-sm"> Totally optional short description about yourself, what you do and so on. </p><div class="pt-12 pb-8"><button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"> Get In Touch </button></div><div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"><a class="link" href="#" data-tippy-content="@facebook_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path></svg></a><a class="link" href="#" data-tippy-content="@twitter_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg></a><a class="link" href="#" data-tippy-content="@github_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a><a class="link" href="#" data-tippy-content="@unsplash_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Unsplash</title><path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"></path></svg></a><a class="link" href="#" data-tippy-content="@dribble_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"></path></svg></a><a class="link" href="#" data-tippy-content="@instagram_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path></svg></a><a class="link" href="#" data-tippy-content="@youtube_handle"><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>YouTube</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path></svg></a></div></div></div><div class="w-full lg:w-2/5"><img src="https://source.unsplash.com/400x600?fashion" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"></div></div></div>`);
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$m]]);
+const meta$3 = void 0;
+const _sfc_main$y = {};
+function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, _attrs, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<div class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover w-full" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url('https://source.unsplash.com/1080x0?nature')" })}"${_scopeId}><div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"${_scopeId}><div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"${_scopeId}><div class="p-4 md:p-12 text-center lg:text-left"${_scopeId}><div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url('https://source.unsplash.com/192x192?fashion')" })}"${_scopeId}></div><h1 class="text-3xl font-bold pt-8 lg:pt-0"${_scopeId}>Your Name</h1><div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"${_scopeId}></div><p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"${_scopeId}><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"${_scopeId}><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"${_scopeId}></path></svg> What you do </p><p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"${_scopeId}><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"${_scopeId}><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"${_scopeId}></path></svg> Your Location - 25.0000\xB0 N, 71.0000\xB0 W </p><p class="pt-8 text-sm"${_scopeId}> Totally optional short description about yourself, what you do and so on. </p><div class="pt-12 pb-8"${_scopeId}><button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"${_scopeId}> Get In Touch </button></div><div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"${_scopeId}><a class="link" href="#" data-tippy-content="@facebook_handle"${_scopeId}><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${_scopeId}><title${_scopeId}>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"${_scopeId}></path></svg></a><a class="link" href="#" data-tippy-content="@twitter_handle"${_scopeId}><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${_scopeId}><title${_scopeId}>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"${_scopeId}></path></svg></a><a class="link" href="#" data-tippy-content="@github_handle"${_scopeId}><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${_scopeId}><title${_scopeId}>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"${_scopeId}></path></svg></a><a class="link" href="#" data-tippy-content="@unsplash_handle"${_scopeId}><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${_scopeId}><title${_scopeId}>Unsplash</title><path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"${_scopeId}></path></svg></a><a class="link" href="#" data-tippy-content="@dribble_handle"${_scopeId}><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${_scopeId}><title${_scopeId}>Dribbble</title><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"${_scopeId}></path></svg></a><a class="link" href="#" data-tippy-content="@instagram_handle"${_scopeId}><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"${_scopeId}><title${_scopeId}>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"${_scopeId}></path></svg></a><a class="link" href="#" data-tippy-content="@youtube_handle"${_scopeId}><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><title${_scopeId}>YouTube</title><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"${_scopeId}></path></svg></a></div></div></div><div class="w-full lg:w-2/5"${_scopeId}><img src="https://source.unsplash.com/400x600?fashion" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"${_scopeId}></div></div></div>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("div", {
+            class: "font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover w-full",
+            style: { "background-image": "url('https://source.unsplash.com/1080x0?nature')" }
+          }, [
+            vue_cjs_prod.createVNode("div", { class: "max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0" }, [
+              vue_cjs_prod.createVNode("div", {
+                id: "profile",
+                class: "w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
+              }, [
+                vue_cjs_prod.createVNode("div", { class: "p-4 md:p-12 text-center lg:text-left" }, [
+                  vue_cjs_prod.createVNode("div", {
+                    class: "block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center",
+                    style: { "background-image": "url('https://source.unsplash.com/192x192?fashion')" }
+                  }),
+                  vue_cjs_prod.createVNode("h1", { class: "text-3xl font-bold pt-8 lg:pt-0" }, "Your Name"),
+                  vue_cjs_prod.createVNode("div", { class: "mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25" }),
+                  vue_cjs_prod.createVNode("p", { class: "pt-4 text-base font-bold flex items-center justify-center lg:justify-start" }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                      class: "h-4 fill-current text-green-700 pr-4",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      viewBox: "0 0 20 20"
+                    }, [
+                      vue_cjs_prod.createVNode("path", { d: "M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" })
+                    ])),
+                    vue_cjs_prod.createTextVNode(" What you do ")
+                  ]),
+                  vue_cjs_prod.createVNode("p", { class: "pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start" }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                      class: "h-4 fill-current text-green-700 pr-4",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      viewBox: "0 0 20 20"
+                    }, [
+                      vue_cjs_prod.createVNode("path", { d: "M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" })
+                    ])),
+                    vue_cjs_prod.createTextVNode(" Your Location - 25.0000\xB0 N, 71.0000\xB0 W ")
+                  ]),
+                  vue_cjs_prod.createVNode("p", { class: "pt-8 text-sm" }, " Totally optional short description about yourself, what you do and so on. "),
+                  vue_cjs_prod.createVNode("div", { class: "pt-12 pb-8" }, [
+                    vue_cjs_prod.createVNode("button", { class: "bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full" }, " Get In Touch ")
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between" }, [
+                    vue_cjs_prod.createVNode("a", {
+                      class: "link",
+                      href: "#",
+                      "data-tippy-content": "@facebook_handle"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 fill-current text-gray-600 hover:text-green-700",
+                        role: "img",
+                        viewBox: "0 0 24 24",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "Facebook"),
+                        vue_cjs_prod.createVNode("path", { d: "M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      class: "link",
+                      href: "#",
+                      "data-tippy-content": "@twitter_handle"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 fill-current text-gray-600 hover:text-green-700",
+                        role: "img",
+                        viewBox: "0 0 24 24",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "Twitter"),
+                        vue_cjs_prod.createVNode("path", { d: "M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      class: "link",
+                      href: "#",
+                      "data-tippy-content": "@github_handle"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 fill-current text-gray-600 hover:text-green-700",
+                        role: "img",
+                        viewBox: "0 0 24 24",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "GitHub"),
+                        vue_cjs_prod.createVNode("path", { d: "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      class: "link",
+                      href: "#",
+                      "data-tippy-content": "@unsplash_handle"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 fill-current text-gray-600 hover:text-green-700",
+                        role: "img",
+                        viewBox: "0 0 24 24",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "Unsplash"),
+                        vue_cjs_prod.createVNode("path", { d: "M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      class: "link",
+                      href: "#",
+                      "data-tippy-content": "@dribble_handle"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 fill-current text-gray-600 hover:text-green-700",
+                        role: "img",
+                        viewBox: "0 0 24 24",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "Dribbble"),
+                        vue_cjs_prod.createVNode("path", { d: "M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      class: "link",
+                      href: "#",
+                      "data-tippy-content": "@instagram_handle"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 fill-current text-gray-600 hover:text-green-700",
+                        role: "img",
+                        viewBox: "0 0 24 24",
+                        xmlns: "http://www.w3.org/2000/svg"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "Instagram"),
+                        vue_cjs_prod.createVNode("path", { d: "M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      class: "link",
+                      href: "#",
+                      "data-tippy-content": "@youtube_handle"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "h-6 fill-current text-gray-600 hover:text-green-700",
+                        role: "img",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "YouTube"),
+                        vue_cjs_prod.createVNode("path", { d: "M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" })
+                      ]))
+                    ])
+                  ])
+                ])
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "w-full lg:w-2/5" }, [
+                vue_cjs_prod.createVNode("img", {
+                  src: "https://source.unsplash.com/400x600?fashion",
+                  class: "rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
+                })
+              ])
+            ])
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
 }
-const _sfc_setup$D = _sfc_main$D.setup;
-_sfc_main$D.setup = (props, ctx) => {
+const _sfc_setup$y = _sfc_main$y.setup;
+_sfc_main$y.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/profile/1.vue");
-  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
+  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
-const __nuxt_component_1$4 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["ssrRender", _sfc_ssrRender$v]]);
-const meta$5 = void 0;
-const _sfc_main$C = {
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$l]]);
+const meta$2 = void 0;
+const _sfc_main$x = {
   __name: "1",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4256,109 +5144,581 @@ const _sfc_main$C = {
       ko: ["8\uAC1C \uD56D\uBAA9", "\uC885\uB958", "\uCD94\uCC9C", "\uD06C\uAE30", "\uAC00\uACA9", "\uC7A5\uBC14\uAD6C\uB2C8\uC5D0 \uCD94\uAC00"]
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-base-100 w-full" }, _attrs))}><div class="container pr-6 lg:pl-0 pl-6 py-8 mx-auto"><div class="lg:flex"><div class="dropdown lg:w-64 w-full mr-8 inline-block lg:dropdown-open"><label tabindex="0" class="btn btn-square lg:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></label><ul class="dropdown-content bg-base-100 !z-[9999] shadow lg:shadow-none menu w-full rounded-box lg:rounded-none"><!--[-->`);
-      serverRenderer.exports.ssrRenderList(navs.value, (item, i) => {
-        _push(`<li><a class="${serverRenderer.exports.ssrRenderClass({ "active capitalize": cur.value == i })}" href="javascript:;">${serverRenderer.exports.ssrInterpolate(item)}</a></li>`);
-      });
-      _push(`<!--]--></ul></div><div class="mt-6 lg:mt-0 lg:px-2 lg:w-4/5"><div class="flex items-center justify-between text-sm tracking-widest uppercase"><p class="text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</p><div class="flex items-center"><p class="text-base-content text-opacity-50">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][1])}</p><select class="font-medium ml-2 capitalize text-base-content text-opacity-70 bg-transparent focus:outline-none"><option value="#">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][2])}</option><option value="#">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][3])}</option><option value="#">${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][4])}</option></select></div></div><div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"><!--[-->`);
-      serverRenderer.exports.ssrRenderList(8, (item) => {
-        _push(`<div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto"><img class="object-cover w-full rounded-md h-72 xl:h-80"${serverRenderer.exports.ssrRenderAttr("src", `https://p.wcao.cc/w500?${item}`)} alt="T-Shirt"><h4 class="mt-2 text-lg font-medium text-base-content text-opacity-70 uppercase">${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref($faker).word.noun())}</h4><p class="text-primary my-2">$${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref($faker).commerce.price())}</p><button class="btn capitalize btn-primary btn-sm"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg><span>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][5])}</span></button></div>`);
-      });
-      _push(`<!--]--></div></div></div></div></section>`);
+      const _component_nuxt_layout = __nuxt_component_0$2;
+      _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+        daisyui: "",
+        lang: ""
+      }, _attrs), {
+        default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(`<section class="bg-base-100 w-full"${_scopeId}><div class="container pr-6 lg:pl-0 pl-6 py-8 mx-auto"${_scopeId}><div class="lg:flex"${_scopeId}><div class="dropdown lg:w-64 w-full mr-8 inline-block lg:dropdown-open"${_scopeId}><label tabindex="0" class="btn btn-square lg:hidden"${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"${_scopeId}></path></svg></label><ul class="dropdown-content bg-base-100 !z-[9999] shadow lg:shadow-none menu w-full rounded-box lg:rounded-none"${_scopeId}><!--[-->`);
+            serverRenderer.exports.ssrRenderList(navs.value, (item, i) => {
+              _push2(`<li${_scopeId}><a class="${serverRenderer.exports.ssrRenderClass({ "active capitalize": cur.value == i })}" href="javascript:;"${_scopeId}>${serverRenderer.exports.ssrInterpolate(item)}</a></li>`);
+            });
+            _push2(`<!--]--></ul></div><div class="mt-6 lg:mt-0 lg:px-2 lg:w-4/5"${_scopeId}><div class="flex items-center justify-between text-sm tracking-widest uppercase"${_scopeId}><p class="text-base-content text-opacity-50"${_scopeId}>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][0])}</p><div class="flex items-center"${_scopeId}><p class="text-base-content text-opacity-50"${_scopeId}>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][1])}</p><select class="font-medium ml-2 capitalize text-base-content text-opacity-70 bg-transparent focus:outline-none"${_scopeId}><option value="#"${_scopeId}>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][2])}</option><option value="#"${_scopeId}>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][3])}</option><option value="#"${_scopeId}>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][4])}</option></select></div></div><div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"${_scopeId}><!--[-->`);
+            serverRenderer.exports.ssrRenderList(8, (item) => {
+              _push2(`<div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto"${_scopeId}><img class="object-cover w-full rounded-md h-72 xl:h-80"${serverRenderer.exports.ssrRenderAttr("src", `https://p.wcao.cc/w500?${item}`)} alt="T-Shirt"${_scopeId}><h4 class="mt-2 text-lg font-medium text-base-content text-opacity-70 uppercase"${_scopeId}>${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref($faker).word.noun())}</h4><p class="text-primary my-2"${_scopeId}>$${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref($faker).commerce.price())}</p><button class="btn capitalize btn-primary btn-sm"${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor"${_scopeId}><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"${_scopeId}></path></svg><span${_scopeId}>${serverRenderer.exports.ssrInterpolate(locales2[vue_cjs_prod.unref(language)][5])}</span></button></div>`);
+            });
+            _push2(`<!--]--></div></div></div></div></section>`);
+          } else {
+            return [
+              vue_cjs_prod.createVNode("section", { class: "bg-base-100 w-full" }, [
+                vue_cjs_prod.createVNode("div", { class: "container pr-6 lg:pl-0 pl-6 py-8 mx-auto" }, [
+                  vue_cjs_prod.createVNode("div", { class: "lg:flex" }, [
+                    vue_cjs_prod.createVNode("div", { class: "dropdown lg:w-64 w-full mr-8 inline-block lg:dropdown-open" }, [
+                      vue_cjs_prod.createVNode("label", {
+                        tabindex: "0",
+                        class: "btn btn-square lg:hidden"
+                      }, [
+                        (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          class: "inline-block w-5 h-5 stroke-current"
+                        }, [
+                          vue_cjs_prod.createVNode("path", {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d: "M4 6h16M4 12h16M4 18h16"
+                          })
+                        ]))
+                      ]),
+                      vue_cjs_prod.createVNode("ul", { class: "dropdown-content bg-base-100 !z-[9999] shadow lg:shadow-none menu w-full rounded-box lg:rounded-none" }, [
+                        (vue_cjs_prod.openBlock(true), vue_cjs_prod.createBlock(vue_cjs_prod.Fragment, null, vue_cjs_prod.renderList(navs.value, (item, i) => {
+                          return vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("li", { key: i }, [
+                            vue_cjs_prod.createVNode("a", {
+                              class: { "active capitalize": cur.value == i },
+                              onClick: vue_cjs_prod.withModifiers(($event) => cur.value = i, ["stop"]),
+                              href: "javascript:;"
+                            }, vue_cjs_prod.toDisplayString(item), 11, ["onClick"])
+                          ]);
+                        }), 128))
+                      ])
+                    ]),
+                    vue_cjs_prod.createVNode("div", { class: "mt-6 lg:mt-0 lg:px-2 lg:w-4/5" }, [
+                      vue_cjs_prod.createVNode("div", { class: "flex items-center justify-between text-sm tracking-widest uppercase" }, [
+                        vue_cjs_prod.createVNode("p", { class: "text-base-content text-opacity-50" }, vue_cjs_prod.toDisplayString(locales2[vue_cjs_prod.unref(language)][0]), 1),
+                        vue_cjs_prod.createVNode("div", { class: "flex items-center" }, [
+                          vue_cjs_prod.createVNode("p", { class: "text-base-content text-opacity-50" }, vue_cjs_prod.toDisplayString(locales2[vue_cjs_prod.unref(language)][1]), 1),
+                          vue_cjs_prod.createVNode("select", { class: "font-medium ml-2 capitalize text-base-content text-opacity-70 bg-transparent focus:outline-none" }, [
+                            vue_cjs_prod.createVNode("option", { value: "#" }, vue_cjs_prod.toDisplayString(locales2[vue_cjs_prod.unref(language)][2]), 1),
+                            vue_cjs_prod.createVNode("option", { value: "#" }, vue_cjs_prod.toDisplayString(locales2[vue_cjs_prod.unref(language)][3]), 1),
+                            vue_cjs_prod.createVNode("option", { value: "#" }, vue_cjs_prod.toDisplayString(locales2[vue_cjs_prod.unref(language)][4]), 1)
+                          ])
+                        ])
+                      ]),
+                      vue_cjs_prod.createVNode("div", { class: "grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" }, [
+                        (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.Fragment, null, vue_cjs_prod.renderList(8, (item) => {
+                          return vue_cjs_prod.createVNode("div", { class: "flex flex-col items-center justify-center w-full max-w-lg mx-auto" }, [
+                            vue_cjs_prod.createVNode("img", {
+                              class: "object-cover w-full rounded-md h-72 xl:h-80",
+                              src: `https://p.wcao.cc/w500?${item}`,
+                              alt: "T-Shirt"
+                            }, null, 8, ["src"]),
+                            vue_cjs_prod.createVNode("h4", { class: "mt-2 text-lg font-medium text-base-content text-opacity-70 uppercase" }, vue_cjs_prod.toDisplayString(vue_cjs_prod.unref($faker).word.noun()), 1),
+                            vue_cjs_prod.createVNode("p", { class: "text-primary my-2" }, "$" + vue_cjs_prod.toDisplayString(vue_cjs_prod.unref($faker).commerce.price()), 1),
+                            vue_cjs_prod.createVNode("button", { class: "btn capitalize btn-primary btn-sm" }, [
+                              (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                                xmlns: "http://www.w3.org/2000/svg",
+                                class: "w-5 h-5 mx-1",
+                                viewBox: "0 0 20 20",
+                                fill: "currentColor"
+                              }, [
+                                vue_cjs_prod.createVNode("path", { d: "M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" })
+                              ])),
+                              vue_cjs_prod.createVNode("span", null, vue_cjs_prod.toDisplayString(locales2[vue_cjs_prod.unref(language)][5]), 1)
+                            ])
+                          ]);
+                        }), 64))
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
     };
   }
 };
-const _sfc_setup$C = _sfc_main$C.setup;
-_sfc_main$C.setup = (props, ctx) => {
+const _sfc_setup$x = _sfc_main$x.setup;
+_sfc_main$x.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/1.vue");
-  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
-const meta$4 = void 0;
-const _sfc_main$B = {};
-function _sfc_ssrRender$u(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-base-content text-opacity-60 bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto"><div class="flex flex-col text-center w-full mb-20"><h2 class="text-xs text-primary tracking-widest font-medium mb-1">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productMaterial())}</h2><h1 class="sm:text-3xl text-2xl font-medium mb-4 text-base-content text-opacity-90">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="lg:w-2/3 mx-auto leading-relaxed text-base">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. </p></div><div class="flex flex-wrap"><!--[-->`);
-  serverRenderer.exports.ssrRenderList(4, (item) => {
-    _push(`<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-base-content border-opacity-20"><h2 class="text-lg sm:text-xl text-base-content text-opacity-90 font-medium mb-2">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h2><p class="leading-relaxed text-base mb-4">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a class="text-primary inline-flex items-center">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())} <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div>`);
-  });
-  _push(`<!--]--></div><div class="flex justify-center mt-16"><button class="btn capitalize btn-primary">${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.preposition())}</button></div></div></section>`);
+const _sfc_main$w = {};
+function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+    daisyui: "",
+    lang: ""
+  }, _attrs), {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<section class="text-base-content text-opacity-60 bg-base-100"${_scopeId}><div class="container px-5 py-24 mx-auto"${_scopeId}><div class="flex flex-col text-center w-full mb-20"${_scopeId}><h2 class="text-xs text-primary tracking-widest font-medium mb-1"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productMaterial())}</h2><h1 class="sm:text-3xl text-2xl font-medium mb-4 text-base-content text-opacity-90"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><p class="lg:w-2/3 mx-auto leading-relaxed text-base"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}. </p></div><div class="flex flex-wrap"${_scopeId}><!--[-->`);
+        serverRenderer.exports.ssrRenderList(4, (item) => {
+          _push2(`<div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-base-content border-opacity-20"${_scopeId}><h2 class="text-lg sm:text-xl text-base-content text-opacity-90 font-medium mb-2"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h2><p class="leading-relaxed text-base mb-4"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><a class="text-primary inline-flex items-center"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())} <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"${_scopeId}><path d="M5 12h14M12 5l7 7-7 7"${_scopeId}></path></svg></a></div>`);
+        });
+        _push2(`<!--]--></div><div class="flex justify-center mt-16"${_scopeId}><button class="btn capitalize btn-primary"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.preposition())}</button></div></div></section>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("section", { class: "text-base-content text-opacity-60 bg-base-100" }, [
+            vue_cjs_prod.createVNode("div", { class: "container px-5 py-24 mx-auto" }, [
+              vue_cjs_prod.createVNode("div", { class: "flex flex-col text-center w-full mb-20" }, [
+                vue_cjs_prod.createVNode("h2", { class: "text-xs text-primary tracking-widest font-medium mb-1" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productMaterial()), 1),
+                vue_cjs_prod.createVNode("h1", { class: "sm:text-3xl text-2xl font-medium mb-4 text-base-content text-opacity-90" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productName()), 1),
+                vue_cjs_prod.createVNode("p", { class: "lg:w-2/3 mx-auto leading-relaxed text-base" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + ". " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + ". " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + ". ", 1)
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "flex flex-wrap" }, [
+                (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.Fragment, null, vue_cjs_prod.renderList(4, (item) => {
+                  return vue_cjs_prod.createVNode("div", { class: "xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l border-base-content border-opacity-20" }, [
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg sm:text-xl text-base-content text-opacity-90 font-medium mb-2" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productName()), 1),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base mb-4" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()), 1),
+                    vue_cjs_prod.createVNode("a", { class: "text-primary inline-flex items-center" }, [
+                      vue_cjs_prod.createTextVNode(vue_cjs_prod.toDisplayString(_ctx.$faker.word.adverb()) + " ", 1),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-4 h-4 ml-2",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M5 12h14M12 5l7 7-7 7" })
+                      ]))
+                    ])
+                  ]);
+                }), 64))
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "flex justify-center mt-16" }, [
+                vue_cjs_prod.createVNode("button", { class: "btn capitalize btn-primary" }, vue_cjs_prod.toDisplayString(_ctx.$faker.word.preposition()), 1)
+              ])
+            ])
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
 }
-const _sfc_setup$B = _sfc_main$B.setup;
-_sfc_main$B.setup = (props, ctx) => {
+const _sfc_setup$w = _sfc_main$w.setup;
+_sfc_main$w.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/2.vue");
-  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
+  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-const __nuxt_component_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender$u]]);
-const meta$3 = void 0;
-const _sfc_main$A = {};
-function _sfc_ssrRender$t(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto"><div class="flex flex-wrap w-full mb-20"><div class="lg:w-1/2 w-full mb-6 lg:mb-0"><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"> Pitchfork Kickstarter Taxidermy </h1><div class="h-1 w-20 bg-indigo-500 rounded"></div></div><p class="lg:w-1/2 w-full leading-relaxed text-gray-500"> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven&#39;t heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag. </p></div><div class="flex flex-wrap -m-4"><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Chichen Itza </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Colosseum Roma </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Great Pyramid of Giza </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"><div class="bg-gray-100 p-6 rounded-lg"><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"> San Francisco </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div></div></div></section>`);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$k]]);
+const _sfc_main$v = {};
+function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, _attrs, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<section class="text-gray-600 body-font bg-base-100"${_scopeId}><div class="container px-5 py-24 mx-auto"${_scopeId}><div class="flex flex-wrap w-full mb-20"${_scopeId}><div class="lg:w-1/2 w-full mb-6 lg:mb-0"${_scopeId}><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"${_scopeId}> Pitchfork Kickstarter Taxidermy </h1><div class="h-1 w-20 bg-indigo-500 rounded"${_scopeId}></div></div><p class="lg:w-1/2 w-full leading-relaxed text-gray-500"${_scopeId}> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven&#39;t heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag. </p></div><div class="flex flex-wrap -m-4"${_scopeId}><div class="xl:w-1/4 md:w-1/2 p-4"${_scopeId}><div class="bg-gray-100 p-6 rounded-lg"${_scopeId}><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"${_scopeId}><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"${_scopeId}> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"${_scopeId}> Chichen Itza </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"${_scopeId}><div class="bg-gray-100 p-6 rounded-lg"${_scopeId}><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content"${_scopeId}><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"${_scopeId}> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"${_scopeId}> Colosseum Roma </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"${_scopeId}><div class="bg-gray-100 p-6 rounded-lg"${_scopeId}><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content"${_scopeId}><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"${_scopeId}> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"${_scopeId}> Great Pyramid of Giza </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div><div class="xl:w-1/4 md:w-1/2 p-4"${_scopeId}><div class="bg-gray-100 p-6 rounded-lg"${_scopeId}><img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"${_scopeId}><h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"${_scopeId}> SUBTITLE </h3><h2 class="text-lg text-gray-900 font-medium title-font mb-4"${_scopeId}> San Francisco </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. </p></div></div></div></div></section>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("section", { class: "text-gray-600 body-font bg-base-100" }, [
+            vue_cjs_prod.createVNode("div", { class: "container px-5 py-24 mx-auto" }, [
+              vue_cjs_prod.createVNode("div", { class: "flex flex-wrap w-full mb-20" }, [
+                vue_cjs_prod.createVNode("div", { class: "lg:w-1/2 w-full mb-6 lg:mb-0" }, [
+                  vue_cjs_prod.createVNode("h1", { class: "sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900" }, " Pitchfork Kickstarter Taxidermy "),
+                  vue_cjs_prod.createVNode("div", { class: "h-1 w-20 bg-indigo-500 rounded" })
+                ]),
+                vue_cjs_prod.createVNode("p", { class: "lg:w-1/2 w-full leading-relaxed text-gray-500" }, " Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag. ")
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "flex flex-wrap -m-4" }, [
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/4 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "bg-gray-100 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "h-40 rounded w-full object-cover object-center mb-6",
+                      src: "https://dummyimage.com/720x400",
+                      alt: "content"
+                    }),
+                    vue_cjs_prod.createVNode("h3", { class: "tracking-widest text-indigo-500 text-xs font-medium title-font" }, " SUBTITLE "),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-4" }, " Chichen Itza "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/4 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "bg-gray-100 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "h-40 rounded w-full object-cover object-center mb-6",
+                      src: "https://dummyimage.com/721x401",
+                      alt: "content"
+                    }),
+                    vue_cjs_prod.createVNode("h3", { class: "tracking-widest text-indigo-500 text-xs font-medium title-font" }, " SUBTITLE "),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-4" }, " Colosseum Roma "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/4 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "bg-gray-100 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "h-40 rounded w-full object-cover object-center mb-6",
+                      src: "https://dummyimage.com/722x402",
+                      alt: "content"
+                    }),
+                    vue_cjs_prod.createVNode("h3", { class: "tracking-widest text-indigo-500 text-xs font-medium title-font" }, " SUBTITLE "),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-4" }, " Great Pyramid of Giza "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/4 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "bg-gray-100 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("img", {
+                      class: "h-40 rounded w-full object-cover object-center mb-6",
+                      src: "https://dummyimage.com/723x403",
+                      alt: "content"
+                    }),
+                    vue_cjs_prod.createVNode("h3", { class: "tracking-widest text-indigo-500 text-xs font-medium title-font" }, " SUBTITLE "),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-4" }, " San Francisco "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche. ")
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
 }
-const _sfc_setup$A = _sfc_main$A.setup;
-_sfc_main$A.setup = (props, ctx) => {
+const _sfc_setup$v = _sfc_main$v.setup;
+_sfc_main$v.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/3.vue");
-  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
 };
-const __nuxt_component_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$t]]);
-const meta$2 = void 0;
-const _sfc_main$z = {};
-function _sfc_ssrRender$s(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto"><div class="flex flex-wrap w-full mb-20 flex-col items-center text-center"><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"> Pitchfork Kickstarter Taxidermy </h1><p class="lg:w-1/2 w-full leading-relaxed text-gray-500"> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. </p></div><div class="flex flex-wrap -m-4"><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Shooting Stars </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> The Catalyzer </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Neptune </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Melanchole </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Bunker </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"><div class="border border-gray-200 p-6 rounded-lg"><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"> Ramona Falls </h2><p class="leading-relaxed text-base"> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div></div><button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Button </button></div></section>`);
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["ssrRender", _sfc_ssrRender$j]]);
+const _sfc_main$u = {};
+function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<section class="text-gray-600 body-font bg-base-100"${_scopeId}><div class="container px-5 py-24 mx-auto"${_scopeId}><div class="flex flex-wrap w-full mb-20 flex-col items-center text-center"${_scopeId}><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"${_scopeId}> Pitchfork Kickstarter Taxidermy </h1><p class="lg:w-1/2 w-full leading-relaxed text-gray-500"${_scopeId}> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. </p></div><div class="flex flex-wrap -m-4"${_scopeId}><div class="xl:w-1/3 md:w-1/2 p-4"${_scopeId}><div class="border border-gray-200 p-6 rounded-lg"${_scopeId}><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><path d="M22 12h-4l-3 9L9 3l-3 9H2"${_scopeId}></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"${_scopeId}> Shooting Stars </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"${_scopeId}><div class="border border-gray-200 p-6 rounded-lg"${_scopeId}><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><circle cx="6" cy="6" r="3"${_scopeId}></circle><circle cx="6" cy="18" r="3"${_scopeId}></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"${_scopeId}></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"${_scopeId}> The Catalyzer </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"${_scopeId}><div class="border border-gray-200 p-6 rounded-lg"${_scopeId}><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"${_scopeId}></path><circle cx="12" cy="7" r="4"${_scopeId}></circle></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"${_scopeId}> Neptune </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"${_scopeId}><div class="border border-gray-200 p-6 rounded-lg"${_scopeId}><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"${_scopeId}></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"${_scopeId}> Melanchole </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"${_scopeId}><div class="border border-gray-200 p-6 rounded-lg"${_scopeId}><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"${_scopeId}></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"${_scopeId}> Bunker </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div><div class="xl:w-1/3 md:w-1/2 p-4"${_scopeId}><div class="border border-gray-200 p-6 rounded-lg"${_scopeId}><div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"${_scopeId}></path></svg></div><h2 class="text-lg text-gray-900 font-medium title-font mb-2"${_scopeId}> Ramona Falls </h2><p class="leading-relaxed text-base"${_scopeId}> Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. </p></div></div></div><button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"${_scopeId}> Button </button></div></section>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("section", { class: "text-gray-600 body-font bg-base-100" }, [
+            vue_cjs_prod.createVNode("div", { class: "container px-5 py-24 mx-auto" }, [
+              vue_cjs_prod.createVNode("div", { class: "flex flex-wrap w-full mb-20 flex-col items-center text-center" }, [
+                vue_cjs_prod.createVNode("h1", { class: "sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900" }, " Pitchfork Kickstarter Taxidermy "),
+                vue_cjs_prod.createVNode("p", { class: "lg:w-1/2 w-full leading-relaxed text-gray-500" }, " Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. ")
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "flex flex-wrap -m-4" }, [
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/3 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "border border-gray-200 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-6 h-6",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M22 12h-4l-3 9L9 3l-3 9H2" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-2" }, " Shooting Stars "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/3 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "border border-gray-200 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-6 h-6",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("circle", {
+                          cx: "6",
+                          cy: "6",
+                          r: "3"
+                        }),
+                        vue_cjs_prod.createVNode("circle", {
+                          cx: "6",
+                          cy: "18",
+                          r: "3"
+                        }),
+                        vue_cjs_prod.createVNode("path", { d: "M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-2" }, " The Catalyzer "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/3 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "border border-gray-200 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-6 h-6",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" }),
+                        vue_cjs_prod.createVNode("circle", {
+                          cx: "12",
+                          cy: "7",
+                          r: "4"
+                        })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-2" }, " Neptune "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/3 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "border border-gray-200 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-6 h-6",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-2" }, " Melanchole "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/3 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "border border-gray-200 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-6 h-6",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-2" }, " Bunker "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. ")
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "xl:w-1/3 md:w-1/2 p-4" }, [
+                  vue_cjs_prod.createVNode("div", { class: "border border-gray-200 p-6 rounded-lg" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-6 h-6",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("h2", { class: "text-lg text-gray-900 font-medium title-font mb-2" }, " Ramona Falls "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm. ")
+                  ])
+                ])
+              ]),
+              vue_cjs_prod.createVNode("button", { class: "flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" }, " Button ")
+            ])
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
 }
-const _sfc_setup$z = _sfc_main$z.setup;
-_sfc_main$z.setup = (props, ctx) => {
+const _sfc_setup$u = _sfc_main$u.setup;
+_sfc_main$u.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/4.vue");
-  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
+  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
-const __nuxt_component_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$s]]);
-const meta$1 = void 0;
-const _sfc_main$y = {};
-function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs) {
-  _push(`<section${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "text-gray-600 body-font bg-base-100" }, _attrs))}><div class="container px-5 py-24 mx-auto flex flex-wrap"><div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden"><img alt="feature" class="object-cover object-center h-full w-full" src="https://picsum.photos/460/500"></div><div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center"><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Shooting Stars </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> The Catalyzer </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div><div class="flex flex-col mb-10 lg:items-start items-center"><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div class="flex-grow"><h2 class="text-gray-900 text-lg title-font font-medium mb-3"> Neptune </h2><p class="leading-relaxed text-base"> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center">Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div></div></div></section>`);
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["ssrRender", _sfc_ssrRender$i]]);
+const _sfc_main$t = {};
+function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<section class="text-gray-600 body-font bg-base-100"${_scopeId}><div class="container px-5 py-24 mx-auto flex flex-wrap"${_scopeId}><div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden"${_scopeId}><img alt="feature" class="object-cover object-center h-full w-full" src="https://picsum.photos/460/500"${_scopeId}></div><div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center"${_scopeId}><div class="flex flex-col mb-10 lg:items-start items-center"${_scopeId}><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><path d="M22 12h-4l-3 9L9 3l-3 9H2"${_scopeId}></path></svg></div><div class="flex-grow"${_scopeId}><h2 class="text-gray-900 text-lg title-font font-medium mb-3"${_scopeId}> Shooting Stars </h2><p class="leading-relaxed text-base"${_scopeId}> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center"${_scopeId}>Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"${_scopeId}><path d="M5 12h14M12 5l7 7-7 7"${_scopeId}></path></svg></a></div></div><div class="flex flex-col mb-10 lg:items-start items-center"${_scopeId}><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><circle cx="6" cy="6" r="3"${_scopeId}></circle><circle cx="6" cy="18" r="3"${_scopeId}></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"${_scopeId}></path></svg></div><div class="flex-grow"${_scopeId}><h2 class="text-gray-900 text-lg title-font font-medium mb-3"${_scopeId}> The Catalyzer </h2><p class="leading-relaxed text-base"${_scopeId}> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center"${_scopeId}>Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"${_scopeId}><path d="M5 12h14M12 5l7 7-7 7"${_scopeId}></path></svg></a></div></div><div class="flex flex-col mb-10 lg:items-start items-center"${_scopeId}><div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"${_scopeId}><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24"${_scopeId}><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"${_scopeId}></path><circle cx="12" cy="7" r="4"${_scopeId}></circle></svg></div><div class="flex-grow"${_scopeId}><h2 class="text-gray-900 text-lg title-font font-medium mb-3"${_scopeId}> Neptune </h2><p class="leading-relaxed text-base"${_scopeId}> Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. </p><a class="mt-3 text-indigo-500 inline-flex items-center"${_scopeId}>Learn More<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"${_scopeId}><path d="M5 12h14M12 5l7 7-7 7"${_scopeId}></path></svg></a></div></div></div></div></section>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("section", { class: "text-gray-600 body-font bg-base-100" }, [
+            vue_cjs_prod.createVNode("div", { class: "container px-5 py-24 mx-auto flex flex-wrap" }, [
+              vue_cjs_prod.createVNode("div", { class: "lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden" }, [
+                vue_cjs_prod.createVNode("img", {
+                  alt: "feature",
+                  class: "object-cover object-center h-full w-full",
+                  src: "https://picsum.photos/460/500"
+                })
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center" }, [
+                vue_cjs_prod.createVNode("div", { class: "flex flex-col mb-10 lg:items-start items-center" }, [
+                  vue_cjs_prod.createVNode("div", { class: "w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5" }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                      fill: "none",
+                      stroke: "currentColor",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                      class: "w-6 h-6",
+                      viewBox: "0 0 24 24"
+                    }, [
+                      vue_cjs_prod.createVNode("path", { d: "M22 12h-4l-3 9L9 3l-3 9H2" })
+                    ]))
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "flex-grow" }, [
+                    vue_cjs_prod.createVNode("h2", { class: "text-gray-900 text-lg title-font font-medium mb-3" }, " Shooting Stars "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. "),
+                    vue_cjs_prod.createVNode("a", { class: "mt-3 text-indigo-500 inline-flex items-center" }, [
+                      vue_cjs_prod.createTextVNode("Learn More"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-4 h-4 ml-2",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M5 12h14M12 5l7 7-7 7" })
+                      ]))
+                    ])
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "flex flex-col mb-10 lg:items-start items-center" }, [
+                  vue_cjs_prod.createVNode("div", { class: "w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5" }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                      fill: "none",
+                      stroke: "currentColor",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                      class: "w-6 h-6",
+                      viewBox: "0 0 24 24"
+                    }, [
+                      vue_cjs_prod.createVNode("circle", {
+                        cx: "6",
+                        cy: "6",
+                        r: "3"
+                      }),
+                      vue_cjs_prod.createVNode("circle", {
+                        cx: "6",
+                        cy: "18",
+                        r: "3"
+                      }),
+                      vue_cjs_prod.createVNode("path", { d: "M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" })
+                    ]))
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "flex-grow" }, [
+                    vue_cjs_prod.createVNode("h2", { class: "text-gray-900 text-lg title-font font-medium mb-3" }, " The Catalyzer "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. "),
+                    vue_cjs_prod.createVNode("a", { class: "mt-3 text-indigo-500 inline-flex items-center" }, [
+                      vue_cjs_prod.createTextVNode("Learn More"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-4 h-4 ml-2",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M5 12h14M12 5l7 7-7 7" })
+                      ]))
+                    ])
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "flex flex-col mb-10 lg:items-start items-center" }, [
+                  vue_cjs_prod.createVNode("div", { class: "w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5" }, [
+                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                      fill: "none",
+                      stroke: "currentColor",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                      class: "w-6 h-6",
+                      viewBox: "0 0 24 24"
+                    }, [
+                      vue_cjs_prod.createVNode("path", { d: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" }),
+                      vue_cjs_prod.createVNode("circle", {
+                        cx: "12",
+                        cy: "7",
+                        r: "4"
+                      })
+                    ]))
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "flex-grow" }, [
+                    vue_cjs_prod.createVNode("h2", { class: "text-gray-900 text-lg title-font font-medium mb-3" }, " Neptune "),
+                    vue_cjs_prod.createVNode("p", { class: "leading-relaxed text-base" }, " Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine. "),
+                    vue_cjs_prod.createVNode("a", { class: "mt-3 text-indigo-500 inline-flex items-center" }, [
+                      vue_cjs_prod.createTextVNode("Learn More"),
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        class: "w-4 h-4 ml-2",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M5 12h14M12 5l7 7-7 7" })
+                      ]))
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
 }
-const _sfc_setup$y = _sfc_main$y.setup;
-_sfc_main$y.setup = (props, ctx) => {
+const _sfc_setup$t = _sfc_main$t.setup;
+_sfc_main$t.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/section/5.vue");
-  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
+  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["ssrRender", _sfc_ssrRender$r]]);
+const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$h]]);
+const meta$1 = void 0;
 const meta = void 0;
 const routes = [
   {
-    name: "language-blog-1",
-    path: "/:language?/blog/1",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/blog/1.vue",
+    name: "language-blog-num",
+    path: "/:language?/blog/:num",
+    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/blog/[num].vue",
     children: [],
-    meta: meta$q,
+    meta: meta$l,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _1$9;
-    })
-  },
-  {
-    name: "language-blog-2",
-    path: "/:language?/blog/2",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/blog/2.vue",
-    children: [],
-    meta: meta$p,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _2$5;
-    })
-  },
-  {
-    name: "language-blog-3",
-    path: "/:language?/blog/3",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/blog/3.vue",
-    children: [],
-    meta: meta$o,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _3$5;
+      return _num_$3;
     })
   },
   {
@@ -4366,10 +5726,10 @@ const routes = [
     path: "/:language?/card/1",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/1.vue",
     children: [],
-    meta: meta$n,
+    meta: meta$k,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _1$7;
+      return _1$1;
     })
   },
   {
@@ -4377,7 +5737,7 @@ const routes = [
     path: "/:language?/card/10",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/10.vue",
     children: [],
-    meta: meta$m,
+    meta: meta$j,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _10$1;
@@ -4388,7 +5748,7 @@ const routes = [
     path: "/:language?/card/11",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/11.vue",
     children: [],
-    meta: meta$l,
+    meta: meta$i,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _11$1;
@@ -4399,7 +5759,7 @@ const routes = [
     path: "/:language?/card/12",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/12.vue",
     children: [],
-    meta: meta$k,
+    meta: meta$h,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _12$1;
@@ -4410,7 +5770,7 @@ const routes = [
     path: "/:language?/card/13",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/13.vue",
     children: [],
-    meta: meta$j,
+    meta: meta$g,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _13$1;
@@ -4421,7 +5781,7 @@ const routes = [
     path: "/:language?/card/14",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/14.vue",
     children: [],
-    meta: meta$i,
+    meta: meta$f,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _14$1;
@@ -4432,7 +5792,7 @@ const routes = [
     path: "/:language?/card/15",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/15.vue",
     children: [],
-    meta: meta$h,
+    meta: meta$e,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _15$1;
@@ -4443,7 +5803,7 @@ const routes = [
     path: "/:language?/card/16",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/16.vue",
     children: [],
-    meta: meta$g,
+    meta: meta$d,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _16$1;
@@ -4454,7 +5814,7 @@ const routes = [
     path: "/:language?/card/17",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/17.vue",
     children: [],
-    meta: meta$f,
+    meta: meta$c,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _17;
@@ -4465,10 +5825,10 @@ const routes = [
     path: "/:language?/card/2",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/2.vue",
     children: [],
-    meta: meta$e,
+    meta: meta$b,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _2$3;
+      return _2$1;
     })
   },
   {
@@ -4476,10 +5836,10 @@ const routes = [
     path: "/:language?/card/3",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/3.vue",
     children: [],
-    meta: meta$d,
+    meta: meta$a,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _3$3;
+      return _3$1;
     })
   },
   {
@@ -4487,10 +5847,10 @@ const routes = [
     path: "/:language?/card/4",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/4.vue",
     children: [],
-    meta: meta$c,
+    meta: meta$9,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _4$3;
+      return _4$1;
     })
   },
   {
@@ -4498,10 +5858,10 @@ const routes = [
     path: "/:language?/card/5",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/5.vue",
     children: [],
-    meta: meta$b,
+    meta: meta$8,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _5$3;
+      return _5$1;
     })
   },
   {
@@ -4509,7 +5869,7 @@ const routes = [
     path: "/:language?/card/6",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/6.vue",
     children: [],
-    meta: meta$a,
+    meta: meta$7,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _6$1;
@@ -4520,7 +5880,7 @@ const routes = [
     path: "/:language?/card/7",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/7.vue",
     children: [],
-    meta: meta$9,
+    meta: meta$6,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _7$1;
@@ -4531,7 +5891,7 @@ const routes = [
     path: "/:language?/card/8",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/8.vue",
     children: [],
-    meta: meta$8,
+    meta: meta$5,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _8$1;
@@ -4542,87 +5902,54 @@ const routes = [
     path: "/:language?/card/9",
     file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/card/9.vue",
     children: [],
-    meta: meta$7,
+    meta: meta$4,
     alias: [],
     component: () => Promise.resolve().then(function() {
       return _9$1;
     })
   },
   {
-    name: "language-hero-1",
-    path: "/:language?/hero/1",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/hero/1.vue",
-    children: [],
-    meta: meta$6,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _1$5;
-    })
-  },
-  {
-    name: "language-profile-1",
-    path: "/:language?/profile/1",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/profile/1.vue",
-    children: [],
-    meta: meta$5,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _1$3;
-    })
-  },
-  {
-    name: "language-section-1",
-    path: "/:language?/section/1",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/section/1.vue",
-    children: [],
-    meta: meta$4,
-    alias: [],
-    component: () => Promise.resolve().then(function() {
-      return _1$1;
-    })
-  },
-  {
-    name: "language-section-2",
-    path: "/:language?/section/2",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/section/2.vue",
+    name: "language-hero-num",
+    path: "/:language?/hero/:num",
+    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/hero/[num].vue",
     children: [],
     meta: meta$3,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _2$1;
+      return _num_$2;
     })
   },
   {
-    name: "language-section-3",
-    path: "/:language?/section/3",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/section/3.vue",
+    name: "language-profile-num",
+    path: "/:language?/profile/:num",
+    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/profile/[num].vue",
     children: [],
     meta: meta$2,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _3$1;
+      return _num_$1;
     })
   },
   {
-    name: "language-section-4",
-    path: "/:language?/section/4",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/section/4.vue",
+    name: "language-section-num",
+    path: "/:language?/section/:num",
+    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/section/[num].vue",
     children: [],
     meta: meta$1,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _4$1;
+      return _num_;
     })
   },
   {
-    name: "language-section-5",
-    path: "/:language?/section/5",
-    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/[[language]]/section/5.vue",
+    name: "index",
+    path: "/",
+    file: "/Users/meetqy/Desktop/my-template/hellowebui/pages/index.vue",
     children: [],
     meta,
     alias: [],
     component: () => Promise.resolve().then(function() {
-      return _5$1;
+      return index;
     })
   }
 ];
@@ -7682,8 +9009,8 @@ class Helpers {
     return object[key];
   }
   arrayElement(array = ["a", "b", "c"]) {
-    const index = array.length > 1 ? this.faker.datatype.number({ max: array.length - 1 }) : 0;
-    return array[index];
+    const index2 = array.length > 1 ? this.faker.datatype.number({ max: array.length - 1 }) : 0;
+    return array[index2];
   }
   arrayElements(array = ["a", "b", "c"], count) {
     if (typeof count !== "number") {
@@ -7697,11 +9024,11 @@ class Helpers {
     let i = array.length;
     const min = i - count;
     let temp;
-    let index;
+    let index2;
     while (i-- > min) {
-      index = Math.floor((i + 1) * this.faker.datatype.float({ min: 0, max: 0.99 }));
-      temp = arrayCopy[index];
-      arrayCopy[index] = arrayCopy[i];
+      index2 = Math.floor((i + 1) * this.faker.datatype.float({ min: 0, max: 0.99 }));
+      temp = arrayCopy[index2];
+      arrayCopy[index2] = arrayCopy[i];
       arrayCopy[i] = temp;
     }
     return arrayCopy.slice(min);
@@ -61402,7 +62729,7 @@ var SwipeDirection;
   SwipeDirection2["NONE"] = "NONE";
 })(SwipeDirection || (SwipeDirection = {}));
 vue_cjs_prod.ref([]);
-const _sfc_main$x = {
+const _sfc_main$s = {
   __name: "error-404",
   __ssrInlineRender: true,
   props: {
@@ -61443,7 +62770,7 @@ const _sfc_main$x = {
       ]
     });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$1;
+      const _component_NuxtLink = __nuxt_component_0$3;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-011aae6d><div class="fixed left-0 right-0 spotlight z-10" data-v-011aae6d></div><div class="max-w-520px text-center z-20" data-v-011aae6d><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-011aae6d>${serverRenderer.exports.ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-011aae6d>${serverRenderer.exports.ssrInterpolate(__props.description)}</p><div class="w-full flex items-center justify-center" data-v-011aae6d>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         to: "/",
@@ -61464,14 +62791,14 @@ const _sfc_main$x = {
     };
   }
 };
-const _sfc_setup$x = _sfc_main$x.setup;
-_sfc_main$x.setup = (props, ctx) => {
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-404.vue");
-  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-const Error404 = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["__scopeId", "data-v-011aae6d"]]);
-const _sfc_main$w = {
+const Error404 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["__scopeId", "data-v-011aae6d"]]);
+const _sfc_main$r = {
   __name: "error-500",
   __ssrInlineRender: true,
   props: {
@@ -61512,14 +62839,14 @@ const _sfc_main$w = {
     };
   }
 };
-const _sfc_setup$w = _sfc_main$w.setup;
-_sfc_main$w.setup = (props, ctx) => {
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-500.vue");
-  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
-const Error500 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["__scopeId", "data-v-6aee6495"]]);
-const _sfc_main$u = {
+const Error500 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["__scopeId", "data-v-6aee6495"]]);
+const _sfc_main$p = {
   __name: "nuxt-error-page",
   __ssrInlineRender: true,
   props: {
@@ -61547,13 +62874,13 @@ const _sfc_main$u = {
     };
   }
 };
-const _sfc_setup$u = _sfc_main$u.setup;
-_sfc_main$u.setup = (props, ctx) => {
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
-  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
 };
-const _sfc_main$t = {
+const _sfc_main$o = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
@@ -61571,7 +62898,7 @@ const _sfc_main$t = {
       serverRenderer.exports.ssrRenderSuspense(_push, {
         default: () => {
           if (vue_cjs_prod.unref(error)) {
-            _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(_sfc_main$u), { error: vue_cjs_prod.unref(error) }, null, _parent));
+            _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(_sfc_main$p), { error: vue_cjs_prod.unref(error) }, null, _parent));
           } else {
             _push(serverRenderer.exports.ssrRenderComponent(_component_App, null, null, _parent));
           }
@@ -61581,26 +62908,26 @@ const _sfc_main$t = {
     };
   }
 };
-const _sfc_setup$t = _sfc_main$t.setup;
-_sfc_main$t.setup = (props, ctx) => {
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-root.vue");
-  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
-const _sfc_main$s = {};
-function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs) {
+const _sfc_main$n = {};
+function _sfc_ssrRender$g(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_page = vue_cjs_prod.resolveComponent("nuxt-page");
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ id: "beauty-template" }, _attrs))}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_page, null, null, _parent));
   _push(`</div>`);
 }
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
+const _sfc_setup$n = _sfc_main$n.setup;
+_sfc_main$n.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
+  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$q]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$g]]);
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch$1.create({
     baseURL: baseURL()
@@ -61610,7 +62937,7 @@ let entry;
 const plugins = normalizePlugins(_plugins);
 {
   entry = async function createNuxtAppServer(ssrContext) {
-    const vueApp = vue_cjs_prod.createApp(_sfc_main$t);
+    const vueApp = vue_cjs_prod.createApp(_sfc_main$o);
     vueApp.component("App", AppComponent);
     const nuxt = createNuxtApp({ vueApp, ssrContext });
     try {
@@ -61624,7 +62951,7 @@ const plugins = normalizePlugins(_plugins);
   };
 }
 const entry$1 = (ctx) => entry(ctx);
-const _sfc_main$r = {
+const _sfc_main$m = {
   __name: "default",
   __ssrInlineRender: true,
   props: {
@@ -61736,7 +63063,7 @@ const _sfc_main$r = {
       attribute: "data-theme"
     });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_nuxt_link = __nuxt_component_0$1;
+      const _component_nuxt_link = __nuxt_component_0$3;
       if (!vue_cjs_prod.unref(full)) {
         _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "drawer drawer-mobile" }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content relative min-h-screen p-4"><div class="mockup-window border bg-base-100 shadow h-full relative"><div class="h-12 w-full absolute left-0 top-0 flex justify-end px-4 items-center border-b"><button class="${serverRenderer.exports.ssrRenderClass([{ hidden: props.lang && props.daisyui }, "btn btn-ghost btn-sm hover:bg-transparent font-light mr-2"])}"> \u5B8C\u5584\u4E2D... </button><div class="${serverRenderer.exports.ssrRenderClass([{ hidden: !props.daisyui }, "btn btn-ghost hover:bg-transparent btn-sm"])}"><span class="lowercase text-primary">daisy</span><span class="!text-base-content uppercase">UI</span></div><div class="${serverRenderer.exports.ssrRenderClass([{ hidden: !props.lang }, "dropdown dropdown-end mr-2"])}"><label tabindex="0" class="btn btn-sm m-1 capitalize"> language </label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
         serverRenderer.exports.ssrRenderList(langs, (item) => {
@@ -61777,112 +63104,45 @@ const _sfc_main$r = {
     };
   }
 };
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$m = _sfc_main$m.setup;
+_sfc_main$m.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("layouts/default.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
 };
 const _default = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _sfc_main$r
+  "default": _sfc_main$m
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$q = {};
-function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Blog1 = _sfc_main$V;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
-    middle: false,
-    lang: "",
-    daisyui: ""
-  }, _attrs), {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Blog1, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Blog1)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/blog/1.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+const _sfc_main$l = {
+  __name: "[num]",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { params } = useRoute();
+    const Blog = {
+      1: _sfc_main$Q,
+      2: _sfc_main$P,
+      3: __nuxt_component_2$1
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(Blog[vue_cjs_prod.unref(params).num]), _attrs, null), _parent);
+    };
+  }
 };
-const _1$8 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$p]]);
-const _1$9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _1$8
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$p = {};
-function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Blog2 = _sfc_main$U;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
-    middle: false,
-    daisyui: "",
-    lang: ""
-  }, _attrs), {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Blog2, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Blog2)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
+const _sfc_setup$l = _sfc_main$l.setup;
+_sfc_main$l.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/blog/2.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/blog/[num].vue");
+  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
-const _2$4 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$o]]);
-const _2$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _num_$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _2$4
+  "default": _sfc_main$l
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$o = {};
-function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Blog3 = __nuxt_component_1$g;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Blog3, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Blog3)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/blog/3.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
-};
-const _3$4 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$n]]);
-const _3$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _3$4
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$n = {};
-function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card1 = __nuxt_component_1$f;
+const _sfc_main$k = {};
+function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card1 = __nuxt_component_1$a;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -61899,21 +63159,21 @@ function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$n = _sfc_main$n.setup;
-_sfc_main$n.setup = (props, ctx) => {
+const _sfc_setup$k = _sfc_main$k.setup;
+_sfc_main$k.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/1.vue");
-  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
 };
-const _1$6 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$m]]);
-const _1$7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _1 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$f]]);
+const _1$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _1$6
+  "default": _1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$m = {};
-function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card10 = __nuxt_component_1$e;
+const _sfc_main$j = {};
+function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card10 = __nuxt_component_1$9;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -61927,21 +63187,21 @@ function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$m = _sfc_main$m.setup;
-_sfc_main$m.setup = (props, ctx) => {
+const _sfc_setup$j = _sfc_main$j.setup;
+_sfc_main$j.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/10.vue");
-  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
-const _10 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$l]]);
+const _10 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$e]]);
 const _10$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _10
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$l = {};
-function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card11 = __nuxt_component_1$d;
+const _sfc_main$i = {};
+function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card11 = __nuxt_component_1$8;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -61955,21 +63215,21 @@ function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$l = _sfc_main$l.setup;
-_sfc_main$l.setup = (props, ctx) => {
+const _sfc_setup$i = _sfc_main$i.setup;
+_sfc_main$i.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/11.vue");
-  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
+  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
 };
-const _11 = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["ssrRender", _sfc_ssrRender$k]]);
+const _11 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$d]]);
 const _11$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _11
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$k = {};
-function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card12 = _sfc_main$P;
+const _sfc_main$h = {};
+function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card12 = _sfc_main$K;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     daisyui: "",
     lang: ""
@@ -61986,21 +63246,21 @@ function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$k = _sfc_main$k.setup;
-_sfc_main$k.setup = (props, ctx) => {
+const _sfc_setup$h = _sfc_main$h.setup;
+_sfc_main$h.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/12.vue");
-  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
+  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
 };
-const _12 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$j]]);
+const _12 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$c]]);
 const _12$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _12
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$j = {};
-function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card13 = __nuxt_component_1$c;
+const _sfc_main$g = {};
+function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card13 = __nuxt_component_1$7;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     daisyui: "",
     lang: ""
@@ -62017,21 +63277,21 @@ function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$j = _sfc_main$j.setup;
-_sfc_main$j.setup = (props, ctx) => {
+const _sfc_setup$g = _sfc_main$g.setup;
+_sfc_main$g.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/13.vue");
-  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
+  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
 };
-const _13 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$i]]);
+const _13 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["ssrRender", _sfc_ssrRender$b]]);
 const _13$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _13
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$i = {};
-function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card14 = __nuxt_component_1$b;
+const _sfc_main$f = {};
+function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card14 = __nuxt_component_1$6;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -62045,20 +63305,20 @@ function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$i = _sfc_main$i.setup;
-_sfc_main$i.setup = (props, ctx) => {
+const _sfc_setup$f = _sfc_main$f.setup;
+_sfc_main$f.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/14.vue");
-  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
+  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
 };
-const _14 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$h]]);
+const _14 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["ssrRender", _sfc_ssrRender$a]]);
 const _14$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _14
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$h = {};
-function _sfc_ssrRender$g(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
+const _sfc_main$e = {};
+function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -62097,20 +63357,20 @@ function _sfc_ssrRender$g(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$h = _sfc_main$h.setup;
-_sfc_main$h.setup = (props, ctx) => {
+const _sfc_setup$e = _sfc_main$e.setup;
+_sfc_main$e.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/15.vue");
-  return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
+  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
 };
-const _15 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$g]]);
+const _15 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["ssrRender", _sfc_ssrRender$9]]);
 const _15$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _15
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$g = {};
-function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
+const _sfc_main$d = {};
+function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -62194,18 +63454,18 @@ function _sfc_ssrRender$f(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$g = _sfc_main$g.setup;
-_sfc_main$g.setup = (props, ctx) => {
+const _sfc_setup$d = _sfc_main$d.setup;
+_sfc_main$d.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/16.vue");
-  return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
+  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
 };
-const _16 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["ssrRender", _sfc_ssrRender$f]]);
+const _16 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["ssrRender", _sfc_ssrRender$8]]);
 const _16$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _16
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$f = {
+const _sfc_main$c = {
   __name: "17",
   __ssrInlineRender: true,
   setup(__props) {
@@ -62231,7 +63491,7 @@ const _sfc_main$f = {
       ko: ["\uBA87\uBD84 \uC804\uC5D0", "\uB17C\uD3C9", "\uB098 \uAD6C\uC2A4\uD0C0", "\uB17C\uD3C9", "\uCF64\uD30C\uB974\uD2F0\uB974", "\uCF54\uBA58\uD2B8 \uC4F0\uAE30"]
     };
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_nuxt_layout = __nuxt_component_0;
+      const _component_nuxt_layout = __nuxt_component_0$2;
       _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
         daisyui: "",
         lang: ""
@@ -62341,20 +63601,20 @@ const _sfc_main$f = {
     };
   }
 };
-const _sfc_setup$f = _sfc_main$f.setup;
-_sfc_main$f.setup = (props, ctx) => {
+const _sfc_setup$c = _sfc_main$c.setup;
+_sfc_main$c.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/17.vue");
-  return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
+  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
 };
 const _17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _sfc_main$f
+  "default": _sfc_main$c
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$e = {};
-function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card2 = __nuxt_component_1$a;
+const _sfc_main$b = {};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card2 = __nuxt_component_1$5;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62371,21 +63631,21 @@ function _sfc_ssrRender$e(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$e = _sfc_main$e.setup;
-_sfc_main$e.setup = (props, ctx) => {
+const _sfc_setup$b = _sfc_main$b.setup;
+_sfc_main$b.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/2.vue");
-  return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
+  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
-const _2$2 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["ssrRender", _sfc_ssrRender$e]]);
-const _2$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _2 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", _sfc_ssrRender$7]]);
+const _2$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _2$2
+  "default": _2
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$d = {};
-function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card3 = __nuxt_component_1$9;
+const _sfc_main$a = {};
+function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card3 = __nuxt_component_1$4;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62402,21 +63662,21 @@ function _sfc_ssrRender$d(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$d = _sfc_main$d.setup;
-_sfc_main$d.setup = (props, ctx) => {
+const _sfc_setup$a = _sfc_main$a.setup;
+_sfc_main$a.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/3.vue");
-  return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
+  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
-const _3$2 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["ssrRender", _sfc_ssrRender$d]]);
-const _3$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _3 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["ssrRender", _sfc_ssrRender$6]]);
+const _3$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _3$2
+  "default": _3
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$c = {};
-function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card4 = __nuxt_component_1$8;
+const _sfc_main$9 = {};
+function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card4 = __nuxt_component_1$3;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62433,21 +63693,21 @@ function _sfc_ssrRender$c(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$c = _sfc_main$c.setup;
-_sfc_main$c.setup = (props, ctx) => {
+const _sfc_setup$9 = _sfc_main$9.setup;
+_sfc_main$9.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/4.vue");
-  return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
+  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
 };
-const _4$2 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["ssrRender", _sfc_ssrRender$c]]);
-const _4$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _4 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$5]]);
+const _4$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _4$2
+  "default": _4
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$b = {};
-function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card5 = __nuxt_component_1$7;
+const _sfc_main$8 = {};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card5 = __nuxt_component_1$2;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62464,21 +63724,21 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$b = _sfc_main$b.setup;
-_sfc_main$b.setup = (props, ctx) => {
+const _sfc_setup$8 = _sfc_main$8.setup;
+_sfc_main$8.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/5.vue");
-  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
+  return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
-const _5$2 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", _sfc_ssrRender$b]]);
-const _5$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _5 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$4]]);
+const _5$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _5$2
+  "default": _5
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$a = {};
-function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card6 = _sfc_main$I;
+const _sfc_main$7 = {};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card6 = _sfc_main$D;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62495,21 +63755,21 @@ function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$a = _sfc_main$a.setup;
-_sfc_main$a.setup = (props, ctx) => {
+const _sfc_setup$7 = _sfc_main$7.setup;
+_sfc_main$7.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/6.vue");
-  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
+  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
-const _6 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["ssrRender", _sfc_ssrRender$a]]);
+const _6 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$3]]);
 const _6$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _6
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$9 = {};
-function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card7 = _sfc_main$H;
+const _sfc_main$6 = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card7 = _sfc_main$C;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62526,21 +63786,21 @@ function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$9 = _sfc_main$9.setup;
-_sfc_main$9.setup = (props, ctx) => {
+const _sfc_setup$6 = _sfc_main$6.setup;
+_sfc_main$6.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/7.vue");
-  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
+  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
-const _7 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$9]]);
+const _7 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$2]]);
 const _7$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _7
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$8 = {};
-function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card8 = _sfc_main$G;
+const _sfc_main$5 = {};
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card8 = _sfc_main$B;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     lang: "",
     daisyui: ""
@@ -62557,21 +63817,21 @@ function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$8 = _sfc_main$8.setup;
-_sfc_main$8.setup = (props, ctx) => {
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/8.vue");
-  return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const _8 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$8]]);
+const _8 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$1]]);
 const _8$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _8
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$7 = {};
-function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Card9 = __nuxt_component_1$6;
+const _sfc_main$4 = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$2;
+  const _component_Card9 = __nuxt_component_1$1;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ daisyui: "" }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -62585,218 +63845,130 @@ function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$7 = _sfc_main$7.setup;
-_sfc_main$7.setup = (props, ctx) => {
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/card/9.vue");
-  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const _9 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$7]]);
+const _9 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender]]);
 const _9$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": _9
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$6 = {};
-function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Hero1 = __nuxt_component_1$5;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Hero1, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Hero1)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
-const _sfc_setup$6 = _sfc_main$6.setup;
-_sfc_main$6.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/hero/1.vue");
-  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
+const _sfc_main$3 = {
+  __name: "[num]",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { params } = useRoute();
+    const Hero = {
+      1: __nuxt_component_0$1
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(Hero[vue_cjs_prod.unref(params).num]), _attrs, null), _parent);
+    };
+  }
 };
-const _1$4 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$6]]);
-const _1$5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _1$4
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$5 = {};
-function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Profile1 = __nuxt_component_1$4;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, _attrs, {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Profile1, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Profile1)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
-const _sfc_setup$5 = _sfc_main$5.setup;
-_sfc_main$5.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/profile/1.vue");
-  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
-};
-const _1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5]]);
-const _1$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _1$2
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$4 = {};
-function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Section1 = _sfc_main$C;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
-    daisyui: "",
-    lang: ""
-  }, _attrs), {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Section1, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Section1)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
-const _sfc_setup$4 = _sfc_main$4.setup;
-_sfc_main$4.setup = (props, ctx) => {
-  const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/section/1.vue");
-  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
-};
-const _1 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$4]]);
-const _1$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": _1
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$3 = {};
-function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Section2 = __nuxt_component_1$3;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
-    daisyui: "",
-    lang: ""
-  }, _attrs), {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Section2, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Section2)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
 const _sfc_setup$3 = _sfc_main$3.setup;
 _sfc_main$3.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/section/2.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/hero/[num].vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const _2 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3]]);
-const _2$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _num_$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _2
+  "default": _sfc_main$3
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$2 = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Section3 = __nuxt_component_1$2;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, _attrs, {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Section3, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Section3)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
+const _sfc_main$2 = {
+  __name: "[num]",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { params } = useRoute();
+    const Profile = {
+      1: __nuxt_component_0
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(Profile[vue_cjs_prod.unref(params).num]), _attrs, null), _parent);
+    };
+  }
+};
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/section/3.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/profile/[num].vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const _3 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2]]);
-const _3$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _num_$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _3
+  "default": _sfc_main$2
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$1 = {};
-function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Section4 = __nuxt_component_1$1;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Section4, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Section4)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
+const _sfc_main$1 = {
+  __name: "[num]",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { params } = useRoute();
+    const Section = {
+      1: _sfc_main$x,
+      2: __nuxt_component_1,
+      3: __nuxt_component_2,
+      4: __nuxt_component_3,
+      5: __nuxt_component_4
+    };
+    return (_ctx, _push, _parent, _attrs) => {
+      serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(Section[vue_cjs_prod.unref(params).num]), _attrs, null), _parent);
+    };
+  }
+};
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/section/4.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/section/[num].vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const _4 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1]]);
-const _4$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _num_ = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _4
+  "default": _sfc_main$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main = {};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_nuxt_layout = __nuxt_component_0;
-  const _component_Section5 = __nuxt_component_1;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(serverRenderer.exports.ssrRenderComponent(_component_Section5, null, null, _parent2, _scopeId));
-      } else {
-        return [
-          vue_cjs_prod.createVNode(_component_Section5)
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
+const _sfc_main = {
+  __name: "index",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const { routes: routes2 } = useRouter().options;
+    console.log(routes2);
+    return (_ctx, _push, _parent, _attrs) => {
+      const _component_nuxt_link = __nuxt_component_0$3;
+      _push(`<ul${serverRenderer.exports.ssrRenderAttrs(_attrs)}><!--[-->`);
+      serverRenderer.exports.ssrRenderList(vue_cjs_prod.unref(routes2), (item) => {
+        _push(`<li>`);
+        _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {
+          to: "/" + item.name.replace("language-", "").replace("-", "/")
+        }, {
+          default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+            if (_push2) {
+              _push2(`${serverRenderer.exports.ssrInterpolate(item.name)}`);
+            } else {
+              return [
+                vue_cjs_prod.createTextVNode(vue_cjs_prod.toDisplayString(item.name), 1)
+              ];
+            }
+          }),
+          _: 2
+        }, _parent));
+        _push(`</li>`);
+      });
+      _push(`<!--]--></ul>`);
+    };
+  }
+};
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/[[language]]/section/5.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const _5 = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
-const _5$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const index = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  "default": _5
+  "default": _sfc_main
 }, Symbol.toStringTag, { value: "Module" }));
 
 export { entry$1 as default };

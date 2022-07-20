@@ -22,9 +22,9 @@
           </div>
 
           <div class="dropdown dropdown-end mr-2" v-if="props.lang">
-            <label tabindex="0" class="btn btn-sm m-1 capitalize"
-              >language</label
-            >
+            <label tabindex="0" class="btn btn-sm m-1 capitalize">
+              language
+            </label>
             <ul
               tabindex="0"
               class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"

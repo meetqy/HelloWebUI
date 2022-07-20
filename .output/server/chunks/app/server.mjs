@@ -61750,7 +61750,7 @@ const _sfc_main$r = {
           _push(`<!---->`);
         }
         if (props.lang) {
-          _push(`<div class="dropdown dropdown-end mr-2"><label tabindex="0" class="btn btn-sm m-1 capitalize">language</label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
+          _push(`<div class="dropdown dropdown-end mr-2"><label tabindex="0" class="btn btn-sm m-1 capitalize"> language </label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
           serverRenderer.exports.ssrRenderList(langs, (item) => {
             _push(`<li class="flex">`);
             _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {

@@ -61738,47 +61738,31 @@ const _sfc_main$r = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_nuxt_link = __nuxt_component_0$1;
       if (!vue_cjs_prod.unref(full)) {
-        _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "drawer drawer-mobile" }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content relative min-h-screen p-4"><div class="mockup-window border bg-base-100 shadow h-full relative"><div class="h-12 w-full absolute left-0 top-0 flex justify-end px-4 items-center border-b">`);
-        if (!props.lang || !props.daisyui) {
-          _push(`<button class="btn btn-ghost btn-sm hover:bg-transparent font-light mr-2"> \u5B8C\u5584\u4E2D... </button>`);
-        } else {
-          _push(`<!---->`);
-        }
-        if (props.daisyui) {
-          _push(`<div class="btn btn-ghost hover:bg-transparent btn-sm"><span class="lowercase text-primary">daisy</span><span class="!text-base-content uppercase">UI</span></div>`);
-        } else {
-          _push(`<!---->`);
-        }
-        if (props.lang) {
-          _push(`<div class="dropdown dropdown-end mr-2"><label tabindex="0" class="btn btn-sm m-1 capitalize"> language </label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
-          serverRenderer.exports.ssrRenderList(langs, (item) => {
-            _push(`<li class="flex">`);
-            _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {
-              to: `/${item.text}/${vue_cjs_prod.unref(url)}`,
-              class: "flex justify-between"
-            }, {
-              default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-                if (_push2) {
-                  _push2(`<span${_scopeId}>${serverRenderer.exports.ssrInterpolate(item.icon)} <span class="ml-1"${_scopeId}>${serverRenderer.exports.ssrInterpolate(item.text)}</span></span><span class="badge badge-outline lowercase"${_scopeId}>${serverRenderer.exports.ssrInterpolate(item.desc)}</span>`);
-                } else {
-                  return [
-                    vue_cjs_prod.createVNode("span", null, [
-                      vue_cjs_prod.createTextVNode(vue_cjs_prod.toDisplayString(item.icon) + " ", 1),
-                      vue_cjs_prod.createVNode("span", { class: "ml-1" }, vue_cjs_prod.toDisplayString(item.text), 1)
-                    ]),
-                    vue_cjs_prod.createVNode("span", { class: "badge badge-outline lowercase" }, vue_cjs_prod.toDisplayString(item.desc), 1)
-                  ];
-                }
-              }),
-              _: 2
-            }, _parent));
-            _push(`</li>`);
-          });
-          _push(`<!--]--></ul></div>`);
-        } else {
-          _push(`<!---->`);
-        }
-        _push(`<div class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg></div><button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div class="w-full h-full overflow-y-scroll bg-neutral"><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{ "items-center -mt-4": props.middle }, "w-full min-h-full flex justify-center relative"])}">`);
+        _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "drawer drawer-mobile" }, _attrs))}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"><div class="drawer-content relative min-h-screen p-4"><div class="mockup-window border bg-base-100 shadow h-full relative"><div class="h-12 w-full absolute left-0 top-0 flex justify-end px-4 items-center border-b"><button class="${serverRenderer.exports.ssrRenderClass([{ hidden: props.lang && props.daisyui }, "btn btn-ghost btn-sm hover:bg-transparent font-light mr-2"])}"> \u5B8C\u5584\u4E2D... </button><div class="${serverRenderer.exports.ssrRenderClass([{ hidden: !props.daisyui }, "btn btn-ghost hover:bg-transparent btn-sm"])}"><span class="lowercase text-primary">daisy</span><span class="!text-base-content uppercase">UI</span></div><div class="${serverRenderer.exports.ssrRenderClass([{ hidden: !props.lang }, "dropdown dropdown-end mr-2"])}"><label tabindex="0" class="btn btn-sm m-1 capitalize"> language </label><ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 uppercase"><!--[-->`);
+        serverRenderer.exports.ssrRenderList(langs, (item) => {
+          _push(`<li class="flex">`);
+          _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {
+            to: `/${item.text}/${vue_cjs_prod.unref(url)}`,
+            class: "flex justify-between"
+          }, {
+            default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+              if (_push2) {
+                _push2(`<span${_scopeId}>${serverRenderer.exports.ssrInterpolate(item.icon)} <span class="ml-1"${_scopeId}>${serverRenderer.exports.ssrInterpolate(item.text)}</span></span><span class="badge badge-outline lowercase"${_scopeId}>${serverRenderer.exports.ssrInterpolate(item.desc)}</span>`);
+              } else {
+                return [
+                  vue_cjs_prod.createVNode("span", null, [
+                    vue_cjs_prod.createTextVNode(vue_cjs_prod.toDisplayString(item.icon) + " ", 1),
+                    vue_cjs_prod.createVNode("span", { class: "ml-1" }, vue_cjs_prod.toDisplayString(item.text), 1)
+                  ]),
+                  vue_cjs_prod.createVNode("span", { class: "badge badge-outline lowercase" }, vue_cjs_prod.toDisplayString(item.desc), 1)
+                ];
+              }
+            }),
+            _: 2
+          }, _parent));
+          _push(`</li>`);
+        });
+        _push(`<!--]--></ul></div><div class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg></div><button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div class="w-full h-full overflow-y-scroll bg-neutral"><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{ "items-center -mt-4": props.middle }, "w-full min-h-full flex justify-center relative"])}">`);
         serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div></div></div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
         serverRenderer.exports.ssrRenderList(themes, (item) => {

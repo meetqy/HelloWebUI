@@ -8,20 +8,23 @@
         >
           <button
             class="btn btn-ghost btn-sm hover:bg-transparent font-light mr-2"
-            v-if="!props.lang || !props.daisyui"
+            :class="{ hidden: props.lang && props.daisyui }"
           >
             完善中...
           </button>
 
           <div
             class="btn btn-ghost hover:bg-transparent btn-sm"
-            v-if="props.daisyui"
+            :class="{ hidden: !props.daisyui }"
           >
             <span class="lowercase text-primary">daisy</span>
             <span class="!text-base-content uppercase">UI</span>
           </div>
 
-          <div class="dropdown dropdown-end mr-2" v-if="props.lang">
+          <div
+            class="dropdown dropdown-end mr-2"
+            :class="{ hidden: !props.lang }"
+          >
             <label tabindex="0" class="btn btn-sm m-1 capitalize">
               language
             </label>

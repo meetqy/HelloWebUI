@@ -3857,7 +3857,7 @@ const useParams = () => {
   }
   return params;
 };
-const _sfc_main$E = {
+const _sfc_main$F = {
   __name: "1",
   __ssrInlineRender: true,
   setup(__props) {
@@ -3936,13 +3936,13 @@ const _sfc_main$E = {
     };
   }
 };
-const _sfc_setup$E = _sfc_main$E.setup;
-_sfc_main$E.setup = (props, ctx) => {
+const _sfc_setup$F = _sfc_main$F.setup;
+_sfc_main$F.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/1.vue");
-  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
+  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
-const _sfc_main$D = {
+const _sfc_main$E = {
   __name: "2",
   __ssrInlineRender: true,
   setup(__props) {
@@ -4048,11 +4048,11 @@ const _sfc_main$D = {
     };
   }
 };
-const _sfc_setup$D = _sfc_main$D.setup;
-_sfc_main$D.setup = (props, ctx) => {
+const _sfc_setup$E = _sfc_main$E.setup;
+_sfc_main$E.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/2.vue");
-  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
+  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -4061,8 +4061,8 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$C = {};
-function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
+const _sfc_main$D = {};
+function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0$3;
   _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
     middle: false,
@@ -4283,17 +4283,17 @@ function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$C = _sfc_main$C.setup;
-_sfc_main$C.setup = (props, ctx) => {
+const _sfc_setup$D = _sfc_main$D.setup;
+_sfc_main$D.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/3.vue");
-  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const __nuxt_component_2$2 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["ssrRender", _sfc_ssrRender$k]]);
-const _sfc_main$B = {};
-function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
+const __nuxt_component_2$2 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["ssrRender", _sfc_ssrRender$l]]);
+const _sfc_main$C = {};
+function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0$3;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, _attrs, {
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(`<div class="bg-base-100 font-sans leading-normal tracking-normal w-full"${_scopeId}><div class="w-full m-0 p-0 bg-cover bg-bottom" style="${serverRenderer.exports.ssrRenderStyle({ "background-image": "url('https://p.wcao.cc/random/1080x460')", "height": "60vh", "max-height": "460px" })}"${_scopeId}><div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal"${_scopeId}><p class="text-white font-extrabold text-3xl md:text-5xl"${_scopeId}> \u{1F47B} Ghostwind CSS </p><p class="text-xl md:text-2xl text-gray-500"${_scopeId}>Welcome to my Blog</p></div></div><div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32"${_scopeId}><div class="mx-0 sm:mx-6"${_scopeId}><nav class="mt-0 w-full"${_scopeId}><div class="container mx-auto flex items-center"${_scopeId}><div class="flex w-1/2 pl-4 text-sm"${_scopeId}><ul class="list-reset flex justify-between flex-1 md:flex-none items-center"${_scopeId}><li class="mr-2"${_scopeId}><a class="inline-block py-2 px-2 text-white no-underline hover:underline" href="post.html"${_scopeId}>POST</a></li><li class="mr-2"${_scopeId}><a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#"${_scopeId}>LINK</a></li><li class="mr-2"${_scopeId}><a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#"${_scopeId}>LINK</a></li><li class="mr-2"${_scopeId}><a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#"${_scopeId}>LINK</a></li></ul></div><div class="flex w-1/2 justify-end content-center"${_scopeId}><a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@twitter_handle" href="https://twitter.com/intent/tweet?url=#"${_scopeId}><svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"${_scopeId}><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"${_scopeId}></path></svg></a><a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="#facebook_id" href="https://www.facebook.com/sharer/sharer.php?u=#"${_scopeId}><svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"${_scopeId}><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"${_scopeId}></path></svg></a></div></div></nav><div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t"${_scopeId}><div class="flex h-full bg-white rounded overflow-hidden shadow-lg"${_scopeId}><a href="post.html" class="flex flex-wrap no-underline hover:no-underline"${_scopeId}><div class="w-full md:w-2/3 rounded-t"${_scopeId}><img src="https://source.unsplash.com/collection/494263/800x600" class="h-full w-full shadow"${_scopeId}></div><div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink"${_scopeId}><div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"${_scopeId}><p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6"${_scopeId}> GETTING STARTED </p><div class="w-full font-bold text-xl text-gray-900 px-6"${_scopeId}> \u{1F44B} Welcome fellow Tailwind CSS and Ghost fan </div><p class="text-gray-800 font-serif text-base px-6 mb-5"${_scopeId}> This starter template is an attempt to replicate the default Ghost theme &quot;Casper&quot; using Tailwind CSS and vanilla Javascript. <br${_scopeId}><br${_scopeId}></p></div><div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"${_scopeId}><div class="flex items-center justify-between"${_scopeId}><img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author" tabindex="0"${_scopeId}><p class="text-gray-600 text-xs md:text-sm"${_scopeId}>1 MIN READ</p></div></div></div></a></div><div class="flex flex-wrap justify-between pt-12 -mx-6"${_scopeId}><div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"${_scopeId}><div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"${_scopeId}><div href="#" class="flex flex-wrap no-underline hover:no-underline"${_scopeId}><img src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6"${_scopeId}><p class="w-full text-gray-600 text-xs md:text-sm px-6"${_scopeId}> GETTING STARTED </p><div class="w-full font-bold text-xl text-gray-900 px-6"${_scopeId}> Lorem ipsum dolor sit amet. </div><p class="text-gray-800 font-serif text-base px-6 mb-5"${_scopeId}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula. </p></div></div><div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"${_scopeId}><div class="flex items-center justify-between"${_scopeId}><img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author" tabindex="0"${_scopeId}><p class="text-gray-600 text-xs md:text-sm"${_scopeId}>1 MIN READ</p></div></div></div><div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"${_scopeId}><div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"${_scopeId}><a href="#" class="flex flex-wrap no-underline hover:no-underline"${_scopeId}><img src="https://source.unsplash.com/collection/3106804/800x600" class="h-64 w-full rounded-t pb-6"${_scopeId}><p class="w-full text-gray-600 text-xs md:text-sm px-6"${_scopeId}> GETTING STARTED </p><div class="w-full font-bold text-xl text-gray-900 px-6"${_scopeId}> Lorem ipsum dolor sit amet. </div><p class="text-gray-800 font-serif text-base px-6 mb-5"${_scopeId}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ip Aliquam at ipsum eu nunc commodo posuere et sit amet ligula. </p></a></div><div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"${_scopeId}><div class="flex items-center justify-between"${_scopeId}><img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author" tabindex="0"${_scopeId}><p class="text-gray-600 text-xs md:text-sm"${_scopeId}>1 MIN READ</p></div></div></div><div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"${_scopeId}><div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"${_scopeId}><a href="#" class="flex flex-wrap no-underline hover:no-underline"${_scopeId}><img src="https://source.unsplash.com/collection/539527/800x600" class="h-64 w-full rounded-t pb-6"${_scopeId}><p class="w-full text-gray-600 text-xs md:text-sm px-6"${_scopeId}> GETTING STARTED </p><div class="w-full font-bold text-xl text-gray-900 px-6"${_scopeId}> Lorem ipsum dolor sit amet. </div><p class="text-gray-800 font-serif text-base px-6 mb-5"${_scopeId}> Lorem ipsum eu nunc commodo posuere et sit amet ligula. </p></a></div><div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"${_scopeId}><div class="flex items-center justify-between"${_scopeId}><img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author" tabindex="0"${_scopeId}><p class="text-gray-600 text-xs md:text-sm"${_scopeId}>1 MIN READ</p></div></div></div><div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink"${_scopeId}><div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"${_scopeId}><a href="#" class="flex flex-wrap no-underline hover:no-underline"${_scopeId}><img src="https://source.unsplash.com/collection/3657445/800x600" class="h-full w-full rounded-t pb-6"${_scopeId}><p class="w-full text-gray-600 text-xs md:text-sm px-6"${_scopeId}> GETTING STARTED </p><div class="w-full font-bold text-xl text-gray-900 px-6"${_scopeId}> Lorem ipsum dolor sit amet. </div><p class="text-gray-800 font-serif text-base px-6 mb-5"${_scopeId}> Lorem ipsum eu nunc commodo posuere et sit amet ligula. </p></a></div><div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"${_scopeId}><div class="flex items-center justify-between"${_scopeId}><img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author" tabindex="0"${_scopeId}><p class="text-gray-600 text-xs md:text-sm"${_scopeId}>1 MIN READ</p></div></div></div><div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink"${_scopeId}><div class="flex-1 flex-row bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"${_scopeId}><a href="#" class="flex flex-wrap no-underline hover:no-underline"${_scopeId}><img src="https://source.unsplash.com/collection/764827/800x600" class="h-full w-full rounded-t pb-6"${_scopeId}><p class="w-full text-gray-600 text-xs md:text-sm px-6"${_scopeId}> GETTING STARTED </p><div class="w-full font-bold text-xl text-gray-900 px-6"${_scopeId}> Lorem ipsum dolor sit amet. </div><p class="text-gray-800 font-serif text-base px-6 mb-5"${_scopeId}> Lorem ipsum eu nunc commodo posuere et sit amet ligula. </p></a></div><div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"${_scopeId}><div class="flex items-center justify-between"${_scopeId}><img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author" tabindex="0"${_scopeId}><p class="text-gray-600 text-xs md:text-sm"${_scopeId}>1 MIN READ</p></div></div></div><div class="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink"${_scopeId}><div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"${_scopeId}><a href="#" class="flex flex-wrap no-underline hover:no-underline"${_scopeId}><img src="https://source.unsplash.com/collection/325867/800x600" class="h-full w-full rounded-t pb-6"${_scopeId}><p class="w-full text-gray-600 text-xs md:text-sm px-6"${_scopeId}> GETTING STARTED </p><div class="w-full font-bold text-xl text-gray-900 px-6"${_scopeId}> Lorem ipsum dolor sit amet. </div><p class="text-gray-800 font-serif text-base px-6 mb-5"${_scopeId}> Lorem ipsum eu nunc commodo posuere et sit amet ligula. </p></a></div><div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"${_scopeId}><div class="flex items-center justify-between"${_scopeId}><img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author" tabindex="0"${_scopeId}><p class="text-gray-600 text-xs md:text-sm"${_scopeId}>1 MIN READ</p></div></div></div><div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"${_scopeId}><div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"${_scopeId}><a href="#" class="flex flex-wrap no-underline hover:no-underline"${_scopeId}><img src="https://source.unsplash.com/collection/1118905/800x600" class="h-full w-full rounded-t pb-6"${_scopeId}><p class="w-full text-gray-600 text-xs md:text-sm px-6"${_scopeId}> GETTING STARTED </p><div class="w-full font-bold text-xl text-gray-900 px-6"${_scopeId}> Lorem ipsum dolor sit amet. </div><p class="text-gray-800 font-serif text-base px-6 mb-5"${_scopeId}> Lorem ipsum eu nunc commodo posuere et sit amet ligula. </p></a></div><div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"${_scopeId}><div class="flex items-center justify-between"${_scopeId}><img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author" tabindex="0"${_scopeId}><p class="text-gray-600 text-xs md:text-sm"${_scopeId}>1 MIN READ</p></div></div></div></div></div><div class="container font-sans bg-green-100 rounded mt-8 p-4 md:p-24 text-center"${_scopeId}><h2 class="font-bold break-normal text-2xl md:text-4xl"${_scopeId}> Subscribe to Ghostwind CSS </h2><h3 class="font-bold break-normal font-normal text-gray-600 text-base md:text-xl"${_scopeId}> Get the latest posts delivered right to your inbox </h3><div class="w-full text-center pt-4"${_scopeId}><form action="#"${_scopeId}><div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center"${_scopeId}><input type="email" placeholder="youremail@example.com" class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none"${_scopeId}><button type="submit" class="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400"${_scopeId}> Subscribe </button></div></form></div></div><div class="flex w-full items-center font-sans p-8 md:p-24"${_scopeId}><img class="w-10 h-10 rounded-full mr-4" src="http://i.pravatar.cc/300" alt="Avatar of Author"${_scopeId}><div class="flex-1"${_scopeId}><p class="text-base font-bold text-base md:text-xl leading-none"${_scopeId}> Ghostwind CSS </p><p class="text-gray-600 text-xs md:text-base"${_scopeId}> Tailwind CSS version of Ghost&#39;s Casper theme by <a class="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500" href="https://www.tailwindtoolbox.com"${_scopeId}>TailwindToolbox.com</a></p></div><div class="justify-end"${_scopeId}><button class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full"${_scopeId}> Read More </button></div></div></div></div><footer class="bg-gray-900"${_scopeId}><div class="container max-w-6xl mx-auto flex items-center px-2 py-8"${_scopeId}><div class="w-full mx-auto flex flex-wrap items-center"${_scopeId}><div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold"${_scopeId}><a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline" href="#"${_scopeId}> \u{1F47B} <span class="text-base text-gray-200"${_scopeId}> Ghostwind CSS</span></a></div><div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end"${_scopeId}><ul class="list-reset flex justify-center flex-1 md:flex-none items-center"${_scopeId}><li${_scopeId}><a class="inline-block py-2 px-3 text-white no-underline" href="#"${_scopeId}>Active</a></li><li${_scopeId}><a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-3" href="#"${_scopeId}>link</a></li><li${_scopeId}><a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-3" href="#"${_scopeId}>link</a></li><li${_scopeId}><a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-3" href="#"${_scopeId}>link</a></li></ul></div></div></div></footer></div>`);
@@ -4698,13 +4698,465 @@ function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
+const _sfc_setup$C = _sfc_main$C.setup;
+_sfc_main$C.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/4.vue");
+  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+};
+const __nuxt_component_3$2 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["ssrRender", _sfc_ssrRender$k]]);
+const _sfc_main$B = {};
+function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_layout = __nuxt_component_0$3;
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+    middle: false,
+    overflow: ""
+  }, _attrs), {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<div class="drawer drawer-mobile bg-base-100"${_scopeId}><input id="my-drawer-2" type="checkbox" class="drawer-toggle"${_scopeId}><div class="drawer-content flex justify-center lg:justify-start"${_scopeId}><div class="lg:w-[70vw] max-w-screen-lg lg:pt-4 lg:p-4"${_scopeId}><div class="navbar bg-base-100 lg:hidden sticky top-0 w-full z-50"${_scopeId}><div class="flex-none"${_scopeId}><label for="my-drawer-2" class="btn btn-square btn-ghost lg:hidden"${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"${_scopeId}></path></svg></label></div><div class="flex-1"${_scopeId}><a class="btn btn-ghost normal-case text-xl" href="./"${_scopeId}>Sarissa Blog</a></div><div class="flex-none"${_scopeId}><button data-set-theme="winter" class="btn btn-sm btn-ghost btn-square" data-act-class="btn-active"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"${_scopeId}><title${_scopeId}>ionicons-v5-q</title><path d="M256,118a22,22,0,0,1-22-22V48a22,22,0,0,1,44,0V96A22,22,0,0,1,256,118Z"${_scopeId}></path><path d="M256,486a22,22,0,0,1-22-22V416a22,22,0,0,1,44,0v48A22,22,0,0,1,256,486Z"${_scopeId}></path><path d="M369.14,164.86a22,22,0,0,1-15.56-37.55l33.94-33.94a22,22,0,0,1,31.11,31.11l-33.94,33.94A21.93,21.93,0,0,1,369.14,164.86Z"${_scopeId}></path><path d="M108.92,425.08a22,22,0,0,1-15.55-37.56l33.94-33.94a22,22,0,1,1,31.11,31.11l-33.94,33.94A21.94,21.94,0,0,1,108.92,425.08Z"${_scopeId}></path><path d="M464,278H416a22,22,0,0,1,0-44h48a22,22,0,0,1,0,44Z"${_scopeId}></path><path d="M96,278H48a22,22,0,0,1,0-44H96a22,22,0,0,1,0,44Z"${_scopeId}></path><path d="M403.08,425.08a21.94,21.94,0,0,1-15.56-6.45l-33.94-33.94a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.55,37.56Z"${_scopeId}></path><path d="M142.86,164.86a21.89,21.89,0,0,1-15.55-6.44L93.37,124.48a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.56,37.55Z"${_scopeId}></path><path d="M256,358A102,102,0,1,1,358,256,102.12,102.12,0,0,1,256,358Z"${_scopeId}></path></svg></button><button data-set-theme="garden" class="btn btn-sm btn-ghost btn-square" data-act-class="btn-active"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"${_scopeId}></path></svg></button><button data-set-theme="dark" class="btn btn-sm btn-ghost btn-square" data-act-class="btn-active"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"${_scopeId}><title${_scopeId}>ionicons-v5-j</title><path d="M152.62,126.77c0-33,4.85-66.35,17.23-94.77C87.54,67.83,32,151.89,32,247.38,32,375.85,136.15,480,264.62,480c95.49,0,179.55-55.54,215.38-137.85-28.42,12.38-61.8,17.23-94.77,17.23C256.76,359.38,152.62,255.24,152.62,126.77Z"${_scopeId}></path></svg></button></div></div><div class="flex-1 p-3 md:py-[35]"${_scopeId}><div class="space-y-2 md:space-y-6"${_scopeId}><div class="card card-side bg-base-200 shadow-xl"${_scopeId}><figure${_scopeId}><img src="https://api.lorem.space/image/movie?w=200&amp;h=280" alt="Movie"${_scopeId}></figure><div class="card-body"${_scopeId}><h2 class="card-title"${_scopeId}>Lorem ipsum dolor sit amet</h2><div class="justify-start"${_scopeId}><button class="btn btn-xs btn-primary"${_scopeId}>Movies</button><button class="btn btn-xs btn-secondary"${_scopeId}>Watched</button></div><p${_scopeId}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div></div><div class="card card-side bg-base-200 shadow-xl"${_scopeId}><div class="card-body"${_scopeId}><h2 class="card-title"${_scopeId}> Fringilla est ullamcorper eget nulla facilisi etiam dignissim. </h2><div class="justify-start"${_scopeId}><button class="btn btn-xs btn-accent"${_scopeId}>Article</button></div><p${_scopeId}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim. Purus viverra accumsan in nisl. Aliquam faucibus purus in massa. In vitae turpis massa sed elementum tempus egestas. Nisl purus in mollis nunc sed. Ullamcorper morbi tincidunt ornare massa eget. Enim nulla aliquet porttitor lacus luctus accumsan. Id neque aliquam vestibulum morbi blandit cursus. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Sed augue lacus viverra vitae. </p></div></div><div class="card card-side bg-base-200 shadow-xl"${_scopeId}><figure${_scopeId}><img src="https://api.lorem.space/image/book?w=200&amp;h=280" alt="Book"${_scopeId}></figure><div class="card-body"${_scopeId}><h2 class="card-title"${_scopeId}>Rhoncus dolor purus non enim.</h2><div class="justify-start"${_scopeId}><button class="btn btn-xs btn-error"${_scopeId}>Books</button><button class="btn btn-xs btn-success"${_scopeId}>Author</button></div><p${_scopeId}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim. </p></div></div><div class="card card-side bg-base-200 shadow-xl"${_scopeId}><div class="card-body"${_scopeId}><h2 class="card-title"${_scopeId}> Elementum pulvinar etiam non quam lacus suspendisse </h2><div class="justify-start"${_scopeId}><button class="btn btn-xs btn-warning"${_scopeId}>Note</button></div><p${_scopeId}> Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Massa sed elementum tempus egestas sed. Proin sagittis nisl rhoncus mattis rhoncus urna. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Posuere urna nec tincidunt praesent semper. Elementum pulvinar etiam non quam lacus suspendisse. </p></div></div><div class="card card-side bg-base-200 shadow-xl"${_scopeId}><figure${_scopeId}><img src="https://api.lorem.space/image/game?w=200&amp;h=280" alt="Game"${_scopeId}></figure><div class="card-body"${_scopeId}><h2 class="card-title"${_scopeId}>Sed augue lacus viverra vitae.</h2><div class="justify-start"${_scopeId}><button class="btn btn-xs btn-primary"${_scopeId}>Game</button></div><p${_scopeId}> Sodales ut etiam sit amet nisl purus in mollis nunc. Suspendisse potenti nullam ac tortor vitae purus. Eu mi bibendum neque egestas congue quisque egestas diam. </p></div></div><div class="flex justify-center"${_scopeId}><div class="btn-group"${_scopeId}><button class="btn"${_scopeId}>1</button><button class="btn"${_scopeId}>2</button><button class="btn btn-disabled"${_scopeId}>...</button><button class="btn"${_scopeId}>99</button><button class="btn"${_scopeId}>100</button></div></div></div><div class="divider"${_scopeId}></div><p class="text-sm pl-4"${_scopeId}>\xA9 1967 - 2022 Sarissa Blog</p><p class="text-xs pl-4"${_scopeId}> Sarissa theme desing by <a class="link" href="https://github.com/iozcelik"${_scopeId}>iozcelik</a></p></div></div></div><div class="drawer-side"${_scopeId}><label for="my-drawer-2" class="drawer-overlay"${_scopeId}></label><div class="overflow-y-auto flex lg:justify-center w-fit lg:w-[30vw]"${_scopeId}><div class="w-fit p-3 lg:m-6 bg-base-100"${_scopeId}><div class="avatar w-60"${_scopeId}><div class="w-16 lg:w-32 rounded-full mx-auto"${_scopeId}><img src="https://api.lorem.space/image/face?hash=92310"${_scopeId}></div></div><h1 class="text-2xl p-2 pl-4"${_scopeId}>Sarissa Blog</h1><p class="text-sm pl-4"${_scopeId}>Responsive Blog Template</p><div class="flex gap-1 justify-center pt-4"${_scopeId}><a class="btn btn-sm btn-ghost btn-square"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"${_scopeId}><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"${_scopeId}></path></svg></a><a class="btn btn-sm btn-ghost btn-square"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"${_scopeId}><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"${_scopeId}></path></svg></a><a class="btn btn-sm btn-ghost btn-square"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"${_scopeId}><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"${_scopeId}></path><rect x="2" y="9" width="4" height="12"${_scopeId}></rect><circle cx="4" cy="4" r="2"${_scopeId}></circle></svg></a><a class="btn btn-sm btn-ghost btn-square"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"${_scopeId}><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"${_scopeId}></path></svg></a></div><div class="divider"${_scopeId}></div><div class="pt-4"${_scopeId}><ul class="menu bg-base-100 rounded-box"${_scopeId}><li${_scopeId}><a href="./"${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"${_scopeId}></path></svg> Home </a></li><li${_scopeId}><a href="./about.html"${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"${_scopeId}></path></svg> About </a></li><li${_scopeId}><a href="./categories.html"${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"${_scopeId}></path></svg> Categories </a></li><li${_scopeId}><a href="./search.html"${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"${_scopeId}></path></svg> Search </a></li><li${_scopeId}><a href="./archive.html"${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"${_scopeId}></path></svg> Archive </a></li><div class="divider"${_scopeId}></div><li class="hidden lg:block"${_scopeId}><div class="flex gap-1 justify-center"${_scopeId}><button data-set-theme="winter" class="btn btn-sm btn-ghost btn-square" data-act-class="btn-active"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"${_scopeId}><title${_scopeId}>ionicons-v5-q</title><path d="M256,118a22,22,0,0,1-22-22V48a22,22,0,0,1,44,0V96A22,22,0,0,1,256,118Z"${_scopeId}></path><path d="M256,486a22,22,0,0,1-22-22V416a22,22,0,0,1,44,0v48A22,22,0,0,1,256,486Z"${_scopeId}></path><path d="M369.14,164.86a22,22,0,0,1-15.56-37.55l33.94-33.94a22,22,0,0,1,31.11,31.11l-33.94,33.94A21.93,21.93,0,0,1,369.14,164.86Z"${_scopeId}></path><path d="M108.92,425.08a22,22,0,0,1-15.55-37.56l33.94-33.94a22,22,0,1,1,31.11,31.11l-33.94,33.94A21.94,21.94,0,0,1,108.92,425.08Z"${_scopeId}></path><path d="M464,278H416a22,22,0,0,1,0-44h48a22,22,0,0,1,0,44Z"${_scopeId}></path><path d="M96,278H48a22,22,0,0,1,0-44H96a22,22,0,0,1,0,44Z"${_scopeId}></path><path d="M403.08,425.08a21.94,21.94,0,0,1-15.56-6.45l-33.94-33.94a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.55,37.56Z"${_scopeId}></path><path d="M142.86,164.86a21.89,21.89,0,0,1-15.55-6.44L93.37,124.48a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.56,37.55Z"${_scopeId}></path><path d="M256,358A102,102,0,1,1,358,256,102.12,102.12,0,0,1,256,358Z"${_scopeId}></path></svg></button><button data-set-theme="garden" class="btn btn-sm btn-ghost btn-square" data-act-class="btn-active"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"${_scopeId}></path></svg></button><button data-set-theme="dark" class="btn btn-sm btn-ghost btn-square" data-act-class="btn-active"${_scopeId}><svg class="inline-block w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"${_scopeId}><title${_scopeId}>ionicons-v5-j</title><path d="M152.62,126.77c0-33,4.85-66.35,17.23-94.77C87.54,67.83,32,151.89,32,247.38,32,375.85,136.15,480,264.62,480c95.49,0,179.55-55.54,215.38-137.85-28.42,12.38-61.8,17.23-94.77,17.23C256.76,359.38,152.62,255.24,152.62,126.77Z"${_scopeId}></path></svg></button></div></li></ul></div></div></div></div></div>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("div", { class: "drawer drawer-mobile bg-base-100" }, [
+            vue_cjs_prod.createVNode("input", {
+              id: "my-drawer-2",
+              type: "checkbox",
+              class: "drawer-toggle"
+            }),
+            vue_cjs_prod.createVNode("div", { class: "drawer-content flex justify-center lg:justify-start" }, [
+              vue_cjs_prod.createVNode("div", { class: "lg:w-[70vw] max-w-screen-lg lg:pt-4 lg:p-4" }, [
+                vue_cjs_prod.createVNode("div", { class: "navbar bg-base-100 lg:hidden sticky top-0 w-full z-50" }, [
+                  vue_cjs_prod.createVNode("div", { class: "flex-none" }, [
+                    vue_cjs_prod.createVNode("label", {
+                      for: "my-drawer-2",
+                      class: "btn btn-square btn-ghost lg:hidden"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        fill: "none",
+                        viewBox: "0 0 24 24",
+                        class: "inline-block w-5 h-5 stroke-current"
+                      }, [
+                        vue_cjs_prod.createVNode("path", {
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          "stroke-width": "2",
+                          d: "M4 6h16M4 12h16M4 18h16"
+                        })
+                      ]))
+                    ])
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "flex-1" }, [
+                    vue_cjs_prod.createVNode("a", {
+                      class: "btn btn-ghost normal-case text-xl",
+                      href: "./"
+                    }, "Sarissa Blog")
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "flex-none" }, [
+                    vue_cjs_prod.createVNode("button", {
+                      "data-set-theme": "winter",
+                      class: "btn btn-sm btn-ghost btn-square",
+                      "data-act-class": "btn-active"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "inline-block w-4 h-4 fill-current",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 512 512"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "ionicons-v5-q"),
+                        vue_cjs_prod.createVNode("path", { d: "M256,118a22,22,0,0,1-22-22V48a22,22,0,0,1,44,0V96A22,22,0,0,1,256,118Z" }),
+                        vue_cjs_prod.createVNode("path", { d: "M256,486a22,22,0,0,1-22-22V416a22,22,0,0,1,44,0v48A22,22,0,0,1,256,486Z" }),
+                        vue_cjs_prod.createVNode("path", { d: "M369.14,164.86a22,22,0,0,1-15.56-37.55l33.94-33.94a22,22,0,0,1,31.11,31.11l-33.94,33.94A21.93,21.93,0,0,1,369.14,164.86Z" }),
+                        vue_cjs_prod.createVNode("path", { d: "M108.92,425.08a22,22,0,0,1-15.55-37.56l33.94-33.94a22,22,0,1,1,31.11,31.11l-33.94,33.94A21.94,21.94,0,0,1,108.92,425.08Z" }),
+                        vue_cjs_prod.createVNode("path", { d: "M464,278H416a22,22,0,0,1,0-44h48a22,22,0,0,1,0,44Z" }),
+                        vue_cjs_prod.createVNode("path", { d: "M96,278H48a22,22,0,0,1,0-44H96a22,22,0,0,1,0,44Z" }),
+                        vue_cjs_prod.createVNode("path", { d: "M403.08,425.08a21.94,21.94,0,0,1-15.56-6.45l-33.94-33.94a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.55,37.56Z" }),
+                        vue_cjs_prod.createVNode("path", { d: "M142.86,164.86a21.89,21.89,0,0,1-15.55-6.44L93.37,124.48a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.56,37.55Z" }),
+                        vue_cjs_prod.createVNode("path", { d: "M256,358A102,102,0,1,1,358,256,102.12,102.12,0,0,1,256,358Z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("button", {
+                      "data-set-theme": "garden",
+                      class: "btn btn-sm btn-ghost btn-square",
+                      "data-act-class": "btn-active"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "inline-block w-4 h-4 fill-current",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        fill: "none",
+                        viewBox: "0 0 24 24",
+                        stroke: "currentColor",
+                        "stroke-width": "2"
+                      }, [
+                        vue_cjs_prod.createVNode("path", {
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
+                          d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                        })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("button", {
+                      "data-set-theme": "dark",
+                      class: "btn btn-sm btn-ghost btn-square",
+                      "data-act-class": "btn-active"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "inline-block w-4 h-4 fill-current",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 512 512"
+                      }, [
+                        vue_cjs_prod.createVNode("title", null, "ionicons-v5-j"),
+                        vue_cjs_prod.createVNode("path", { d: "M152.62,126.77c0-33,4.85-66.35,17.23-94.77C87.54,67.83,32,151.89,32,247.38,32,375.85,136.15,480,264.62,480c95.49,0,179.55-55.54,215.38-137.85-28.42,12.38-61.8,17.23-94.77,17.23C256.76,359.38,152.62,255.24,152.62,126.77Z" })
+                      ]))
+                    ])
+                  ])
+                ]),
+                vue_cjs_prod.createVNode("div", { class: "flex-1 p-3 md:py-[35]" }, [
+                  vue_cjs_prod.createVNode("div", { class: "space-y-2 md:space-y-6" }, [
+                    vue_cjs_prod.createVNode("div", { class: "card card-side bg-base-200 shadow-xl" }, [
+                      vue_cjs_prod.createVNode("figure", null, [
+                        vue_cjs_prod.createVNode("img", {
+                          src: "https://api.lorem.space/image/movie?w=200&h=280",
+                          alt: "Movie"
+                        })
+                      ]),
+                      vue_cjs_prod.createVNode("div", { class: "card-body" }, [
+                        vue_cjs_prod.createVNode("h2", { class: "card-title" }, "Lorem ipsum dolor sit amet"),
+                        vue_cjs_prod.createVNode("div", { class: "justify-start" }, [
+                          vue_cjs_prod.createVNode("button", { class: "btn btn-xs btn-primary" }, "Movies"),
+                          vue_cjs_prod.createVNode("button", { class: "btn btn-xs btn-secondary" }, "Watched")
+                        ]),
+                        vue_cjs_prod.createVNode("p", null, " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ")
+                      ])
+                    ]),
+                    vue_cjs_prod.createVNode("div", { class: "card card-side bg-base-200 shadow-xl" }, [
+                      vue_cjs_prod.createVNode("div", { class: "card-body" }, [
+                        vue_cjs_prod.createVNode("h2", { class: "card-title" }, " Fringilla est ullamcorper eget nulla facilisi etiam dignissim. "),
+                        vue_cjs_prod.createVNode("div", { class: "justify-start" }, [
+                          vue_cjs_prod.createVNode("button", { class: "btn btn-xs btn-accent" }, "Article")
+                        ]),
+                        vue_cjs_prod.createVNode("p", null, " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim. Purus viverra accumsan in nisl. Aliquam faucibus purus in massa. In vitae turpis massa sed elementum tempus egestas. Nisl purus in mollis nunc sed. Ullamcorper morbi tincidunt ornare massa eget. Enim nulla aliquet porttitor lacus luctus accumsan. Id neque aliquam vestibulum morbi blandit cursus. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Sed augue lacus viverra vitae. ")
+                      ])
+                    ]),
+                    vue_cjs_prod.createVNode("div", { class: "card card-side bg-base-200 shadow-xl" }, [
+                      vue_cjs_prod.createVNode("figure", null, [
+                        vue_cjs_prod.createVNode("img", {
+                          src: "https://api.lorem.space/image/book?w=200&h=280",
+                          alt: "Book"
+                        })
+                      ]),
+                      vue_cjs_prod.createVNode("div", { class: "card-body" }, [
+                        vue_cjs_prod.createVNode("h2", { class: "card-title" }, "Rhoncus dolor purus non enim."),
+                        vue_cjs_prod.createVNode("div", { class: "justify-start" }, [
+                          vue_cjs_prod.createVNode("button", { class: "btn btn-xs btn-error" }, "Books"),
+                          vue_cjs_prod.createVNode("button", { class: "btn btn-xs btn-success" }, "Author")
+                        ]),
+                        vue_cjs_prod.createVNode("p", null, " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim. ")
+                      ])
+                    ]),
+                    vue_cjs_prod.createVNode("div", { class: "card card-side bg-base-200 shadow-xl" }, [
+                      vue_cjs_prod.createVNode("div", { class: "card-body" }, [
+                        vue_cjs_prod.createVNode("h2", { class: "card-title" }, " Elementum pulvinar etiam non quam lacus suspendisse "),
+                        vue_cjs_prod.createVNode("div", { class: "justify-start" }, [
+                          vue_cjs_prod.createVNode("button", { class: "btn btn-xs btn-warning" }, "Note")
+                        ]),
+                        vue_cjs_prod.createVNode("p", null, " Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Massa sed elementum tempus egestas sed. Proin sagittis nisl rhoncus mattis rhoncus urna. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Posuere urna nec tincidunt praesent semper. Elementum pulvinar etiam non quam lacus suspendisse. ")
+                      ])
+                    ]),
+                    vue_cjs_prod.createVNode("div", { class: "card card-side bg-base-200 shadow-xl" }, [
+                      vue_cjs_prod.createVNode("figure", null, [
+                        vue_cjs_prod.createVNode("img", {
+                          src: "https://api.lorem.space/image/game?w=200&h=280",
+                          alt: "Game"
+                        })
+                      ]),
+                      vue_cjs_prod.createVNode("div", { class: "card-body" }, [
+                        vue_cjs_prod.createVNode("h2", { class: "card-title" }, "Sed augue lacus viverra vitae."),
+                        vue_cjs_prod.createVNode("div", { class: "justify-start" }, [
+                          vue_cjs_prod.createVNode("button", { class: "btn btn-xs btn-primary" }, "Game")
+                        ]),
+                        vue_cjs_prod.createVNode("p", null, " Sodales ut etiam sit amet nisl purus in mollis nunc. Suspendisse potenti nullam ac tortor vitae purus. Eu mi bibendum neque egestas congue quisque egestas diam. ")
+                      ])
+                    ]),
+                    vue_cjs_prod.createVNode("div", { class: "flex justify-center" }, [
+                      vue_cjs_prod.createVNode("div", { class: "btn-group" }, [
+                        vue_cjs_prod.createVNode("button", { class: "btn" }, "1"),
+                        vue_cjs_prod.createVNode("button", { class: "btn" }, "2"),
+                        vue_cjs_prod.createVNode("button", { class: "btn btn-disabled" }, "..."),
+                        vue_cjs_prod.createVNode("button", { class: "btn" }, "99"),
+                        vue_cjs_prod.createVNode("button", { class: "btn" }, "100")
+                      ])
+                    ])
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "divider" }),
+                  vue_cjs_prod.createVNode("p", { class: "text-sm pl-4" }, "\xA9 1967 - 2022 Sarissa Blog"),
+                  vue_cjs_prod.createVNode("p", { class: "text-xs pl-4" }, [
+                    vue_cjs_prod.createTextVNode(" Sarissa theme desing by "),
+                    vue_cjs_prod.createVNode("a", {
+                      class: "link",
+                      href: "https://github.com/iozcelik"
+                    }, "iozcelik")
+                  ])
+                ])
+              ])
+            ]),
+            vue_cjs_prod.createVNode("div", { class: "drawer-side" }, [
+              vue_cjs_prod.createVNode("label", {
+                for: "my-drawer-2",
+                class: "drawer-overlay"
+              }),
+              vue_cjs_prod.createVNode("div", { class: "overflow-y-auto flex lg:justify-center w-fit lg:w-[30vw]" }, [
+                vue_cjs_prod.createVNode("div", { class: "w-fit p-3 lg:m-6 bg-base-100" }, [
+                  vue_cjs_prod.createVNode("div", { class: "avatar w-60" }, [
+                    vue_cjs_prod.createVNode("div", { class: "w-16 lg:w-32 rounded-full mx-auto" }, [
+                      vue_cjs_prod.createVNode("img", { src: "https://api.lorem.space/image/face?hash=92310" })
+                    ])
+                  ]),
+                  vue_cjs_prod.createVNode("h1", { class: "text-2xl p-2 pl-4" }, "Sarissa Blog"),
+                  vue_cjs_prod.createVNode("p", { class: "text-sm pl-4" }, "Responsive Blog Template"),
+                  vue_cjs_prod.createVNode("div", { class: "flex gap-1 justify-center pt-4" }, [
+                    vue_cjs_prod.createVNode("a", { class: "btn btn-sm btn-ghost btn-square" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "inline-block w-4 h-4 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", { class: "btn btn-sm btn-ghost btn-square" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "inline-block w-4 h-4 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", { class: "btn btn-sm btn-ghost btn-square" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "inline-block w-4 h-4 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" }),
+                        vue_cjs_prod.createVNode("rect", {
+                          x: "2",
+                          y: "9",
+                          width: "4",
+                          height: "12"
+                        }),
+                        vue_cjs_prod.createVNode("circle", {
+                          cx: "4",
+                          cy: "4",
+                          r: "2"
+                        })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", { class: "btn btn-sm btn-ghost btn-square" }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "inline-block w-4 h-4 fill-current",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        stroke: "currentColor",
+                        "stroke-width": "2",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" })
+                      ]))
+                    ])
+                  ]),
+                  vue_cjs_prod.createVNode("div", { class: "divider" }),
+                  vue_cjs_prod.createVNode("div", { class: "pt-4" }, [
+                    vue_cjs_prod.createVNode("ul", { class: "menu bg-base-100 rounded-box" }, [
+                      vue_cjs_prod.createVNode("li", null, [
+                        vue_cjs_prod.createVNode("a", { href: "./" }, [
+                          (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            class: "h-5 w-5",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor"
+                          }, [
+                            vue_cjs_prod.createVNode("path", {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              "stroke-width": "2",
+                              d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                            })
+                          ])),
+                          vue_cjs_prod.createTextVNode(" Home ")
+                        ])
+                      ]),
+                      vue_cjs_prod.createVNode("li", null, [
+                        vue_cjs_prod.createVNode("a", { href: "./about.html" }, [
+                          (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            class: "h-5 w-5",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                            "stroke-width": "2"
+                          }, [
+                            vue_cjs_prod.createVNode("path", {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                            })
+                          ])),
+                          vue_cjs_prod.createTextVNode(" About ")
+                        ])
+                      ]),
+                      vue_cjs_prod.createVNode("li", null, [
+                        vue_cjs_prod.createVNode("a", { href: "./categories.html" }, [
+                          (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            class: "h-5 w-5",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                            "stroke-width": "2"
+                          }, [
+                            vue_cjs_prod.createVNode("path", {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              d: "M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
+                            })
+                          ])),
+                          vue_cjs_prod.createTextVNode(" Categories ")
+                        ])
+                      ]),
+                      vue_cjs_prod.createVNode("li", null, [
+                        vue_cjs_prod.createVNode("a", { href: "./search.html" }, [
+                          (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            class: "h-5 w-5",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                            "stroke-width": "2"
+                          }, [
+                            vue_cjs_prod.createVNode("path", {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                            })
+                          ])),
+                          vue_cjs_prod.createTextVNode(" Search ")
+                        ])
+                      ]),
+                      vue_cjs_prod.createVNode("li", null, [
+                        vue_cjs_prod.createVNode("a", { href: "./archive.html" }, [
+                          (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            class: "h-5 w-5",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                            "stroke-width": "2"
+                          }, [
+                            vue_cjs_prod.createVNode("path", {
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              d: "M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                            })
+                          ])),
+                          vue_cjs_prod.createTextVNode(" Archive ")
+                        ])
+                      ]),
+                      vue_cjs_prod.createVNode("div", { class: "divider" }),
+                      vue_cjs_prod.createVNode("li", { class: "hidden lg:block" }, [
+                        vue_cjs_prod.createVNode("div", { class: "flex gap-1 justify-center" }, [
+                          vue_cjs_prod.createVNode("button", {
+                            "data-set-theme": "winter",
+                            class: "btn btn-sm btn-ghost btn-square",
+                            "data-act-class": "btn-active"
+                          }, [
+                            (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                              class: "inline-block w-4 h-4 fill-current",
+                              xmlns: "http://www.w3.org/2000/svg",
+                              viewBox: "0 0 512 512"
+                            }, [
+                              vue_cjs_prod.createVNode("title", null, "ionicons-v5-q"),
+                              vue_cjs_prod.createVNode("path", { d: "M256,118a22,22,0,0,1-22-22V48a22,22,0,0,1,44,0V96A22,22,0,0,1,256,118Z" }),
+                              vue_cjs_prod.createVNode("path", { d: "M256,486a22,22,0,0,1-22-22V416a22,22,0,0,1,44,0v48A22,22,0,0,1,256,486Z" }),
+                              vue_cjs_prod.createVNode("path", { d: "M369.14,164.86a22,22,0,0,1-15.56-37.55l33.94-33.94a22,22,0,0,1,31.11,31.11l-33.94,33.94A21.93,21.93,0,0,1,369.14,164.86Z" }),
+                              vue_cjs_prod.createVNode("path", { d: "M108.92,425.08a22,22,0,0,1-15.55-37.56l33.94-33.94a22,22,0,1,1,31.11,31.11l-33.94,33.94A21.94,21.94,0,0,1,108.92,425.08Z" }),
+                              vue_cjs_prod.createVNode("path", { d: "M464,278H416a22,22,0,0,1,0-44h48a22,22,0,0,1,0,44Z" }),
+                              vue_cjs_prod.createVNode("path", { d: "M96,278H48a22,22,0,0,1,0-44H96a22,22,0,0,1,0,44Z" }),
+                              vue_cjs_prod.createVNode("path", { d: "M403.08,425.08a21.94,21.94,0,0,1-15.56-6.45l-33.94-33.94a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.55,37.56Z" }),
+                              vue_cjs_prod.createVNode("path", { d: "M142.86,164.86a21.89,21.89,0,0,1-15.55-6.44L93.37,124.48a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.56,37.55Z" }),
+                              vue_cjs_prod.createVNode("path", { d: "M256,358A102,102,0,1,1,358,256,102.12,102.12,0,0,1,256,358Z" })
+                            ]))
+                          ]),
+                          vue_cjs_prod.createVNode("button", {
+                            "data-set-theme": "garden",
+                            class: "btn btn-sm btn-ghost btn-square",
+                            "data-act-class": "btn-active"
+                          }, [
+                            (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                              class: "inline-block w-4 h-4 fill-current",
+                              xmlns: "http://www.w3.org/2000/svg",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                              "stroke-width": "2"
+                            }, [
+                              vue_cjs_prod.createVNode("path", {
+                                "stroke-linecap": "round",
+                                "stroke-linejoin": "round",
+                                d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                              })
+                            ]))
+                          ]),
+                          vue_cjs_prod.createVNode("button", {
+                            "data-set-theme": "dark",
+                            class: "btn btn-sm btn-ghost btn-square",
+                            "data-act-class": "btn-active"
+                          }, [
+                            (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                              class: "inline-block w-4 h-4 fill-current",
+                              xmlns: "http://www.w3.org/2000/svg",
+                              viewBox: "0 0 512 512"
+                            }, [
+                              vue_cjs_prod.createVNode("title", null, "ionicons-v5-j"),
+                              vue_cjs_prod.createVNode("path", { d: "M152.62,126.77c0-33,4.85-66.35,17.23-94.77C87.54,67.83,32,151.89,32,247.38,32,375.85,136.15,480,264.62,480c95.49,0,179.55-55.54,215.38-137.85-28.42,12.38-61.8,17.23-94.77,17.23C256.76,359.38,152.62,255.24,152.62,126.77Z" })
+                            ]))
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+}
 const _sfc_setup$B = _sfc_main$B.setup;
 _sfc_main$B.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/4.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/blog/5.vue");
   return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
-const __nuxt_component_3$2 = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender$j]]);
+const __nuxt_component_4$2 = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender$j]]);
 const meta$5 = void 0;
 const _sfc_main$A = {};
 function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs) {
@@ -64205,7 +64657,8 @@ const _sfc_main$6 = {
     middle: {
       type: Boolean,
       default: true
-    }
+    },
+    overflow: Boolean
   },
   setup(__props) {
     const props = __props;
@@ -64334,7 +64787,9 @@ const _sfc_main$6 = {
           }, _parent));
           _push(`</li>`);
         });
-        _push(`<!--]--></ul></div><div class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg></div><button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div class="w-full h-full overflow-y-scroll bg-neutral"><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{ "items-center -mt-4": props.middle }, "w-full min-h-full flex justify-center relative"])}">`);
+        _push(`<!--]--></ul></div><div class="btn btn-sm btn-ghost mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg></div><button class="btn btn-sm btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></button></div><div class="${serverRenderer.exports.ssrRenderClass([props.overflow ? "overflow-hidden" : "overflow-y-scroll", "w-full h-full bg-neutral"])}"><div id="template-wrapper" class="${serverRenderer.exports.ssrRenderClass([{
+          "items-center -mt-4": props.middle
+        }, "w-full min-h-full flex justify-center relative"])}">`);
         serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div></div></div></div><div class="drawer-side"><label for="my-drawer-2" class="drawer-overlay"></label><ul class="menu p-4 overflow-y-auto w-72 bg-base-200 text-base-content scrollbar"><!--[-->`);
         serverRenderer.exports.ssrRenderList(themes, (item) => {
@@ -64365,10 +64820,11 @@ const _sfc_main$5 = {
   setup(__props) {
     const { params } = useRoute();
     const Blog = {
-      1: _sfc_main$E,
-      2: _sfc_main$D,
+      1: _sfc_main$F,
+      2: _sfc_main$E,
       3: __nuxt_component_2$2,
-      4: __nuxt_component_3$2
+      4: __nuxt_component_3$2,
+      5: __nuxt_component_4$2
     };
     return (_ctx, _push, _parent, _attrs) => {
       serverRenderer.exports.ssrRenderVNode(_push, vue_cjs_prod.createVNode(vue_cjs_prod.resolveDynamicComponent(Blog[vue_cjs_prod.unref(params).num]), _attrs, null), _parent);

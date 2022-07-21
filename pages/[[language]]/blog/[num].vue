@@ -10,5 +10,6 @@ const Blog = {
   2: resolveComponent("Blog2"),
   3: resolveComponent("Blog3"),
   4: resolveComponent("Blog4"),
+  5: resolveComponent("Blog5"),
 };
 </script>

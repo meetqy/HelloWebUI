@@ -1,5 +1,5 @@
 <template>
-  <nuxt-layout>
+  <nuxt-layout :middle="false">
     <div class="bg-base-100 font-sans leading-normal tracking-normal w-full">
       <!--Header-->
       <div

@@ -84,11 +84,16 @@
           </button>
         </div>
 
-        <div class="w-full h-full overflow-y-scroll bg-neutral">
+        <div
+          class="w-full h-full bg-neutral"
+          :class="props.overflow ? 'overflow-hidden' : 'overflow-y-scroll'"
+        >
           <div
             class="w-full min-h-full flex justify-center relative"
             id="template-wrapper"
-            :class="{ 'items-center -mt-4': props.middle }"
+            :class="{
+              'items-center -mt-4': props.middle,
+            }"
           >
             <slot></slot>
           </div>
@@ -141,6 +146,7 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
+  overflow: Boolean,
 });
 
 const { $faker } = useNuxtApp();

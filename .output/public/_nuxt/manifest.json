@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-80792e2b.mjs",
+    "file": "entry-d7602e76.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -13,35 +13,35 @@
       "pages/index.vue"
     ],
     "css": [
-      "entry.3cdf95a7.css"
+      "entry.a8bd6cab.css"
     ]
   },
   "pages/[[language]]/blog/[num].vue": {
-    "file": "_num_-49a6d450.mjs",
+    "file": "_num_-9e999c2a.mjs",
     "src": "pages/[[language]]/blog/[num].vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_language-c2592d7f.mjs"
+      "_language-14250e28.mjs"
     ]
   },
-  "_language-c2592d7f.mjs": {
-    "file": "language-c2592d7f.mjs",
+  "_language-14250e28.mjs": {
+    "file": "language-14250e28.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/[[language]]/card/[num].vue": {
-    "file": "_num_-22d71832.mjs",
+    "file": "_num_-342bd357.mjs",
     "src": "pages/[[language]]/card/[num].vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_language-c2592d7f.mjs"
+      "_language-14250e28.mjs"
     ]
   },
   "pages/[[language]]/hero/[num].vue": {
-    "file": "_num_-56d4ae9b.mjs",
+    "file": "_num_-510ccac8.mjs",
     "src": "pages/[[language]]/hero/[num].vue",
     "isDynamicEntry": true,
     "imports": [
@@ -49,7 +49,7 @@
     ]
   },
   "pages/[[language]]/profile/[num].vue": {
-    "file": "_num_-063f760b.mjs",
+    "file": "_num_-f7614b30.mjs",
     "src": "pages/[[language]]/profile/[num].vue",
     "isDynamicEntry": true,
     "imports": [
@@ -57,16 +57,16 @@
     ]
   },
   "pages/[[language]]/section/[num].vue": {
-    "file": "_num_-b22126c4.mjs",
+    "file": "_num_-eab6509b.mjs",
     "src": "pages/[[language]]/section/[num].vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_language-c2592d7f.mjs"
+      "_language-14250e28.mjs"
     ]
   },
   "pages/index.vue": {
-    "file": "index-39963782.mjs",
+    "file": "index-83fbfe48.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -74,7 +74,7 @@
     ]
   },
   "layouts/default.vue": {
-    "file": "default-5bcc1f94.mjs",
+    "file": "default-23a28d5f.mjs",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [

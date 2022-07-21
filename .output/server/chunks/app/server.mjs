@@ -4064,24 +4064,29 @@ const _export_sfc = (sfc, props) => {
 const _sfc_main$C = {};
 function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   const _component_nuxt_layout = __nuxt_component_0$3;
-  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({ middle: false }, _attrs), {
+  _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_layout, vue_cjs_prod.mergeProps({
+    middle: false,
+    lang: "",
+    daisyui: ""
+  }, _attrs), {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<div class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal w-full"${_scopeId}><nav id="header" class="w-full z-30 top-0 py-1"${_scopeId}><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"${_scopeId}><label for="menu-toggle" class="cursor-pointer md:hidden block"${_scopeId}><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"${_scopeId}><title${_scopeId}>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"${_scopeId}></path></svg></label><input class="hidden" type="checkbox" id="menu-toggle"${_scopeId}><div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu"${_scopeId}><nav${_scopeId}><ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"${_scopeId}><li${_scopeId}><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#"${_scopeId}>Shop</a></li><li${_scopeId}><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#"${_scopeId}>About</a></li></ul></nav></div><div class="order-1 md:order-2"${_scopeId}><a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl" href="#"${_scopeId}><svg class="fill-current text-gray-800 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z"${_scopeId}></path></svg> NORDICS </a></div><div class="order-2 md:order-3 flex items-center" id="nav-content"${_scopeId}><a class="inline-block no-underline hover:text-black" href="#"${_scopeId}><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><circle fill="none" cx="12" cy="7" r="3"${_scopeId}></circle><path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"${_scopeId}></path></svg></a><a class="pl-3 inline-block no-underline hover:text-black" href="#"${_scopeId}><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z"${_scopeId}></path><circle cx="10.5" cy="18.5" r="1.5"${_scopeId}></circle><circle cx="17.5" cy="18.5" r="1.5"${_scopeId}></circle></svg></a></div></div></nav><section class="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right" style="${serverRenderer.exports.ssrRenderStyle({ "max-width": "1600px", "height": "32rem", "background-image": "url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')" })}"${_scopeId}><div class="container mx-auto"${_scopeId}><div class="flex flex-col w-full lg:w-1/2 justify-center items-start px-6 tracking-wide"${_scopeId}><h1 class="text-black text-2xl my-4"${_scopeId}> Stripy Zig Zag Jigsaw Pillow and Duvet Set </h1><a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#"${_scopeId}>products</a></div></div></section><section class="bg-white py-8"${_scopeId}><div class="container mx-auto flex items-center flex-wrap pt-4 pb-12"${_scopeId}><nav id="store" class="w-full z-30 top-0 px-6 py-1"${_scopeId}><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3"${_scopeId}><a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl" href="#"${_scopeId}> Store </a><div class="flex items-center" id="store-nav-content"${_scopeId}><a class="pl-3 inline-block no-underline hover:text-black" href="#"${_scopeId}><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z"${_scopeId}></path></svg></a><a class="pl-3 inline-block no-underline hover:text-black" href="#"${_scopeId}><svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"${_scopeId}></path></svg></a></div></div></nav><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div><div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=80"${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p class=""${_scopeId}>Product Name</p><svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="pt-1 text-gray-900"${_scopeId}>\xA39.99</p></a></div></div></section><section class="bg-white py-8"${_scopeId}><div class="container py-8 px-6 mx-auto"${_scopeId}><a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8" href="#"${_scopeId}> About </a><p class="mt-8 mb-8"${_scopeId}> This template is inspired by the stunning nordic minamalist design - in particular: <br${_scopeId}><a class="text-gray-800 underline hover:text-gray-900" href="http://savoy.nordicmade.com/" target="_blank"${_scopeId}>Savoy Theme</a> created by <a class="text-gray-800 underline hover:text-gray-900" href="https://nordicmade.com/"${_scopeId}>https://nordicmade.com/</a> and <a class="text-gray-800 underline hover:text-gray-900" href="https://www.metricdesign.no/" target="_blank"${_scopeId}>https://www.metricdesign.no/</a></p><p class="mb-8"${_scopeId}> Lorem ipsum dolor sit amet, consectetur <a href="#"${_scopeId}>random link</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac. </p></div></section><footer class="container mx-auto bg-white py-8 border-t border-gray-400"${_scopeId}><div class="container flex px-3 py-8"${_scopeId}><div class="w-full mx-auto flex flex-wrap"${_scopeId}><div class="flex w-full lg:w-1/2"${_scopeId}><div class="px-3 md:px-0"${_scopeId}><h3 class="font-bold text-gray-900"${_scopeId}>About</h3><p class="py-4"${_scopeId}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia. </p></div></div><div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right"${_scopeId}><div class="px-3 md:px-0"${_scopeId}><h3 class="font-bold text-gray-900"${_scopeId}>Social</h3><ul class="list-reset items-center pt-3"${_scopeId}><li${_scopeId}><a class="inline-block no-underline hover:text-black hover:underline py-1" href="#"${_scopeId}>Add social links</a></li></ul></div></div></div></div></footer></div>`);
+        _push2(`<div class="bg-base-100 text-base-content text-opacity-60 work-sans leading-normal text-base tracking-normal w-full"${_scopeId}><div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"${_scopeId}><div class="dropdown lg:dropdown-open lg:h-10"${_scopeId}><label tabindex="0" class="btn btn-ghost btn-sm lg:hidden"${_scopeId}><svg class="fill-current text-base-content text-opacity-90" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"${_scopeId}><title${_scopeId}>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"${_scopeId}></path></svg></label><ul tabindex="0" class="dropdown-content menu bg-base-100 lg:menu-horizontal menu-vertical rounded-box lg:w-auto w-56"${_scopeId}><li${_scopeId}><a href="#"${_scopeId}>Shop</a></li><li${_scopeId}><a href="#"${_scopeId}>About</a></li></ul></div><div class="order-1 md:order-2"${_scopeId}><a class="flex uppercase items-center tracking-wide no-underline hover:no-underline font-bold text-base-content text-opacity-80 text-xl" href="#"${_scopeId}><svg class="fill-current text-base-content text-opacity-80 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z"${_scopeId}></path></svg> wcao.cc </a></div><div class="order-2 md:order-3 flex items-center"${_scopeId}><a class="btn btn-ghost btn-square" href="#"${_scopeId}><svg class="fill-current hover:text-base-content" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><circle fill="none" cx="12" cy="7" r="3"${_scopeId}></circle><path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"${_scopeId}></path></svg></a><a class="btn btn-ghost btn-square" href="#"${_scopeId}><svg class="fill-current hover:text-base-content" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z"${_scopeId}></path><circle cx="10.5" cy="18.5" r="1.5"${_scopeId}></circle><circle cx="17.5" cy="18.5" r="1.5"${_scopeId}></circle></svg></a></div></div><section class="w-full mx-auto bg-nordic-base-content-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right" style="${serverRenderer.exports.ssrRenderStyle({ "max-width": "1600px", "height": "32rem", "background-image": "url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')" })}"${_scopeId}><div class="container mx-auto"${_scopeId}><div class="flex flex-col w-full lg:w-1/2 justify-center items-start px-6 tracking-wide"${_scopeId}><h1 class="text-base-content text-2xl"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</h1><a class="btn btn-link capitalize font-normal btn-lg px-0" href="#"${_scopeId}> products </a></div></div></section><section class="bg-base-100 py-8"${_scopeId}><div class="container mx-auto flex items-center flex-wrap"${_scopeId}><div class="w-full container mx-auto flex flex-wrap items-center justify-between px-2 py-3"${_scopeId}><a class="uppercase tracking-wide font-bold text-base-content text-opacity-80 text-xl" href="#"${_scopeId}> Store </a><div class="flex items-center"${_scopeId}><a class="btn btn-square btn-ghost" href="#"${_scopeId}><svg class="fill-current hover:text-base-content" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z"${_scopeId}></path></svg></a><a class="btn btn-square btn-ghost" href="#"${_scopeId}><svg class="fill-current hover:text-base-content" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"${_scopeId}><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"${_scopeId}></path></svg></a></div></div><!--[-->`);
+        serverRenderer.exports.ssrRenderList(8, (item) => {
+          _push2(`<div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"${_scopeId}><a href="#"${_scopeId}><img${serverRenderer.exports.ssrRenderAttr("src", `https://source.unsplash.com/user/feeypflanzen/500x500/?${item}`)}${_scopeId}><div class="pt-3 flex items-center justify-between"${_scopeId}><p${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productName())}</p><svg class="h-6 w-6 fill-current text-base-content text-opacity-50 hover:text-base-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"${_scopeId}><path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"${_scopeId}></path></svg></div><p class="mt-1 text-base-content text-opacity-90"${_scopeId}> \xA3${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.price())}</p></a></div>`);
+        });
+        _push2(`<!--]--></div></section><section class="bg-base-100 py-8"${_scopeId}><div class="container py-8 px-6 mx-auto"${_scopeId}><a class="capitalize tracking-wide no-underline hover:no-underline font-bold text-base-content text-opacity-80 text-xl mb-8" href="#"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.adverb())}</a><p class="mt-8 mb-8"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p><p class="mb-8"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></section><footer class="container mx-auto flex bg-base-100 px-3 py-8 border-t border-base-content border-opacity-40"${_scopeId}><div class="flex w-full lg:w-1/2"${_scopeId}><div class="px-3 md:px-0"${_scopeId}><h3 class="font-bold text-base-content text-opacity-90 capitalize"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.word.verb())}</h3><p class="py-4"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())} ${serverRenderer.exports.ssrInterpolate(_ctx.$faker.commerce.productDescription())}</p></div></div><div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right"${_scopeId}><div class="px-3 md:px-0"${_scopeId}><h3 class="font-bold text-base-content text-opacity-90"${_scopeId}>${serverRenderer.exports.ssrInterpolate(_ctx.$faker.name.findName())}</h3><a class="btn btn-link pr-0" href="#"${_scopeId}> wcao.cc </a></div></div></footer></div>`);
       } else {
         return [
-          vue_cjs_prod.createVNode("div", { class: "bg-white text-gray-600 work-sans leading-normal text-base tracking-normal w-full" }, [
-            vue_cjs_prod.createVNode("nav", {
-              id: "header",
-              class: "w-full z-30 top-0 py-1"
-            }, [
-              vue_cjs_prod.createVNode("div", { class: "w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3" }, [
+          vue_cjs_prod.createVNode("div", { class: "bg-base-100 text-base-content text-opacity-60 work-sans leading-normal text-base tracking-normal w-full" }, [
+            vue_cjs_prod.createVNode("div", { class: "w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3" }, [
+              vue_cjs_prod.createVNode("div", { class: "dropdown lg:dropdown-open lg:h-10" }, [
                 vue_cjs_prod.createVNode("label", {
-                  for: "menu-toggle",
-                  class: "cursor-pointer md:hidden block"
+                  tabindex: "0",
+                  class: "btn btn-ghost btn-sm lg:hidden"
                 }, [
                   (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                    class: "fill-current text-gray-900",
+                    class: "fill-current text-base-content text-opacity-90",
                     xmlns: "http://www.w3.org/2000/svg",
                     width: "20",
                     height: "20",
@@ -4091,369 +4096,183 @@ function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
                     vue_cjs_prod.createVNode("path", { d: "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" })
                   ]))
                 ]),
-                vue_cjs_prod.createVNode("input", {
-                  class: "hidden",
-                  type: "checkbox",
-                  id: "menu-toggle"
-                }),
-                vue_cjs_prod.createVNode("div", {
-                  class: "hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1",
-                  id: "menu"
+                vue_cjs_prod.createVNode("ul", {
+                  tabindex: "0",
+                  class: "dropdown-content menu bg-base-100 lg:menu-horizontal menu-vertical rounded-box lg:w-auto w-56"
                 }, [
-                  vue_cjs_prod.createVNode("nav", null, [
-                    vue_cjs_prod.createVNode("ul", { class: "md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0" }, [
-                      vue_cjs_prod.createVNode("li", null, [
-                        vue_cjs_prod.createVNode("a", {
-                          class: "inline-block no-underline hover:text-black hover:underline py-2 px-4",
-                          href: "#"
-                        }, "Shop")
-                      ]),
-                      vue_cjs_prod.createVNode("li", null, [
-                        vue_cjs_prod.createVNode("a", {
-                          class: "inline-block no-underline hover:text-black hover:underline py-2 px-4",
-                          href: "#"
-                        }, "About")
-                      ])
-                    ])
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "order-1 md:order-2" }, [
-                  vue_cjs_prod.createVNode("a", {
-                    class: "flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl",
-                    href: "#"
-                  }, [
-                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                      class: "fill-current text-gray-800 mr-2",
-                      xmlns: "http://www.w3.org/2000/svg",
-                      width: "24",
-                      height: "24",
-                      viewBox: "0 0 24 24"
-                    }, [
-                      vue_cjs_prod.createVNode("path", { d: "M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z" })
-                    ])),
-                    vue_cjs_prod.createTextVNode(" NORDICS ")
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", {
-                  class: "order-2 md:order-3 flex items-center",
-                  id: "nav-content"
-                }, [
-                  vue_cjs_prod.createVNode("a", {
-                    class: "inline-block no-underline hover:text-black",
-                    href: "#"
-                  }, [
-                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                      class: "fill-current hover:text-black",
-                      xmlns: "http://www.w3.org/2000/svg",
-                      width: "24",
-                      height: "24",
-                      viewBox: "0 0 24 24"
-                    }, [
-                      vue_cjs_prod.createVNode("circle", {
-                        fill: "none",
-                        cx: "12",
-                        cy: "7",
-                        r: "3"
-                      }),
-                      vue_cjs_prod.createVNode("path", { d: "M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" })
-                    ]))
+                  vue_cjs_prod.createVNode("li", null, [
+                    vue_cjs_prod.createVNode("a", { href: "#" }, "Shop")
                   ]),
-                  vue_cjs_prod.createVNode("a", {
-                    class: "pl-3 inline-block no-underline hover:text-black",
-                    href: "#"
-                  }, [
-                    (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                      class: "fill-current hover:text-black",
-                      xmlns: "http://www.w3.org/2000/svg",
-                      width: "24",
-                      height: "24",
-                      viewBox: "0 0 24 24"
-                    }, [
-                      vue_cjs_prod.createVNode("path", { d: "M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z" }),
-                      vue_cjs_prod.createVNode("circle", {
-                        cx: "10.5",
-                        cy: "18.5",
-                        r: "1.5"
-                      }),
-                      vue_cjs_prod.createVNode("circle", {
-                        cx: "17.5",
-                        cy: "18.5",
-                        r: "1.5"
-                      })
-                    ]))
+                  vue_cjs_prod.createVNode("li", null, [
+                    vue_cjs_prod.createVNode("a", { href: "#" }, "About")
                   ])
+                ])
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "order-1 md:order-2" }, [
+                vue_cjs_prod.createVNode("a", {
+                  class: "flex uppercase items-center tracking-wide no-underline hover:no-underline font-bold text-base-content text-opacity-80 text-xl",
+                  href: "#"
+                }, [
+                  (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                    class: "fill-current text-base-content text-opacity-80 mr-2",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "24",
+                    height: "24",
+                    viewBox: "0 0 24 24"
+                  }, [
+                    vue_cjs_prod.createVNode("path", { d: "M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z" })
+                  ])),
+                  vue_cjs_prod.createTextVNode(" wcao.cc ")
+                ])
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "order-2 md:order-3 flex items-center" }, [
+                vue_cjs_prod.createVNode("a", {
+                  class: "btn btn-ghost btn-square",
+                  href: "#"
+                }, [
+                  (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                    class: "fill-current hover:text-base-content",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "24",
+                    height: "24",
+                    viewBox: "0 0 24 24"
+                  }, [
+                    vue_cjs_prod.createVNode("circle", {
+                      fill: "none",
+                      cx: "12",
+                      cy: "7",
+                      r: "3"
+                    }),
+                    vue_cjs_prod.createVNode("path", { d: "M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" })
+                  ]))
+                ]),
+                vue_cjs_prod.createVNode("a", {
+                  class: "btn btn-ghost btn-square",
+                  href: "#"
+                }, [
+                  (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                    class: "fill-current hover:text-base-content",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "24",
+                    height: "24",
+                    viewBox: "0 0 24 24"
+                  }, [
+                    vue_cjs_prod.createVNode("path", { d: "M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z" }),
+                    vue_cjs_prod.createVNode("circle", {
+                      cx: "10.5",
+                      cy: "18.5",
+                      r: "1.5"
+                    }),
+                    vue_cjs_prod.createVNode("circle", {
+                      cx: "17.5",
+                      cy: "18.5",
+                      r: "1.5"
+                    })
+                  ]))
                 ])
               ])
             ]),
             vue_cjs_prod.createVNode("section", {
-              class: "w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right",
+              class: "w-full mx-auto bg-nordic-base-content-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right",
               style: { "max-width": "1600px", "height": "32rem", "background-image": "url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')" }
             }, [
               vue_cjs_prod.createVNode("div", { class: "container mx-auto" }, [
                 vue_cjs_prod.createVNode("div", { class: "flex flex-col w-full lg:w-1/2 justify-center items-start px-6 tracking-wide" }, [
-                  vue_cjs_prod.createVNode("h1", { class: "text-black text-2xl my-4" }, " Stripy Zig Zag Jigsaw Pillow and Duvet Set "),
+                  vue_cjs_prod.createVNode("h1", { class: "text-base-content text-2xl" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productName()), 1),
                   vue_cjs_prod.createVNode("a", {
-                    class: "text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black",
+                    class: "btn btn-link capitalize font-normal btn-lg px-0",
                     href: "#"
-                  }, "products")
+                  }, " products ")
                 ])
               ])
             ]),
-            vue_cjs_prod.createVNode("section", { class: "bg-white py-8" }, [
-              vue_cjs_prod.createVNode("div", { class: "container mx-auto flex items-center flex-wrap pt-4 pb-12" }, [
-                vue_cjs_prod.createVNode("nav", {
-                  id: "store",
-                  class: "w-full z-30 top-0 px-6 py-1"
-                }, [
-                  vue_cjs_prod.createVNode("div", { class: "w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3" }, [
+            vue_cjs_prod.createVNode("section", { class: "bg-base-100 py-8" }, [
+              vue_cjs_prod.createVNode("div", { class: "container mx-auto flex items-center flex-wrap" }, [
+                vue_cjs_prod.createVNode("div", { class: "w-full container mx-auto flex flex-wrap items-center justify-between px-2 py-3" }, [
+                  vue_cjs_prod.createVNode("a", {
+                    class: "uppercase tracking-wide font-bold text-base-content text-opacity-80 text-xl",
+                    href: "#"
+                  }, " Store "),
+                  vue_cjs_prod.createVNode("div", { class: "flex items-center" }, [
                     vue_cjs_prod.createVNode("a", {
-                      class: "uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl",
+                      class: "btn btn-square btn-ghost",
                       href: "#"
-                    }, " Store "),
-                    vue_cjs_prod.createVNode("div", {
-                      class: "flex items-center",
-                      id: "store-nav-content"
                     }, [
-                      vue_cjs_prod.createVNode("a", {
-                        class: "pl-3 inline-block no-underline hover:text-black",
-                        href: "#"
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "fill-current hover:text-base-content",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        width: "24",
+                        height: "24",
+                        viewBox: "0 0 24 24"
                       }, [
+                        vue_cjs_prod.createVNode("path", { d: "M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" })
+                      ]))
+                    ]),
+                    vue_cjs_prod.createVNode("a", {
+                      class: "btn btn-square btn-ghost",
+                      href: "#"
+                    }, [
+                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
+                        class: "fill-current hover:text-base-content",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        width: "24",
+                        height: "24",
+                        viewBox: "0 0 24 24"
+                      }, [
+                        vue_cjs_prod.createVNode("path", { d: "M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" })
+                      ]))
+                    ])
+                  ])
+                ]),
+                (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock(vue_cjs_prod.Fragment, null, vue_cjs_prod.renderList(8, (item) => {
+                  return vue_cjs_prod.createVNode("div", {
+                    class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col",
+                    key: item
+                  }, [
+                    vue_cjs_prod.createVNode("a", { href: "#" }, [
+                      vue_cjs_prod.createVNode("img", {
+                        src: `https://source.unsplash.com/user/feeypflanzen/500x500/?${item}`
+                      }, null, 8, ["src"]),
+                      vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
+                        vue_cjs_prod.createVNode("p", null, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productName()), 1),
                         (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                          class: "fill-current hover:text-black",
+                          class: "h-6 w-6 fill-current text-base-content text-opacity-50 hover:text-base-content",
                           xmlns: "http://www.w3.org/2000/svg",
-                          width: "24",
-                          height: "24",
                           viewBox: "0 0 24 24"
                         }, [
-                          vue_cjs_prod.createVNode("path", { d: "M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" })
+                          vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
                         ]))
                       ]),
-                      vue_cjs_prod.createVNode("a", {
-                        class: "pl-3 inline-block no-underline hover:text-black",
-                        href: "#"
-                      }, [
-                        (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                          class: "fill-current hover:text-black",
-                          xmlns: "http://www.w3.org/2000/svg",
-                          width: "24",
-                          height: "24",
-                          viewBox: "0 0 24 24"
-                        }, [
-                          vue_cjs_prod.createVNode("path", { d: "M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" })
-                        ]))
-                      ])
+                      vue_cjs_prod.createVNode("p", { class: "mt-1 text-base-content text-opacity-90" }, " \xA3" + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.price()), 1)
                     ])
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
-                  vue_cjs_prod.createVNode("a", { href: "#" }, [
-                    vue_cjs_prod.createVNode("img", {
-                      class: "hover:grow hover:shadow-lg",
-                      src: "https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-                    }),
-                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
-                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
-                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
-                      ]))
-                    ]),
-                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
-                  vue_cjs_prod.createVNode("a", { href: "#" }, [
-                    vue_cjs_prod.createVNode("img", {
-                      class: "hover:grow hover:shadow-lg",
-                      src: "https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-                    }),
-                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
-                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
-                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
-                      ]))
-                    ]),
-                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
-                  vue_cjs_prod.createVNode("a", { href: "#" }, [
-                    vue_cjs_prod.createVNode("img", {
-                      class: "hover:grow hover:shadow-lg",
-                      src: "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-                    }),
-                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
-                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
-                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
-                      ]))
-                    ]),
-                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
-                  vue_cjs_prod.createVNode("a", { href: "#" }, [
-                    vue_cjs_prod.createVNode("img", {
-                      class: "hover:grow hover:shadow-lg",
-                      src: "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-                    }),
-                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
-                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
-                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
-                      ]))
-                    ]),
-                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
-                  vue_cjs_prod.createVNode("a", { href: "#" }, [
-                    vue_cjs_prod.createVNode("img", {
-                      class: "hover:grow hover:shadow-lg",
-                      src: "https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-                    }),
-                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
-                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
-                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
-                      ]))
-                    ]),
-                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
-                  vue_cjs_prod.createVNode("a", { href: "#" }, [
-                    vue_cjs_prod.createVNode("img", {
-                      class: "hover:grow hover:shadow-lg",
-                      src: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-                    }),
-                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
-                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
-                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
-                      ]))
-                    ]),
-                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
-                  vue_cjs_prod.createVNode("a", { href: "#" }, [
-                    vue_cjs_prod.createVNode("img", {
-                      class: "hover:grow hover:shadow-lg",
-                      src: "https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-                    }),
-                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
-                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
-                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
-                      ]))
-                    ]),
-                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
-                  ])
-                ]),
-                vue_cjs_prod.createVNode("div", { class: "w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" }, [
-                  vue_cjs_prod.createVNode("a", { href: "#" }, [
-                    vue_cjs_prod.createVNode("img", {
-                      class: "hover:grow hover:shadow-lg",
-                      src: "https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80"
-                    }),
-                    vue_cjs_prod.createVNode("div", { class: "pt-3 flex items-center justify-between" }, [
-                      vue_cjs_prod.createVNode("p", { class: "" }, "Product Name"),
-                      (vue_cjs_prod.openBlock(), vue_cjs_prod.createBlock("svg", {
-                        class: "h-6 w-6 fill-current text-gray-500 hover:text-black",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        vue_cjs_prod.createVNode("path", { d: "M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" })
-                      ]))
-                    ]),
-                    vue_cjs_prod.createVNode("p", { class: "pt-1 text-gray-900" }, "\xA39.99")
-                  ])
-                ])
+                  ]);
+                }), 64))
               ])
             ]),
-            vue_cjs_prod.createVNode("section", { class: "bg-white py-8" }, [
+            vue_cjs_prod.createVNode("section", { class: "bg-base-100 py-8" }, [
               vue_cjs_prod.createVNode("div", { class: "container py-8 px-6 mx-auto" }, [
                 vue_cjs_prod.createVNode("a", {
-                  class: "uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8",
+                  class: "capitalize tracking-wide no-underline hover:no-underline font-bold text-base-content text-opacity-80 text-xl mb-8",
                   href: "#"
-                }, " About "),
-                vue_cjs_prod.createVNode("p", { class: "mt-8 mb-8" }, [
-                  vue_cjs_prod.createTextVNode(" This template is inspired by the stunning nordic minamalist design - in particular: "),
-                  vue_cjs_prod.createVNode("br"),
-                  vue_cjs_prod.createVNode("a", {
-                    class: "text-gray-800 underline hover:text-gray-900",
-                    href: "http://savoy.nordicmade.com/",
-                    target: "_blank"
-                  }, "Savoy Theme"),
-                  vue_cjs_prod.createTextVNode(" created by "),
-                  vue_cjs_prod.createVNode("a", {
-                    class: "text-gray-800 underline hover:text-gray-900",
-                    href: "https://nordicmade.com/"
-                  }, "https://nordicmade.com/"),
-                  vue_cjs_prod.createTextVNode(" and "),
-                  vue_cjs_prod.createVNode("a", {
-                    class: "text-gray-800 underline hover:text-gray-900",
-                    href: "https://www.metricdesign.no/",
-                    target: "_blank"
-                  }, "https://www.metricdesign.no/")
-                ]),
-                vue_cjs_prod.createVNode("p", { class: "mb-8" }, [
-                  vue_cjs_prod.createTextVNode(" Lorem ipsum dolor sit amet, consectetur "),
-                  vue_cjs_prod.createVNode("a", { href: "#" }, "random link"),
-                  vue_cjs_prod.createTextVNode(" adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae congue eu consequat ac. ")
-                ])
+                }, vue_cjs_prod.toDisplayString(_ctx.$faker.word.adverb()), 1),
+                vue_cjs_prod.createVNode("p", { class: "mt-8 mb-8" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()), 1),
+                vue_cjs_prod.createVNode("p", { class: "mb-8" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()), 1)
               ])
             ]),
-            vue_cjs_prod.createVNode("footer", { class: "container mx-auto bg-white py-8 border-t border-gray-400" }, [
-              vue_cjs_prod.createVNode("div", { class: "container flex px-3 py-8" }, [
-                vue_cjs_prod.createVNode("div", { class: "w-full mx-auto flex flex-wrap" }, [
-                  vue_cjs_prod.createVNode("div", { class: "flex w-full lg:w-1/2" }, [
-                    vue_cjs_prod.createVNode("div", { class: "px-3 md:px-0" }, [
-                      vue_cjs_prod.createVNode("h3", { class: "font-bold text-gray-900" }, "About"),
-                      vue_cjs_prod.createVNode("p", { class: "py-4" }, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia. ")
-                    ])
-                  ]),
-                  vue_cjs_prod.createVNode("div", { class: "flex w-full lg:w-1/2 lg:justify-end lg:text-right" }, [
-                    vue_cjs_prod.createVNode("div", { class: "px-3 md:px-0" }, [
-                      vue_cjs_prod.createVNode("h3", { class: "font-bold text-gray-900" }, "Social"),
-                      vue_cjs_prod.createVNode("ul", { class: "list-reset items-center pt-3" }, [
-                        vue_cjs_prod.createVNode("li", null, [
-                          vue_cjs_prod.createVNode("a", {
-                            class: "inline-block no-underline hover:text-black hover:underline py-1",
-                            href: "#"
-                          }, "Add social links")
-                        ])
-                      ])
-                    ])
-                  ])
+            vue_cjs_prod.createVNode("footer", { class: "container mx-auto flex bg-base-100 px-3 py-8 border-t border-base-content border-opacity-40" }, [
+              vue_cjs_prod.createVNode("div", { class: "flex w-full lg:w-1/2" }, [
+                vue_cjs_prod.createVNode("div", { class: "px-3 md:px-0" }, [
+                  vue_cjs_prod.createVNode("h3", { class: "font-bold text-base-content text-opacity-90 capitalize" }, vue_cjs_prod.toDisplayString(_ctx.$faker.word.verb()), 1),
+                  vue_cjs_prod.createVNode("p", { class: "py-4" }, vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()) + " " + vue_cjs_prod.toDisplayString(_ctx.$faker.commerce.productDescription()), 1)
+                ])
+              ]),
+              vue_cjs_prod.createVNode("div", { class: "flex w-full lg:w-1/2 lg:justify-end lg:text-right" }, [
+                vue_cjs_prod.createVNode("div", { class: "px-3 md:px-0" }, [
+                  vue_cjs_prod.createVNode("h3", { class: "font-bold text-base-content text-opacity-90" }, vue_cjs_prod.toDisplayString(_ctx.$faker.name.findName()), 1),
+                  vue_cjs_prod.createVNode("a", {
+                    class: "btn btn-link pr-0",
+                    href: "#"
+                  }, " wcao.cc ")
                 ])
               ])
             ])

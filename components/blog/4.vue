@@ -467,7 +467,7 @@
               Subscribe to Ghostwind CSS
             </h2>
             <h3
-              class="font-bold break-normal font-normal text-gray-600 text-base md:text-xl"
+              class="break-normal font-normal text-gray-600 text-base md:text-xl"
             >
               Get the latest posts delivered right to your inbox
             </h3>
@@ -501,7 +501,7 @@
               alt="Avatar of Author"
             />
             <div class="flex-1">
-              <p class="text-base font-bold text-base md:text-xl leading-none">
+              <p class="text-base font-bold md:text-xl leading-none">
                 Ghostwind CSS
               </p>
               <p class="text-gray-600 text-xs md:text-base">

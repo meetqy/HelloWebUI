@@ -1,5 +1,5 @@
 <template>
-  <nuxt-layout :middle="false" overflow>
+  <nuxt-layout :middle="false" overflow daisyui>
     <div class="drawer drawer-mobile bg-base-100">
       <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex justify-center lg:justify-start">

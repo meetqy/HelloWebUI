@@ -1,6 +1,6 @@
 ![](./readme/preview.jpg)
 
-# wcao.cc Template
+# wcao.cc-template
 
 收集漂亮的网页、模板、组件，用 tailwind+daisyui 实现，就可以轻易实现主题切换咯。
 

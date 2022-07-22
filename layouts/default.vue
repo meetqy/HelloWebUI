@@ -14,7 +14,7 @@
           </button>
 
           <div
-            class="btn btn-ghost hover:bg-transparent btn-sm"
+            class="btn btn-ghost hover:bg-transparent btn-sm mr-2"
             :class="{ hidden: !props.daisyui }"
           >
             <span class="lowercase text-primary">daisy</span>

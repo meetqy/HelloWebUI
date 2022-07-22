@@ -1,19 +1,9 @@
-![](./readme/preview.gif)
+![](./readme/preview.jpg)
 
-# HelloWebUI
+# wcao.cc-template
 
-分享多主题、多语言、响应式 web 网页模板
+收集漂亮的网页、模板、组件，用 tailwind+daisyui 实现，就可以轻易实现主题切换咯。
 
-## Card
+- [所有模板](https://wcao.cc)
 
-<div>
-<a href='https://wcao.cc/template/detail/pro-8'>
-<img src='./readme/template/card/1.jpg' width='200'/>
-</a>
-<a href='https://wcao.cc/template/detail/pro-9'>
-<img src='./readme/template/card/2.jpg' width='200'/>
-</a>
-<a href='https://wcao.cc/template/detail/pro-10'>
-<img src='./readme/template/card/3.jpg' width='200'/>
-</a>
-</div>
+> 云服务器内存不足以打包，只能上传`.output`文件了
